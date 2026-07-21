@@ -1,0 +1,805 @@
+.main-menu .navigation>li{
+  padding: 10px 0 !important;
+  padding-top: 20px !important;
+}
+.main-menu .navigation>li a{
+  text-decoration: none !important;
+}
+.main-header .nav-toggler{
+  right: 10px !important;
+}
+.section-title{
+  background: transparent !important;
+}
+body, h1, h2, h3, h4, h5, h6, p, a, li, button, input, textarea {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Hero Section Styling */
+.tank-hero-section {
+  position: relative;
+  background-image: url('../images/industrial-tank-3d-scan-service/hero-bg.png');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.tank-hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(38, 38, 38, 1) 0%, rgba(38, 38, 38, 0.95) 60%, rgba(38, 38, 38, 0) 100%);
+  z-index: 1;
+}
+
+.tank-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+}
+
+.tank-hero-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.text-yellow {
+  color: #eab330; /* Match the yellow color from the design */
+}
+
+.tank-hero-desc {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+.btn-yellow {
+  background-color: #eab330;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid #eab330;
+  padding: 12px 28px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-yellow:hover {
+  background-color: transparent;
+  color: #eab330;
+}
+
+.btn-outline-white {
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid #fff;
+  padding: 12px 28px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-outline-white:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.hero-features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.feature-item {
+  text-align: center;
+  flex: 1;
+  min-width: 100px;
+}
+
+.feature-icon-wrapper {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto 10px auto;
+  border: 1px solid #eab330;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.feature-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 2px;
+  color: #fff;
+}
+
+.feature-subtitle {
+  font-size: 18px;
+  color: #cccccc;
+  line-height: 1.2;
+}
+
+@media (max-width: 991px) {
+  .tank-hero-section::before {
+    width: 80%;
+    background: linear-gradient(to right, rgba(38, 38, 38, 1) 0%, rgba(38, 38, 38, 0.95) 70%, rgba(38, 38, 38, 0) 100%);
+  }
+}
+
+@media (max-width: 767px) {
+  .tank-hero-section::before {
+    width: 100%;
+    background: rgba(38, 38, 38, 0.85);
+  }
+  .tank-hero-title {
+    font-size: 3rem;
+  }
+  .hero-features {
+    justify-content: center;
+  }
+  .feature-item {
+    flex: 0 0 45%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Why Us Section Styling */
+.why-us-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #fafafa;
+}
+
+.why-icon-box {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.why-icon-box:hover {
+  transform: translateY(-5px);
+}
+
+.why-icon-box img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.why-title {
+  font-size: 18px; /* Following minimum font size rule */
+  font-weight: 600;
+  color: #333;
+  line-height: 1.3;
+}
+
+/* Expertise Section Styling */
+.expertise-section .dark-box {
+  background-color: #262626;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.expertise-section .box-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.expertise-section .text-yellow {
+  color: #eab330 !important;
+}
+
+.comparison-table {
+  color: #fff !important;
+  background-color: transparent !important;
+  --bs-table-bg: transparent;
+  --bs-table-color: #fff;
+  --bs-table-striped-bg: transparent;
+  --bs-table-striped-color: #fff;
+  --bs-table-active-bg: transparent;
+  --bs-table-active-color: #fff;
+  --bs-table-hover-bg: transparent;
+  --bs-table-hover-color: #fff;
+}
+
+.comparison-table th {
+  border-bottom: none;
+  padding-bottom: 25px;
+  background-color: transparent !important;
+}
+
+.comparison-table td {
+  border-bottom: 1px solid #4a4a4a;
+  padding: 20px 5px;
+  vertical-align: middle;
+  background-color: transparent !important;
+  color: #fff !important;
+}
+
+.comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table .feature-name {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+.comparison-table td.text-center {
+  font-size: 18px;
+}
+
+.comparison-table td.text-white {
+  color: #fff !important;
+}
+
+.comparison-table td.text-yellow {
+  color: #eab330 !important;
+  font-weight: 600;
+}
+
+.badge-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eab330;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  width: 90%;
+}
+
+.badge-yellow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eab330;
+  color: #000;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  width: 90%;
+}
+
+.expertise-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #dddddd;
+  text-align: justify;
+}
+
+.expertise-icon {
+  width: 45px;
+}
+.expertise-icon img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.expertise-icon-title {
+  font-size: 18px; /* Strict minimum font size 18px */
+  color: #fff;
+  line-height: 1.2;
+}
+
+/* Applications Section Styling */
+.app-card {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 12px 10px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.app-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.app-icon {
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-icon img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.app-title {
+  font-size: 18px; /* Following minimum font size rule */
+  color: #333;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+/* Workflow Section Styling */
+.workflow-box {
+  background-color: #fffdf8; /* Very light yellow tint */
+  border: 1px solid #f9d885;
+  border-radius: 12px;
+  padding: 30px;
+}
+.workflow-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.workflow-diagram {
+  position: relative;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.w-line {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  height: 2px;
+  background-color: #eab330;
+  transform: translateY(-50%);
+}
+.w-item {
+  flex: 1;
+  position: relative;
+  height: 100%;
+}
+.w-content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-item .w-content {
+  bottom: 50%;
+}
+.bottom-item .w-content {
+  top: 50%;
+}
+.top-item .w-connector {
+  height: 20px;
+  width: 2px;
+  background-color: #eab330;
+  margin-top: 8px;
+}
+.bottom-item .w-connector {
+  height: 20px;
+  width: 2px;
+  background-color: #eab330;
+  margin-bottom: 8px;
+}
+.w-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.1;
+}
+.w-icon {
+  height: 40px;
+  object-fit: contain;
+}
+
+.s-icon {
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+.s-text {
+  font-size: 12px; /* Keeping at 16px slightly smaller so 8 logos fit side by side */
+  color: #eab330;
+  font-weight: 700;
+}
+
+/* Proven Workflow Timeline Styling */
+.proven-timeline {
+  position: relative;
+  z-index: 1;
+}
+
+.proven-line {
+  position: absolute;
+  top: 20px; /* Center of the 40px circles */
+  left: 20px;
+  right: 20px;
+  height: 0;
+  border-top: 2px dashed #999;
+  z-index: -1;
+}
+
+.proven-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+}
+
+.proven-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #eab330;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.proven-text {
+  font-size: 18px; /* Strict minimum font size rule */
+  color: #333;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .proven-timeline {
+    flex-direction: column !important;
+    align-items: flex-start;
+  }
+  .proven-step {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .proven-circle {
+    margin-bottom: 0;
+    margin-right: 15px;
+    flex-shrink: 0;
+    z-index: 2; /* ensure circle stays above the line */
+  }
+  .proven-text {
+    text-align: left;
+  }
+  .proven-text br{
+    display:none;
+  }
+  .proven-line {
+    /* Vertical line aligned with left circles */
+    top: 20px;
+    bottom: 20px;
+    left: 25px; /* 5px padding + 20px half circle */
+    transform: none;
+    right: auto;
+    width: 0;
+    height: auto;
+    border-top: none;
+    border-left: 2px dashed #999;
+    display: block;
+  }
+}
+
+/* Equipment Section Styling */
+.equip-box {
+  background-color: #2c2c2c;
+  border-radius: 12px;
+  padding: 20px 15px;
+  height: 100%;
+}
+.equip-title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.equip-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+.equip-img-wrapper {
+  background-color: #fff;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+.equip-img-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.equip-name {
+  color: #fff;
+  font-size: 18px; /* Strict minimum font size rule */
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Software & Deliverables Section Styling */
+.deliverables-box {
+  background-color: #222;
+  border-radius: 12px;
+  padding: 40px 30px;
+}
+.deliverables-title {
+  font-size: 26px;
+  font-weight: 700;
+}
+.deliv-img {
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.deliv-text {
+  font-size: 18px; /* Strict minimum font size 18px */
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.software-box {
+  background-color: #fff;
+  border: 1px solid #eab330;
+  border-radius: 12px;
+  padding: 30px 20px;
+}
+.software-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+}
+.soft-img {
+  max-height: 70px;
+  max-width: 100%;
+  object-fit: contain;
+}
+.soft-inspect-img {
+  max-height: 90px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Applications Grid Styling */
+.app-grid-img {
+  border-radius: 12px;
+  object-fit: cover;
+}
+.app-grid-title {
+  font-size: 18px; /* Strict minimum font size 18px */
+  font-weight: 700;
+  color: #444;
+  line-height: 1.2;
+}
+
+/* Previous Projects Section Styling */
+.project-box {
+  background-color: #f8f9fa; /* Light grey box */
+  border-radius: 12px;
+  padding: 30px 25px;
+}
+.project-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.project-img-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.project-img-wrapper img {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+.project-details {
+  font-size: 18px; /* Strict minimum font size 18px */
+  color: #444;
+  line-height: 1.6;
+  padding: 0;
+}
+.project-label {
+  color: #eab330;
+  font-weight: 700;
+}
+
+/* Trusted Organizations Section Styling */
+.company-logo {
+  max-height: 70px;
+  max-width: 140px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.company-logo:hover {
+  transform: scale(1.05);
+}
+
+/* CTA Section Styling */
+.cta-btn {
+  background: linear-gradient(to bottom, #f3c64c, #dda526);
+  color: #fff !important;
+  font-size: 18px; /* Following minimum font size */
+  padding: 12px 35px;
+  border-radius: 6px;
+  border: 1px solid #d49f25;
+  transition: all 0.3s ease;
+}
+.cta-btn:hover {
+  background: linear-gradient(to bottom, #dda526, #c58f1f);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+/* FAQ Section Styling */
+.faq-section {
+  background-color: #f8f9fa;
+  /* Alternating background - light gray! */
+  padding: 90px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.faq-header {
+  margin-bottom: 50px;
+}
+
+.faq-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  padding: 22px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.25s ease;
+  border-radius: 8px;
+}
+
+.faq-question:hover {
+  background-color: #383838;
+}
+
+.faq-icon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Active FAQ Item state */
+.faq-item.active .faq-question {
+  border-radius: 8px 8px 0 0;
+  border-bottom: 3px solid #e5b122;
+}
+
+.faq-answer-wrapper {
+  transition: all 0.3s ease;
+}
+
+.faq-answer {
+  background-color: #ffffff;
+  border: 1px solid #e5e9f0;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+}
+
+.faq-answer p {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #4a5568;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .faq-title {
+    font-size: 30px;
+  }
+
+  .faq-question {
+    padding: 18px 20px;
+    font-size: 15px;
+  }
+
+  .faq-answer {
+    padding: 20px;
+  }
+
+  .faq-answer p {
+    font-size: 14px;
+  }
+}
+  .software-logos{
+    display:grid !important;
+    grid-template-columns: repeat(8,1fr) !important;
+  }
+@media screen and (max-width:700px){
+  .software-logos{
+    
+    grid-template-columns: repeat(3,1fr) !important;
+    gap: 10px;
+  }
+}
