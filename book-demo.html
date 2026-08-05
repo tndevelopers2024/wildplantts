@@ -363,11 +363,11 @@
                             <div class="crbwc-dropdown-menu">
                                 <div class="crbwc-dropdown-item" data-value="EpicT150" style="display: flex; align-items: center; gap: 10px;"><img src="images/sotia-form/sotia-hero-right-form-input-section-option-icon1.png" alt="">EpicT150</div>
                                 <div class="crbwc-dropdown-item" data-value="Precise Geo SLAM" style="display: flex; align-items: center; gap: 10px;"><img src="images/sotia-form/sotia-hero-right-form-input-section-option-icon2.png" alt="">Precise Geo SLAM</div>
+                            </div>
                         </div>
-                        <input type="text" name="product" id="hidden-product" class="crbwc-hidden-validator" required value="Need technical recommendation">
-                    </div>
+                        <input type="text" name="product" id="hidden-product" class="crbwc-hidden-validator" required value="">
                     <label class="sotia-product-radio" style="margin-top: 15px;">
-                          <input type="radio" name="product" value="Need technical recommendation">
+                          <input type="radio" name="product_radio" value="Need technical recommendation">
                           <div class="sotia-product-box">
                               <img src="images/sotia-form/sotia-hero-right-form-icon2.png" alt="" style="width:24px;height:24px;object-fit:contain;">
                               <span style="color: #777; font-weight: 500;">Need technical recommendation</span>
@@ -680,7 +680,18 @@
                 var val = $(this).attr('data-value');
                 $dropdown.find('.crbwc-dropdown-trigger').text($(this).text()).addClass('selected-value');
                 $dropdown.siblings('input').val(val);
+                if ($dropdown.attr('id') === 'dropdown-product') {
+                    $('#hidden-product').val(val);
+                    $('input[name="product_radio"]').prop('checked', false);
+                }
                 $dropdown.removeClass('open');
+            });
+
+            $('input[name="product_radio"]').on('change', function() {
+                if ($(this).is(':checked')) {
+                    $('#hidden-product').val($(this).val());
+                    $('#dropdown-product .crbwc-dropdown-trigger').text('Select Option').removeClass('selected-value');
+                }
             });
 
             $(document).on('click', function () {

@@ -53,16 +53,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Load the HTML template
         ob_start();
         include 'crbwc-contact.phtml';
-        $mail_body = ob_start() ? ob_get_clean() : '';
-        if (!$mail_body) {
-             ob_end_clean();
-        }
+        $mail_body = ob_get_clean();
 
         $mail->Body    = $mail_body;
         $mail->AltBody = "New Quote Request from: {$data['fullName']} | Company: {$data['companyName']} | Email: {$data['email']} | Phone: {$data['phone']}";
 
         $mail->send();
-        echo "<script>window.location.href='index.html?status=success';</script>";
+        echo "<script>alert('✅ Your request has been sent successfully!'); window.location.href='get-a-quote-3d-scanning.html';</script>";
         exit();
     } catch (Exception $e) {
         echo "<script>alert('Message could not be sent. Mailer Error: {$mail->ErrorInfo}'); window.history.back();</script>";
@@ -70,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     // Not a POST request
-    header("Location: index.html");
+    header("Location: get-a-quote-3d-scanning.html");
     exit();
 }
 ?>
