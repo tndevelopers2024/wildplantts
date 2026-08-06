@@ -50,16 +50,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Load the HTML template
         ob_start();
         include 'sotia-contact.phtml';
-        $mail_body = ob_start() ? ob_get_clean() : '';
-        if (!$mail_body) {
-             ob_end_clean();
-        }
+        $mail_body = ob_get_clean();
 
         $mail->Body    = $mail_body;
         $mail->AltBody = "New Demo Request from: {$data['name']} | Company: {$data['company']} | Product: {$data['product']} | Email: {$data['email']} | Phone: {$data['phone']}";
 
         $mail->send();
-        echo "<script>window.location.href='sotia-form.html?status=success';</script>";
+        echo "<script>alert('✅ Your request has been sent successfully!'); window.location.href='book-demo.html';</script>";
         exit();
     } catch (Exception $e) {
         echo "<script>alert('Message could not be sent. Mailer Error: {$mail->ErrorInfo}'); window.history.back();</script>";
@@ -67,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     // Not a POST request
-    header("Location: sotia-form.html");
+    header("Location: book-demo.html");
     exit();
 }
 ?>
