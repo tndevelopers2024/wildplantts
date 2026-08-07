@@ -1,0 +1,1384 @@
+/* 
+   ==========================================================================
+   Mobile SLAM Scanning Services Stylesheet
+   ========================================================================== 
+*/
+
+/* --- Navbar Style Overrides --- */
+.main-header {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); 
+}
+
+.main-header .main-box {
+    background-color: #ffffff !important;
+}
+
+.main-header .main-menu .navigation > li > a {
+    color: #333333 !important;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize !important; 
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li:hover > a,
+.main-header .main-menu .navigation > li.current > a {
+    color: #e4ae1f !important;
+    text-decoration: none !important;
+}
+
+/* Force ALL dropdown and sub-menu links to have no text decoration (underlines) */
+.main-header .main-menu .navigation li a {
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li.dropdown > a::after {
+    content: '\f107'; 
+    font-family: 'Font Awesome 5 Free', 'FontAwesome', sans-serif;
+    font-weight: 900;
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+.main-header .main-menu .navigation > li > a.btn {
+    background-color: #e2a613 !important; 
+    color: #111111 !important;
+    padding: 12px 30px !important;
+    border-radius: 0px !important; 
+    font-weight: 600 !important;
+    margin-left: 20px;
+    border: none !important;
+    display: inline-block;
+    text-transform: none !important;
+}
+
+.main-header .main-menu .navigation > li > a.btn:hover {
+    background-color: #c9930f !important;
+    color: #ffffff !important;
+}
+.main-menu .navigation > li {
+    padding: 25px 0px;
+}
+
+/* --- Layout fixes for empty pages --- */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-main-content {
+    flex-grow: 1;
+    padding-top: 100px; /* Increased padding to ensure hero is below header */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-footer {
+    margin-top: auto; 
+}
+
+/* ========================================= */
+/* MSSS Layout Containers                    */
+/* ========================================= */
+.msss-auto-container {
+    position: relative;
+    max-width: 1400px;
+    padding: 0px 0px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+/* ========================================= */
+/* Mobile SLAM Hero Section                  */
+/* ========================================= */
+.msss-hero-section {
+  position: relative;
+  background-image: url('../images/mobile-slam-scanning-service/msss-hero-right-bg-img.png');
+  background-size: cover;
+  background-position: right top; /* Ensuring the top of the image aligns perfectly with the section so it doesn't get cropped */
+  background-repeat: no-repeat;
+  padding: 30px 0 120px;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.msss-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(40, 36, 35, 1) 0%, rgba(40, 36, 35, 0.95) 45%, rgba(40, 36, 35, 0.4) 75%, rgba(40, 36, 35, 0) 100%);
+  z-index: 1;
+}
+
+.msss-hero-row {
+  margin: 0;
+}
+
+.msss-hero-left {
+  padding-right: 30px;
+}
+
+.msss-hero-title {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 25px;
+  letter-spacing: -0.5px;
+}
+
+.msss-hero-title span {
+  display: block;   
+  font-size: 34px;
+  margin-top: 8px;
+}
+
+.msss-hero-subtitle {
+  color: #e4ad1b; /* Exact golden yellow from design */
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.msss-hero-desc {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.msss-highlight {
+  color: #e4ad1b;
+  font-weight: 700;
+}
+
+.msss-hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.msss-btn-solid {
+  background-color: #e4ad1b !important;
+  color: #111111 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  padding: 14px 32px !important;
+  border-radius: 6px !important;
+  border: 1px solid #e4ad1b !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+.msss-btn-solid:hover {
+  background-color: transparent !important;
+  color: #e4ad1b !important;
+}
+
+.msss-btn-outline {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  padding: 14px 32px !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+.msss-btn-outline:hover {
+  border-color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Responsive Overrides */
+@media (max-width: 1199px) {
+  .msss-hero-title { font-size: 40px; }
+  .msss-hero-title span { font-size: 28px; }
+}
+
+@media (max-width: 991px) {
+  .msss-hero-section {
+    padding: 80px 0;
+    min-height: 600px;
+    background-position: calc(100% + 150px) center; /* shift image left on smaller screens if possible */
+    padding: 0px 15px;
+    }
+  .msss-hero-overlay {
+    background: linear-gradient(to right, rgba(40, 36, 35, 1) 0%, rgba(40, 36, 35, 0.95) 70%, rgba(40, 36, 35, 0.6) 100%);
+  }
+  .msss-hero-left{
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .msss-hero-title { font-size: 32px; line-height: 1.25; }
+  .msss-hero-title span { font-size: 24px; }
+  .msss-hero-subtitle { font-size: 18px; }
+  .msss-hero-desc { font-size: 15px; }
+  .msss-hero-buttons { flex-direction: column; width: 100%; align-items: stretch; margin-top: 25px; }
+  .msss-btn-solid, .msss-btn-outline { width: 100%; text-align: center; }
+  .msss-hero-overlay {
+    background: linear-gradient(to right, rgba(40, 36, 35, 1) 0%, rgba(40, 36, 35, 0.92) 100%);
+  }
+  .msss-hero-section {
+    padding: 40px 0;
+  }
+}
+
+/* ========================================= */
+/* About / Why Choose Section                */
+/* ========================================= */
+.msss-about-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.msss-about-row {
+  margin: 0;
+}
+
+/* Section Title Shared */
+.msss-section-title {
+  color: #222222;
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  letter-spacing: -0.5px;
+}
+
+/* Left Column */
+.msss-about-left {
+  padding-right: 40px;
+}
+
+.msss-about-text {
+  color: #555555;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.msss-about-highlight-text {
+  color: #e4ad1b; /* Golden Yellow */
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.6;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+/* Tech Flow Box */
+.msss-tech-flow-box {
+  border: 1px dashed #e4ad1b;
+  border-radius: 8px;
+  padding: 25px 15px;
+  margin: 25px 0;
+  background-color: rgba(228, 173, 27, 0.03); /* Extremely faint yellow tint */
+}
+
+.msss-tech-badges {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.msss-tech-badge {
+  background-color: #e4ad1b;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+}
+
+.msss-tech-badges i.fa-arrow-right {
+  color: #777777;
+  font-size: 14px;
+}
+
+/* Right Column */
+.msss-about-right {
+  padding-left: 20px;
+}
+
+.msss-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.msss-benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.msss-benefit-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.msss-benefit-icon i.fa-check {
+  color: #333333;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.msss-benefit-content h4 {
+  color: #222222;
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.msss-benefit-content p {
+  color: #555555;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Responsive Overrides */
+@media (max-width: 1199px) {
+  .msss-tech-badges { gap: 8px; }
+  .msss-tech-badge { padding: 8px 10px; font-size: 12px; }
+}
+
+@media (max-width: 991px) {
+  .msss-about-section { padding: 80px 20px; }
+  .msss-about-left { padding-right: 0px; margin-bottom: 50px; padding-left: 0px; }
+  .msss-about-right { padding-left: 0px; padding-right: 0px; }
+}
+
+@media (max-width: 767px) {
+  .msss-about-section { padding: 60px 20px; }
+  .msss-section-title { font-size: 28px; margin-bottom: 20px; }
+  
+  .msss-tech-badges { flex-direction: column; gap: 15px; }
+  .msss-tech-badges i.fa-arrow-right { transform: rotate(90deg); }
+}
+
+/* ========================================= */
+/* Workflow Timeline Section                 */
+/* ========================================= */
+.msss-workflow-section {
+  padding: 60px 0;
+  background-color: #fafbfc;
+}
+
+.msss-workflow-header {
+  margin-bottom: 50px;
+}
+.msss-workflow-header .msss-section-title {
+  text-align: center;
+}
+
+.msss-workflow-timeline-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* The dotted line behind numbers */
+.msss-workflow-line {
+  position: absolute;
+  top: 18px; /* half of 36px number circle */
+  left: 4%;
+  right: 4%;
+  height: 0;
+  border-top: 2px dashed #bbbbbb;
+  z-index: 1;
+}
+
+.msss-workflow-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+  gap: 10px;
+}
+
+.msss-workflow-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+}
+
+.msss-wf-number {
+  width: 36px;
+  height: 36px;
+  background-color: #f1b913;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0 6px #fafbfc; /* creates gap over the dashed line */
+}
+
+.msss-wf-img-box {
+  width: 100%;
+  padding: 0 5px;
+  margin-bottom: 12px;
+}
+
+.msss-wf-img-box img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid #e0e0e0;
+}
+
+.msss-wf-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #333333;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Responsive Workflow */
+@media (max-width: 1199px) {
+  .msss-wf-title {
+    font-size: 11.5px;
+  }
+}
+
+@media (max-width: 991px) {
+  .msss-workflow-timeline-wrapper {
+    overflow-x: auto;
+    padding-bottom: 20px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .msss-workflow-grid {
+    width: 1300px; /* Force minimum width to enable scrolling */
+    padding: 0 20px;
+  }
+  .msss-workflow-line {
+    width: 1260px;
+    left: 40px;
+  }
+}
+
+/* ========================================= */
+/* Technologies We Use Section               */
+/* ========================================= */
+.msss-tech-use-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.msss-tech-header {
+  margin-bottom: 45px;
+}
+
+.msss-tech-header .msss-section-title {
+  margin-bottom: 15px;
+}
+
+.msss-tech-subtitle {
+  font-size: 19px;
+  color: #444444;
+  font-weight: 500;
+  margin: 0;
+}
+
+.msss-tech-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.msss-tech-item {
+  width: calc(14.285% - 30px);
+  min-width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.msss-tech-icon {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.msss-tech-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.msss-tech-item h4 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #222222;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Responsive Tech */
+@media (max-width: 1199px) {
+  .msss-tech-use-section { padding: 80px 20px; }
+  .msss-tech-item { width: calc(25% - 30px); min-width: unset; }
+  .msss-tech-grid { row-gap: 40px; }
+}
+
+@media (max-width: 991px) {
+  .msss-tech-use-section { padding: 60px 20px; }
+  .msss-tech-item { width: calc(33.33% - 30px); }
+}
+
+@media (max-width: 767px) {
+  .msss-tech-grid { gap: 20px; row-gap: 35px; }
+  .msss-tech-item { width: calc(50% - 20px); }
+  .msss-tech-subtitle { font-size: 17px; }
+  .msss-tech-icon { width: 60px; height: 60px; margin-bottom: 12px; }
+  .msss-tech-item h4 { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  .msss-tech-grid { gap: 15px; row-gap: 30px; }
+  .msss-tech-item { width: calc(50% - 15px); }
+}
+
+/* ========================================= */
+/* Industries We Serve Section               */
+/* ========================================= */
+.msss-industries-section {
+  padding: 80px 0;
+  background-color: #fafbfc;
+}
+
+.msss-industries-header {
+  margin-bottom: 45px;
+}
+
+.msss-industries-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.msss-industry-card {
+  width: calc(14.285% - 15px); /* 7 items per row exactly */
+  min-width: 140px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px 10px;
+  transition: all 0.3s ease;
+  min-height: 145px;
+}
+
+.msss-industry-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transform: translateY(-3px);
+  border-color: #e4ad1b;
+}
+
+.msss-industry-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.msss-industry-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.msss-industry-card p {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Responsive Industries */
+@media (max-width: 1199px) {
+  .msss-industries-section { padding: 80px 20px; }
+  .msss-industry-card { width: calc(20% - 15px); }
+}
+
+@media (max-width: 991px) {
+  .msss-industries-section { padding: 60px 20px; }
+  .msss-industry-card { width: calc(25% - 15px); }
+}
+
+@media (max-width: 767px) {
+  .msss-industry-card { width: calc(33.33% - 15px); }
+  .msss-industry-card p { font-size: 12px; }
+  .msss-industry-card { padding: 20px 8px; min-height: 130px; }
+}
+
+@media (max-width: 480px) {
+  .msss-industry-card { width: calc(50% - 15px); }
+}
+
+/* ========================================= */
+/* Engineering Deliverables Section          */
+/* ========================================= */
+.msss-deliverables-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.msss-deliverables-header {
+  margin-bottom: 50px;
+}
+
+.msss-deliverables-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.msss-deliverable-card {
+  width: calc(16.666% - 15px);
+  min-width: 170px;
+  background-color: #ffffff;
+  border: 1px solid #e4ad1b; /* Golden border */
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.msss-deliverable-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.msss-deliv-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.msss-deliv-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.msss-deliv-content {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.msss-deliv-title {
+  color: #e4ad1b; /* Golden Yellow */
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.3;
+  margin-bottom: 12px;
+  min-height: 40px; /* Aligns content if titles span varied lines */
+}
+
+.msss-deliv-content p {
+  font-size: 13px;
+  color: #444444;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.msss-deliv-content h5 {
+  font-size: 13px;
+  font-weight: 800;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+.msss-deliv-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* margin-top: auto; Pushes list to fill bottom appropriately if elements above are short */
+}
+
+.msss-deliv-list li {
+  font-size: 12.5px;
+  color: #444444;
+  position: relative;
+  padding-left: 12px;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.msss-deliv-list li::before {
+  content: '•';
+  color: #222222;
+  font-size: 16px;
+  font-weight: 800;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+/* Modifier for Double Column Lists (like Card 1) */
+.msss-deliv-list.double-col {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.msss-deliv-list.double-col li {
+  width: 50%;
+}
+
+/* Responsive Deliverables */
+@media (max-width: 1199px) {
+  .msss-deliverable-card { width: calc(33.33% - 15px); }
+  .msss-deliverables-grid { gap: 20px; }
+}
+
+@media (max-width: 767px) {
+  .msss-deliverables-section { padding: 60px 20px; }
+  .msss-deliverable-card { width: calc(50% - 15px); }
+}
+
+@media (max-width: 500px) {
+  .msss-deliverable-card { width: 100%; }
+}
+
+/* ========================================= */
+/* Additional Deliverables Section           */
+/* ========================================= */
+.msss-additional-deliv-section {
+  padding: 60px 0;
+  background-color: #fafbfc; /* Slight off-white to contrast the pure white Engineering Deliverables above */
+}
+
+.msss-add-deliv-header {
+  margin-bottom: 45px;
+}
+
+.msss-additional-deliv-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.msss-add-deliv-card {
+  width: calc(16.666% - 15px); /* 6 items per row */
+  min-width: 140px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px 10px;
+  transition: all 0.3s ease;
+  min-height: 140px;
+}
+
+.msss-add-deliv-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transform: translateY(-3px);
+  border-color: #e4ad1b;
+}
+
+.msss-add-deliv-icon {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.msss-add-deliv-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.msss-add-deliv-card p {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Responsive Additional Deliverables */
+@media (max-width: 1199px) {
+  .msss-additional-deliv-section { padding: 80px 20px; }
+  .msss-add-deliv-card { width: calc(25% - 15px); } /* 4 per row */
+}
+
+@media (max-width: 991px) {
+  .msss-additional-deliv-section { padding: 60px 20px; }
+  .msss-add-deliv-card { width: calc(33.33% - 15px); } /* 3 per row */
+}
+
+@media (max-width: 767px) {
+  .msss-add-deliv-card { width: calc(50% - 15px); } /* 2 per row */
+  .msss-add-deliv-card p { font-size: 12px; }
+  .msss-add-deliv-card { padding: 20px 8px; min-height: 125px; }
+}
+
+@media (max-width: 480px) {
+  .msss-add-deliv-card { width: calc(50% - 15px); }
+  .msss-add-deliv-icon { width: 45px; height: 45px; }
+}
+
+/* ========================================= */
+/* Benefits & Mobile SLAM vs Section         */
+/* ========================================= */
+.msss-benefits-vs-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.msss-benefits-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.msss-benefits-left, .msss-vs-right {
+  width: calc(50% - 20px);
+}
+
+.msss-benefits-left h2.msss-section-title,
+.msss-vs-right h2.msss-section-title {
+  margin-bottom: 35px;
+  font-size: 24px;
+}
+
+/* Left Grid */
+.msss-benefits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+}
+
+.msss-bvs-item {
+  width: calc(50% - 10px);
+}
+
+.msss-bvs-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #222222;
+  text-align: left; /* Align to the left to match reference */
+  margin-bottom: 10px;
+  padding-left: 10px; /* Icon width (38px) + Gap (15px) = 53px perfect alignment with desc */
+  line-height: 1.3;
+}
+
+.msss-bvs-body {
+  display: flex;
+  align-items: center; /* Aligns icon with top of text */
+  gap: 15px;
+}
+
+.msss-bvs-icon {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0; /* Prevents icon from shrinking if text is long */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2px; /* Slight nudge down to center alongside paragraph lines visually */
+}
+
+.msss-bvs-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.msss-bvs-desc {
+  font-size: 15.5px;
+  color: #333333;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Right Table */
+.msss-vs-table-wrapper {
+  border-radius: 8px;
+  overflow: hidden; /* Clips the rounded corners nicely on the dark header */
+  border: 1px solid #dcdcdc; 
+}
+
+.msss-vs-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  background: white;
+}
+
+.msss-vs-table thead {
+  background-color: #262626; /* Dark background matching image */
+}
+
+.msss-vs-table th {
+  padding: 22px 15px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.msss-vs-table th.highlight-col {
+  color: #e4ad1b; /* Golden Yellow text */
+}
+
+.msss-vs-table td {
+  padding: 20px 15px;
+  border-bottom: 1px solid #dcdcdc;
+  line-height: 1.4;
+}
+
+.msss-vs-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.msss-vs-table td.tech-col {
+  font-size: 15px;
+  font-weight: 800;
+  color: #333333;
+  /* border-right: 1px solid #dcdcdc;  */
+  width: 45%; 
+}
+
+.msss-vs-table td.app-col {
+  font-size: 15px;
+  font-weight: 600;
+  color: #e4ad1b; 
+  width: 55%; 
+}
+
+/* Responsive */
+@media (max-width: 1199px) {
+  .msss-benefits-vs-section { padding: 60px 20px; }
+  .msss-benefits-wrapper { gap: 30px; }
+}
+
+@media (max-width: 991px) {
+  .msss-benefits-left, .msss-vs-right { width: 100%; }
+  .msss-vs-right { margin-top: 40px; }
+}
+
+@media (max-width: 767px) {
+  .msss-bvs-item { width: 100%; } 
+  .msss-benefits-grid { gap: 25px 0; }
+  .msss-bvs-title { text-align: left; padding-left: 10px; margin-bottom: 5px; } /* Aligns title with text on mobile if 1 column */
+}
+
+/* ========================================= */
+/* Why Choose WildPlantTS Section            */
+/* ========================================= */
+.msss-why-choose-section {
+  padding: 60px 0;
+  background-color: #2b2b2b; /* Dark charcoal */
+  border-radius: 20px;
+}
+
+.msss-why-choose-section .text-white {
+  color: #ffffff;
+}
+
+.msss-why-header {
+  margin-bottom: 55px;
+}
+
+.msss-why-choose-section .text-highlight {
+  color: #e4ad1b;
+}
+
+.msss-why-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.msss-why-card {
+  width: calc(25% - 25px); /* 4 per row */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.msss-why-icon {
+  background-color: rgba(255, 255, 255, 0.05); /* Faint circle backdrop */
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.05); /* Outer ring */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+  padding: 15px; /* Restrict image size so it sits nicely inside the circle */
+}
+
+.msss-why-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.msss-why-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.msss-why-desc {
+  font-size: 14.5px;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+/* Responsive Why Choose */
+@media (max-width: 1199px) {
+  .msss-why-card { width: calc(50% - 15px); margin-bottom: 30px; }
+  .msss-why-choose-section { padding: 60px 20px; }
+}
+
+@media (max-width: 767px) {
+  .msss-why-card { width: 100%; margin-bottom: 35px; }
+  .msss-why-grid { gap: 0; }
+  .msss-why-card:last-child { margin-bottom: 0; }
+}
+
+/* ========================================= */
+/* Related Links Section                     */
+/* ========================================= */
+.msss-related-links-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.msss-related-block {
+  margin-bottom: 60px;
+}
+
+.msss-related-block:last-child {
+  margin-bottom: 0;
+}
+
+.msss-related-block .msss-section-title {
+  margin-bottom: 35px;
+}
+
+.msss-related-services-grid,
+.msss-related-industries-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.msss-related-card {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 8px;
+  transition: all 0.3s ease;
+  min-height: 125px;
+}
+
+.msss-related-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transform: translateY(-3px);
+  border-color: #e4ad1b;
+}
+
+.msss-related-icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.msss-related-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.msss-related-card p {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* Modifiers for specific row item counts */
+.services-card {
+  width: calc(11.111% - 11px);
+}
+
+.industries-card {
+  width: calc(14.285% - 10.5px);
+}
+
+.industries-card p {
+  font-size: 12.5px; /* Safely fit slightly larger text in wider blocks */
+}
+
+/* Responsive Related Links */
+@media (max-width: 1199px) {
+  .msss-related-links-section { padding: 60px 20px; }
+  .services-card { width: calc(20% - 12px); } /* 5 per row */
+  .industries-card { width: calc(25% - 12px); } /* 4 per row */
+}
+
+@media (max-width: 991px) {
+  .services-card { width: calc(33.33% - 12px); } /* 3 per row */
+  .industries-card { width: calc(33.33% - 12px); }
+}
+
+@media (max-width: 767px) {
+  .services-card, .industries-card { width: calc(50% - 12px); } /* 2 per row */
+  .msss-related-card { padding: 15px 5px; min-height: 110px; }
+  .msss-related-icon { width: 35px; height: 35px; }
+  .msss-related-card p, .industries-card p { font-size: 11px; }
+}
+
+@media (max-width: 480px) {
+  .services-card, .industries-card { width: 100%; } /* Single col on tiny phones */
+}
+
+/* ========================================= */
+/* Call To Action Section                    */
+/* ========================================= */
+.msss-cta-section {
+  background-color: #faf5eb; /* Soft cream color matching image */
+  padding: 65px 0;
+}
+
+.msss-cta-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.msss-cta-content {
+  width: 65%;
+}
+
+.msss-cta-content h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #262626;
+  margin-bottom: 20px;
+  line-height: 1.25;
+}
+
+.msss-cta-content p {
+  font-size: 15.5px;
+  color: #333333;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 500;
+}
+
+.msss-cta-btn-box {
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.msss-cta-btn {
+  display: inline-block;
+  background: linear-gradient(180deg, #f0c347 0%, #d89c1c 100%);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 16px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(219, 157, 30, 0.35); /* Colored drop shadow for depth */
+  border: 1px solid #dca020;
+  transition: all 0.3s ease;
+}
+
+.msss-cta-btn:hover {
+  background: linear-gradient(180deg, #d89c1c 0%, #f0c347 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(219, 157, 30, 0.45);
+  color: #ffffff;
+}
+
+/* Responsive CTA */
+@media (max-width: 991px) {
+  .msss-cta-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .msss-cta-content, .msss-cta-btn-box {
+    width: 100%;
+  }
+  .msss-cta-btn-box {
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .msss-cta-content h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .msss-cta-content h2 {
+    font-size: 24px;
+  }
+  .msss-cta-content p {
+    font-size: 14px;
+  }
+}
+
+/* ========================================= */
+/* FAQ Section                               */
+/* ========================================= */
+.msss-faq-section {
+  padding: 80px 0 100px;
+  background-color: #ffffff; /* Explicitly matching image's white backdrop */
+}
+
+.msss-faq-header {
+  margin-bottom: 50px;
+}
+
+.msss-faq-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #222222;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .msss-faq-header h2 {
+    font-size: 30px;
+  }
+}
+
+.msss-faq-item {
+  margin-bottom: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+}
+
+.msss-faq-title {
+  background-color: #313131; /* Matched to dark grey in reference */
+  padding: 22px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 4px solid #e4ad1b; /* Visible on ALL states per mockup */
+}
+
+.msss-faq-title h5 {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.msss-faq-icon {
+  color: #ffffff;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.msss-faq-content {
+  display: none;
+  background-color: #fbfbfb; /* VERY slight grey base from reference content block */
+  padding: 30px;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.msss-faq-content p {
+  color: #555555;
+  font-size: 15.5px;
+  line-height: 1.6;
+  font-weight: 500;
+  margin: 0;
+}
+
+.msss-faq-item.active {
+  box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
