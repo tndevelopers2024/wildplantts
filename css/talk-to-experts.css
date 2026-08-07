@@ -1,0 +1,394 @@
+/* ========================================= */
+/* Global / Header Styles */
+/* ========================================= */
+body {
+    font-family: "Poppins", sans-serif !important;
+}
+
+/* --- Navbar Style Overrides --- */
+.main-header {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.main-header .main-menu .navigation > li > a {
+    color: #333333 !important;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize !important;
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li:hover > a,
+.main-header .main-menu .navigation > li.current > a {
+    color: #e4ae1f !important;
+    text-decoration: none !important;
+}
+
+/* Force ALL dropdown and sub-menu links to have no text decoration (underlines) */
+.main-header .main-menu .navigation li a {
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li.dropdown > a::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free", "FontAwesome", sans-serif;
+    font-weight: 900;
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+.main-header .main-menu .navigation > li > a.btn {
+    background-color: #e2a613 !important;
+    color: #111111 !important;
+    padding: 12px 30px !important;
+    border-radius: 0px !important;
+    font-weight: 600 !important;
+    margin-left: 20px;
+    border: none !important;
+    display: inline-block;
+    text-transform: none !important;
+}
+
+.main-header .main-menu .navigation > li > a.btn:hover {
+    background-color: #c9930f !important;
+    color: #ffffff !important;
+}
+.main-menu .navigation > li {
+    padding: 25px 0px;
+}
+
+/* --- Layout fixes for empty pages --- */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-main-content {
+    flex-grow: 1;
+    padding-top: 100px;
+}
+
+.main-footer {
+    margin-top: auto;
+}
+
+/* ========================================= */
+
+
+/* ========================================= */
+/* Talk to Experts Section */
+/* ========================================= */
+.talk-to-experts-section {
+    background-color: #f6f6f6;
+    margin-top: 100px;
+    box-shadow: 0px 25px 50px -4px #00000040;
+    position: relative;
+    z-index: 10;
+}
+
+/* Left Banner */
+.experts-hero-banner {
+    background-image: url("../images/talk-to-experts-form/hero-bg.jpeg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #111111;
+    padding: 40px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    height: 100%;
+    color: #fff;
+    text-shadow: 0px 4px 4px #00000040;
+}
+
+.experts-hero-banner .hero-icon {
+    margin-bottom: 24px;
+    width: 48px;
+    height: 48px;
+}
+
+.experts-hero-banner .hero-title {
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.experts-hero-banner .hero-title .highlight {
+    color: #E5B122;
+}
+
+.experts-hero-banner .hero-desc {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.hero-stats-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.hero-stat-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.hero-stat-item img {
+    width: 48px;
+    height: 48px;
+}
+
+.hero-stat-item .stat-content h4 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.hero-stat-item .stat-content p {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* Right Form */
+.form-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0px 2px 2px 0px #0000001A;
+    margin-bottom: 24px;
+}
+
+.form-card .card-title {
+    color: #1E1E1E;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.form-card .card-subtitle {
+    color: #6B7280;
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+    margin-top: -16px;
+}
+
+.form-card label {
+    color: #1E1E1E;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Custom Checkbox specific label override */
+.custom-checkbox {
+    font-weight: 500 !important;
+    font-size: 1.6rem !important;
+    margin-bottom: 0 !important;
+    display: flex !important;
+    align-items: center;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.input-group-custom {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group-custom img {
+    position: absolute;
+    left: 16px;
+    color: #6B7280;
+    width: 20px;
+    height: 20px;
+}
+
+.input-group-custom input,
+.form-control {
+    width: 100%;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    padding: 14px 16px 14px 48px;
+    font-size: 1.6rem;
+    color: #1E1E1E;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-control.other-input {
+    padding-left: 16px;
+}
+
+.input-group-custom input::placeholder,
+.form-control::placeholder {
+    color: #6B7280;
+    font-weight: 400;
+}
+
+.input-group-custom input:focus,
+.form-control:focus {
+    border-color: #E5B122;
+}
+
+/* Custom Checkbox inner styling */
+.custom-checkbox input {
+    display: none;
+}
+
+.custom-checkbox .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.custom-checkbox input:checked + .checkmark {
+    background-color: #E5B122;
+    border-color: #E5B122;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+    content: "✓";
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.custom-checkbox:has(input:checked) {
+    border-color: #E5B122;
+    background-color: #FFF9E6;
+}
+
+/* Custom Radio */
+.custom-radio {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 0 !important;
+}
+
+.custom-radio input {
+    display: none;
+}
+
+.custom-radio .radio-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: none;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: #374151;
+    font-size: 1.6rem !important;
+    font-weight: 500;
+}
+
+.custom-radio .radio-content::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #D1D5DB;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.custom-radio input:checked + .radio-content::before {
+    background-color: #fff;
+    border: 6px solid #E5B122;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    background-color: #E5B122;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #d4a21e;
+}
+
+.privacy-text {
+    text-align: center;
+    color: #6B7280;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.privacy-text svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* ========================================= */
+/* Trust Bar Section */
+/* ========================================= */
+.trust-bar-section {
+    background-color: #fff;
+    border-top: 1px solid #E5E7EB !important;
+    padding: 50px 0;
+    margin-top: 40px;
+}
+
+.trust-bar-item {
+    padding: 0 24px;
+}
+
+@media (min-width: 992px) {
+    .trust-bar-item:not(:first-child) {
+        border-left: 1px solid #E5E7EB;
+    }
+}
+
+.trust-bar-item img {
+    margin-bottom: 16px;
+    height: 48px;
+}
+
+.trust-bar-item .trust-bar-title {
+    color: #272727;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.trust-bar-item .trust-bar-desc {
+    color: #272727;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: left;
+}
