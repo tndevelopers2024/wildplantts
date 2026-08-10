@@ -1,0 +1,1290 @@
+/* Styles for Point Cloud Processing & Registration Services */
+
+body {
+    font-family: "Poppins", sans-serif !important;
+}
+
+/* --- Navbar Style Overrides --- */
+.main-header {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.main-header .main-menu .navigation > li > a {
+    color: #333333 !important;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize !important;
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li:hover > a,
+.main-header .main-menu .navigation > li.current > a {
+    color: #e4ae1f !important;
+    text-decoration: none !important;
+}
+
+/* Force ALL dropdown and sub-menu links to have no text decoration (underlines) */
+.main-header .main-menu .navigation li a {
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li.dropdown > a::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free", "FontAwesome", sans-serif;
+    font-weight: 900;
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+.main-header .main-menu .navigation > li > a.btn {
+    background-color: #e2a613 !important;
+    color: #111111 !important;
+    padding: 12px 30px !important;
+    border-radius: 0px !important;
+    font-weight: 600 !important;
+    margin-left: 20px;
+    border: none !important;
+    display: inline-block;
+    text-transform: none !important;
+}
+
+.main-header .main-menu .navigation > li > a.btn:hover {
+    background-color: #c9930f !important;
+    color: #ffffff !important;
+}
+.main-menu .navigation > li {
+    padding: 25px 0px;
+}
+
+/* --- Layout fixes for empty pages --- */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-main-content {
+    flex-grow: 1;
+    padding-top: 100px;
+}
+
+.main-footer {
+    margin-top: auto;
+}
+
+main {
+    background-color: #f8f9fa;
+}
+
+/* ========================================= */
+/* Hero Section */
+/* ========================================= */
+.pc-hero-section {
+    position: relative;
+    background-image: url("../images/point-cloud-processing-and-registration-services/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.pc-hero-container {
+    padding: 0 5%;
+    width: 100%;
+}
+
+.pc-hero-content {
+    padding: 60px 0;
+    max-width: 900px;
+}
+
+.pc-hero-title {
+    color: #ffffff;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.pc-hero-subtitle {
+    color: #f0b000;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.pc-hero-desc1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.pc-hero-desc2 {
+    color: #ffffff;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+/* ========================================= */
+/* Stat Section */
+/* ========================================= */
+.pc-stat-section {
+    background-color: #e5b122;
+    padding: 40px 0;
+}
+
+.pc-stat-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.pc-stat-icon {
+    flex-shrink: 0;
+    width: 60px;
+}
+
+.pc-stat-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.pc-stat-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.pc-stat-title {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.pc-stat-desc {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+/* ========================================= */
+/* What is Point Cloud Processing Section */
+/* ========================================= */
+.pc-what-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.pc-what-title {
+    color: #272727;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.pc-what-desc {
+    color: #1e1e1e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.pc-what-subtitle {
+    color: #1e1e1e;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.pc-what-list {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.pc-what-list li {
+    list-style-type: disc;
+    color: #1e1e1e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+/* Images */
+.pc-what-images-container {
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+.pc-what-image-box {
+    position: relative;
+    flex: 1;
+    background: linear-gradient(to bottom, #060606 28%, #737171 70%);
+}
+
+.pc-what-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.9; /* slightly transparent so background might be seen if they are transparent pngs */
+}
+
+.pc-what-image-left {
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    overflow: hidden;
+}
+
+.pc-what-image-right {
+    background: linear-gradient(to bottom, #b0afaf 26%, #f1f1f1 77%);
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    overflow: hidden;
+}
+
+.pc-what-slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    z-index: 3;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -2px;
+}
+
+.pc-what-badge {
+    position: absolute;
+    top: 20px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    font-size: 2rem;
+    font-weight: 500;
+    z-index: 2;
+}
+
+.pc-what-badge-left {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000000;
+    left: 20px;
+}
+
+.pc-what-badge-right {
+    background: rgba(253, 194, 12, 0.8);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    right: 20px;
+}
+
+/* ========================================= */
+/* Registration Methods Section */
+/* ========================================= */
+.pc-reg-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.pc-reg-main-title {
+    color: #1d1d1d;
+    font-size: 3.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pc-reg-main-title span {
+    color: #ffc100;
+}
+
+.pc-reg-card {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    height: 100%;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.pc-reg-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.pc-reg-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pc-reg-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.pc-reg-card-title {
+    color: #1e1e1e;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.pc-reg-card-desc {
+    color: #1e1e1e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* ========================================= */
+/* Global Point Cloud Section */
+/* ========================================= */
+.pc-global-section {
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+.pc-global-wrapper {
+    background-color: #f6f6f6;
+    border-radius: 24px;
+    padding: 60px 50px;
+}
+
+.pc-global-title {
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: #1d1d1d;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.pc-global-title span {
+    color: #fabe07;
+    display: block;
+}
+
+.pc-global-desc {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #1e1e1e;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Process Flow */
+.pc-global-process {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 550px;
+}
+
+.pc-global-step {
+    text-align: center;
+    width: 110px;
+}
+
+.pc-global-icon-box {
+    background-color: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+    padding: 15px;
+}
+
+.pc-global-icon-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.pc-global-step-text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #1e1e1e;
+    line-height: 1.4;
+}
+
+.pc-global-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    color: #1e1e1e;
+    font-size: 3.5rem;
+}
+
+/* Clients Grid */
+.pc-global-right-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #1d1d1d;
+    margin-bottom: 30px;
+}
+
+.pc-client-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.pc-client-card {
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pc-client-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pc-client-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.pc-client-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #3a3a3a;
+    line-height: 1.3;
+}
+
+/* ========================================= */
+/* Supported Scan Sources Section */
+/* ========================================= */
+.pc-sources-section {
+    background-color: #ffffff;
+    padding-bottom: 40px;
+}
+
+.pc-sources-title {
+    text-align: center;
+    color: #1d1d1d;
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.pc-source-card {
+    background-color: #F6F6FA;
+    border-radius: 12px;
+    padding: 30px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pc-source-image {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.pc-source-image img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.pc-source-name {
+    color: #323232;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+/* ========================================= */
+/* Service Hero Section */
+/* ========================================= */
+.pc-service-hero-section {
+    background-color: #E5E5E5;
+    padding: 40px 0;
+}
+
+.pc-service-hero-wrapper {
+    background-image: url('../images/point-cloud-processing-and-registration-services/service-hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    padding: 80px 50px;
+}
+
+.pc-service-hero-content {
+    max-width: 600px;
+}
+
+.pc-service-hero-title {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.pc-service-hero-title span {
+    color: #FDC20C;
+}
+
+.pc-service-hero-desc {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* ========================================= */
+/* Service Scope Section */
+/* ========================================= */
+.pc-scope-section {
+    background-color: #E5E5E5;
+    padding-bottom: 40px;
+}
+
+.pc-scope-card {
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 30px;
+    height: 100%;
+}
+
+.pc-scope-card-warning {
+    background-color: #FFEAEA;
+}
+
+.pc-scope-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.pc-scope-icon {
+    background-color: #FDC20C;
+    border-radius: 8px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.pc-scope-icon img {
+    width: 35px;
+}
+
+.pc-scope-icon-warning {
+    background-color: #F60000;
+}
+
+.pc-scope-title {
+    color: #F0B000;
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.pc-scope-title-warning {
+    color: #F60000;
+}
+
+.pc-scope-desc {
+    color: #1E1E1E;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.pc-scope-subtitle {
+    color: #1E1E1E;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.pc-scope-list {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.pc-scope-list li {
+    list-style-type: disc;
+    font-size: 1.8rem;
+    color: #1E1E1E;
+    margin-bottom: 10px;
+}
+
+.pc-scope-list li:last-child {
+    margin-bottom: 0;
+}
+
+.pc-scope-list-warning {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.pc-scope-list-warning li {
+    color: #1e1e1e;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.pc-scope-list-warning li::before {
+    content: "❌";
+    font-size: 1.6rem;
+}
+
+.pc-scope-warning-box {
+    border: 1px solid #EC0000;
+    background-color: #FFD0D0;
+    border-radius: 13px;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+.pc-scope-warning-box p {
+    color: #F60000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* ========================================= */
+/* Workflow Section */
+/* ========================================= */
+.pc-workflow-section {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.pc-workflow-title {
+    color: #1D1D1D;
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.pc-workflow-title span {
+    color: #FDC20C;
+}
+
+.pc-workflow-subtitle {
+    color: #1e1e1e;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pc-workflow-desc {
+    color: #1e1e1e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pc-workflow-card {
+    background-color: #f6f6fa;
+    border-radius: 14px;
+    padding: 30px 20px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.pc-workflow-number {
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    background-color: #FFE8A3;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #1e1e1e;
+}
+
+.pc-workflow-icon {
+    background-color: #FDC20C;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.pc-workflow-icon img {
+    width: 32px;
+}
+
+.pc-workflow-text {
+    flex-grow: 1;
+}
+
+.pc-workflow-card-title {
+    color: #1e1e1e;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.pc-workflow-card-desc {
+    color: #1e1e1e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.pc-workflow-arrow {
+    position: absolute;
+    top: 50%;
+    right: -24px;
+    transform: translateY(-50%);
+    width: 24px;
+    border-bottom: 2px dashed #000;
+    z-index: 10;
+}
+
+.pc-workflow-arrow::after {
+    content: '';
+    position: absolute;
+    right: -4px;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(45deg);
+}
+
+/* ========================================= */
+/* Benefits Section */
+/* ========================================= */
+.pc-benefits-section {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.pc-benefits-wrapper {
+    background-color: #1E1E1E;
+    border-radius: 32px;
+    padding: 60px 40px;
+}
+
+.pc-benefits-title {
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pc-benefits-title span {
+    color: #FDC20C;
+}
+
+.pc-benefits-card {
+    background-color: rgba(255, 255, 255, 0.05); /* #FFFFFF0D */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 30px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pc-benefits-icon {
+    background-color: #F0B000;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.pc-benefits-card-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.pc-benefits-card-desc {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* ========================================= */
+/* Industries Section */
+/* ========================================= */
+.pc-industry-section {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.pc-industry-title {
+    color: #2F2B2A;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pc-industry-card {
+    text-align: center;
+    height: 100%;
+}
+
+.pc-industry-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    aspect-ratio: 16/10;
+}
+
+.pc-industry-card-title {
+    color: #2F2B2A;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.pc-industry-card-desc {
+    color: #2F2B2A;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* ========================================= */
+/* Ready Section */
+/* ========================================= */
+.pc-ready-section {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.pc-ready-wrapper {
+    background-color: #333;
+    border-radius: 32px;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.pc-ready-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    object-fit: contain;
+    object-position: right bottom;
+    z-index: 1;
+}
+
+.pc-ready-content {
+    position: relative;
+    z-index: 2;
+    max-width: 60%;
+}
+
+.pc-ready-title {
+    color: #fff;
+    font-size: 3.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.pc-ready-desc {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.pc-ready-btn {
+    background-color: #E5B122;
+    color: #060f1a;
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 15px 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.pc-ready-btn:hover {
+    background-color: #d1a11e;
+    color: #060f1a;
+}
+
+/* ========================================= */
+/* FAQ Section */
+/* ========================================= */
+.faq-section {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.faq-heading {
+    color: #191C1E;
+    font-weight: 700;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq-accordion {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border: 1px solid #C2C6D6;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-item details {
+    width: 100%;
+}
+
+.faq-item summary {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #2A2A2A;
+    padding: 20px;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    outline: none;
+    display: block; /* Removed flex so we can absolutely position the chevron cleanly */
+    padding-right: 50px;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-right: 3px solid #E5B122;
+    border-bottom: 3px solid #E5B122;
+    transform: translateY(-50%) rotate(45deg);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transition: transform 0.3s;
+}
+
+.faq-item details[open] summary::after {
+    transform: translateY(-50%) rotate(-135deg);
+}
+
+.faq-content {
+    border-top: 4px solid #E5B122;
+    padding: 20px;
+    font-size: 1.6rem;
+    color: #272727;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+@media (min-width: 992px) {
+    .pc-stat-item {
+        margin-bottom: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .pc-hero-section {
+        margin-top: 80px;
+        min-height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .pc-hero-title {
+        font-size: 4rem;
+    }
+    .pc-hero-subtitle {
+        font-size: 2rem;
+    }
+    .pc-hero-desc1 {
+        font-size: 1.8rem;
+    }
+    .pc-hero-desc2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .pc-hero-title {
+        font-size: 3.5rem;
+    }
+    .pc-hero-subtitle {
+        font-size: 1.8rem;
+    }
+    .pc-hero-desc1,
+    .pc-hero-desc2 {
+        font-size: 1.6rem;
+    }
+    .pc-stat-title {
+        font-size: 1.8rem;
+    }
+    .pc-stat-desc {
+        font-size: 1.6rem;
+    }
+    .pc-client-text {
+        font-size: 1.4rem;
+    }
+    .pc-sources-section {
+        padding: 40px 0;
+    }
+    .pc-sources-title {
+        font-size: 2.8rem;
+        margin-bottom: 30px;
+    }
+    .pc-source-card {
+        margin-bottom: 20px;
+    }
+    .pc-service-hero-section {
+        padding: 40px 0;
+    }
+    .pc-service-hero-wrapper {
+        padding: 40px 20px;
+    }
+    .pc-service-hero-title {
+        font-size: 3rem;
+    }
+    .pc-service-hero-desc {
+        font-size: 1.6rem;
+    }
+    .pc-scope-section {
+        padding: 40px 0;
+    }
+    .pc-scope-card {
+        padding: 20px;
+    }
+    .pc-scope-title {
+        font-size: 2.2rem;
+    }
+    .pc-scope-desc,
+    .pc-scope-list li,
+    .pc-scope-list-warning li {
+        font-size: 1.6rem;
+    }
+    .pc-scope-subtitle {
+        font-size: 1.8rem;
+    }
+    .pc-workflow-section {
+        padding: 40px 0;
+    }
+    .pc-workflow-title {
+        font-size: 2.8rem;
+    }
+    .pc-workflow-subtitle {
+        font-size: 1.6rem;
+    }
+    .pc-workflow-desc {
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+    }
+    .pc-workflow-card {
+        padding: 20px 15px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .pc-workflow-arrow {
+        display: none !important;
+    }
+    .pc-benefits-section {
+        padding: 40px 0;
+    }
+    .pc-benefits-wrapper {
+        padding: 40px 20px;
+        border-radius: 16px;
+    }
+    .pc-benefits-title {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    .pc-benefits-card {
+        margin-bottom: 20px;
+    }
+    .pc-industry-section {
+        padding: 40px 0;
+    }
+    .pc-industry-title {
+        font-size: 2.8rem;
+        margin-bottom: 30px;
+    }
+    .pc-ready-section {
+        padding: 40px 0;
+    }
+    .pc-ready-wrapper {
+        padding: 40px 20px;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 16px;
+    }
+    .pc-ready-content {
+        max-width: 100%;
+        margin-bottom: 250px;
+    }
+    .pc-ready-title {
+        font-size: 2.6rem;
+    }
+    .pc-ready-desc {
+        font-size: 1.6rem;
+    }
+    .pc-ready-bg {
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        right: 0;
+    }
+    .faq-heading {
+        font-size: 3.5rem;
+    }
+    .faq-item summary {
+        font-size: 1.8rem;
+    }
+    .pc-what-title {
+        font-size: 2.5rem;
+    }
+    .pc-what-desc,
+    .pc-what-subtitle,
+    .pc-what-list li {
+        font-size: 1.4rem;
+    }
+    .pc-what-images-container {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .pc-what-image-left {
+        border-radius: 14px 14px 0 0;
+    }
+    .pc-what-image-right {
+        border-radius: 0 0 14px 14px;
+    }
+    .pc-reg-main-title {
+        font-size: 2.8rem;
+    }
+    .pc-reg-card {
+        margin-bottom: 20px;
+    }
+    .pc-global-wrapper {
+        padding: 40px 20px;
+    }
+    .pc-global-title {
+        font-size: 2.8rem;
+    }
+    .pc-client-grid {
+        grid-template-columns: 1fr;
+    }
+    .pc-global-process {
+        flex-wrap: wrap;
+        gap: 15px;
+        max-width: 100%;
+        justify-content: center;
+    }
+    .pc-global-arrow {
+        display: none;
+    }
+}
