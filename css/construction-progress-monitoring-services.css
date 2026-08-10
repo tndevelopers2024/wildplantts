@@ -1,0 +1,84 @@
+/* 
+   ==========================================================================
+   Mobile SLAM Scanning Services Stylesheet
+   ========================================================================== 
+*/
+
+/* --- Navbar Style Overrides --- */
+.main-header {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); 
+}
+
+.main-header .main-box {
+    background-color: #ffffff !important;
+}
+
+.main-header .main-menu .navigation > li > a {
+    color: #333333 !important;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize !important; 
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li:hover > a,
+.main-header .main-menu .navigation > li.current > a {
+    color: #e4ae1f !important;
+    text-decoration: none !important;
+}
+
+/* Force ALL dropdown and sub-menu links to have no text decoration (underlines) */
+.main-header .main-menu .navigation li a {
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li.dropdown > a::after {
+    content: '\f107'; 
+    font-family: 'Font Awesome 5 Free', 'FontAwesome', sans-serif;
+    font-weight: 900;
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+.main-header .main-menu .navigation > li > a.btn {
+    background-color: #e2a613 !important; 
+    color: #111111 !important;
+    padding: 12px 30px !important;
+    border-radius: 0px !important; 
+    font-weight: 600 !important;
+    margin-left: 20px;
+    border: none !important;
+    display: inline-block;
+    text-transform: none !important;
+}
+
+.main-header .main-menu .navigation > li > a.btn:hover {
+    background-color: #c9930f !important;
+    color: #ffffff !important;
+}
+.main-menu .navigation > li {
+    padding: 25px 0px;
+}
+
+/* --- Layout fixes for empty pages --- */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-main-content {
+    flex-grow: 1;
+    padding-top: 100px; /* Increased padding to ensure hero is below header */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-footer {
+    margin-top: auto; 
+}
+
