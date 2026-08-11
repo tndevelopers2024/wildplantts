@@ -1,0 +1,1167 @@
+/* Styles for Data Center 3D Scanning & Scan to BIM Services */
+
+body {
+    font-family: "Poppins", sans-serif !important;
+}
+
+/* --- Navbar Style Overrides --- */
+.main-header {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.main-header .main-menu .navigation > li > a {
+    color: #333333 !important;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize !important;
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li:hover > a,
+.main-header .main-menu .navigation > li.current > a {
+    color: #e4ae1f !important;
+    text-decoration: none !important;
+}
+
+/* Force ALL dropdown and sub-menu links to have no text decoration (underlines) */
+.main-header .main-menu .navigation li a {
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li.dropdown > a::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free", "FontAwesome", sans-serif;
+    font-weight: 900;
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+.main-header .main-menu .navigation > li > a.btn {
+    background-color: #e2a613 !important;
+    color: #111111 !important;
+    padding: 12px 30px !important;
+    border-radius: 0px !important;
+    font-weight: 600 !important;
+    margin-left: 20px;
+    border: none !important;
+    display: inline-block;
+    text-transform: none !important;
+}
+
+.main-header .main-menu .navigation > li > a.btn:hover {
+    background-color: #c9930f !important;
+    color: #ffffff !important;
+}
+.main-menu .navigation > li {
+    padding: 25px 0px;
+}
+
+/* --- Layout fixes for empty pages --- */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-main-content {
+    flex-grow: 1;
+    padding-top: 100px;
+}
+
+.main-footer {
+    margin-top: auto;
+}
+
+main {
+    background-color: #f8f9fa;
+}
+
+/* ========================================= */
+/* Hero Section */
+/* ========================================= */
+.dc-hero-section {
+    position: relative;
+    background-image: url("../images/data-center-3d-scanning-scan-to-bim-services/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.dc-hero-container {
+    padding: 0 5%;
+}
+
+.dc-hero-content {
+    padding: 60px 0;
+}
+
+.dc-hero-tag {
+    color: #E5B122;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.dc-hero-title {
+    color: #ffffff;
+    font-size: 5.3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.dc-hero-desc {
+    color: #ffffff;
+    font-size: 2.0rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 900px;
+}
+
+.dc-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dc-btn {
+    display: inline-block;
+    padding: 15px 32px;
+    border-radius: 8px;
+    font-size: 2.0rem;
+    font-weight: 500;
+    text-decoration: none !important;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.dc-btn-primary {
+    background-color: #E5B122;
+    color: #060F1A !important;
+    border: 1px solid #E5B122;
+}
+
+.dc-btn-primary:hover {
+    background-color: #c99c1c;
+    border-color: #c99c1c;
+    color: #060F1A !important;
+}
+
+.dc-btn-secondary {
+    background-color: transparent;
+    color: #ffffff !important;
+    border: 1px solid #ffffff;
+}
+
+.dc-btn-secondary:hover {
+    background-color: #ffffff;
+    color: #060F1A !important;
+}
+
+/* ========================================= */
+/* Stat Bar Section */
+/* ========================================= */
+.dc-stat-bar-section {
+    position: relative;
+    z-index: 10;
+    margin-top: -60px; 
+}
+
+.dc-stat-bar-container {
+    background: #ffffff;
+    border: 1px solid #C6C6C6;
+    border-radius: 18px;
+    box-shadow: 0px 3px 26.9px 0px rgba(0, 0, 0, 0.15);
+    padding: 30px 20px;
+}
+
+.dc-stat-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+    .dc-stat-item {
+        margin-bottom: 0;
+    }
+}
+
+.dc-stat-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #FFCC08;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.dc-stat-icon img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.dc-stat-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.dc-stat-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 2px;
+}
+
+.dc-stat-desc {
+    color: #000000;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+/* ========================================= */
+/* Featured Project Section */
+/* ========================================= */
+.dc-featured-project-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.dc-featured-tag {
+    color: #FDC20C;
+    font-weight: 600;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.dc-featured-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 3.8rem;
+    margin-bottom: 15px;
+}
+
+.dc-featured-desc {
+    color: #1f1f1f;
+    font-weight: 500;
+    font-size: 2.0rem;
+    margin-bottom: 40px;
+}
+
+.dc-featured-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.dc-featured-list li {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #1f1f1f;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.dc-featured-list li i {
+    color: #FDC20C;
+    font-size: 2rem;
+    margin-top: 3px;
+}
+
+.dc-trusted-box {
+    background-color: #FFFDF6;
+    border: 1px solid #FDC20C;
+    border-radius: 11px;
+    padding: 30px;
+}
+
+.dc-trusted-box p {
+    color: #1f1f1f;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.dc-project-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.dc-card-header {
+    background-color: #FFCC08;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 60px;
+}
+
+.dc-card-number {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    position: absolute;
+    left: 20px;
+}
+
+.dc-card-title {
+    color: #1f1f1f;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;
+}
+
+.dc-card-image img {
+    display: block;
+    width: 100%;
+}
+
+/* ========================================= */
+/* Why LiDAR Section */
+/* ========================================= */
+.dc-why-lidar-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.dc-why-tag {
+    color: #FDC20C;
+    font-weight: 600;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.dc-why-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 3.8rem;
+    margin-bottom: 15px;
+}
+
+.dc-why-desc {
+    color: #1f1f1f;
+    font-weight: 500;
+    font-size: 2.0rem;
+    margin-bottom: 40px;
+}
+
+.dc-why-img {
+    border-radius: 12px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dc-comparison-table {
+    border: 0.5px solid #D2D2D2;
+    border-radius: 12px;
+    background: #fafafa;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.15); /* #00000026 equivalent */
+}
+
+.dc-table-header {
+    display: flex;
+    position: relative;
+    border-radius: 12px 12px 0 0;
+}
+
+.dc-col-header {
+    width: 50%;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.dc-header-trad {
+    background-color: #FFEEEE;
+    color: #F30000;
+    font-weight: 600;
+    font-size: 2.5rem;
+    border-radius: 12px 0 0 0;
+}
+
+.dc-header-lidar {
+    background-color: #E0F9F0;
+    color: #019D5E;
+    font-weight: 600;
+    font-size: 2.5rem;
+    border-radius: 0 12px 0 0;
+}
+
+.dc-vs-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: #222222;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 2.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.dc-table-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.dc-table-row {
+    display: flex;
+    border-bottom: 1px solid #eaeaea;
+    flex-grow: 1;
+}
+
+.dc-table-row:last-child {
+    border-bottom: none;
+}
+
+.dc-td {
+    width: 50%;
+    padding: 20px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.dc-td-trad {
+    color: #1e1e1e;
+    border-right: 1px solid #eaeaea;
+}
+
+.dc-td-lidar {
+    color: #1e1e1e;
+}
+
+/* ========================================= */
+/* Our Services Section */
+/* ========================================= */
+.dc-services-section {
+    background-color: #ffffff;
+}
+
+.dc-services-wrapper {
+    background-color: #F2F2F2;
+    padding: 50px 0;
+    border-radius: 21px;
+}
+
+.dc-services-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 3.8rem;
+    margin-bottom: 40px;
+}
+
+.dc-service-card {
+    background-color: #ffffff;
+    border-radius: 13px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.dc-service-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.dc-service-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #FDC20C;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.dc-service-icon img {
+    max-width: 35px;
+    max-height: 35px;
+}
+
+.dc-service-name {
+    color: #191C1D;
+    font-weight: 700;
+    font-size: 2.0rem;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+
+.dc-service-body {
+    flex-grow: 1;
+}
+
+.dc-service-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.dc-service-list li {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #1f1f1f;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.dc-service-list li i {
+    color: #FDC20C;
+    font-size: 1.8rem;
+    margin-top: 3px;
+}
+
+/* Applications Section */
+.dc-applications-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.dc-applications-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 3.8rem;
+    margin-bottom: 50px;
+}
+
+.dc-app-card {
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 25px 23px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.dc-app-icon {
+    flex-shrink: 0;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dc-app-icon img {
+    max-height: 40px;
+    width: auto;
+}
+
+.dc-app-text {
+    color: #3A3A3A;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: left;
+    line-height: 1.4;
+}
+
+/* Equipment Section */
+.dc-equipment-section {
+    background-color: #F7F9FA;
+    padding: 40px 0;
+}
+
+.dc-equipment-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 3.8rem;
+    margin-bottom: 50px;
+}
+
+.dc-equipment-name {
+    color: #E5B122;
+    font-weight: 800;
+    font-size: 3.2rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.dc-equipment-img-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dc-equipment-img-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Software Section */
+.dc-software-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.dc-software-title {
+    color: #000000;
+    font-weight: 700;
+    font-size: 3.8rem;
+    margin-bottom: 50px;
+}
+
+.dc-software-name {
+    color: #E5B122;
+    font-weight: 600;
+    font-size: 2.0rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.dc-software-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dc-software-img-box img {
+    max-width: 60%;
+    height: auto;
+}
+
+/* Benefits Section */
+.dc-benefits-section {
+    background-color: #F7F9FA;
+    padding: 40px 0;
+}
+
+.dc-benefits-title {
+    color: #191C1E;
+    font-weight: 700;
+    font-size: 3.8rem;
+    margin-bottom: 50px;
+}
+
+.dc-benefit-card {
+    background-color: #ffffff;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.dc-benefit-icon {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.dc-benefit-icon img {
+    max-height: 100%;
+    width: auto;
+}
+
+.dc-benefit-text {
+    color: #272727;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.3;
+}
+
+@media (min-width: 992px) {
+    .dc-row-cols-lg-8 > * {
+        flex: 0 0 auto;
+        width: 12.5%;
+    }
+}
+
+/* Scan & Model Section */
+.dc-scan-model-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.dc-scan-model-title {
+    color: #191C1E;
+    font-weight: 700;
+    font-size: 3.8rem;
+    margin-bottom: 15px;
+}
+
+.dc-scan-model-subtitle {
+    color: #323232;
+    font-weight: 700;
+    font-size: 2.0rem;
+    margin-bottom: 5px;
+}
+
+.dc-scan-model-desc {
+    color: #323232;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+}
+
+.dc-types-card {
+    background-color: #F7F9FA;
+    border-radius: 16px;
+    border-top: 4px solid #FDC20C;
+    padding: 35px 30px;
+    height: 100%;
+}
+
+.dc-types-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dc-types-icon {
+    background-color: #FDC20C;
+    border-radius: 8px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.dc-types-icon img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.dc-types-title {
+    color: #323232;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+
+.dc-types-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.dc-types-list li {
+    color: #323232;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.dc-types-list li i {
+    color: #FDC20C;
+    margin-top: 5px;
+    margin-right: 12px;
+    font-size: 1.8rem;
+}
+
+.dc-projects-container {
+    background-color: #F7F9FA;
+    border-radius: 16px;
+    padding: 30px;
+    height: 100%;
+}
+
+.dc-projects-main-title {
+    color: #323232;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.dc-projects-main-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    height: 3px;
+    background-color: #FDC20C;
+}
+
+.dc-project-card {
+    background-color: #ffffff;
+    border: 1px solid #0000001A;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dc-project-title {
+    color: #272727;
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.dc-project-title-small {
+    color: #272727;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.dc-project-location {
+    display: flex;
+    align-items: center;
+}
+
+.dc-project-location img {
+    margin-right: 8px;
+    width: 14px;
+}
+
+.dc-project-location span {
+    color: #272727;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.dc-project-stats {
+    font-size: 1.3rem;
+    color: #272727;
+}
+
+.dc-project-stats div {
+    display: flex;
+    align-items: center;
+}
+
+.dc-project-stats img {
+    margin-right: 6px;
+    width: 16px;
+}
+
+.dc-project-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.dc-project-list li {
+    font-size: 1.5rem;
+    color: #323232;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.dc-project-list li i {
+    color: #FDC20C;
+    margin-top: 3px;
+    margin-right: 8px;
+    font-size: 1.4rem;
+}
+
+/* What We Deliver Section */
+.dc-deliver-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.dc-deliver-container {
+    background-color: #fff9e7;
+    border-radius: 16px;
+    padding: 40px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.dc-deliver-title-wrap {
+    flex: 0 0 auto;
+    margin-right: 30px;
+}
+
+.dc-deliver-title {
+    color: #323232;
+    font-weight: 700;
+    font-size: 2.5rem;
+    position: relative;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+.dc-deliver-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 110px; /* Covers "What We" */
+    height: 4px;
+    background-color: #FDC20C;
+}
+
+.dc-deliver-items {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.dc-deliver-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 140px;
+}
+
+.dc-deliver-icon {
+    width: 90px;
+    height: 90px;
+    background-color: #FDC20C;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.dc-deliver-icon img {
+    width: 55%;
+    height: auto;
+}
+
+.dc-deliver-text {
+    color: #272727;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.3;
+}
+
+.dc-deliver-separator {
+    width: 1px;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, #FDC20C, #FDC20C, transparent);
+    align-self: center;
+    margin: 0 10px;
+    margin-top: -20px;
+}
+
+@media (max-width: 1200px) {
+    .dc-deliver-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .dc-deliver-title-wrap {
+        margin-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .dc-deliver-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .dc-deliver-items {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .dc-deliver-separator {
+        display: none;
+    }
+}
+
+/* CTA Section */
+.dc-cta-section {
+    background-image: url('../images/data-center-3d-scanning-scan-to-bim-services/ready-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.dc-cta-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 4.8rem;
+    margin-bottom: 25px;
+}
+
+.dc-cta-desc {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 0 auto 40px auto;
+}
+
+.dc-cta-btn-primary {
+    background-color: #ffffff;
+    color: #424141;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 9999px;
+    padding: 16px 40px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.dc-cta-btn-primary:hover {
+    color: #424141;
+    background-color: #f0f0f0;
+}
+
+.dc-cta-btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border: 1px solid #FFFFFF4D;
+    border-radius: 9999px;
+    padding: 16px 40px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.dc-cta-btn-secondary:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================= */
+/* FAQ Section */
+/* ========================================= */
+.faq-section {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.faq-heading {
+    color: #191C1E;
+    font-weight: 700;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq-accordion {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border: 1px solid #C2C6D6;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-item details {
+    width: 100%;
+}
+
+.faq-item summary {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #2A2A2A;
+    padding: 20px;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    outline: none;
+    display: block; /* Removed flex so we can absolutely position the chevron cleanly */
+    padding-right: 50px;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-right: 3px solid #E5B122;
+    border-bottom: 3px solid #E5B122;
+    transform: translateY(-50%) rotate(45deg);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transition: transform 0.3s;
+}
+
+.faq-item details[open] summary::after {
+    transform: translateY(-50%) rotate(-135deg);
+}
+
+.faq-content {
+    border-top: 4px solid #E5B122;
+    padding: 20px;
+    font-size: 1.6rem;
+    color: #272727;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+@media (max-width: 767px) {
+    .dc-hero-buttons {
+        margin-bottom: 50px;
+    }
+    .faq-heading {
+        font-size: 3.5rem;
+    }
+    .faq-item summary {
+        font-size: 1.8rem;
+    }
+}

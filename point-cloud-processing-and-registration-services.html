@@ -1,0 +1,1773 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Point Cloud Processing & Registration Services</title>
+        <!-- Stylesheets -->
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/style1.css" />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+        <!-- Responsive -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
+        <link href="css/responsive.css" rel="stylesheet" />
+        <!--[if lt IE 9
+            ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
+        ><![endif]-->
+        <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Custom CSS for this page -->
+        <link
+            href="css/point-cloud-processing-and-registration-services.css"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/lucide@latest"></script>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <header class="main-header">
+                <!-- Main Box -->
+                <div class="main-box">
+                    <div class="auto-container">
+                        <div class="outer-container clearfix">
+                            <!--Logo Box-->
+                            <div class="logo-box">
+                                <div class="logo">
+                                    <a href="index.html"
+                                        ><img
+                                            src="images/home-logo.png"
+                                            style="
+                                                padding: 20px 0;
+                                                width: 200px;
+                                            "
+                                            alt=""
+                                    /></a>
+                                </div>
+                            </div>
+
+                            <!--Nav Outer-->
+                            <div class="nav-outer clearfix">
+                                <!-- Main Menu -->
+                                <nav class="main-menu">
+                                    <div class="navbar-header">
+                                        <!-- Toggle Button -->
+                                        <button
+                                            type="button"
+                                            class="navbar-toggle"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                        >
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="navbar-collapse collapse clearfix"
+                                    >
+                                        <ul class="navigation clearfix">
+                                            <li class="current">
+                                                <a href="index.html">Home</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="about-us.html"
+                                                    >About Us</a
+                                                >
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="product.html"
+                                                    >Product
+                                                </a>
+                                                <ul>
+                                                    <li class="dropdown">
+                                                        <a
+                                                            href="3d-laser-scanner.html"
+                                                            >Lidar Laser
+                                                            Scanners</a
+                                                        >
+                                                        <ul>
+                                                            <li class="">
+                                                                <a
+                                                                    href="lecia-rtc360-laser-scanner.html"
+                                                                    >Leica
+                                                                    RTC360</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"
+                                                                    >Leica
+                                                                    RTC360 LT
+                                                                    (coming
+                                                                    soon)</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"
+                                                                    >Leica
+                                                                    BLK360 G2
+                                                                    (coming
+                                                                    soon)</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"
+                                                                    >Leica
+                                                                    RTC360 SE
+                                                                    (coming
+                                                                    soon)</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"
+                                                                    >Leica
+                                                                    BLK3602Go
+                                                                    (coming
+                                                                    soon)</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"
+                                                                    >Leica P40
+                                                                    ScanStation
+                                                                    (coming
+                                                                    soon)</a
+                                                                >
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown">
+                                                        <a
+                                                            href="faro-scene-software.html"
+                                                            >Software</a
+                                                        >
+                                                        <ul>
+                                                            <li class="">
+                                                                <a
+                                                                    href="faro-focus-3D-scanner.html"
+                                                                    >Cyclone
+                                                                    Field 360</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="faro-scene-software.html"
+                                                                    >Cyclone
+                                                                    Register
+                                                                    360</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="faro-scene-software.html"
+                                                                    >Cyclone 3DR
+                                                                    Pro</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="faro-scene-software.html"
+                                                                    >Cloudworx</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="faro-scene-software.html"
+                                                                    >TruView
+                                                                    Desktop</a
+                                                                >
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#"
+                                                    >Technology services</a
+                                                >
+                                                <ul>
+                                                    <li class="dropdown">
+                                                        <a href="#"
+                                                            >3D Laser
+                                                            Scanning</a
+                                                        >
+                                                        <ul>
+                                                            <li>
+                                                                <a
+                                                                    href="factory-3d-scanning-and-digital-factory-solutions.html"
+                                                                    >Factory 3D
+                                                                    scanning(Smart
+                                                                    Factory
+                                                                    Digital
+                                                                    Twin)-
+                                                                    Retrofit,
+                                                                    Digital
+                                                                    Documents</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="building-3D-scanning.html"
+                                                                    >Building 3D
+                                                                    scanning</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="infrastructure-3D-scanning.html"
+                                                                    >Infrastructure
+                                                                    3D
+                                                                    scanning</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="heritage-building-3d-scanning-and-scan-to-mesh-services.html"
+                                                                    >Heritage
+                                                                    Building 3D
+                                                                    Scanning</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="movie-set-3D-scanning.html"
+                                                                    >Movie Set
+                                                                    3D
+                                                                    scanning</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="forest-terrestrial-3D-scanning.html"
+                                                                    >Forest/Mountain
+                                                                    3D
+                                                                    Scanning</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"
+                                                                    >Shipbuilding
+                                                                    3D scanning
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="data-center-3d-scanning-scan-to-bim-services.html"
+                                                                    >Data Center
+                                                                    3D
+                                                                    Scanning</a
+                                                                >
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown">
+                                                        <a
+                                                            href="technologies.php"
+                                                            >3D Modelling
+                                                            Service</a
+                                                        >
+                                                        <ul>
+                                                            <li>
+                                                                <a
+                                                                    href="factory-3d-scanning-and-digital-factory-solutions.html"
+                                                                    >3D Scan to
+                                                                    Factory
+                                                                    CAD</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="oil-gas-plant-3d-scanning-scan-to-cad-plant-3d-services.html"
+                                                                    >3D Scan to
+                                                                    Plant3D</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="pharma-plant-3d-scanning-scan-to-bim-services.html"
+                                                                    >3DScan to
+                                                                    BIM
+                                                                    Service</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"
+                                                                    >CAD to BIM
+                                                                    Services</a
+                                                                >
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="dropdown">
+                                                        <a href="#"
+                                                            >Point Cloud
+                                                            Services</a
+                                                        >
+                                                        <ul>
+                                                            <li>
+                                                                <a
+                                                                    href="point-cloud-processing-and-registration-services.html"
+                                                                    >Point Cloud
+                                                                    Processing &
+                                                                    Registration
+                                                                    Services</a
+                                                                >
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="3Dscan-Bim-service.html"
+                                                            >Drone Service</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="">
+                                                <a href="contact.html"
+                                                    >Contact Us</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="contact.html"
+                                                    class="btn"
+                                                    >Get in touch</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                                <!-- Main Menu End-->
+                            </div>
+
+                            <!--Nav Outer End-->
+
+                            <!-- Hidden Nav Toggler -->
+                            <div class="nav-toggler">
+                                <button class="hidden-bar-opener">
+                                    <span class="icon fa fa-bars"></span>
+                                </button>
+                            </div>
+                            <!-- / Hidden Nav Toggler -->
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!--End Main Header -->
+
+            <!-- Hidden Navigation Bar -->
+            <section class="hidden-bar right-align">
+                <div class="hidden-bar-closer">
+                    <button class="btn"><i class="fa fa-close"></i></button>
+                </div>
+
+                <div class="hidden-bar-wrapper">
+                    <!-- Logo -->
+                    <div class="logo text-center">
+                        <a href="index.html">
+                            <img src="images/home-logo.png" alt="" />
+                        </a>
+                    </div>
+
+                    <!-- Side Navigation -->
+                    <div class="side-menu">
+                        <ul class="navigation">
+                            <li><a href="index.html">Home</a></li>
+
+                            <li><a href="about-us.html">About Us</a></li>
+
+                            <!-- Product Dropdown -->
+                            <li class="dropdown">
+                                <a href="product.html">Product</a>
+                                <ul>
+                                    <!-- Laser Scanners -->
+                                    <li class="dropdown">
+                                        <a href="faro-focus-3D-scanner.html"
+                                            >Lidar Laser Scanners</a
+                                        >
+                                        <ul>
+                                            <li>
+                                                <a
+                                                    href="faro-focus-3D-scanner.html"
+                                                    >Leica RTC360</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="faro-scene-software.html"
+                                                    >Leica RTC360 LT</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="faro-scene-software.html"
+                                                    >Leica BLK360 G2</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="faro-scene-software.html"
+                                                    >Leica RTC360 SE</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="faro-scene-software.html"
+                                                    >Leica BLK3602Go</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="faro-scene-software.html"
+                                                    >Leica P40 ScanStation</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- Software -->
+                                    <li class="dropdown">
+                                        <a href="faro-scene-software.html"
+                                            >Software</a
+                                        >
+                                        <ul>
+                                            <li>
+                                                <a
+                                                    href="faro-focus-3D-scanner.html"
+                                                    >Cyclone Field 360</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="faro-scene-software.html"
+                                                    >Cyclone Register 360</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="faro-scene-software.html"
+                                                    >Cyclone 3DR Pro</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="faro-scene-software.html"
+                                                    >Cloudworx</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="faro-scene-software.html"
+                                                    >TruView Desktop</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Technology Services -->
+                            <li class="dropdown">
+                                <a href="#">Technology Services</a>
+                                <ul>
+                                    <!-- 3D Laser Scanning -->
+                                    <li class="dropdown">
+                                        <a href="#">3D Laser Scanning</a>
+                                        <ul>
+                                            <li>
+                                                <a
+                                                    href="factory-3d-scanning-and-digital-factory-solutions.html"
+                                                    >Factory 3D scanning (Smart
+                                                    Factory Digital Twin) -
+                                                    Retrofit, Digital
+                                                    Documents</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="building-3D-scanning.html"
+                                                    >Building 3D scanning</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="infrastructure-3D-scanning.html"
+                                                    >Infrastructure 3D
+                                                    scanning</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="heritage-building-3d-scanning-and-scan-to-mesh-services.html"
+                                                    >Heritage Building 3D
+                                                    Scanning</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="movie-set-3D-scanning.html"
+                                                    >Movie Set 3D scanning</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="forest-terrestrial-3D-scanning.html"
+                                                    >Forest/Mountain 3D
+                                                    Scanning</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    >Shipbuilding 3D scanning</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="data-center-3d-scanning-scan-to-bim-services.html"
+                                                    >Data Center 3D Scanning</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <!-- 3D Modelling -->
+                                    <li class="dropdown">
+                                        <a href="technologies.php"
+                                            >3D Modelling Service</a
+                                        >
+                                        <ul>
+                                            <li>
+                                                <a
+                                                    href="factory-3d-scanning-and-digital-factory-solutions.html"
+                                                    >3D Scan to Factory CAD</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="oil-gas-plant-3d-scanning-scan-to-cad-plant-3d-services.html"
+                                                    >3D Scan to Plant3D</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="pharma-plant-3d-scanning-scan-to-bim-services.html"
+                                                    >3DScan to BIM Service</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    >CAD to BIM Services</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="#">Point Cloud Services</a>
+                                        <ul>
+                                            <li>
+                                                <a
+                                                    href="point-cloud-processing-and-registration-services.html"
+                                                    >Point Cloud Processing &
+                                                    Registration Services</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="3Dscan-Bim-service.html"
+                                            >Drone Service</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="contact.html">Contact Us</a></li>
+
+                            <li>
+                                <a href="contact.html" class="btn"
+                                    >Get in Touch</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    ><i class="fa-brands fa-facebook"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i class="fa-brands fa-twitter"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i class="fa-brands fa-instagram"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    ><i class="fa-brands fa-linkedin"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- / Hidden Bar -->
+
+            <!-- Main Content Area -->
+            <main>
+                <!-- Hero Section -->
+                <section class="pc-hero-section">
+                    <div class="container-fluid pc-hero-container">
+                        <div class="row align-items-center">
+                            <div
+                                class="col-lg-8 col-md-10 col-12 pc-hero-content"
+                            >
+                                <h1 class="pc-hero-title">
+                                    Point Cloud Processing & Registration
+                                    Services
+                                </h1>
+                                <p class="pc-hero-subtitle">
+                                    Transform Raw Scan Data into Accurate,
+                                    Engineering- Ready Point Clouds
+                                </p>
+                                <p class="pc-hero-desc1">
+                                    From registration and cleaning to
+                                    optimisation and QA, WildplantTS 
+                                    deliver accurate, high-quality point clouds
+                                    for engineering, BIM, CAD, 
+                                    Digital Twin, and industrial workflows.
+                                </p>
+                                <p class="pc-hero-desc2">
+                                    Compatible with all Reality Capture systems.
+                                    Trusted by clients worldwide.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Stat Section -->
+                <section class="pc-stat-section">
+                    <div class="container-fluid" style="padding: 0 5%">
+                        <div
+                            class="row align-items-center justify-content-between"
+                        >
+                            <!-- Stat 1 -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="pc-stat-item">
+                                    <div class="pc-stat-icon">
+                                        <img
+                                            src="images/point-cloud-processing-and-registration-services/hero-stat-1.svg"
+                                            alt="Global Services"
+                                        />
+                                    </div>
+                                    <div class="pc-stat-text">
+                                        <h4 class="pc-stat-title">
+                                            Global Services
+                                        </h4>
+                                        <p class="pc-stat-desc">
+                                            Clients Worldwide
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Stat 2 -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="pc-stat-item">
+                                    <div class="pc-stat-icon">
+                                        <img
+                                            src="images/point-cloud-processing-and-registration-services/hero-stat-2.svg"
+                                            alt="1000+"
+                                        />
+                                    </div>
+                                    <div class="pc-stat-text">
+                                        <h4 class="pc-stat-title">1000+</h4>
+                                        <p class="pc-stat-desc">
+                                            Projects Delivered
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Stat 3 -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="pc-stat-item">
+                                    <div class="pc-stat-icon">
+                                        <img
+                                            src="images/point-cloud-processing-and-registration-services/hero-stat-3.svg"
+                                            alt="All Major Scan System"
+                                        />
+                                    </div>
+                                    <div class="pc-stat-text">
+                                        <h4 class="pc-stat-title">
+                                            All Major Scan System
+                                        </h4>
+                                        <p class="pc-stat-desc">Supported</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Stat 4 -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="pc-stat-item">
+                                    <div class="pc-stat-icon">
+                                        <img
+                                            src="images/point-cloud-processing-and-registration-services/hero-stat-4.svg"
+                                            alt="Quality Controlled"
+                                        />
+                                    </div>
+                                    <div class="pc-stat-text">
+                                        <h4 class="pc-stat-title">
+                                            Quality Controlled
+                                        </h4>
+                                        <p class="pc-stat-desc">Workflows</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- What is Point Cloud Processing Section -->
+                <section class="pc-what-section">
+                    <div class="container-fluid" style="padding: 0 5%">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <h2 class="pc-what-title">
+                                    What is Point Cloud Processing?
+                                </h2>
+                                <p class="pc-what-desc">
+                                    Point Cloud Processing is the engineering
+                                    workflow that converts raw scan data into
+                                    clean, accurate, and usable point cloud
+                                    datasets.
+                                </p>
+                                <p class="pc-what-subtitle">
+                                    Raw scan data often contains:
+                                </p>
+                                <ul class="pc-what-list">
+                                    <li>Multiple scan positions</li>
+                                    <li>Misalignment</li>
+                                    <li>Noise</li>
+                                    <li>Duplicate points</li>
+                                    <li>Temporary objects</li>
+                                    <li>Incomplete registration</li>
+                                    <li>Unclassified data</li>
+                                </ul>
+                                <p class="pc-what-desc">
+                                    Our engineers process the data to create a
+                                    single, optimized point cloud suitable for
+                                    engineering applications.
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="pc-what-images-container">
+                                    <div
+                                        class="pc-what-image-box pc-what-image-left"
+                                    >
+                                        <div
+                                            class="pc-what-badge pc-what-badge-left"
+                                        >
+                                            Before
+                                        </div>
+                                        <img
+                                            src="images/point-cloud-processing-and-registration-services/what-before.png"
+                                            alt="Before Point Cloud Processing"
+                                        />
+                                    </div>
+                                    <div class="pc-what-slider">&lt;|&gt;</div>
+                                    <div
+                                        class="pc-what-image-box pc-what-image-right"
+                                    >
+                                        <div
+                                            class="pc-what-badge pc-what-badge-right"
+                                        >
+                                            After
+                                        </div>
+                                        <img
+                                            src="images/point-cloud-processing-and-registration-services/what-after.png"
+                                            alt="After Point Cloud Processing"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Registration Methods Section -->
+                <section class="pc-reg-section">
+                    <div class="container-fluid" style="padding: 0 5%">
+                        <h2 class="pc-reg-main-title">
+                            Registration <span>Methods We use</span>
+                        </h2>
+                        <div class="row">
+                            <!-- Card 1 -->
+                            <div
+                                class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4 mb-lg-0"
+                            >
+                                <div class="pc-reg-card">
+                                    <div class="pc-reg-icon">
+                                        <img
+                                            src="images/point-cloud-processing-and-registration-services/method-1.svg"
+                                            alt="Target-Based Registration"
+                                        />
+                                    </div>
+                                    <h3 class="pc-reg-card-title">
+                                        Target-Based Registration
+                                    </h3>
+                                    <p class="pc-reg-card-desc">
+                                        Using physical targets placed in the
+                                        field for high accuracy.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div
+                                class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4 mb-lg-0"
+                            >
+                                <div class="pc-reg-card">
+                                    <div class="pc-reg-icon">
+                                        <img
+                                            src="images/point-cloud-processing-and-registration-services/method-2.svg"
+                                            alt="Cloud-to-Cloud Registration"
+                                        />
+                                    </div>
+                                    <h3 class="pc-reg-card-title">
+                                        Cloud-to-Cloud Registration
+                                    </h3>
+                                    <p class="pc-reg-card-desc">
+                                        Aligning scans directly using
+                                        overlapping point cloud data.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card 3 -->
+                            <div
+                                class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4 mb-lg-0"
+                            >
+                                <div class="pc-reg-card">
+                                    <div class="pc-reg-icon">
+                                        <img
+                                            src="images/point-cloud-processing-and-registration-services/method-3.svg"
+                                            alt="Hybrid Registration"
+                                        />
+                                    </div>
+                                    <h3 class="pc-reg-card-title">
+                                        Hybrid Registration
+                                    </h3>
+                                    <p class="pc-reg-card-desc">
+                                        Combining targets and cloud alignment
+                                        for optimal results.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card 4 -->
+                            <div
+                                class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4 mb-lg-0"
+                            >
+                                <div class="pc-reg-card">
+                                    <div class="pc-reg-icon">
+                                        <img
+                                            src="images/point-cloud-processing-and-registration-services/method-4.svg"
+                                            alt="Control Point Registration"
+                                        />
+                                    </div>
+                                    <h3 class="pc-reg-card-title">
+                                        Control Point Registration
+                                    </h3>
+                                    <p class="pc-reg-card-desc">
+                                        Using control points to achieve accurate
+                                        alignment.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card 5 -->
+                            <div
+                                class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4 mb-md-0"
+                            >
+                                <div class="pc-reg-card">
+                                    <div class="pc-reg-icon">
+                                        <img
+                                            src="images/point-cloud-processing-and-registration-services/method-5.svg"
+                                            alt="Survey Control Integration"
+                                        />
+                                    </div>
+                                    <h3 class="pc-reg-card-title">
+                                        Survey Control Integration
+                                    </h3>
+                                    <p class="pc-reg-card-desc">
+                                        Integrating survey data for engineering
+                                        grade accuracy.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Card 6 -->
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                                <div class="pc-reg-card">
+                                    <div class="pc-reg-icon">
+                                        <img
+                                            src="images/point-cloud-processing-and-registration-services/method-6.svg"
+                                            alt="Geo-referenced Coordinate Systems"
+                                        />
+                                    </div>
+                                    <h3 class="pc-reg-card-title">
+                                        Geo-referenced Coordinate Systems
+                                    </h3>
+                                    <p class="pc-reg-card-desc">
+                                        Delivering data in real-world,
+                                        geo-referenced coordinate systems.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Global Point Cloud Section -->
+                <section class="pc-global-section">
+                    <div class="container-fluid" style="padding: 0 5%">
+                        <div class="pc-global-wrapper">
+                            <div class="row">
+                                <!-- Left Content -->
+                                <div class="col-lg-5 mb-5 mb-lg-0 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h2 class="pc-global-title">
+                                                Global Point Cloud
+                                                <span>Processing Services</span>
+                                            </h2>
+                                            <p class="pc-global-desc">
+                                                We provide remote point cloud processing
+                                                services worldwide. Simply upload your
+                                                scan data securely, and our engineering
+                                                team will process it remotely and return
+                                                engineering-ready point clouds
+                                            </p>
+                                        </div>
+
+                                        <div class="pc-global-process">
+                                            <!-- Step 1 -->
+                                            <div class="pc-global-step">
+                                                <div class="pc-global-icon-box">
+                                                    <img
+                                                        src="images/point-cloud-processing-and-registration-services/processing-1.svg"
+                                                        alt="Upload Your Data"
+                                                    />
+                                                </div>
+                                                <div class="pc-global-step-text">
+                                                    Upload Your Data
+                                                </div>
+                                            </div>
+                                            <!-- Arrow -->
+                                            <div class="pc-global-arrow">
+                                                &#10230;
+                                            </div>
+                                            <!-- Step 2 -->
+                                            <div class="pc-global-step">
+                                                <div class="pc-global-icon-box">
+                                                    <img
+                                                        src="images/point-cloud-processing-and-registration-services/processing-2.svg"
+                                                        alt="We Process Remotely"
+                                                    />
+                                                </div>
+                                                <div class="pc-global-step-text">
+                                                    We Process Remotely
+                                                </div>
+                                            </div>
+                                            <!-- Arrow -->
+                                            <div class="pc-global-arrow">
+                                                &#10230;
+                                            </div>
+                                            <!-- Step 3 -->
+                                            <div class="pc-global-step">
+                                                <div class="pc-global-icon-box">
+                                                    <img
+                                                        src="images/point-cloud-processing-and-registration-services/processing-3.svg"
+                                                        alt="Receive Ready to Use Data"
+                                                    />
+                                                </div>
+                                                <div class="pc-global-step-text">
+                                                    Receive Ready to Use Data
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <!-- Right Content -->
+                                <div class="col-lg-7 pl-lg-5">
+                                    <h3 class="pc-global-right-title">
+                                        We support clients including
+                                    </h3>
+                                    <div class="pc-client-grid">
+                                        <!-- Client 1 -->
+                                        <div class="pc-client-card">
+                                            <div class="pc-client-icon">
+                                                <img
+                                                    src="images/point-cloud-processing-and-registration-services/client-1.png"
+                                                    alt="Survey Companies"
+                                                />
+                                            </div>
+                                            <div class="pc-client-text">
+                                                Survey Companies
+                                            </div>
+                                        </div>
+                                        <!-- Client 2 -->
+                                        <div class="pc-client-card">
+                                            <div class="pc-client-icon">
+                                                <img
+                                                    src="images/point-cloud-processing-and-registration-services/client-2.svg"
+                                                    alt="Reality Capture Service Providers"
+                                                />
+                                            </div>
+                                            <div class="pc-client-text">
+                                                Reality Capture Service
+                                                Providers
+                                            </div>
+                                        </div>
+                                        <!-- Client 3 -->
+                                        <div class="pc-client-card">
+                                            <div class="pc-client-icon">
+                                                <img
+                                                    src="images/point-cloud-processing-and-registration-services/client-3.svg"
+                                                    alt="EPC Contractors"
+                                                />
+                                            </div>
+                                            <div class="pc-client-text">
+                                                EPC Contractors
+                                            </div>
+                                        </div>
+                                        <!-- Client 4 -->
+                                        <div class="pc-client-card">
+                                            <div class="pc-client-icon">
+                                                <img
+                                                    src="images/point-cloud-processing-and-registration-services/client-4.svg"
+                                                    alt="Architects"
+                                                />
+                                            </div>
+                                            <div class="pc-client-text">
+                                                Architects
+                                            </div>
+                                        </div>
+                                        <!-- Client 5 -->
+                                        <div class="pc-client-card">
+                                            <div class="pc-client-icon">
+                                                <img
+                                                    src="images/point-cloud-processing-and-registration-services/client-5.svg"
+                                                    alt="BIM Consultants"
+                                                />
+                                            </div>
+                                            <div class="pc-client-text">
+                                                BIM Consultants
+                                            </div>
+                                        </div>
+                                        <!-- Client 6 -->
+                                        <div class="pc-client-card">
+                                            <div class="pc-client-icon">
+                                                <img
+                                                    src="images/point-cloud-processing-and-registration-services/client-6.svg"
+                                                    alt="Engineering Firms"
+                                                />
+                                            </div>
+                                            <div class="pc-client-text">
+                                                Engineering Firms
+                                            </div>
+                                        </div>
+                                        <!-- Client 7 -->
+                                        <div class="pc-client-card">
+                                            <div class="pc-client-icon">
+                                                <img
+                                                    src="images/point-cloud-processing-and-registration-services/client-7.svg"
+                                                    alt="Government Agencies"
+                                                />
+                                            </div>
+                                            <div class="pc-client-text">
+                                                Government Agencies
+                                            </div>
+                                        </div>
+                                        <!-- Client 8 -->
+                                        <div class="pc-client-card">
+                                            <div class="pc-client-icon">
+                                                <img
+                                                    src="images/point-cloud-processing-and-registration-services/client-8.svg"
+                                                    alt="Facility Owners"
+                                                />
+                                            </div>
+                                            <div class="pc-client-text">
+                                                Facility Owners
+                                            </div>
+                                        </div>
+                                        <!-- Client 9 -->
+                                        <div class="pc-client-card">
+                                            <div class="pc-client-icon">
+                                                <img
+                                                    src="images/point-cloud-processing-and-registration-services/client-9.svg"
+                                                    alt="Digital Twin Companies"
+                                                />
+                                            </div>
+                                            <div class="pc-client-text">
+                                                Digital Twin Companies
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Supported Scan Sources Section -->
+                <section class="pc-sources-section">
+                    <div class="container">
+                        <h2 class="pc-sources-title">Supported Scan Sources</h2>
+                        <div class="row">
+                            <!-- Source 1 -->
+                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                                <div class="pc-source-card">
+                                    <div class="pc-source-image">
+                                        <img
+                                            src="images/point-cloud-processing-and-registration-services/scanner-1.png"
+                                            alt="Terrestrial LiDAR"
+                                        />
+                                    </div>
+                                    <h3 class="pc-source-name">Terrestrial LiDAR</h3>
+                                </div>
+                            </div>
+                            <!-- Source 2 -->
+                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                                <div class="pc-source-card">
+                                    <div class="pc-source-image">
+                                        <img
+                                            src="images/point-cloud-processing-and-registration-services/scanner-2.png"
+                                            alt="Mobile SLAM"
+                                        />
+                                    </div>
+                                    <h3 class="pc-source-name">Mobile SLAM</h3>
+                                </div>
+                            </div>
+                            <!-- Source 3 -->
+                            <div class="col-lg-3 col-md-6 col-12 mb-4 mb-md-0">
+                                <div class="pc-source-card">
+                                    <div class="pc-source-image">
+                                        <img
+                                            src="images/point-cloud-processing-and-registration-services/scanner-3.png"
+                                            alt="Drone Photogrammetry"
+                                        />
+                                    </div>
+                                    <h3 class="pc-source-name">Drone Photogrammetry</h3>
+                                </div>
+                            </div>
+                            <!-- Source 4 -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="pc-source-card">
+                                    <div class="pc-source-image">
+                                        <img
+                                            src="images/point-cloud-processing-and-registration-services/scanner-4.png"
+                                            alt="Handheld Infrared lidar"
+                                        />
+                                    </div>
+                                    <h3 class="pc-source-name">Handheld Infrared lidar</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Service Hero Section -->
+                <section class="pc-service-hero-section">
+                    <div class="container-fluid" style="padding: 0 5%">
+                        <div class="pc-service-hero-wrapper">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="pc-service-hero-content">
+                                        <h2 class="pc-service-hero-title">
+                                            Comprehensive<br />Point Cloud<br />
+                                            <span>Processing For Every<br />Project Need</span>
+                                        </h2>
+                                        <p class="pc-service-hero-desc">
+                                            We transform raw scan data into accurate, clean, and engineering-ready point clouds for industrial, construction, and infrastructure projects.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Service Scope Section -->
+                <section class="pc-scope-section">
+                    <div class="container-fluid" style="padding: 0 5%">
+                        <div class="row g-4">
+                            <!-- Card 1 -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="pc-scope-card">
+                                    <div class="pc-scope-header">
+                                        <div class="pc-scope-icon">
+                                            <img src="images/point-cloud-processing-and-registration-services/service-scope-1.svg" alt="Point Cloud Registration">
+                                        </div>
+                                        <h3 class="pc-scope-title">Point Cloud<br>Registration</h3>
+                                    </div>
+                                    <p class="pc-scope-desc">Accurately align multiple scans into a single unified point cloud.</p>
+                                    <h4 class="pc-scope-subtitle">Registration Methods</h4>
+                                    <ul class="pc-scope-list">
+                                        <li>Cloud-to-Cloud</li>
+                                        <li>Target-Based</li>
+                                        <li>Hybrid Registration</li>
+                                        <li>Survey Control Registration</li>
+                                        <li>Geo-referencing</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="pc-scope-card">
+                                    <div class="pc-scope-header">
+                                        <div class="pc-scope-icon">
+                                            <img src="images/point-cloud-processing-and-registration-services/service-scope-2.svg" alt="Noise Removal">
+                                        </div>
+                                        <h3 class="pc-scope-title" style="margin-top: 15px;">Noise Removal</h3>
+                                    </div>
+                                    <p class="pc-scope-desc">Remove unwanted scan artifacts that reduce data quality.</p>
+                                    <h4 class="pc-scope-subtitle">Includes</h4>
+                                    <ul class="pc-scope-list">
+                                        <li>Moving People</li>
+                                        <li>Vehicles</li>
+                                        <li>Temporary Objects</li>
+                                        <li>Environmental Noise</li>
+                                        <li>Random Scan Errors</li>
+                                        <li>Outlier Points</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="pc-scope-card">
+                                    <div class="pc-scope-header">
+                                        <div class="pc-scope-icon">
+                                            <img src="images/point-cloud-processing-and-registration-services/service-scope-3.svg" alt="Point Cloud Cleaning">
+                                        </div>
+                                        <h3 class="pc-scope-title">Point Cloud<br>Cleaning</h3>
+                                    </div>
+                                    <p class="pc-scope-desc">Prepare point clouds for engineering workflows.</p>
+                                    <h4 class="pc-scope-subtitle">Cleaning includes:</h4>
+                                    <ul class="pc-scope-list">
+                                        <li>Duplicate Point Removal</li>
+                                        <li>Background Cleaning</li>
+                                        <li>Object Isolation</li>
+                                        <li>Region Selection</li>
+                                        <li>Scan Trimming</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="pc-scope-card">
+                                    <div class="pc-scope-header">
+                                        <div class="pc-scope-icon">
+                                            <img src="images/point-cloud-processing-and-registration-services/service-scope-4.svg" alt="Point Cloud Optimization">
+                                        </div>
+                                        <h3 class="pc-scope-title">Point Cloud<br>Optimization</h3>
+                                    </div>
+                                    <p class="pc-scope-desc">Optimize large datasets while preserving engineering accuracy.</p>
+                                    <h4 class="pc-scope-subtitle">Benefits</h4>
+                                    <ul class="pc-scope-list">
+                                        <li>Faster Processing</li>
+                                        <li>Reduced File Size</li>
+                                        <li>Improved Performance</li>
+                                        <li>Better Software Compatibility</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="pc-scope-card">
+                                    <div class="pc-scope-header">
+                                        <div class="pc-scope-icon">
+                                            <img src="images/point-cloud-processing-and-registration-services/service-scope-5.svg" alt="Point Cloud Segmentation">
+                                        </div>
+                                        <h3 class="pc-scope-title">Point Cloud<br>Segmentation</h3>
+                                    </div>
+                                    <p class="pc-scope-desc">Separate different areas or systems within the point cloud.</p>
+                                    <h4 class="pc-scope-subtitle">Examples include:</h4>
+                                    <ul class="pc-scope-list">
+                                        <li>Buildings</li>
+                                        <li>Equipment</li>
+                                        <li>Piping</li>
+                                        <li>Structural Steel</li>
+                                        <li>Civil Infrastructure</li>
+                                        <li>Electrical Systems</li>
+                                        <li>HVAC</li>
+                                        <li>Utilities</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Card 6 -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="pc-scope-card">
+                                    <div class="pc-scope-header">
+                                        <div class="pc-scope-icon">
+                                            <img src="images/point-cloud-processing-and-registration-services/service-scope-6.svg" alt="Point Cloud Classification">
+                                        </div>
+                                        <h3 class="pc-scope-title">Point Cloud<br>Classification</h3>
+                                    </div>
+                                    <p class="pc-scope-desc">Organize scan data into logical engineering categories.</p>
+                                    <h4 class="pc-scope-subtitle">Typical classifications include:</h4>
+                                    <ul class="pc-scope-list">
+                                        <li>Ground</li>
+                                        <li>Buildings</li>
+                                        <li>Vegetation</li>
+                                        <li>Roads</li>
+                                        <li>Bridges</li>
+                                        <li>Utility Assets</li>
+                                        <li>Structural Elements</li>
+                                        <li>Mechanical Equipment</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Card 7 -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="pc-scope-card">
+                                    <div class="pc-scope-header">
+                                        <div class="pc-scope-icon">
+                                            <img src="images/point-cloud-processing-and-registration-services/service-scope-7.svg" alt="Output Formats">
+                                        </div>
+                                        <h3 class="pc-scope-title" style="margin-top: 15px;">Output Formats</h3>
+                                    </div>
+                                    <p class="pc-scope-desc">We deliver professionally processed point clouds in industry-standard formats.</p>
+                                    <h4 class="pc-scope-subtitle">Supported Output Formats</h4>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul class="pc-scope-list">
+                                                <li>E57</li>
+                                                <li>LAS</li>
+                                                <li>LAZ</li>
+                                                <li>RCP</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="pc-scope-list">
+                                                <li>RCS</li>
+                                                <li>PTS</li>
+                                                <li>XYZ</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="pc-scope-desc mt-3">Additional formats can be provided upon request, depending on the source data and software compatibility.</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 8 -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <div class="pc-scope-card pc-scope-card-warning">
+                                    <div class="pc-scope-header">
+                                        <div class="pc-scope-icon pc-scope-icon-warning">
+                                            <img src="images/point-cloud-processing-and-registration-services/service-scope-8.svg" alt="What This Service Does NOT Include">
+                                        </div>
+                                        <h3 class="pc-scope-title pc-scope-title-warning">What This<br>Service Does<br>NOT Include</h3>
+                                    </div>
+                                    <p class="pc-scope-desc">To avoid confusion, this service does not include:</p>
+                                    <ul class="pc-scope-list-warning">
+                                        <li>Mesh Generation</li>
+                                        <li>STL Creation</li>
+                                        <li>Mesh Editing</li>
+                                        <li>Mesh Repair</li>
+                                        <li>Mesh Optimization</li>
+                                        <li>Reverse Engineering</li>
+                                        <li>CAD Modelling</li>
+                                        <li>Scan to CAD</li>
+                                        <li>Scan to BIM</li>
+                                        <li>Surface Modelling</li>
+                                        <li>Polygon Mesh Processing</li>
+                                    </ul>
+                                    <div class="pc-scope-warning-box">
+                                        <p>These services are available separately under our Engineering Services portfolio</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Workflow Section -->
+                <section class="pc-workflow-section">
+                    <div class="container-fluid" style="padding: 0 5%">
+                        <h2 class="pc-workflow-title">Our Point Cloud Processing &<br><span>Registration Workflow</span></h2>
+                        <h3 class="pc-workflow-subtitle">You share the scan data, we handle the rest.</h3>
+                        <p class="pc-workflow-desc">Our expert Reality Capture team processes, registers, and delivers clean, engineer-ready point clouds for your projects.</p>
+
+                        <div class="row g-5">
+                            <!-- Workflow 1 -->
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <div class="pc-workflow-card">
+                                    <div class="pc-workflow-number">01</div>
+                                    <div class="pc-workflow-icon">
+                                        <img src="images/point-cloud-processing-and-registration-services/workflow-1.svg" alt="Data Import">
+                                    </div>
+                                    <div class="pc-workflow-text">
+                                        <h4 class="pc-workflow-card-title">Data Import</h4>
+                                        <p class="pc-workflow-card-desc">Receive raw scan data from any LIDAR, SLAM, drone, or 3D laser scanner.</p>
+                                    </div>
+                                    <!-- Arrow -->
+                                    <div class="pc-workflow-arrow d-none d-lg-block"></div>
+                                </div>
+                            </div>
+
+                            <!-- Workflow 2 -->
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <div class="pc-workflow-card">
+                                    <div class="pc-workflow-number">02</div>
+                                    <div class="pc-workflow-icon">
+                                        <img src="images/point-cloud-processing-and-registration-services/workflow-2.svg" alt="Registration & Alignment">
+                                    </div>
+                                    <div class="pc-workflow-text">
+                                        <h4 class="pc-workflow-card-title">Registration & Alignment</h4>
+                                        <p class="pc-workflow-card-desc">Align scans using the right alignment methods captured during scanning.</p>
+                                    </div>
+                                    <!-- Arrow -->
+                                    <div class="pc-workflow-arrow d-none d-lg-block"></div>
+                                </div>
+                            </div>
+
+                            <!-- Workflow 3 -->
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <div class="pc-workflow-card">
+                                    <div class="pc-workflow-number">03</div>
+                                    <div class="pc-workflow-icon">
+                                        <img src="images/point-cloud-processing-and-registration-services/workflow-3.svg" alt="Cleaning & Filtering">
+                                    </div>
+                                    <div class="pc-workflow-text">
+                                        <h4 class="pc-workflow-card-title">Cleaning & Filtering</h4>
+                                        <p class="pc-workflow-card-desc">Remove noise, unwanted objects, moving people, vehicles, & scan artefacts.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Workflow 4 -->
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <div class="pc-workflow-card">
+                                    <div class="pc-workflow-number">04</div>
+                                    <div class="pc-workflow-icon">
+                                        <img src="images/point-cloud-processing-and-registration-services/workflow-4.svg" alt="Optimisation & Segmentation">
+                                    </div>
+                                    <div class="pc-workflow-text">
+                                        <h4 class="pc-workflow-card-title">Optimisation &<br>Segmentation</h4>
+                                        <p class="pc-workflow-card-desc">Optimise the point cloud and divide it into logical areas as per requirements.</p>
+                                    </div>
+                                    <!-- Arrow -->
+                                    <div class="pc-workflow-arrow d-none d-lg-block"></div>
+                                </div>
+                            </div>
+
+                            <!-- Workflow 5 -->
+                            <div class="col-lg-4 mb-4 mb-lg-0">
+                                <div class="pc-workflow-card">
+                                    <div class="pc-workflow-number">05</div>
+                                    <div class="pc-workflow-icon">
+                                        <img src="images/point-cloud-processing-and-registration-services/workflow-5.svg" alt="Classification">
+                                    </div>
+                                    <div class="pc-workflow-text">
+                                        <h4 class="pc-workflow-card-title">Classification</h4>
+                                        <p class="pc-workflow-card-desc">Classify data into engineering categories, layers, or disciplines.</p>
+                                    </div>
+                                    <!-- Arrow -->
+                                    <div class="pc-workflow-arrow d-none d-lg-block"></div>
+                                </div>
+                            </div>
+
+                            <!-- Workflow 6 -->
+                            <div class="col-lg-4">
+                                <div class="pc-workflow-card">
+                                    <div class="pc-workflow-number">06</div>
+                                    <div class="pc-workflow-icon">
+                                        <img src="images/point-cloud-processing-and-registration-services/workflow-6.svg" alt="Quality Check & Delivery">
+                                    </div>
+                                    <div class="pc-workflow-text">
+                                        <h4 class="pc-workflow-card-title">Quality Check & Delivery</h4>
+                                        <p class="pc-workflow-card-desc">Perform comprehensive quality checks and deliver in your required format.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Benefits Section -->
+                <section class="pc-benefits-section">
+                    <div class="container-fluid" style="padding: 0 5%">
+                        <div class="pc-benefits-wrapper">
+                            <h2 class="pc-benefits-title">Benefits of <span>Professional Point Cloud Processing</span></h2>
+                            <div class="row g-4">
+                                <!-- Card 1 -->
+                                <div class="col-xl col-lg-4 col-md-6 col-12">
+                                    <div class="pc-benefits-card">
+                                        <div class="pc-benefits-icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                        </div>
+                                        <h3 class="pc-benefits-card-title">Accurate<br>Registration</h3>
+                                        <p class="pc-benefits-card-desc">Proper alignment of all scan positions.</p>
+                                    </div>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="col-xl col-lg-4 col-md-6 col-12">
+                                    <div class="pc-benefits-card">
+                                        <div class="pc-benefits-icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                        </div>
+                                        <h3 class="pc-benefits-card-title">Cleaner<br>Engineering<br>Data</h3>
+                                        <p class="pc-benefits-card-desc">Remove unnecessary objects and improve data quality.</p>
+                                    </div>
+                                </div>
+                                <!-- Card 3 -->
+                                <div class="col-xl col-lg-4 col-md-6 col-12">
+                                    <div class="pc-benefits-card">
+                                        <div class="pc-benefits-icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                        </div>
+                                        <h3 class="pc-benefits-card-title">Faster BIM &<br>CAD Modelling</h3>
+                                        <p class="pc-benefits-card-desc">Well-processed point clouds significantly reduce modelling time.</p>
+                                    </div>
+                                </div>
+                                <!-- Card 4 -->
+                                <div class="col-xl col-lg-4 col-md-6 col-12">
+                                    <div class="pc-benefits-card">
+                                        <div class="pc-benefits-icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                        </div>
+                                        <h3 class="pc-benefits-card-title">Smaller File Sizes</h3>
+                                        <p class="pc-benefits-card-desc">Optimized datasets improve software performance.</p>
+                                    </div>
+                                </div>
+                                <!-- Card 5 -->
+                                <div class="col-xl col-lg-4 col-md-6 col-12">
+                                    <div class="pc-benefits-card">
+                                        <div class="pc-benefits-icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                        </div>
+                                        <h3 class="pc-benefits-card-title">Better<br>Collaboration</h3>
+                                        <p class="pc-benefits-card-desc">Standardized point cloud formats simplify sharing across multidisciplinary teams.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Industries Section -->
+                <section class="pc-industry-section">
+                    <div class="container-fluid" style="padding: 0 5%">
+                        <h2 class="pc-industry-title">Industries & Applications</h2>
+                        <div class="row g-5">
+                            <!-- Industry 1 -->
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                                <div class="pc-industry-card">
+                                    <img src="images/point-cloud-processing-and-registration-services/industry-1.png" alt="Construction & BIM" class="pc-industry-img">
+                                    <h3 class="pc-industry-card-title">Construction & BIM</h3>
+                                    <p class="pc-industry-card-desc">As-built documentation, clash detection, progress monitoring.</p>
+                                </div>
+                            </div>
+                            <!-- Industry 2 -->
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                                <div class="pc-industry-card">
+                                    <img src="images/point-cloud-processing-and-registration-services/industry-2.png" alt="Oil & Gas Plants" class="pc-industry-img">
+                                    <h3 class="pc-industry-card-title">Oil & Gas Plants</h3>
+                                    <p class="pc-industry-card-desc">Plant digitization, maintenance planning, shutdown projects.</p>
+                                </div>
+                            </div>
+                            <!-- Industry 3 -->
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                                <div class="pc-industry-card">
+                                    <img src="images/point-cloud-processing-and-registration-services/industry-3.png" alt="Manufacturing & Automotive" class="pc-industry-img">
+                                    <h3 class="pc-industry-card-title">Manufacturing &<br>Automotive</h3>
+                                    <p class="pc-industry-card-desc">Factory layouts, digital twins, reverse engineering support.</p>
+                                </div>
+                            </div>
+                            <!-- Industry 4 -->
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                                <div class="pc-industry-card">
+                                    <img src="images/point-cloud-processing-and-registration-services/industry-4.png" alt="Infrastructure & Bridges" class="pc-industry-img">
+                                    <h3 class="pc-industry-card-title">Infrastructure &<br>Bridges</h3>
+                                    <p class="pc-industry-card-desc">Roads, bridges, railways, airports, metro projects.</p>
+                                </div>
+                            </div>
+                            <!-- Industry 5 -->
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                                <div class="pc-industry-card">
+                                    <img src="images/point-cloud-processing-and-registration-services/industry-5.png" alt="Heritage Documentation" class="pc-industry-img">
+                                    <h3 class="pc-industry-card-title">Heritage Documentation</h3>
+                                    <p class="pc-industry-card-desc">Temples, forts, palaces, museums, cultural preservation.</p>
+                                </div>
+                            </div>
+                            <!-- Industry 6 -->
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                                <div class="pc-industry-card">
+                                    <img src="images/point-cloud-processing-and-registration-services/industry-6.png" alt="Mining & Quarry" class="pc-industry-img">
+                                    <h3 class="pc-industry-card-title">Mining & Quarry</h3>
+                                    <p class="pc-industry-card-desc">Stockpile analysis, terrain modeling, site monitoring.</p>
+                                </div>
+                            </div>
+                            <!-- Industry 7 -->
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                                <div class="pc-industry-card">
+                                    <img src="images/point-cloud-processing-and-registration-services/industry-7.png" alt="Facility Management" class="pc-industry-img">
+                                    <h3 class="pc-industry-card-title">Facility Management</h3>
+                                    <p class="pc-industry-card-desc">Building maintenance and asset management.</p>
+                                </div>
+                            </div>
+                            <!-- Industry 8 -->
+                            <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                                <div class="pc-industry-card">
+                                    <img src="images/point-cloud-processing-and-registration-services/industry-8.png" alt="Architecture & Surveying" class="pc-industry-img">
+                                    <h3 class="pc-industry-card-title">Architecture &<br>Surveying</h3>
+                                    <p class="pc-industry-card-desc">Existing conditions, renovation planning, site analysis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Ready to Process Section -->
+                <section class="pc-ready-section">
+                    <div class="container-fluid" style="padding: 0 5%">
+                        <div class="pc-ready-wrapper">
+                            <img src="images/point-cloud-processing-and-registration-services/ready-bg.png" alt="Point Cloud Plant" class="pc-ready-bg">
+                            <div class="pc-ready-content">
+                                <h2 class="pc-ready-title">Ready to Process Your Point Cloud?</h2>
+                                <p class="pc-ready-desc">Whether you have raw LiDAR data from a single building or thousands of scans from a large industrial facility, WildPlantTS can transform your datasets into clean, accurately registered, engineering-ready point clouds for projects anywhere in the world.</p>
+                                <a href="#" class="pc-ready-btn">Start Your Point Cloud Processing Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FAQ Section -->
+                <section class="faq-section">
+                    <div class="container-fluid" style="padding: 0 5%;">
+                        <h2 class="faq-heading">Frequently Asked Questions</h2>
+                        <div class="faq-accordion">
+                            <!-- Item 1 -->
+                            <div class="faq-item">
+                                <details open>
+                                    <summary>Can you process scan data captured by another company?</summary>
+                                    <div class="faq-content">
+                                        Yes. We routinely process point cloud data from third-party survey firms and Reality Capture providers.
+                                    </div>
+                                </details>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="faq-item">
+                                <details>
+                                    <summary>Do you create mesh models?</summary>
+                                    <div class="faq-content">
+                                        Yes, we can generate highly accurate 3D mesh models from point cloud data for various visualization and engineering applications.
+                                    </div>
+                                </details>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="faq-item">
+                                <details>
+                                    <summary>Can you register scans from multiple scanners?</summary>
+                                    <div class="faq-content">
+                                        Yes, we can combine and register scan data from various scanner models and brands into a single, unified point cloud.
+                                    </div>
+                                </details>
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="faq-item">
+                                <details>
+                                    <summary>What output formats do you provide?</summary>
+                                    <div class="faq-content">
+                                        We provide point cloud data in all standard formats, including RCP, RCS, E57, PTX, LAS, and more, depending on your project requirements.
+                                    </div>
+                                </details>
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="faq-item">
+                                <details>
+                                    <summary>Do you provide Scan to BIM after processing?</summary>
+                                    <div class="faq-content">
+                                        Yes, we offer comprehensive Scan to BIM services to convert your processed point cloud into accurate 3D BIM models for Revit, AutoCAD, and other software.
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer Placeholder -->
+            <div class="footer"></div>
+        </div>
+
+        <!--Scroll to top-->
+        <div class="scroll-to-top scroll-to-target" data-target=".main-header">
+            <span class="fa fa-long-arrow-up"></span>
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="js/revolution.min.js"></script>
+        <script src="js/jquery.fancybox.pack.js"></script>
+        <script src="js/jquery.fancybox-media.js"></script>
+        <script src="js/isotope.js"></script>
+        <script src="js/owl.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            lucide.createIcons();
+        </script>
+        <script>
+            $(function () {
+                $(".footer").load("footer.html");
+            });
+        </script>
+    </body>
+</html>
