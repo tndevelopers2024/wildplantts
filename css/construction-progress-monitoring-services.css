@@ -71,9 +71,10 @@
 .page-main-content {
     flex-grow: 1;
     padding-top: 100px; /* Increased padding to ensure hero is below header */
+    padding-bottom: 60px; /* Provides vertical buffer space for our overlapping stats banner */
     position: relative;
+    z-index: 10; /* Guarantees expanded items wrap over the footer */
     width: 100%;
-    overflow: hidden;
     background-color: #ffffff;
     font-family: 'Inter', sans-serif;
 }
@@ -82,3 +83,1222 @@
     margin-top: auto; 
 }
 
+
+/* ========================================= */
+/* CPMS Hero Section                         */
+/* ========================================= */
+.cpms-hero-section {
+  position: relative;
+  background-color: #282423;
+  background-image: url('../images/construction-progress-monitoring-services/cpms-hero-right-bg-img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0 130px; /* Top padding ensures our title clears the fixed header completely */
+  min-height: auto; /* Replaced fixed height to stop upward spillage (fixes missing headline) */
+  display: block; /* Removing flex centering on the root section container allows top down flow */
+}
+
+.cpms-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(40, 36, 35, 1) 0%, rgba(40, 36, 35, 0.95) 43%, rgba(60, 50, 45, 0.6) 70%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+.cpms-auto-container {
+  position: relative;
+  max-width: 1400px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  z-index: 2;
+  width: 100%;
+}
+
+.cpms-hero-row {
+  margin: 0;
+}
+
+.cpms-hero-left {
+  padding-right: 30px;
+}
+
+.cpms-hero-kicker {
+  color: #e4ad1b;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.cpms-hero-title {
+  color: #ffffff;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.cpms-hero-subtitle {
+  color: #e4ad1b;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.cpms-hero-desc {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.cpms-hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cpms-btn-solid {
+  background-color: #e4ad1b !important;
+  color: #111111 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  padding: 14px 28px !important;
+  border-radius: 6px !important;
+  border: 1px solid #e4ad1b !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+.cpms-btn-solid:hover {
+  background-color: transparent !important;
+  color: #e4ad1b !important;
+}
+
+.cpms-btn-outline {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  padding: 14px 28px !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+
+.cpms-btn-outline:hover {
+  border-color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Right Content (Timeline Box) */
+.cpms-hero-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cpms-hero-timeline-box {
+  background: rgba(43, 40, 39, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 50px 40px;
+  border-radius: 12px;
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+}
+
+.cpms-hero-timeline-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #e4ad1b;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  box-shadow: 2px 0 15px rgba(228, 173, 27, 0.6);
+}
+
+.cpms-timeline-title {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
+.cpms-timeline-subtitle {
+  color: #aaaaaa;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.cpms-timeline-list {
+  position: relative;
+}
+
+.cpms-timeline-line {
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: 45px; 
+  width: 2px;
+  background-color: #e4ad1b;
+  z-index: 1;
+}
+
+.cpms-timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+  position: relative;
+  z-index: 2;
+}
+
+.cpms-timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.cpms-tl-img {
+  width: 90px;
+  height: 60px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 2px solid #e4ad1b;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.cpms-tl-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cpms-tl-text h4 {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 0 0 2px 0;
+}
+
+.cpms-tl-text p {
+  color: #cccccc;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Overlapping Stats Bottom Bar */
+.cpms-hero-bottom-bar-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(50%);
+  z-index: 10;
+}
+
+.cpms-stats-wrap {
+  display: flex;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cpms-stat-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 0 5px;
+}
+
+.cpms-stat-item img {
+  width: 60px;
+  height: auto;
+  margin-right: 12px;
+  object-fit: contain;
+}
+
+.cpms-stat-item p {
+  color: #e4af19;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.35;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .cpms-hero-title { font-size: 42px; }
+  .cpms-hero-subtitle { font-size: 19px; }
+  .cpms-stats-wrap { flex-wrap: wrap; border-radius: 12px; padding: 25px; }
+  .cpms-stat-item { flex: 0 0 33.333%; margin-bottom: 25px; }
+  /* Remove bottom margin from last row */
+  .cpms-stat-item:nth-last-child(-n+3) { margin-bottom: 0; }
+  .cpms-hero-timeline-box { padding: 40px 30px; }
+}
+
+@media (max-width: 991px) {
+  .cpms-hero-section {
+    padding: 150px 0 160px; /* Top padding must stay large to clear fixed header! */
+    min-height: auto;
+  }
+  .cpms-hero-left {
+    padding-right: 0px;
+  }
+  .cpms-hero-right { justify-content: flex-start; margin-top: 50px; margin-bottom: 50px;}
+  .cpms-hero-timeline-box { max-width: 100%; } /* Emphasize full width on tablet vertical stack */
+  .cpms-stats-wrap { 
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    padding: 10px; 
+    border-radius: 8px;
+    -webkit-overflow-scrolling: touch; 
+    justify-content: flex-start;
+  }
+  .cpms-stats-wrap::-webkit-scrollbar {
+    height: 6px;
+  }
+  .cpms-stats-wrap::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    margin: 0 5px;
+  }
+  .cpms-stats-wrap::-webkit-scrollbar-thumb {
+    background-color: #e4af19;
+    border-radius: 4px;
+  }
+  
+  .cpms-stat-item { 
+    flex: 0 0 auto; 
+    width: 250px; 
+    border-right: 1px solid #eeeeee;
+    padding: 15px 10px; 
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .cpms-hero-section {
+    padding: 40px 0 40px;
+  }
+  .cpms-hero-title { font-size: 32px; line-height: 1.25; }
+  .cpms-hero-subtitle { font-size: 18px; }
+  .cpms-hero-kicker { font-size: 15px; }
+  .cpms-btn-solid, .cpms-btn-outline { width: 100%; text-align: center; }
+  .cpms-hero-buttons { flex-direction: column; gap: 15px; }
+  
+  .cpms-timeline-title { font-size: 22px; }
+  .cpms-hero-timeline-box { padding: 30px 20px; }
+  .cpms-timeline-line { left: 25px; } /* Slide line left proportionally */
+  .cpms-timeline-list { padding-left: 0; }
+  .cpms-tl-img { width: 70px; height: 48px; margin-right: 15px; }
+  
+  .cpms-stat-item { 
+    width: 220px; /* slightly smaller for mobile */
+  }
+}
+
+/* ========================================= */
+/* High-Accuracy Terrestrial LiDAR Section   */
+/* ========================================= */
+.cpms-hat-section {
+  padding: 80px 0 60px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 5;
+}
+
+.cpms-hat-header {
+  margin-bottom: 50px;
+}
+
+.cpms-hat-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.cpms-hat-header p {
+  font-size: 18px;
+  color: #5b677a;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cpms-hat-col {
+  margin-bottom: 30px;
+}
+
+.cpms-hat-card {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 12px;
+  height: 100%;
+}
+
+.cpms-hat-card-inner {
+  display: flex;
+  align-items: stretch;
+  gap: 15px;
+  height: 100%;
+}
+
+.hat-img-box {
+  flex: 0 0 145px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hat-img-box img {
+  width: 100%;
+  height: auto;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.hat-text-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 10px 10px 0;
+}
+
+.hat-brand {
+  color: #fbb615;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 6px;
+}
+
+.hat-type {
+  color: #2b2b2b;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.hat-text-box p {
+  color: #555555;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Tablet & Mobile Overrides */
+@media (max-width: 1200px) {
+  .hat-img-box { flex: 0 0 120px; }
+  .hat-brand { font-size: 19px; }
+  .hat-type { font-size: 15px; }
+}
+
+@media (max-width: 991px) {
+  .cpms-hat-card-inner { flex-direction: column; }
+  .hat-img-box { flex: 0 0 auto; margin-bottom: 5px; max-width: 250px; margin-left: auto; margin-right: auto; padding: 20px; width: 100%; }
+  .hat-text-box { padding: 0 10px 15px; text-align: center; justify-content: flex-start; }
+}
+
+@media (max-width: 767px) {
+  .cpms-hat-header h2 { font-size: 38px; line-height: 1.3; margin-top: 20px;}
+  .cpms-hat-header p { font-size: 18px; }
+  .cpms-hat-section { padding: 60px 0 40px; }
+}
+
+/* ========================================= */
+/* Construction Projects We Monitor Section  */
+/* ========================================= */
+.cpms-cpwm-section {
+  background-color: #2b2b2b;
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.cpms-cpwm-title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.cpms-cpwm-title span {
+  color: #f7a810;
+}
+
+.cpms-cpwm-marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 30px;
+}
+
+/* Optional: pause scrolling when user hovers */
+.cpms-cpwm-marquee:hover .cpms-cpwm-marquee-group {
+  animation-play-state: paused;
+}
+
+.cpms-cpwm-marquee-group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 30px;
+  min-width: 100%;
+  animation: cpms-scroll-x 60s linear infinite;
+}
+
+@keyframes cpms-scroll-x {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% - 30px)); } /* -100% of the group width minus the gap */
+}
+
+.cpms-cpwm-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+  flex-shrink: 0; /* Prevents icons shrinking in the marquee */
+}
+
+.cpms-cpwm-icon {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cpms-cpwm-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.cpms-cpwm-item span {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: center;
+  font-family: inherit;
+}
+
+/* Responsive Scaling */
+@media (max-width: 1200px) {
+  .cpms-cpwm-title { font-size: 30px; }
+  .cpms-cpwm-marquee { gap: 20px; }
+  .cpms-cpwm-marquee-group { gap: 20px; animation-duration: 50s; }
+}
+
+@media (max-width: 991px) {
+  .cpms-cpwm-section { padding: 60px 0; }
+  .cpms-cpwm-title { font-size: 28px; margin-bottom: 40px; }
+  .cpms-cpwm-item { width: 85px; }
+}
+
+@media (max-width: 767px) {
+  .cpms-cpwm-section { padding: 50px 0; }
+  .cpms-cpwm-title { font-size: 24px; margin-bottom: 30px; }
+  .cpms-cpwm-item { width: 80px; }
+  .cpms-cpwm-marquee { gap: 15px; }
+  .cpms-cpwm-marquee-group { gap: 15px; animation-duration: 40s; } /* Slower on small screens */
+}
+
+/* ========================================= */
+/* Construction Progress Monitoring Apps     */
+/* ========================================= */
+.cpms-cpma-section {
+  padding: 80px 0 60px;
+  background-color: #ffffff;
+}
+
+.cpms-cpma-header {
+  margin-bottom: 50px;
+}
+
+.cpms-cpma-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.cpms-cpma-header p {
+  font-size: 18px;
+  color: #5b677a;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cpms-cpma-col {
+  margin-bottom: 30px;
+}
+
+.cpms-cpma-card {
+  background-color: #f6f8fb;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  transition: all 0.3s ease;
+}
+
+.cpms-cpma-card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+}
+
+.cpma-img-box {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+.cpma-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.cpms-cpma-card:hover .cpma-img-box img {
+  transform: scale(1.05);
+}
+
+.cpma-text-box {
+  padding: 22px 25px 30px;
+}
+
+.cpma-text-box h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #2b2b2b;
+  margin-bottom: 20px;
+}
+
+.cpma-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cpma-list li {
+  position: relative;
+  padding-left: 14px;
+  font-size: 16px;
+  color: #555555;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.cpma-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 5px;
+  height: 5px;
+  background-color: #f7a810;
+  border-radius: 50%;
+}
+
+/* Card 8 Dark */
+.cpms-cpma-card-dark {
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  height: 100%;
+  padding: 40px 30px;
+  position: relative;
+  overflow: hidden;
+  background-image: url('../images/construction-progress-monitoring-services/cpma-card8-bg-right-bottom-img.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.cpma-dark-title {
+  color: #fbc02d;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.15;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.cpma-dark-desc {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive Scaling */
+@media (max-width: 1200px) {
+  .cpma-text-box h4 { font-size: 18px; }
+  .cpma-text-box { padding: 20px 15px 25px; }
+  .cpma-dark-title { font-size: 30px; }
+}
+
+@media (max-width: 991px) {
+  .cpms-cpma-section { padding: 60px 0; }
+  .cpms-cpma-header h2 { font-size: 38px; margin-bottom: 12px; }
+  .cpma-img-box { height: 160px; }
+}
+
+@media (max-width: 767px) {
+  .cpms-cpma-section { padding: 50px 0 30px; }
+  .cpms-cpma-header h2 { font-size: 38px; }
+  .cpms-cpma-header p { font-size: 18px; }
+  .cpms-cpma-col { margin-bottom: 25px; }
+  .cpma-img-box { height: 200px; }
+}
+
+/* ========================================= */
+/* Our Progress Monitoring Workflow          */
+/* ========================================= */
+.cpms-workflow-section {
+  padding: 0 0 80px;
+  background-color: #ffffff;
+}
+
+.cpms-workflow-box {
+  background-color: #f6f8fb;
+  border-radius: 20px;
+  padding: 60px 40px;
+}
+
+.cpms-workflow-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.cpms-workflow-header h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.cpms-workflow-header p {
+  font-size: 18px;
+  color: #5b677a;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cpms-workflow-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.cpms-workflow-step {
+  flex: 1 1 0;
+  text-align: center;
+  padding: 0 10px;
+  position: relative;
+}
+
+.workflow-icon-wrapper {
+  position: relative;
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.workflow-step-icon {
+  width: 44px;
+  height: 44px;
+  background-color: #fbb615;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(251, 182, 21, 0.4);
+}
+
+/* Connection Line */
+.cpms-workflow-step:not(:last-child) .workflow-icon-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 0;
+  border-top: 2px dashed #cccccc;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.workflow-step-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #2b2b2b;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.workflow-step-desc {
+  font-size: 15px;
+  color: #555555;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive Scaling */
+@media (max-width: 991px) {
+  .cpms-workflow-timeline {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 0;
+  }
+  .cpms-workflow-step {
+    flex: 0 0 33.333%;
+  }
+  .cpms-workflow-step:not(:last-child) .workflow-icon-wrapper::after {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .cpms-workflow-box { padding: 40px 20px; }
+  .cpms-workflow-header h2 { font-size: 36px; }
+  .cpms-workflow-step { flex: 0 0 100%; }
+}
+
+/* ========================================= */
+/* Deliverables & Benefits Section           */
+/* ========================================= */
+.cpms-db-section {
+  padding: 0 0 80px;
+  background-color: #ffffff;
+}
+
+.cpms-db-col {
+  margin-bottom: 30px;
+}
+
+.cpms-db-box {
+  background-color: #f6f8fb;
+  border-radius: 20px;
+  padding: 50px 35px;
+  height: 100%;
+}
+
+.db-header {
+  margin-bottom: 40px;
+}
+
+.db-header h2 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #2b2b2b;
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
+
+.db-header p {
+  font-size: 17px;
+  color: #5b677a;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Left Box Specifics */
+.db-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.db-list li {
+  font-size: 15px;
+  color: #444444;
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.4;
+}
+
+.db-list li img {
+  width: 18px;
+  height: auto;
+  margin-right: 12px;
+  margin-top: 1px;
+  flex-shrink: 0;
+}
+
+.db-left-img-box {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Added slight shadow for depth */
+}
+
+.db-left-img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.db-bottom-list {
+  margin-top: 15px;
+}
+
+/* Right Box Specifics */
+.db-benefit-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.db-benefit-icon {
+  width: 32px;
+  height: auto;
+  flex-shrink: 0;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+
+.db-benefit-icon img {
+  max-width: 100%;
+  height: auto;
+}
+
+.db-benefit-text h4 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #2b2b2b;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.db-benefit-text p {
+  font-size: 14px;
+  color: #555555;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .cpms-db-box { padding: 40px 25px; }
+  .db-header h2 { font-size: 34px; }
+}
+
+@media (max-width: 991px) {
+  .cpms-db-col { margin-bottom: 30px; }
+}
+
+@media (max-width: 767px) {
+  .cpms-db-box { padding: 35px 20px; }
+  .db-header h2 { font-size: 34px; }
+  .db-benefit-item { margin-bottom: 25px; }
+}
+
+/* ========================================= */
+/* Related Services Section                  */
+/* ========================================= */
+.cpms-rs-section {
+  padding: 0 0 80px;
+  background-color: #ffffff;
+}
+
+.cpms-rs-header {
+  margin-bottom: 40px;
+}
+
+.cpms-rs-header h2 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #2b2b2b;
+  margin: 0;
+}
+
+.cpms-rs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.cpms-rs-item {
+  width: calc(16.666% - 12.5px);
+  display: flex;
+}
+
+.cpms-rs-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  padding: 25px 15px;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.cpms-rs-card:hover {
+  border-color: #f7a810;
+  box-shadow: 0 6px 15px rgba(247, 168, 16, 0.15);
+  transform: translateY(-3px);
+}
+
+.rs-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.rs-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.cpms-rs-card h4 {
+  font-size: 15px;
+  color: #444444;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.35;
+  transition: color 0.3s ease;
+}
+
+.cpms-rs-card:hover h4 {
+  color: #f7a810;
+}
+
+/* Responsive Scaling */
+@media (max-width: 1200px) {
+  .cpms-rs-item { width: calc(25% - 11.25px); }
+}
+
+@media (max-width: 991px) {
+  .cpms-rs-item { width: calc(33.333% - 10px); } 
+}
+
+@media (max-width: 767px) {
+  .cpms-rs-item { width: calc(50% - 7.5px); } 
+  .cpms-rs-header h2 { font-size: 34px; margin-bottom: 30px; }
+}
+
+@media (max-width: 480px) {
+  .cpms-rs-item { width: 100%; } 
+}
+
+/* ========================================= */
+/* Call to Action Section                    */
+/* ========================================= */
+.cpms-cta-section {
+  background-color: #f6f3eb; /* Pale beige background matching the image */
+  padding: 60px 0;
+}
+
+.cpms-cta-flex-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cpms-cta-content {
+  padding-right: 30px;
+}
+
+.cpms-cta-content h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #2b2b2b;
+  margin-bottom: 20px;
+  line-height: 1.35;
+}
+
+.cpms-cta-content p {
+  font-size: 17px;
+  color: #444444;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.cpms-cta-btn-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cpms-cta-btn {
+  background: linear-gradient(to right, #f2c040, #dfa01f);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 5px 12px rgba(223, 160, 31, 0.4);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.cpms-cta-btn:hover {
+  background: linear-gradient(to right, #dfa01f, #f2c040);
+  box-shadow: 0 7px 16px rgba(223, 160, 31, 0.6);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .cpms-cta-content { padding-right: 0; margin-bottom: 35px; text-align: center; }
+  .cpms-cta-btn-box { justify-content: center; }
+  .cpms-cta-content h2 { font-size: 38px; }
+  .cpms-cta-btn { font-size: 18px; padding: 14px 25px; }
+}
+
+@media (max-width: 767px) {
+  .cpms-cta-section { padding: 40px 0; }
+  .cpms-cta-content h2 { font-size: 38px; }
+  .cpms-cta-content p { font-size: 17px; }
+  .cpms-cta-btn { white-space: normal; text-align: center; }
+}
+
+/* ========================================= */
+/* FAQ Section                               */
+/* ========================================= */
+.cpms-faq-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.cpms-faq-header {
+  margin-bottom: 50px;
+}
+
+.cpms-faq-header h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #2b2b2b;
+  margin: 0;
+}
+
+.cpms-faq-accordion {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cpms-faq-item {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ebebeb;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  background-color: #fbfbfb; /* Background matching open state card content */
+}
+
+.cpms-faq-title {
+  background-color: #313131;
+  color: #ffffff;
+  padding: 22px 30px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #fbb615;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.cpms-faq-title:hover {
+  background-color: #252525;
+}
+
+.cpms-faq-title.active {
+  background-color: #2b2b2b;
+}
+
+.cpms-faq-icon {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.cpms-faq-content {
+  display: none;
+  background-color: #fbfbfb;
+  padding: 30px;
+  border-top: none; 
+}
+
+.cpms-faq-content p {
+  font-size: 16px;
+  color: #555555;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Scaling */
+@media (max-width: 767px) {
+  .cpms-faq-section { padding: 50px 0; }
+  .cpms-faq-header h2 { font-size: 40px; }
+  .cpms-faq-title { padding: 18px 20px; font-size: 17px; }
+  .cpms-faq-content { padding: 20px; font-size: 13px; }
+}
