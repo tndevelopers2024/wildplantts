@@ -101,7 +101,7 @@ main {
 }
 
 .dc-hero-tag {
-    color: #E5B122;
+    color: #e5b122;
     font-size: 2.4rem;
     font-weight: 600;
     margin-bottom: 20px;
@@ -117,7 +117,7 @@ main {
 
 .dc-hero-desc {
     color: #ffffff;
-    font-size: 2.0rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 1.6;
     margin-bottom: 40px;
@@ -134,7 +134,7 @@ main {
     display: inline-block;
     padding: 15px 32px;
     border-radius: 8px;
-    font-size: 2.0rem;
+    font-size: 2rem;
     font-weight: 500;
     text-decoration: none !important;
     text-align: center;
@@ -142,15 +142,15 @@ main {
 }
 
 .dc-btn-primary {
-    background-color: #E5B122;
-    color: #060F1A !important;
-    border: 1px solid #E5B122;
+    background-color: #e5b122;
+    color: #060f1a !important;
+    border: 1px solid #e5b122;
 }
 
 .dc-btn-primary:hover {
     background-color: #c99c1c;
     border-color: #c99c1c;
-    color: #060F1A !important;
+    color: #060f1a !important;
 }
 
 .dc-btn-secondary {
@@ -161,7 +161,7 @@ main {
 
 .dc-btn-secondary:hover {
     background-color: #ffffff;
-    color: #060F1A !important;
+    color: #060f1a !important;
 }
 
 /* ========================================= */
@@ -170,12 +170,12 @@ main {
 .dc-stat-bar-section {
     position: relative;
     z-index: 10;
-    margin-top: -60px; 
+    margin-top: -60px;
 }
 
 .dc-stat-bar-container {
     background: #ffffff;
-    border: 1px solid #C6C6C6;
+    border: 1px solid #c6c6c6;
     border-radius: 18px;
     box-shadow: 0px 3px 26.9px 0px rgba(0, 0, 0, 0.15);
     padding: 30px 20px;
@@ -197,7 +197,7 @@ main {
 .dc-stat-icon {
     width: 80px;
     height: 80px;
-    background-color: #FFCC08;
+    background-color: #ffcc08;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -238,7 +238,7 @@ main {
 }
 
 .dc-featured-tag {
-    color: #FDC20C;
+    color: #fdc20c;
     font-weight: 600;
     font-size: 2.8rem;
     margin-bottom: 15px;
@@ -254,7 +254,7 @@ main {
 .dc-featured-desc {
     color: #1f1f1f;
     font-weight: 500;
-    font-size: 2.0rem;
+    font-size: 2rem;
     margin-bottom: 40px;
 }
 
@@ -275,14 +275,14 @@ main {
 }
 
 .dc-featured-list li i {
-    color: #FDC20C;
+    color: #fdc20c;
     font-size: 2rem;
     margin-top: 3px;
 }
 
 .dc-trusted-box {
-    background-color: #FFFDF6;
-    border: 1px solid #FDC20C;
+    background-color: #fffdf6;
+    border: 1px solid #fdc20c;
     border-radius: 11px;
     padding: 30px;
 }
@@ -299,11 +299,11 @@ main {
     border-radius: 12px;
     overflow: hidden;
     background-color: #ffffff;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .dc-card-header {
-    background-color: #FFCC08;
+    background-color: #ffcc08;
     padding: 15px 20px;
     display: flex;
     align-items: center;
@@ -345,7 +345,7 @@ main {
 }
 
 .dc-why-tag {
-    color: #FDC20C;
+    color: #fdc20c;
     font-weight: 600;
     font-size: 2.8rem;
     margin-bottom: 10px;
@@ -361,7 +361,7 @@ main {
 .dc-why-desc {
     color: #1f1f1f;
     font-weight: 500;
-    font-size: 2.0rem;
+    font-size: 2rem;
     margin-bottom: 40px;
 }
 
@@ -372,7 +372,7 @@ main {
 }
 
 .dc-comparison-table {
-    border: 0.5px solid #D2D2D2;
+    border: 0.5px solid #d2d2d2;
     border-radius: 12px;
     background: #fafafa;
     height: 100%;
@@ -394,16 +394,16 @@ main {
 }
 
 .dc-header-trad {
-    background-color: #FFEEEE;
-    color: #F30000;
+    background-color: #ffeeee;
+    color: #f30000;
     font-weight: 600;
     font-size: 2.5rem;
     border-radius: 12px 0 0 0;
 }
 
 .dc-header-lidar {
-    background-color: #E0F9F0;
-    color: #019D5E;
+    background-color: #e0f9f0;
+    color: #019d5e;
     font-weight: 600;
     font-size: 2.5rem;
     border-radius: 0 12px 0 0;
@@ -425,7 +425,7 @@ main {
     align-items: center;
     justify-content: center;
     z-index: 2;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .dc-table-body {
@@ -472,7 +472,7 @@ main {
 }
 
 .dc-services-wrapper {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     padding: 50px 0;
     border-radius: 21px;
 }
@@ -489,7 +489,7 @@ main {
     border-radius: 13px;
     padding: 30px;
     height: 100%;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .dc-service-header {
@@ -501,7 +501,7 @@ main {
 .dc-service-icon {
     width: 60px;
     height: 60px;
-    background-color: #FDC20C;
+    background-color: #fdc20c;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -515,9 +515,9 @@ main {
 }
 
 .dc-service-name {
-    color: #191C1D;
+    color: #191c1d;
     font-weight: 700;
-    font-size: 2.0rem;
+    font-size: 2rem;
     margin-left: 15px;
     margin-bottom: 0;
 }
@@ -543,7 +543,7 @@ main {
 }
 
 .dc-service-list li i {
-    color: #FDC20C;
+    color: #fdc20c;
     font-size: 1.8rem;
     margin-top: 3px;
 }
@@ -562,7 +562,7 @@ main {
 }
 
 .dc-app-card {
-    border: 1px solid #E0E0E0;
+    border: 1px solid #e0e0e0;
     border-radius: 10px;
     padding: 25px 23px;
     display: flex;
@@ -584,16 +584,395 @@ main {
 }
 
 .dc-app-text {
-    color: #3A3A3A;
+    color: #3a3a3a;
     font-weight: 500;
     font-size: 1.6rem;
     text-align: left;
     line-height: 1.4;
 }
+/* Workflow Section */
+.dc-workflow-section {
+    background-color: #f7f9fa;
+    padding: 40px 0;
+    overflow: hidden;
+}
 
+.dc-workflow-title {
+    color: #000;
+    font-size: 3.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.dc-workflow-grid {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 25px; /* Larger row gap to accommodate the curved line and badges */
+    padding: 20px 0;
+    z-index: 1;
+}
+
+.dc-workflow-card {
+    background: rgba(255, 255, 255, 1);
+    box-shadow:
+        0px 2px 4px -2px rgba(0, 0, 0, 0.1),
+        0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #fdc20c;
+    border-radius: 8px;
+    padding: 30px 15px 20px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card widths based on Row for desktop */
+@media (min-width: 1200px) {
+    /* Top Row (5 cards) - curve is 1st child, so cards 1-5 are children 2-6 */
+    .dc-workflow-card:nth-child(-n+6) {
+        width: calc((100% - 100px) / 5);
+    }
+    
+    /* Bottom Row (4 cards) - cards 6-9 are children 7-10 */
+    .dc-workflow-card:nth-child(n+7) {
+        width: calc((100% - 75px) / 4);
+    }
+}
+
+.dc-wf-badge-number {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    transform: translate(-50%, -50%);
+    background: #fdc20c;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.dc-wf-badge-icon {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    transform: translate(50%, -50%);
+    background: #fdc20c;
+    border: 3px solid #ffffff;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.dc-wf-badge-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.dc-wf-img-wrapper {
+    width: 100%;
+    height: 160px; /* Standardize image height so titles align perfectly */
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dc-wf-img {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dc-wf-card-title {
+    color: #1e293b;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.dc-wf-card-desc {
+    color: #475569;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+/* Arrows */
+.dc-wf-arrow {
+    display: none;
+}
+
+.dc-workflow-curve {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .dc-wf-arrow {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: -18px;
+        width: 12px;
+        height: 2px;
+        background-color: #000;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+
+    .dc-wf-arrow::after {
+        content: "";
+        position: absolute;
+        right: -2px;
+        top: -4px;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #000;
+        border-right: 2px solid #000;
+        transform: rotate(45deg);
+    }
+
+    /* The C-curve on the right side of Card 5 */
+    .dc-workflow-grid::before {
+        content: "";
+        position: absolute;
+        bottom: 50%;
+        right: -30px; /* extend right outside the grid */
+        width: 30px;
+        height: 50px; /* reach 30px above the bottom of Card 5 */
+        border-bottom: 2px solid #fdc20c;
+        border-right: 2px solid #fdc20c;
+        border-top: 2px solid #fdc20c;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        z-index: 0;
+    }
+
+    /* The horizontal line from right edge to Card 6 */
+    .dc-workflow-curve {
+        display: block;
+        position: absolute;
+        bottom: 50%; /* Start exactly at the horizontal middle (gap) */
+        right: 0; /* Align with right side of the grid */
+        left: -30px; /* Offset to place the drop line perfectly between the card's corner and the badge */
+        height: 0;
+        border-bottom: 2px solid #fdc20c;
+        z-index: 0;
+    }
+
+    /* Left drop down into Card 6 */
+    .dc-workflow-curve::before {
+        content: "";
+        position: absolute;
+        bottom: 0px; /* align with parent's bottom border */
+        left: -20px; /* drops exactly at left: 0 relative to the grid */
+        width: 44px; /* corner radius */
+        height: 60px; /* Exactly half of the 40px gap to touch the top of Card 6 */
+        border-top: 2px solid #fdc20c;
+        border-left: 2px solid #fdc20c;
+        border-bottom: 2px solid #fdc20c;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        transform: translateY(100%);
+    }
+
+    /* Arrow head pointing down into Card 6 */
+    .dc-workflow-curve::after {
+        content: "";
+        position: absolute;
+        left: 16px; /* centered on the -20px left border */
+        bottom: -64px; /* bottom of the before element */
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid #fdc20c;
+        border-right: 2px solid #fdc20c;
+        transform: rotate(320deg);
+        z-index: 2; /* ensure arrow stays above */
+    }
+}
+
+@media (max-width: 1199px) {
+    .dc-workflow-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 20px 2%;
+    }
+}
+
+@media (max-width: 767px) {
+    .dc-workflow-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .dc-workflow-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Trust / Testimonial Section */
+.dc-trust-section {
+    background-color: #f7f9fa;
+    padding-bottom: 40px;
+}
+
+.dc-trust-container {
+    border: 1px solid #E2E8F0;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 24px;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.dc-trust-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1;
+}
+
+.dc-trust-icon {
+    background-color: #FDC20C;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.dc-trust-icon img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.dc-trust-content {
+    flex: 1;
+}
+
+.dc-trust-title {
+    color: #0F172A;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.dc-trust-desc {
+    color: #64748B;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+@media (max-width: 1199px) {
+    .dc-trust-container {
+        flex-wrap: wrap;
+    }
+    .dc-trust-item {
+        flex: 0 0 calc(50% - 15px);
+    }
+}
+
+@media (max-width: 767px) {
+    .dc-trust-item {
+        flex: 0 0 100%;
+    }
+}
+
+/* Deliverables Section */
+.dc-deliverables-section {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.dc-deliverables-title {
+    color: #000;
+    font-size: 3.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dc-deliverables-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 0 5%;
+}
+
+.dc-deliverable-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #fff;
+}
+
+.dc-deliverable-card img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.dc-deliverable-text {
+    color: #3a3a3a;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+@media (max-width: 1199px) {
+    .dc-deliverables-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (max-width: 991px) {
+    .dc-deliverables-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 767px) {
+    .dc-deliverables-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 575px) {
+    .dc-deliverables-grid {
+        grid-template-columns: 1fr;
+    }
+}
 /* Equipment Section */
 .dc-equipment-section {
-    background-color: #F7F9FA;
+    background-color: #f7f9fa;
     padding: 40px 0;
 }
 
@@ -605,7 +984,7 @@ main {
 }
 
 .dc-equipment-name {
-    color: #E5B122;
+    color: #e5b122;
     font-weight: 800;
     font-size: 3.2rem;
     margin-bottom: 25px;
@@ -640,9 +1019,9 @@ main {
 }
 
 .dc-software-name {
-    color: #E5B122;
+    color: #e5b122;
     font-weight: 600;
-    font-size: 2.0rem;
+    font-size: 2rem;
     margin-bottom: 25px;
     text-transform: uppercase;
     text-align: center;
@@ -662,12 +1041,12 @@ main {
 
 /* Benefits Section */
 .dc-benefits-section {
-    background-color: #F7F9FA;
+    background-color: #f7f9fa;
     padding: 40px 0;
 }
 
 .dc-benefits-title {
-    color: #191C1E;
+    color: #191c1e;
     font-weight: 700;
     font-size: 3.8rem;
     margin-bottom: 50px;
@@ -675,7 +1054,7 @@ main {
 
 .dc-benefit-card {
     background-color: #ffffff;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #e0e0e0;
     border-radius: 10px;
     padding: 25px 15px;
     display: flex;
@@ -720,7 +1099,7 @@ main {
 }
 
 .dc-scan-model-title {
-    color: #191C1E;
+    color: #191c1e;
     font-weight: 700;
     font-size: 3.8rem;
     margin-bottom: 15px;
@@ -729,7 +1108,7 @@ main {
 .dc-scan-model-subtitle {
     color: #323232;
     font-weight: 700;
-    font-size: 2.0rem;
+    font-size: 2rem;
     margin-bottom: 5px;
 }
 
@@ -741,9 +1120,9 @@ main {
 }
 
 .dc-types-card {
-    background-color: #F7F9FA;
+    background-color: #f7f9fa;
     border-radius: 16px;
-    border-top: 4px solid #FDC20C;
+    border-top: 4px solid #fdc20c;
     padding: 35px 30px;
     height: 100%;
 }
@@ -755,7 +1134,7 @@ main {
 }
 
 .dc-types-icon {
-    background-color: #FDC20C;
+    background-color: #fdc20c;
     border-radius: 8px;
     width: 60px;
     height: 60px;
@@ -794,14 +1173,14 @@ main {
 }
 
 .dc-types-list li i {
-    color: #FDC20C;
+    color: #fdc20c;
     margin-top: 5px;
     margin-right: 12px;
     font-size: 1.8rem;
 }
 
 .dc-projects-container {
-    background-color: #F7F9FA;
+    background-color: #f7f9fa;
     border-radius: 16px;
     padding: 30px;
     height: 100%;
@@ -818,18 +1197,18 @@ main {
 }
 
 .dc-projects-main-title::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 150px;
     height: 3px;
-    background-color: #FDC20C;
+    background-color: #fdc20c;
 }
 
 .dc-project-card {
     background-color: #ffffff;
-    border: 1px solid #0000001A;
+    border: 1px solid #0000001a;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -896,7 +1275,7 @@ main {
 }
 
 .dc-project-list li i {
-    color: #FDC20C;
+    color: #fdc20c;
     margin-top: 3px;
     margin-right: 8px;
     font-size: 1.4rem;
@@ -933,13 +1312,13 @@ main {
 }
 
 .dc-deliver-title::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 110px; /* Covers "What We" */
     height: 4px;
-    background-color: #FDC20C;
+    background-color: #fdc20c;
 }
 
 .dc-deliver-items {
@@ -960,7 +1339,7 @@ main {
 .dc-deliver-icon {
     width: 90px;
     height: 90px;
-    background-color: #FDC20C;
+    background-color: #fdc20c;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -983,7 +1362,13 @@ main {
 .dc-deliver-separator {
     width: 1px;
     height: 80px;
-    background: linear-gradient(to bottom, transparent, #FDC20C, #FDC20C, transparent);
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        #fdc20c,
+        #fdc20c,
+        transparent
+    );
     align-self: center;
     margin: 0 10px;
     margin-top: -20px;
@@ -1015,7 +1400,7 @@ main {
 
 /* CTA Section */
 .dc-cta-section {
-    background-image: url('../images/data-center-3d-scanning-scan-to-bim-services/ready-bg.png');
+    background-image: url("../images/data-center-3d-scanning-scan-to-bim-services/ready-bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1063,7 +1448,7 @@ main {
     color: #ffffff;
     font-weight: 700;
     font-size: 1.8rem;
-    border: 1px solid #FFFFFF4D;
+    border: 1px solid #ffffff4d;
     border-radius: 9999px;
     padding: 16px 40px;
     margin: 10px;
@@ -1087,7 +1472,7 @@ main {
 }
 
 .faq-heading {
-    color: #191C1E;
+    color: #191c1e;
     font-weight: 700;
     font-size: 5rem;
     text-align: center;
@@ -1100,7 +1485,7 @@ main {
 }
 
 .faq-item {
-    border: 1px solid #C2C6D6;
+    border: 1px solid #c2c6d6;
     margin-bottom: 15px;
     border-radius: 8px;
     overflow: hidden;
@@ -1114,7 +1499,7 @@ main {
     font-size: 2rem;
     font-weight: 600;
     color: #fff;
-    background-color: #2A2A2A;
+    background-color: #2a2a2a;
     padding: 20px;
     cursor: pointer;
     list-style: none;
@@ -1129,11 +1514,11 @@ main {
 }
 
 .faq-item summary::after {
-    content: '';
+    content: "";
     width: 12px;
     height: 12px;
-    border-right: 3px solid #E5B122;
-    border-bottom: 3px solid #E5B122;
+    border-right: 3px solid #e5b122;
+    border-bottom: 3px solid #e5b122;
     transform: translateY(-50%) rotate(45deg);
     position: absolute;
     right: 20px;
@@ -1146,7 +1531,7 @@ main {
 }
 
 .faq-content {
-    border-top: 4px solid #E5B122;
+    border-top: 4px solid #e5b122;
     padding: 20px;
     font-size: 1.6rem;
     color: #272727;
