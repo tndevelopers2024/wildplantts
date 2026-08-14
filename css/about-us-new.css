@@ -1,0 +1,584 @@
+/* ========================================= */
+/* Base Settings */
+/* ========================================= */
+body,
+.page-wrapper * {
+    font-family: "Poppins", sans-serif !important;
+}
+
+/* --- Navbar Style Overrides --- */
+.main-header {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.main-header .main-menu .navigation > li > a {
+    color: #333333 !important;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize !important;
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li:hover > a,
+.main-header .main-menu .navigation > li.current > a {
+    color: #e4ae1f !important;
+    text-decoration: none !important;
+}
+
+/* Force ALL dropdown and sub-menu links to have no text decoration (underlines) */
+.main-header .main-menu .navigation li a {
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li.dropdown > a::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free", "FontAwesome", sans-serif;
+    font-weight: 900;
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+.main-header .main-menu .navigation > li > a.btn {
+    background-color: #e2a613 !important;
+    color: #111111 !important;
+    padding: 12px 30px !important;
+    border-radius: 0px !important;
+    font-weight: 600 !important;
+    margin-left: 20px;
+    border: none !important;
+    display: inline-block;
+    text-transform: none !important;
+}
+
+.main-header .main-menu .navigation > li > a.btn:hover {
+    background-color: #c9930f !important;
+    color: #ffffff !important;
+}
+.main-menu .navigation > li {
+    padding: 25px 0px;
+}
+
+/* --- Layout fixes for empty pages --- */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-main-content {
+    flex-grow: 1;
+    padding-top: 100px;
+}
+
+.main-footer {
+    margin-top: auto;
+}
+
+/* ========================================= */
+/* About Us Hero Section */
+/* ========================================= */
+.about-hero-section {
+    position: relative;
+    background-color: #2f2b2a;
+    background-image: url("../images/about-us/hero-bg.png");
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-top: 100px; /* Offset for fixed header if needed */
+}
+
+.about-hero-container {
+    padding: 0 5%;
+}
+
+.about-hero-tag {
+    color: #e5b122;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.about-hero-title {
+    color: #ffffff;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    max-width: 800px;
+}
+
+.about-hero-subtitle {
+    color: #e5b122;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.about-hero-desc {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+
+.about-hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-btn-primary {
+    background-color: #e5b122;
+    color: #060f1a;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 15px 35px;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.about-btn-primary:hover {
+    background-color: #d4a21d;
+    color: #060f1a;
+}
+
+.about-btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 15px 35px;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.about-btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+/* ========================================= */
+/* Who We Are Section */
+/* ========================================= */
+.who-we-are-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.who-we-are-container {
+    padding: 0 2%;
+}
+
+.who-we-are-tag {
+    color: #e5b122;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.who-we-are-title {
+    color: #272727;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.who-we-are-text {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.who-we-are-text strong {
+    font-weight: 700;
+}
+
+/* ========================================= */
+/* Workflow Section */
+/* ========================================= */
+.workflow-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+    overflow: hidden; /* Prevent lines from extending outside */
+}
+
+.workflow-container {
+    padding: 0 5%;
+}
+
+.workflow-header {
+    margin-bottom: 50px;
+}
+
+.workflow-tag {
+    color: #e5b122;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.workflow-title {
+    color: #272727;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.workflow-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+/* Left Side */
+.workflow-left {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.workflow-left img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.workflow-step-title {
+    color: #323232;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.workflow-step-desc {
+    color: #434343;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* Middle Side */
+.workflow-middle {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.workflow-arrow-1-to-2 {
+    position: absolute;
+    left: -10px;
+    top: 60%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.css-arrow {
+    position: relative;
+    width: 48px;
+    height: 1px;
+    background-color: #000;
+}
+
+.css-arrow::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid #000;
+}
+
+.workflow-dashed-line {
+    position: absolute;
+    top: 0;
+    left: 24px;
+    width: 120px; /* reach the left edge of the white box */
+    height: 155px; /* reach down to the white box */
+    pointer-events: none;
+    z-index: -1;
+}
+
+.dashed-vertical {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    border-left: 2px dashed #f5b900;
+}
+
+.dashed-horizontal {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px dashed #f5b900;
+}
+
+.dashed-dot {
+    position: absolute;
+    bottom: -14px;
+    right: 41px;
+    width: 10px;
+    height: 10px;
+    background-color: #f5b900;
+    border-radius: 50%;
+}
+
+.workflow-step-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workflow-img-2-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.workflow-img-2-wrapper img {
+    border-radius: 12px;
+    max-width: 50%;
+}
+
+.workflow-badge {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fdc20c;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 5px 25px;
+    border-radius: 10px;
+    white-space: nowrap;
+    z-index: 3;
+}
+
+.workflow-solid-line {
+    position: absolute;
+    top: 50%;
+    right: -5vw;
+    width: 5vw;
+    height: 2px;
+    background-color: #f5b900;
+    z-index: -1;
+}
+
+.workflow-short-dashed {
+    position: absolute;
+    top: 450px;
+    left: 25px;
+    width: 0px;
+    height: 30px;
+    border-left: 2px dashed #f5b900;
+    margin-bottom: 10px;
+}
+
+.workflow-short-dashed::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: -6px;
+    width: 10px;
+    height: 10px;
+    background-color: #f5b900;
+    border-radius: 50%;
+}
+
+.workflow-box-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+    z-index: 2;
+}
+
+.workflow-box {
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 15px 25px;
+    color: #2f2f2f;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.workflow-box-desc {
+    color: #434343;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Right Side */
+.workflow-right {
+    position: relative;
+    padding-left: 5vw;
+}
+
+.workflow-vertical-axis {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80%;
+    width: 2px;
+    background-color: #f5b900;
+    z-index: 1;
+}
+
+.workflow-cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.workflow-card {
+    background-color: #f0f0f0;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+
+.card-connector {
+    position: absolute;
+    left: -5vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5vw;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+}
+
+.connector-line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #f5b900;
+}
+
+.connector-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #f5b900;
+    border-radius: 50%;
+    margin-right: -5px;
+}
+
+.workflow-card img {
+    width: 80px;
+    height: auto;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.workflow-card-icon-placeholder {
+    width: 80px;
+    height: 60px;
+    border-radius: 6px;
+    background-color: #e2e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.workflow-card-icon-placeholder span {
+    font-size: 3rem;
+    color: #888;
+    line-height: 1;
+    margin-top: -10px;
+}
+
+.workflow-card-content h4 {
+    color: #2f2f2f;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.workflow-card-content p {
+    color: #575757;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.4;
+}
+
+@media (max-width: 991px) {
+    .about-hero-section {
+        padding: 80px 0;
+        margin-top: 80px;
+        background-size: 60%;
+        background-position: bottom right;
+    }
+    .about-hero-title {
+        font-size: 4rem;
+    }
+    .workflow-arrow-1-to-2,
+    .workflow-solid-line,
+    .workflow-vertical-axis,
+    .card-connector {
+        display: none !important;
+    }
+    .workflow-left,
+    .workflow-middle,
+    .workflow-right {
+        margin-bottom: 40px;
+        padding: 0 15px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-hero-section {
+        background-size: 80%;
+        background-position: center bottom;
+        padding-bottom: 200px; /* Make room for the background image at the bottom */
+    }
+    .about-hero-title {
+        font-size: 3rem;
+    }
+    .about-hero-subtitle {
+        font-size: 1.8rem;
+    }
+    .about-btn-primary,
+    .about-btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+}
