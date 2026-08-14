@@ -229,6 +229,7 @@ body,
 
 .workflow-header {
     margin-bottom: 50px;
+    text-align: left;
 }
 
 .workflow-tag {
@@ -284,6 +285,7 @@ body,
     text-align: center;
     position: relative;
     z-index: 2;
+    margin-top: 200px;
 }
 
 .workflow-arrow-1-to-2 {
@@ -298,13 +300,13 @@ body,
 
 .css-arrow {
     position: relative;
-    width: 48px;
+    width: 68px;
     height: 1px;
     background-color: #000;
 }
 
 .css-arrow::after {
-    content: '';
+    content: "";
     position: absolute;
     right: -5px;
     top: 50%;
@@ -314,38 +316,25 @@ body,
     border-left: 6px solid #000;
 }
 
-.workflow-dashed-line {
+/* L-shaped dashed line going down and right */
+.workflow-arrow-1-to-2::before {
+    content: "";
     position: absolute;
-    top: 0;
-    left: 24px;
-    width: 120px; /* reach the left edge of the white box */
-    height: 155px; /* reach down to the white box */
-    pointer-events: none;
+    top: 8px;
+    left: 24px; /* Middle of the arrow */
+    width: 80px;
+    height: 159px;
+    border-left: 2px dashed #f5b900;
+    border-bottom: 2px dashed #f5b900;
     z-index: -1;
 }
 
-.dashed-vertical {
+/* Dot where the dashed line touches the Accurate box */
+.workflow-arrow-1-to-2::after {
+    content: "";
     position: absolute;
-    top: 10px;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    border-left: 2px dashed #f5b900;
-}
-
-.dashed-horizontal {
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    border-bottom: 2px dashed #f5b900;
-}
-
-.dashed-dot {
-    position: absolute;
-    bottom: -14px;
-    right: 41px;
+    top: 160px; /* height 155 + top 10 = 165, dot is 10px tall, so top: 160px centers it at 165 */
+    left: 97px; /* left 24 + width 80 = 104. dot is 10px wide, so left: 99px centers it at 104 */
     width: 10px;
     height: 10px;
     background-color: #f5b900;
@@ -384,41 +373,62 @@ body,
     z-index: 3;
 }
 
-.workflow-solid-line {
+/* Line connecting from middle image to vertical mindmap axis */
+.workflow-img-2-wrapper::before {
+    content: "";
     position: absolute;
     top: 50%;
-    right: -5vw;
-    width: 5vw;
+    right: -7px;
+    width: 6vw;
     height: 2px;
     background-color: #f5b900;
     z-index: -1;
 }
 
-.workflow-short-dashed {
-    position: absolute;
-    top: 450px;
-    left: 25px;
-    width: 0px;
-    height: 30px;
-    border-left: 2px dashed #f5b900;
-    margin-bottom: 10px;
-}
-
-.workflow-short-dashed::after {
+/* Dot at the intersection */
+.workflow-img-2-wrapper::after {
     content: "";
     position: absolute;
-    bottom: -5px;
-    left: -6px;
+    top: 50%;
+    right: -4px;
+    transform: translate(50%, -50%);
     width: 10px;
     height: 10px;
     background-color: #f5b900;
     border-radius: 50%;
+    z-index: 1;
 }
 
 .workflow-box-wrapper {
     position: relative;
     margin-bottom: 15px;
     z-index: 2;
+}
+
+/* Vertical dashed line from Unified Point Cloud */
+.workflow-box-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -40px; /* Reaches up behind the badge */
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    border-left: 2px dashed #f5b900;
+    z-index: -1;
+}
+
+/* The dot where the line touches the Accurate box */
+.workflow-box-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #f5b900;
+    border-radius: 50%;
+    z-index: 1;
 }
 
 .workflow-box {
@@ -445,23 +455,23 @@ body,
     padding-left: 5vw;
 }
 
-.workflow-vertical-axis {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 80%;
-    width: 2px;
-    background-color: #f5b900;
-    z-index: 1;
-}
-
 .workflow-cards-wrapper {
     display: flex;
     flex-direction: column;
     gap: 15px;
     position: relative;
     z-index: 2;
+}
+
+/* The central vertical axis line */
+.workflow-cards-wrapper::before {
+    content: "";
+    position: absolute;
+    left: -5vw; /* Perfectly aligns with the 5vw gap */
+    top: 57px;
+    bottom: 52px;
+    width: 2px;
+    background-color: #f5b900;
 }
 
 .workflow-card {
@@ -474,29 +484,29 @@ body,
     position: relative;
 }
 
-.card-connector {
+/* The horizontal line connecting to each card */
+.workflow-card::before {
+    content: "";
     position: absolute;
     left: -5vw;
     top: 50%;
-    transform: translateY(-50%);
     width: 5vw;
-    display: flex;
-    align-items: center;
-    z-index: -1;
-}
-
-.connector-line {
-    flex-grow: 1;
     height: 2px;
     background-color: #f5b900;
 }
 
-.connector-dot {
+/* The dot at the end of each line */
+.workflow-card::after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 10px;
     height: 10px;
     background-color: #f5b900;
     border-radius: 50%;
-    margin-right: -5px;
+    border: none;
 }
 
 .workflow-card img {
@@ -532,6 +542,114 @@ body,
     margin-bottom: 5px;
 }
 
+/* Vision and Mission Section */
+.vision-mission-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.vision-mission-container {
+    padding: 0 5%;
+}
+
+.vm-card {
+    border: 1px solid #00000026;
+    border-radius: 16px;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.vm-card-content {
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+    width: 55%; /* Leave space for the image */
+}
+
+.vm-title {
+    color: #272727;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.vm-desc {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.vm-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vm-list li {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.5;
+}
+
+.vm-list li .mission-icon {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    margin-right: 15px;
+    margin-top: 2px;
+}
+
+.vm-list li .mission-icon circle {
+    fill: #fdc20c;
+    stroke: #fdc20c;
+}
+
+.vm-list li .mission-icon path {
+    stroke: #ffffff;
+}
+
+.vm-card-img-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+}
+
+.vision-bg {
+    background: url("../images/about-us/vision-bg.png") no-repeat right center;
+    background-size: cover;
+}
+
+.mission-bg {
+    background: url("../images/about-us/mission-bg.png") no-repeat right center;
+    background-size: contain; /* Or cover, depending on the aspect ratio */
+}
+
+.vm-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: -2px; /* Slight overlap to avoid hard edges */
+    width: 101%;
+    height: 100%;
+    background: linear-gradient(
+        91.73deg,
+        #ffffff 4.92%,
+        rgba(255, 255, 255, 0) 54.98%
+    );
+}
+
 .workflow-card-content p {
     color: #575757;
     font-size: 1.6rem;
@@ -540,7 +658,581 @@ body,
     line-height: 1.4;
 }
 
+/* What We Do Section */
+.what-we-do-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+.wwd-container {
+    padding: 0 5%;
+}
+.wwd-header {
+    margin-bottom: 40px;
+}
+.wwd-tag {
+    display: block;
+    color: #e5b122;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.wwd-title {
+    color: #272727;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+.wwd-card {
+    background-color: #ffffff;
+    border-top: 1px solid #00000026;
+    border-right: 1px solid #00000026;
+    border-bottom: 1px solid #00000026;
+    border-left: 4px solid #e5b122;
+    border-radius: 8px;
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.wwd-number {
+    color: #e5b122;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.wwd-card-title {
+    color: #272727;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+.wwd-card-desc {
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.wwd-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e5b122;
+    border-radius: 8px;
+    color: #060f1a;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-decoration: none;
+    align-self: flex-start;
+    border: none;
+    transition: background-color 0.3s;
+}
+.wwd-btn:hover {
+    background-color: #d4a21e;
+    color: #060f1a;
+}
+.wwd-btn svg {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+/* Technologies Section */
+.technologies-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+.tech-container {
+    padding: 0 5%;
+}
+.tech-header {
+    margin-bottom: 50px;
+}
+.tech-tag {
+    display: block;
+    color: #e5b122;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.tech-title {
+    color: #272727;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+.tech-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+}
+.tech-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #e5b122;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.tech-circle img {
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain;
+}
+.tech-circle.tech-circle-full {
+    background: transparent;
+}
+.tech-circle.tech-circle-full img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tech-name {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+.tech-arrow-connector {
+    flex-grow: 1;
+    position: relative;
+    height: 150px;
+    margin: 0 -10px;
+    z-index: 1;
+}
+.tech-curve-top {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    height: 70px;
+    border-top: 2px dashed rgba(47, 43, 42, 0.25);
+    border-radius: 50% 50% 0 0;
+}
+.tech-curve-top::after {
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    border-bottom: 2px solid rgba(47, 43, 42, 0.5);
+    border-right: 2px solid rgba(47, 43, 42, 0.5);
+    width: 10px;
+    height: 10px;
+    transform: rotate(-25deg);
+}
+.tech-curve-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    height: 70px;
+    border-bottom: 2px dashed rgba(47, 43, 42, 0.25);
+    border-radius: 0 0 50% 50%;
+}
+.tech-curve-bottom::after {
+    content: "";
+    position: absolute;
+    right: 6px;
+    bottom: 15px;
+    border-top: 2px solid rgba(47, 43, 42, 0.5);
+    border-right: 2px solid rgba(47, 43, 42, 0.5);
+    width: 10px;
+    height: 10px;
+    transform: rotate(25deg);
+}
+/* Ecosystem Section */
+.ecosystem-section {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
+.ecosystem-container {
+    padding: 0 5%;
+}
+.eco-tag {
+    display: block;
+    color: #e5b122;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.eco-title {
+    color: #272727;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.eco-desc {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.eco-partner-card {
+    background: #ffffff;
+    border-top: 4px solid #fdc20c;
+    box-shadow: 0px 4px 16.3px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 32px;
+    padding: 30px 20px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.eco-partner-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.eco-partner-text {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0;
+}
+.eco-formula-card {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 10px;
+    background: #ffffff;
+}
+.eco-formula-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0;
+}
+.eco-operator {
+    color: #e5b122;
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin: 0 15px;
+    line-height: 1;
+}
+.eco-success {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+/* Why Choose Section */
+.why-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+.why-inner {
+    background-color: #242424;
+    border-radius: 40px; /* Gives a nice rounded card look to match modern aesthetics */
+    padding: 60px 3%;
+}
+.why-title {
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.why-highlight {
+    color: #e5b122;
+}
+.why-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+.why-item {
+    width: 19%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.why-icon {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.why-item-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+.why-item-desc {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* About Precise3DM Section */
+.about-precise-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+.ap-title {
+    color: #272727;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.ap-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    padding: 30px;
+    position: relative;
+    z-index: 2;
+}
+.ap-logo {
+    max-height: 50px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.ap-desc {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.ap-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.ap-badge {
+    background-color: rgba(255, 147, 30, 0.1);
+    border: 1px solid #ff931e;
+    border-radius: 100px;
+    padding: 8px 16px;
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.ap-middle-col {
+    padding-bottom: 20px;
+}
+.ap-handshake-img {
+    width: calc(100% + 60px);
+    max-width: none;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: -30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.ap-circles-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+.ap-circle-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ap-circle {
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.ap-circle img {
+    max-width: 50%;
+    height: auto;
+}
+.ap-circle-text {
+    color: #272727;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0;
+}
+.z-index-2 {
+    z-index: 2;
+}
+
+/* Core Values Section */
+.core-values-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+.cv-main-title {
+    color: #272727;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.cv-card {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.15); /* #00000026 */
+    border-radius: 16px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.cv-icon-wrapper {
+    width: 90px;
+    height: 90px;
+    border: 4px solid #E5B122;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.cv-icon-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+.cv-title {
+    color: #272727;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+.cv-desc {
+    color: #272727;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* CTA Section */
+.cta-section {
+    background-image: url('../images/about-us/cta-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+}
+.cta-title {
+    color: #fff;
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+.cta-desc-container {
+    margin-bottom: 40px;
+}
+.cta-desc {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+.cta-desc:last-child {
+    margin-bottom: 0;
+}
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.cta-btn {
+    border-radius: 9999px;
+    padding: 12px 24px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.cta-btn-primary {
+    background-color: #FFFFFF;
+    color: #424141;
+    border: 1px solid #FFFFFF;
+}
+.cta-btn-primary:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+.cta-btn-outline {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* #FFFFFF4D */
+    color: #fff;
+}
+.cta-btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+.cta-image-desktop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42vw;
+    height: 100%;
+    z-index: 1;
+}
+.cta-image-desktop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+}
+.cta-image {
+    max-width: 100%;
+    height: auto;
+}
+
 @media (max-width: 991px) {
+    .tech-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tech-item {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .tech-arrow-connector {
+        display: none;
+    }
+
     .about-hero-section {
         padding: 80px 0;
         margin-top: 80px;
@@ -548,12 +1240,50 @@ body,
         background-position: bottom right;
     }
     .about-hero-title {
-        font-size: 4rem;
+        font-size: 3rem;
+    }
+    .about-hero-desc {
+        font-size: 1.6rem;
+    }
+    .vision-bg,
+    .mission-bg {
+        height: 250px;
+    }
+    .vm-card {
+        padding: 30px 20px;
+        height: auto;
+    }
+    .eco-desc-wrapper {
+        margin-bottom: 40px;
+    }
+    .why-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .why-item {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 40px;
+    }
+    .ap-handshake-img {
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+        top: 0;
+        transform: none;
+        margin-bottom: 30px;
+    }
+    .ap-circles-container {
+        padding-top: 0;
     }
     .workflow-arrow-1-to-2,
-    .workflow-solid-line,
-    .workflow-vertical-axis,
-    .card-connector {
+    .workflow-cards-wrapper::before,
+    .workflow-card::before,
+    .workflow-card::after,
+    .workflow-img-2-wrapper::before,
+    .workflow-img-2-wrapper::after,
+    .workflow-box-wrapper::before,
+    .workflow-box-wrapper::after {
         display: none !important;
     }
     .workflow-left,
@@ -561,6 +1291,23 @@ body,
     .workflow-right {
         margin-bottom: 40px;
         padding: 0 15px !important;
+    }
+    .workflow-middle {
+        margin-top: 0 !important;
+    }
+    .vm-card-content {
+        width: 100%;
+        padding: 25px;
+    }
+    .vm-title {
+        font-size: 2.4rem;
+    }
+    .vm-card-img-wrapper {
+        width: 100%;
+        opacity: 0.2; /* Dim the image on mobile so text is legible */
+    }
+    .vm-gradient-overlay {
+        background: transparent; /* Remove gradient since image is dimmed */
     }
 }
 
