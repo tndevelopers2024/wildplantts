@@ -24,7 +24,8 @@
 
   headerStyle();
 
-  //Submenu Dropdown Toggle
+  window.initHeaderScripts = function() {
+//Submenu Dropdown Toggle
   if ($(".main-header li.dropdown ul").length) {
     $(".main-header li.dropdown").append('<div class="dropdown-btn"></div>');
 
@@ -88,6 +89,8 @@
       $(".hidden-bar").addClass("visible-sidebar");
     });
   }
+};
+window.initHeaderScripts();
 
   //Search Popup
   if ($("#search-popup").length) {
@@ -760,7 +763,13 @@ function loadMore() {
   }
 }
 $(function(){
-  $(".header").load("header.html"); 
+  if ($(".header").length) {
+    $(".header").load("header.html", function() {
+      if (typeof window.initHeaderScripts === 'function') {
+        window.initHeaderScripts();
+      }
+    }); 
+  }
 });
 $(function(){
   $(".footer").load("footer.html"); 
