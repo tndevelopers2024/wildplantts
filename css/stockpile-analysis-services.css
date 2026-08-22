@@ -1,0 +1,1083 @@
+﻿/* 
+   ==========================================================================
+   Construction Verification Services Stylesheet
+   ========================================================================== 
+*/
+
+/* --- Navbar Style Overrides --- */
+.main-header {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); 
+}
+
+.main-header .main-box {
+    background-color: #ffffff !important;
+}
+
+.main-header .main-menu .navigation > li > a {
+    color: #333333 !important;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize !important; 
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li:hover > a,
+.main-header .main-menu .navigation > li.current > a {
+    color: #e4ae1f !important;
+    text-decoration: none !important;
+}
+
+/* Force ALL dropdown and sub-menu links to have no text decoration (underlines) */
+.main-header .main-menu .navigation li a {
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li.dropdown > a::after {
+    content: '\f107'; 
+    font-family: 'Font Awesome 5 Free', 'FontAwesome', sans-serif;
+    font-weight: 900;
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+.main-header .main-menu .navigation > li > a.btn {
+    background-color: #e2a613 !important; 
+    color: #111111 !important;
+    padding: 12px 30px !important;
+    border-radius: 0px !important; 
+    font-weight: 600 !important;
+    margin-left: 20px;
+    border: none !important;
+    display: inline-block;
+    text-transform: none !important;
+}
+
+.main-header .main-menu .navigation > li > a.btn:hover {
+    background-color: #c9930f !important;
+    color: #ffffff !important;
+}
+.main-menu .navigation > li {
+    padding: 25px 0px;
+}
+
+/* --- Layout fixes for empty pages --- */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-main-content {
+    flex-grow: 1;
+    padding-top: 100px;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-footer {
+    margin-top: auto; 
+}
+
+
+/* STOCKPILE ANALYSIS HERO SECTION */
+.sas-hero-section {
+  position: relative;
+  padding-top: 60px; /* offset for fixed header */
+  padding-bottom: 0;
+  color: #fff;
+  z-index: 1;
+}
+.sas-hero-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center bottom;
+  z-index: -2;
+}
+.sas-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
+  z-index: -1;
+}
+.sas-hero-row {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+.sas-hero-left {
+  padding: 20px 15px 40px;
+}
+.sas-hero-left h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+  line-height: 1.1;
+}
+.sas-hero-left .sas-hero-subtitle {
+  font-size: 26px;
+  font-weight: 700;
+  color: #e5b225;
+  margin-bottom: 10px;
+}
+.sas-hero-left .sas-hero-subsubtitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.sas-hero-left p {
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 40px;
+  color: #ddd;
+}
+.sas-hero-btns {
+  display: flex;
+  gap: 20px;
+}
+.sas-hero-btns .sas-btn-primary {
+  background-color: #e5b225;
+  color: #000 !important;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: 2px solid #e5b225;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.sas-hero-btns .sas-btn-primary:hover {
+  background-color: transparent;
+  color: #e5b225 !important;
+}
+.sas-hero-btns .sas-btn-secondary {
+  background-color: transparent;
+  color: #fff !important;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.sas-hero-btns .sas-btn-secondary:hover {
+  background-color: #fff;
+  color: #000 !important;
+}
+
+/* Right Panel */
+.sas-tech-panel {
+  border-left: 3px solid #e5b225;
+  margin-left: 200px;
+  background: rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  border-radius: 0 10px 10px 0;
+}
+.sas-tech-panel h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 25px;
+}
+.sas-tech-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.sas-tech-card:last-child {
+  margin-bottom: 0;
+}
+.sas-tech-img {
+  width: 90px;
+  border-radius: 5px;
+  margin-right: 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sas-tech-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.sas-tech-info h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #e5b225;
+  margin-bottom: 3px;
+}
+.sas-tech-info h6 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.sas-tech-info ul {
+  padding-left: 17px;
+  margin: 0;
+}
+.sas-tech-info ul li {
+  font-size: 13px;
+  color: #ccc;
+  list-style-type: disc;
+  margin-bottom: 3px;
+}
+
+/* Bottom Bar */
+.sas-hero-bottom-bar {
+  background-color: #f1c40f; 
+  padding: 25px 0;
+  width: 100%;
+}
+.sas-stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -15px;
+}
+.sas-stat {
+  padding: 10px 15px;
+  text-align: center;
+}
+.sas-stat-num {
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.sas-stat-text {
+  font-size: 13px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  .sas-hero-left h1 { font-size: 38px; }
+  .sas-hero-row { flex-direction: column; }
+  .sas-hero-right { margin-top: 40px; margin-bottom: 40px; }
+  .sas-tech-panel { border-left: none; border-top: 3px solid #e5b225; margin-left: 0; border-radius: 10px; }
+  .sas-hero-btns { flex-direction: column; }
+}
+
+
+.sas-hero-container { max-width: 1400px; margin: 0 auto; padding: 0 15px; }
+
+
+
+
+/* --- OUR TERRESTRIAL & SLAM TECHNOLOGIES SECTION --- */
+.sas-tech-overview-section {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+.sas-tech-overview-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.sas-tech-item {
+  margin-bottom: 40px;
+}
+.sas-tech-item-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.sas-tech-header {
+  margin-bottom: 25px;
+}
+.sas-tech-heading {
+  font-size: 24px;
+  font-weight: 800;
+  color: #e5b225;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.sas-tech-subheading {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444444;
+  text-transform: uppercase;
+  margin: 0;
+}
+.sas-tech-figure {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.sas-tech-figure img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.sas-tech-features {
+  padding-left: 20px;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 320px;
+}
+.sas-tech-features li {
+  font-size: 16px;
+  color: #444444;
+  margin-bottom: 10px;
+  list-style-type: disc;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .sas-tech-overview-section {
+    padding: 40px 0 !important;
+  }
+}
+
+/* --- COMPARISON SECTION --- */
+.sas-comparison-section {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+.sas-comparison-row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.sas-comparison-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sas-vs-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66px;
+  height: 66px;
+  background: #ffffff;
+  border: 4px solid #ffbc00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffbc00;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.sas-comp-col {
+  padding: 15px;
+}
+.sas-comp-card {
+  border-radius: 10px;
+  padding: 40px;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.sas-comp-green {
+  background-color: #f6faf4;
+  border-top: 5px solid #4a9e38;
+}
+.sas-comp-red {
+  background-color: #fff6f6;
+  border-top: 5px solid #e75a5a;
+  display: flex;
+  flex-direction: column;
+}
+.sas-comp-title {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.sas-green-title {
+  color: #4a9e38;
+}
+.sas-red-title {
+  color: #6a7482;
+}
+.sas-comp-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.sas-comp-list {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+.sas-green-list {
+  flex: 1;
+  min-width: 250px;
+}
+.sas-red-list {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+  flex: 1;
+}
+.sas-comp-list li {
+  margin-bottom: 20px;
+  font-size: 15px;
+  position: relative;
+  padding-left: 30px;
+}
+.sas-comp-list li.last {
+  margin-bottom: 0px;
+}
+.sas-green-list li {
+  color: #444;
+}
+.sas-red-list li {
+  color: #777;
+  margin-bottom: 26px;
+}
+.sas-green-list li i {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  color: #4a9e38;
+}
+.sas-red-list li i {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  color: #e75a5a;
+}
+.sas-comp-img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  text-align: center;
+}
+.sas-comp-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- WORKFLOW SECTION --- */
+.sas-workflow-section {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+.sas-workflow-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.sas-workflow-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.sas-workflow-timeline::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 6%;
+  right: 6%;
+  border-top: 2px dashed #bbbbbb;
+  z-index: 1;
+}
+.sas-workflow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  flex: 1;
+  text-align: center;
+  padding: 0 5px;
+}
+.sas-workflow-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #ffbc00;
+  color: #ffffff;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(255,188,0,0.5);
+}
+.sas-workflow-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+  line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+  
+  .sas-vs-badge {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 15px auto !important;
+    z-index: 10;
+    order: 2;
+  }
+  .sas-comp-col:nth-child(2) {
+    order: 1;
+  }
+  .sas-comp-col:nth-child(3) {
+    order: 3;
+  }
+}
+
+@media (max-width: 991px) {
+  .sas-workflow-timeline {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  .sas-workflow-timeline::before {
+    top: 25px;
+    bottom: 25px;
+    left: 50px; /* Centers the line into exactly 50% of the 50px circle width + 20px margin */
+    right: auto;
+    transform: none;
+    border-top: none;
+    border-left: 2px dashed #bbbbbb;
+  }
+  .sas-workflow-step {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: left;
+  }
+  .sas-workflow-step:last-child {
+    margin-bottom: 0;
+  }
+  .sas-workflow-circle {
+    margin-bottom: 0;
+    margin-right: 25px;
+    flex-shrink: 0;
+  }
+  .sas-workflow-text {
+    padding: 0;
+    background-color: transparent;
+  }
+  
+  .sas-cs-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .sas-cs-panel {
+    width: 100%;
+  }
+  .sas-cs-arrow-container {
+    height: 50px !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    align-self: center !important;
+    margin: 10px auto !important;
+  }
+  .sas-cs-arrow-icon {
+    transform: rotate(90deg) !important;
+    width: 50px !important;
+    height: 50px !important;
+    margin: 0 auto !important;
+    display: block !important;
+    position: relative !important;
+    left: 0 !important;
+  }
+}
+
+/* --- CHALLENGES & SOLUTIONS SECTION --- */
+.sas-cs-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+.sas-cs-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  position: relative;
+  gap: 30px;
+}
+.sas-cs-panel {
+  flex: 1;
+  border-radius: 12px;
+  padding: 40px;
+}
+.sas-cs-left-panel {
+  background-color: #f9f9f9;
+}
+.sas-cs-right-panel {
+  background-color: #333333;
+}
+.sas-cs-title {
+  font-size: 26px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sas-cs-left-title {
+  color: #333333;
+}
+.sas-cs-right-title {
+  color: #ffffff;
+}
+.sas-cs-grid {
+  display: grid;
+  gap: 15px;
+}
+.sas-cs-left-grid {
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(130px, auto);
+}
+.sas-cs-right-grid {
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+}
+.sas-cs-right-grid .sas-cs-card:nth-child(1),
+.sas-cs-right-grid .sas-cs-card:nth-child(2),
+.sas-cs-right-grid .sas-cs-card:nth-child(3) {
+  grid-column: span 2;
+}
+.sas-cs-right-grid .sas-cs-card:nth-child(4),
+.sas-cs-right-grid .sas-cs-card:nth-child(5) {
+  grid-column: span 3;
+}
+.sas-cs-card {
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+.sas-cs-left-grid .sas-cs-card {
+  background-color: #ffffff;
+}
+.sas-cs-left-grid .sas-cs-wide-card {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  justify-content: center;
+}
+.sas-cs-left-grid .sas-cs-wide-card img {
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+.sas-cs-left-grid .sas-cs-card p {
+  color: #555555;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+.sas-cs-right-grid .sas-cs-card {
+  background-color: #444444;
+  border-color: rgba(255,255,255,0.05);
+}
+.sas-cs-right-grid .sas-cs-card p {
+  color: #eeeeee;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+}
+.sas-cs-card img {
+  max-width: 45px;
+  max-height: 45px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+.sas-cs-arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  flex-shrink: 0;
+  margin: 0 -20px;
+  z-index: 10;
+}
+.sas-cs-arrow-icon {
+  width: 90px;
+  height: 90px;
+  filter: drop-shadow(0 6px 8px rgba(0,0,0,0.25));
+}
+
+/* --- REAL PROJECT RESULTS SECTION --- */
+.sas-results-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+.sas-results-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.sas-results-title {
+  grid-column: 2;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  color: #333333;
+  margin: 0;
+}
+.sas-results-nav {
+  grid-column: 3;
+  justify-self: end;
+  display: flex;
+  gap: 15px;
+}
+.sas-results-nav button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ffbc00;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sas-results-nav button:hover {
+  background-color: #e5a800;
+  transform: translateY(-2px);
+}
+.sas-results-item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+.sas-results-item h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333333;
+  padding: 25px 15px;
+  margin: 0;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
+}
+.sas-results-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- DELIVERABLES SECTION --- */
+.sas-deliverables-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+.sas-deliverables-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #333333;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.sas-deliverables-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sas-deliverables-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  width: calc(10% - 13.5px);
+  min-width: 110px;
+}
+.sas-deliverables-card img {
+  max-width: 45px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.sas-deliverables-card p {
+  font-size: 13px;
+  font-weight: 700;
+  color: #333333;
+  margin: 0;
+  line-height: 1.3;
+}
+
+
+@media (max-width: 1200px) {
+  .sas-deliverables-card {
+    width: calc(20% - 12px);
+  }
+}
+
+/* --- INDUSTRIES WE SERVE SECTION --- */
+.sas-industries-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+.sas-industries-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #333333;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.sas-industries-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 30px;
+  text-align: center;
+}
+.sas-industries-item img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.sas-industries-item h4 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #333333;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sas-industries-item p {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0 10px;
+}
+
+/* --- CTA SECTION --- */
+.sas-cta-section {
+  background-color: #faf5e9;
+  padding: 60px 0;
+}
+.sas-cta-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.sas-cta-left h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #333333;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+.sas-cta-left p {
+  font-size: 18px;
+  color: #444444;
+  margin: 0;
+  line-height: 1.6;
+}
+.sas-cta-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-shrink: 0;
+  min-width: 250px;
+}
+.sas-btn-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #f7cd4a 0%, #e2a900 100%);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+}
+.sas-btn-quote:hover {
+  background: linear-gradient(180deg, #e2a900 0%, #cc9900 100%);
+  color: #ffffff;
+}
+.sas-btn-expert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: #d19f00;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid #e2a900;
+}
+.sas-btn-expert:hover {
+  background: rgba(226, 169, 0, 0.05);
+  color: #d19f00;
+}
+
+/* --- FAQ SECTION --- */
+.sas-faq-section {
+  background-color: #ffffff;
+  padding: 80px 0 100px 0;
+}
+.sas-faq-section .sas-hero-container {
+  max-width: 950px;
+}
+.sas-faq-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #333333;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.sas-faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sas-faq-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+.sas-faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c2c2c;
+  padding: 20px 30px;
+  border-bottom: 2px solid #ffbc00;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.sas-faq-header:hover {
+  background-color: #444444;
+}
+.sas-faq-header h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+.sas-chevron {
+  color: #ffffff;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+.sas-faq-item.active .sas-chevron {
+  transform: rotate(180deg);
+}
+.sas-faq-content {
+  display: none;
+  padding: 25px 30px;
+  background-color: #f9f9f9;
+}
+.sas-faq-content p {
+  font-size: 15px;
+  color: #555555;
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 991px) {
+  .sas-industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sas-cta-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .sas-tech-overview-section,
+  .sas-comparison-section,
+  .sas-workflow-section,
+  .sas-cs-section,
+  .sas-results-section,
+  .sas-deliverables-section,
+  .sas-industries-section,
+  .sas-cta-section,
+  .sas-faq-section {
+    padding: 40px 0 !important;
+  }
+  
+  .sas-cs-left-grid {
+    grid-template-columns: 1fr;
+  }
+  .sas-cs-right-grid .sas-cs-card {
+    grid-column: span 6 !important;
+  }
+  
+  .sas-results-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .sas-deliverables-card {
+    width: calc(33.333% - 10px);
+  }
+
+  .sas-industries-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .sas-deliverables-card {
+    width: calc(50% - 7.5px);
+  }
+}
