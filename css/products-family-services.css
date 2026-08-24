@@ -1,0 +1,958 @@
+/* 
+   ==========================================================================
+   Products Family Services Stylesheet
+   ========================================================================== 
+*/
+
+/* --- Navbar Style Overrides --- */
+.main-header {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); 
+}
+
+.main-header .main-box {
+    background-color: #ffffff !important;
+}
+
+.main-header .main-menu .navigation > li > a {
+    color: #333333 !important;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize !important; 
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li:hover > a,
+.main-header .main-menu .navigation > li.current > a {
+    color: #e4ae1f !important;
+    text-decoration: none !important;
+}
+
+/* Force ALL dropdown and sub-menu links to have no text decoration (underlines) */
+.main-header .main-menu .navigation li a {
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li.dropdown > a::after {
+    content: '\f107'; 
+    font-family: 'Font Awesome 5 Free', 'FontAwesome', sans-serif;
+    font-weight: 900;
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+.main-header .main-menu .navigation > li > a.btn {
+    background-color: #e2a613 !important; 
+    color: #111111 !important;
+    padding: 12px 30px !important;
+    border-radius: 0px !important; 
+    font-weight: 600 !important;
+    margin-left: 20px;
+    border: none !important;
+    display: inline-block;
+    text-transform: none !important;
+}
+
+.main-header .main-menu .navigation > li > a.btn:hover {
+    background-color: #c9930f !important;
+    color: #ffffff !important;
+}
+.main-menu .navigation > li {
+    padding: 25px 0px;
+}
+
+/* --- Layout fixes for empty pages --- */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-main-content {
+    flex-grow: 1;
+    padding-top: 100px;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-footer {
+    margin-top: auto; 
+}
+
+/* Add custom external CSS for product family services below */
+
+/* --- Page Padding Overrides --- */
+.pfs-main-content {
+    /* Need padding-top to stop header overlay */
+    padding-top: 100px !important;
+    background-color: #ffffff;
+}
+
+.pfs-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* --- Hero Section --- */
+.pfs-hero-section {
+    padding: 60px 0px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.pfs-hero-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pfs-hero-left {
+    padding-right: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.pfs-subtitle {
+    color: #e4ae1f;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.pfs-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #222222;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.pfs-hero-left p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444444;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.pfs-hero-btns {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.pfs-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 6px;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.pfs-btn-primary {
+    background-color: #e4ae1f;
+    color: #111111;
+    border: 2px solid #e4ae1f;
+}
+
+.pfs-btn-primary:hover {
+    background-color: #c9930f;
+    border-color: #c9930f;
+    color: #ffffff;
+}
+
+.pfs-btn-secondary {
+    background-color: #ffffff;
+    color: #444444;
+    border: 2px solid #bbbbbb;
+}
+
+.pfs-btn-secondary:hover {
+    background-color: #f1f1f1;
+    border-color: #999999;
+}
+
+/* --- Hero Right Images Collage --- */
+.pfs-hero-right {
+    position: relative;
+    z-index: 5;
+}
+
+.pfs-hero-left {
+    padding-right: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.pfs-hero-images {
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+    display: block;
+}
+
+.pfs-hero-images .pfs-img {
+    position: absolute;
+    height: auto;
+    object-fit: contain;
+    z-index: 2;
+}
+
+/* 1: Cyclone Logo */
+.pfs-hero-images .pfs-img1 {
+    top: 5%;
+    right: 28%;
+    width: 18%;
+}
+
+/* 2: Verity */
+.pfs-hero-images .pfs-img2 {
+    top: 10%;
+    right: 3%;
+    width: 22%;
+}
+
+/* 3: Swoosh + Tripod Scanner */
+.pfs-hero-images .pfs-img3 {
+    top: 25%;
+    left: -15%;
+    width: 80%;
+    z-index: 1; /* Swoosh needs to sit behind */
+}
+
+/* 4: Yellow Pelican Box */
+.pfs-hero-images .pfs-img4 {
+    top: 58%;
+    left: 41%;
+    width: 22%;
+    z-index: 3;
+}
+
+/* 5: Drone & Handheld System */
+.pfs-hero-images .pfs-img5 {
+    top: 40%;
+    right: 1%;
+    width: 38%;
+    z-index: 3;
+}
+
+/* 6: Geomagic Wrap */
+.pfs-hero-images .pfs-img6 {
+    bottom: -5%;
+    right: 25%;
+    width: 32%;
+    z-index: 4;
+}
+
+/* --- Step Banner --- */
+.pfs-step-banner {
+    background-color: #ffcc00;
+    padding: 25px 0;
+    margin-top: 40px;
+    border-top: 1px solid #e2a613;
+    border-bottom: 1px solid #e2a613;
+}
+
+.pfs-steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.pfs-step-box {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
+    position: relative;
+}
+
+.pfs-step-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.pfs-step-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.pfs-step-content {
+    flex-grow: 1;
+}
+
+.pfs-step-content h4 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #111111;
+    margin: 0 0 2px 0;
+    text-transform: uppercase;
+}
+
+.pfs-step-content span {
+    font-size: 12px;
+    color: #222222;
+    font-weight: 500;
+}
+
+.pfs-step-arrow {
+    margin-left: 10px;
+    color: #111111;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+/* --- Why Choose Section --- */
+.pfs-why-choose-section {
+    background-color: #222222;
+    padding: 40px 0;
+}
+
+.pfs-wc-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.pfs-wc-title-area {
+    padding-right: 35px;
+    margin-right: 35px;
+    border-right: 1px solid rgba(255,255,255,0.15);
+    flex-shrink: 0;
+    min-width: 200px;
+}
+
+.pfs-wc-title-area h5 {
+    color: #e4ae1f;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pfs-wc-title-area h2 {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.pfs-wc-features {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 15px;
+}
+
+.pfs-wc-item {
+    text-align: center;
+    flex: 1;
+}
+
+.pfs-wc-item img {
+    height: 48px;
+    width: auto;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.pfs-wc-item p {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* --- Explore Our Product Portfolio --- */
+.pfs-eopp-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.pfs-eopp-title-area {
+    margin-bottom: 50px;
+}
+
+.pfs-eopp-title-area h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #222222;
+    margin: 0 0 15px 0;
+}
+
+.pfs-title-divider {
+    width: 60px;
+    height: 4px;
+    background-color: #ffcc00;
+    margin: 0 auto;
+}
+
+.pfs-eopp-category-block {
+    position: relative;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 40px 20px 20px;
+    margin-top: 30px;
+}
+
+.pfs-category-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 0 15px;
+    font-size: 11px;
+    font-weight: 800;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.5px;
+}
+
+.badge-num {
+    background-color: #222222;
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.pfs-eopp-col {
+    margin-bottom: 30px;
+}
+
+.pfs-eopp-card {
+    background-color: #ffffff;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+    border-radius: 6px;
+    border: 1px solid #f1f1f1;
+    padding: 25px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.pfs-eopp-card:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.pfs-eopp-card .card-img-box {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pfs-eopp-card .card-img-box img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.pfs-eopp-card .card-content-box {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pfs-eopp-card h4 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #222222;
+    margin: 0 0 15px 0;
+    line-height: 1.4;
+    min-height: 50px;
+}
+
+.pfs-eopp-card p {
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+}
+
+.pfs-eopp-btn {
+    margin-top: auto; 
+    background-color: #ffcc00;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    padding: 12px 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+}
+
+.pfs-eopp-btn:hover {
+    background-color: #e6b800;
+    color: #ffffff;
+}
+
+.pfs-eopp-btn i {
+    font-size: 14px;
+}
+
+.pfs-eopp-btn.btn-centered {
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+}
+
+/* --- Your Journey With WildPlantTS --- */
+.pfs-journey-section {
+    padding: 70px 0;
+    background-color: #f7f9fa;
+    overflow: hidden; 
+}
+
+.yjww-cards-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.pfs-yjww-row {
+    position: relative;
+    margin-bottom: 30px; 
+}
+
+.pfs-yjww-col {
+    position: relative; 
+    margin-bottom: 30px;
+}
+
+.pfs-yjww-card {
+    background-color: #ffffff;
+    border: 1px solid #efebeb;
+    border-top: 6px solid #ffcc00;
+    border-radius: 12px;
+    padding: 20px 20px 30px;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.pfs-yjww-card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+}
+
+.badge-num-corner {
+    position: absolute;
+    top: -16px;
+    left: 20px;
+    background-color: #ffcc00;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.pfs-yjww-card .img-box {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 150px;
+}
+
+.pfs-yjww-card .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pfs-yjww-card h4 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #222;
+    margin: 0 0 10px 0;
+    min-height: 48px; 
+}
+
+.pfs-yjww-card p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Connectors */
+.yjww-arrow {
+    position: absolute;
+    right: -10px; 
+    top: 35%;
+    transform: translateY(-50%);
+    background-color: #ffcc00;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 10px;
+    z-index: 10;
+}
+
+.yjww-css-curve {
+    position: absolute;
+    top: 22%; 
+    height: 26%; 
+    left: 5px; 
+    right: 40px; 
+    border-bottom: 2px solid #ffcc00; 
+    z-index: 0;
+    pointer-events: none;
+}
+
+.yjww-css-curve::before {
+    content: '';
+    position: absolute;
+    top: .5%;
+    right: -60px;
+    width: 60px;
+    height: 100%;
+    border: 2px solid #ffcc00;
+    border-left: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.yjww-css-curve::after {
+    content: '';
+    position: absolute;
+    top: 100%; 
+    left: -60px;
+    width: 60px;
+    height: 50%;
+    border: 2px solid #ffcc00;
+    border-right: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.curve-arrow-head {
+    position: absolute;
+    top: calc(149.5% - 7px);
+    left: -18px; 
+    color: #ffcc00;
+    font-size: 14px;
+}
+
+/* --- Why Buy From WildPlantTS --- */
+.pfs-why-buy-section {
+    padding: 70px 0 80px;
+    background-color: #272727;
+}
+
+.pfs-wbf-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.pfs-wbf-title .theme-color {
+    color: #ffcc00;
+}
+
+.pfs-wbf-subtitle {
+    font-size: 18px;
+    color: #e0e0e0;
+    font-weight: 500;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.pfs-wbf-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.pfs-wbf-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 130px;
+}
+
+.pfs-wbf-item .icon-box {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pfs-wbf-item .icon-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.pfs-wbf-item h4 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* --- CTA Section --- */
+.pfs-cta-section {
+    padding: 60px 0;
+    background-color: #FDF8EE; /* approximate light cream color */
+}
+
+.pfs-cta-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pfs-cta-title {
+    font-size: 34px;
+    font-weight: 800;
+    color: #333333;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.pfs-cta-desc {
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 650px;
+}
+
+.pfs-cta-btn-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; 
+    gap: 15px;
+}
+
+.pfs-cta-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    min-width: 280px; 
+}
+
+.pfs-cta-btn.btn-filled {
+    background: linear-gradient(180deg, #F9D04A 0%, #E3A322 100%);
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 10px rgba(227, 163, 34, 0.3);
+}
+
+.pfs-cta-btn.btn-filled:hover {
+    background: linear-gradient(180deg, #E3A322 0%, #D1921B 100%);
+    box-shadow: 0 6px 15px rgba(227, 163, 34, 0.4);
+    color: #ffffff;
+}
+
+.pfs-cta-btn.btn-outline {
+    background-color: transparent;
+    border: 2px solid #E3A322;
+    color: #E3A322;
+}
+
+.pfs-cta-btn.btn-outline:hover {
+    background-color: #E3A322;
+    color: #ffffff;
+}
+
+/* --- FAQ Section --- */
+.pfs-faq-section {
+    padding: 70px 0;
+    background-color: #ffffff;
+}
+
+.pfs-faq-title {
+    font-size: 34px;
+    font-weight: 800;
+    color: #222222;
+}
+
+.pfs-faq-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pfs-faq-item {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.pfs-faq-header {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    padding: 20px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 4px solid #ffcc00;
+    transition: background-color 0.3s ease;
+}
+
+.pfs-faq-header:hover {
+    background-color: #1a1a1a;
+}
+
+.pfs-faq-header i {
+    font-size: 20px;
+}
+
+.pfs-faq-body {
+    background-color: #f8f9fa;
+    color: #444444;
+    padding: 25px;
+    font-size: 15px;
+    line-height: 1.6;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .pfs-title { font-size: 34px; }
+    .pfs-wc-features { gap: 10px; }
+    .pfs-wc-title-area { padding-right: 20px; margin-right: 20px; min-width: 180px; }
+    .pfs-wc-item p { font-size: 11px; }
+}
+
+@media (max-width: 991px) {
+    .pfs-main-content { padding-top: 100px !important; }
+    .pfs-hero-row { flex-direction: column; }
+    .pfs-hero-left { padding-right: 15px; margin-bottom: 40px; }
+    
+    .pfs-hero-images { 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        align-items: center;
+        gap: 20px;
+        min-height: auto; 
+        padding: 20px 0; 
+    }
+    .pfs-hero-images .pfs-img {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        width: auto !important;
+        max-width: 45%; 
+        max-height: 200px;
+    }
+    .pfs-hero-images .pfs-img3 {
+        max-width: 100%;
+        order: -1; /* Push the swoosh/tripod to the top or keep natural flow */
+    }
+    
+    .pfs-steps-container { flex-direction: column; gap: 15px; }
+    .pfs-step-box { flex-direction: row; text-align: left; }
+    .pfs-step-arrow { display: none; }
+    
+    .pfs-wc-wrapper { flex-direction: column; align-items: center; text-align: center; }
+    .pfs-wc-title-area { padding-right: 0; margin-right: 0; border-right: none; border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 25px; margin-bottom: 25px; min-width: 100%; }
+    .pfs-wc-features { flex-wrap: wrap; justify-content: center; gap: 30px; }
+    .pfs-wc-item { min-width: 30%; }
+    .pfs-wc-item p { font-size: 13px; }
+    .pfs-wbf-title { font-size: 26px; }
+    .pfs-wbf-grid { gap: 15px; margin-top: 30px; }
+    .pfs-wbf-item { width: 105px; }
+    .pfs-wbf-item h4 { font-size: 13px; }
+    .pfs-wbf-item .icon-box { width: 50px; height: 50px; }
+    
+    .pfs-cta-row { gap: 30px; }
+    .pfs-cta-btn-col { align-items: flex-start; }
+}
+
+@media (max-width: 767px) {
+    .pfs-hero-section { padding: 40px 0px; }
+    .pfs-title { font-size: 28px; }
+    .pfs-hero-left p { font-size: 15px; }
+    .pfs-hero-btns { flex-direction: column; }
+    .pfs-hero-images { min-height: 250px; }
+    .pfs-hero-images .pfs-img { max-width: 80%; }
+    .pfs-hero-images .pfs-img3 { max-width: 100%; }
+    .pfs-step-box { padding: 8px; }
+    .pfs-step-content h4 { font-size: 14px; }
+    .pfs-step-content span { font-size: 11px; }
+
+    .pfs-wc-item { min-width: 45%; }
+    
+    .yjww-arrow { display: none; }
+    .yjww-css-curve { display: none; }
+    .pfs-yjww-col { margin-bottom: 40px; }
+}
