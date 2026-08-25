@@ -26,7 +26,7 @@
     bottom: 0;
     right: 0;
     width: 100%;
-    background-image: linear-gradient(90deg, #26211E 34.96%, rgba(38, 33, 30, 0) 69.71%), url('../images/terrestrial-lidar-technology/hero-bg.png');
+    background-image: linear-gradient(90deg, #26211E 34.96%, rgba(38, 33, 30, 0) 69.71%), url('../images/terrestrial-lidar-technology/hero-bg.jpg');
     background-size: cover;
     background-position: right center;
     background-repeat: no-repeat;
@@ -547,7 +547,7 @@
     right: 0;
     width: 60%;
     height: 100%;
-    background-image: linear-gradient(90.11deg, #353535 10.67%, rgba(53, 53, 53, 0) 95.84%), url('../images/terrestrial-lidar-technology/option-1-bg.png');
+    background-image: linear-gradient(90.11deg, #353535 10.67%, rgba(53, 53, 53, 0) 95.84%), url('../images/terrestrial-lidar-technology/option-1-bg.jpg');
     background-size: cover;
     background-position: right center;
     z-index: 0;
