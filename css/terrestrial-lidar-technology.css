@@ -1,0 +1,844 @@
+/*
+    Custom CSS for Terrestrial LiDAR Technology Page
+    Project: WildplantTS
+*/
+
+/* Scoped classes will go here */
+
+/* ========================================= */
+/* Terrestrial LiDAR Technology Hero Section */
+/* ========================================= */
+.tlt-hero-section {
+    background-color: #26211e;
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+    margin-top: 110px;
+}
+
+.tlt-container {
+    padding: 0 5%;
+}
+
+.tlt-hero-bg-desktop {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-image: linear-gradient(90deg, #26211E 34.96%, rgba(38, 33, 30, 0) 69.71%), url('../images/terrestrial-lidar-technology/hero-bg.png');
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.tlt-hero-tag {
+    display: inline-block;
+    color: #e5b122;
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.tlt-hero-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.tlt-hero-subtitle {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.tlt-hero-desc {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    max-width: 90%;
+}
+
+.tlt-hero-desc:last-of-type {
+    margin-bottom: 40px;
+}
+
+.tlt-hero-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tlt-btn-primary {
+    background: #e5b122;
+    color: #060f1a;
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 15px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid #e5b122;
+}
+
+.tlt-btn-primary:hover {
+    background: #c9930f;
+    border-color: #c9930f;
+    color: #060f1a;
+    text-decoration: none;
+}
+
+.tlt-btn-secondary {
+    background: transparent;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 15px 35px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.tlt-btn-secondary:hover {
+    background: #fff;
+    color: #26201e;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 1199px) {
+    .tlt-hero-title {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .tlt-hero-section {
+        min-height: 600px;
+        margin-top: 80px;
+    }
+    .tlt-hero-title {
+        font-size: 4rem;
+    }
+    .tlt-hero-desc,
+    .tlt-hero-subtitle {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .tlt-hero-section {
+        min-height: auto;
+    }
+    .tlt-hero-tag {
+        font-size: 2rem;
+    }
+    .tlt-hero-title {
+        font-size: 3.5rem;
+    }
+    .tlt-hero-subtitle {
+        font-size: 1.8rem;
+    }
+    .tlt-hero-desc {
+        font-size: 1.6rem;
+    }
+    .tlt-btn-primary,
+    .tlt-btn-secondary {
+        font-size: 1.8rem;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 575px) {
+    .tlt-hero-title {
+        font-size: 3rem;
+    }
+    .tlt-hero-subtitle {
+        font-size: 1.6rem;
+    }
+    .tlt-hero-desc {
+        font-size: 1.4rem;
+    }
+    .tlt-btn-primary,
+    .tlt-btn-secondary {
+        font-size: 1.6rem;
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+    }
+}
+/* ========================================= */
+/* What is LiDAR Section */
+/* ========================================= */
+.tlt-what-is-section {
+    background-color: #f9fafb;
+    padding: 40px 0;
+}
+
+.tlt-what-left {
+    padding-right: 40px;
+}
+
+.tlt-section-title {
+    color: #272727;
+    font-weight: 600;
+    font-size: 4rem;
+    margin-bottom: 25px;
+}
+
+.tlt-text {
+    color: #272727;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tlt-btn-outline {
+    display: inline-block;
+    border: 1px solid #F6BB1A;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #F6BB1A;
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 15px 35px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.tlt-btn-outline:hover {
+    background-color: #F6BB1A;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tlt-what-right img {
+    max-width: 95%;
+    height: auto;
+}
+
+/* Responsive updates for new section */
+@media (max-width: 991px) {
+    .tlt-what-left {
+        padding-right: 15px;
+        margin-bottom: 40px;
+    }
+    .tlt-section-title {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .tlt-what-is-section {
+        padding: 50px 0;
+    }
+    .tlt-section-title {
+        font-size: 2.8rem;
+    }
+    .tlt-text {
+        font-size: 1.6rem;
+    }
+    .tlt-btn-outline {
+        font-size: 1.8rem;
+        padding: 12px 25px;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    .tlt-what-right img {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+}
+
+/* ========================================= */
+/* What is Terrestrial LiDAR Section */
+/* ========================================= */
+.tlt-terrestrial-section {
+    background-color: #f1f1f1;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.tlt-terrestrial-bg-desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    z-index: 0;
+}
+
+.tlt-terrestrial-bg-desktop img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+}
+
+.tlt-terrestrial-right {
+    padding-left: 20px;
+}
+
+.tlt-feature-title {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.tlt-feature-desc {
+    color: #272727;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+/* Responsive updates */
+@media (max-width: 991px) {
+    .tlt-terrestrial-right {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .tlt-terrestrial-section {
+        padding: 50px 0;
+    }
+    .tlt-feature-title {
+        font-size: 1.6rem;
+    }
+    .tlt-feature-desc {
+        font-size: 1.4rem;
+    }
+}
+/* ========================================= */
+/* How Terrestrial LiDAR Works Section */
+/* ========================================= */
+.tlt-how-works-section {
+    background-color: #f9fafb;
+    padding: 60px 0 0 0;
+}
+
+.tlt-how-tag {
+    color: #E5B122;
+    font-weight: 600;
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.tlt-how-title {
+    color: #272727;
+    font-weight: 600;
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.tlt-how-desc {
+    color: #272727;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.tlt-action-box {
+    background: linear-gradient(86.02deg, #FFFFFF 19.57%, #FFEBAF 99.43%);
+    border: 1px solid #E4E4E4;
+    box-shadow: 0px 4px 16px 0px #0000001C;
+    border-radius: 20px;
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.tlt-action-title {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.tlt-action-desc {
+    color: #272727;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.tlt-how-card {
+    background: #fff;
+    border: 1px solid #C5C5C5;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tlt-how-card-body {
+    padding: 25px;
+    flex-grow: 1;
+}
+
+.tlt-how-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.tlt-how-card-number {
+    background-color: #FDC20C;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding: 5px 12px;
+    display: inline-block;
+}
+
+.tlt-how-card-title {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.tlt-how-card-desc {
+    color: #272727;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.tlt-how-card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: auto;
+}
+
+/* Responsive updates for How it works */
+@media (max-width: 1199px) {
+    .tlt-how-title {
+        font-size: 3.5rem;
+    }
+    .tlt-how-tag {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .tlt-how-title {
+        font-size: 3rem;
+    }
+    .tlt-action-box {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .tlt-how-works-section {
+        padding: 50px 0;
+    }
+    .tlt-how-title {
+        font-size: 2.8rem;
+    }
+    .tlt-how-tag {
+        font-size: 1.8rem;
+    }
+    .tlt-how-desc {
+        font-size: 1.6rem;
+    }
+    .tlt-action-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+/* ========================================= */
+/* Two Ways To Use This Technology Section */
+/* ========================================= */
+.tlt-solutions-section {
+    background-color: #f9fafb;
+    padding: 40px 0;
+}
+
+.tlt-solutions-tag {
+    color: #E5B122;
+    font-weight: 600;
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tlt-solutions-title {
+    color: #272727;
+    font-weight: 600;
+    font-size: 5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.tlt-solutions-desc {
+    color: #272727;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 4    0px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tlt-solution-card {
+    border-radius: 24px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tlt-solution-card-left {
+    background-color: #353535;
+}
+
+.tlt-solution-card-right {
+    background-color: #f6bb1a1a;
+    border: 1px solid #A1A1A1;
+}
+
+.tlt-solution-bg-left {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-image: linear-gradient(90.11deg, #353535 10.67%, rgba(53, 53, 53, 0) 95.84%), url('../images/terrestrial-lidar-technology/option-1-bg.png');
+    background-size: cover;
+    background-position: right center;
+    z-index: 0;
+}
+
+.tlt-solution-bg-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-image: url('../images/terrestrial-lidar-technology/option-2-image.png');
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.tlt-solution-content {
+    position: relative;
+    z-index: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.tlt-solution-badge {
+    background-color: #FDC20C;
+    color: #101010;
+    font-weight: 600;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    padding: 6px 12px;
+    display: inline-block;
+    align-self: flex-start;
+    margin-bottom: 25px;
+}
+
+.tlt-solution-title-left {
+    color: #F9FAFB;
+    font-weight: 600;
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+}
+
+.tlt-solution-title-right {
+    color: #272727;
+    font-weight: 600;
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+}
+
+.tlt-solution-subtitle {
+    color: #E5B122;
+    font-weight: 600;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.tlt-solution-desc-left {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.tlt-solution-desc-right {
+    color: #272727;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.tlt-solution-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 40px;
+}
+
+.tlt-solution-list li {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.tlt-solution-list-left li {
+    color: #fff;
+}
+
+.tlt-solution-list-right li {
+    color: #272727;
+}
+
+.tlt-solution-list li i {
+    color: #59CD36;
+    font-size: 1.8rem;
+    margin-right: 15px;
+}
+
+.tlt-solution-btn {
+    background-color: #F6BB1A;
+    color: #101010;
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: auto;
+    transition: all 0.3s ease;
+    border: 1px solid #F6BB1A;
+}
+
+.tlt-solution-btn:hover {
+    background-color: #dca718;
+    color: #101010;
+    text-decoration: none;
+}
+
+/* Responsive updates for Solutions */
+@media (max-width: 1399px) {
+    .tlt-solution-content {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .tlt-solution-title-left,
+    .tlt-solution-title-right {
+        font-size: 2.8rem;
+    }
+    .tlt-solution-subtitle {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .tlt-solution-bg-left,
+    .tlt-solution-bg-right {
+        opacity: 0.3;
+        width: 100%;
+    }
+    .tlt-solution-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .tlt-solutions-section {
+        padding: 50px 0;
+    }
+    .tlt-solutions-title {
+        font-size: 3rem;
+    }
+    .tlt-solutions-tag {
+        font-size: 2rem;
+    }
+    .tlt-solutions-desc {
+        font-size: 1.6rem;
+    }
+    .tlt-solution-card {
+        padding: 25px;
+    }
+    .tlt-solution-title-left,
+    .tlt-solution-title-right {
+        font-size: 2.4rem;
+    }
+    .tlt-solution-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ========================================= */
+/* Why Choose Terrestrial LiDAR Section */
+/* ========================================= */
+.tlt-why-section {
+    background-color: #f9fafb;
+    padding: 40px 0;
+}
+
+.tlt-why-tag {
+    color: #E5B122;
+    font-weight: 600;
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.tlt-why-title {
+    color: #272727;
+    font-weight: 600;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.tlt-why-desc {
+    color: #272727;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.tlt-why-card {
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tlt-why-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Gradient overlay to make text readable at the top */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0) 100%);
+    z-index: 0;
+}
+
+.tlt-why-card-content {
+    position: relative;
+    z-index: 1;
+    padding: 30px 25px;
+    text-align: center;
+}
+
+.tlt-why-card-title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.tlt-why-card-desc {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Responsive updates for Why Choose */
+@media (max-width: 1199px) {
+    .tlt-why-title {
+        font-size: 3.5rem;
+    }
+    .tlt-why-tag {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .tlt-why-title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    .tlt-why-desc {
+        padding-left: 0;
+        border-left: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .tlt-why-section {
+        padding: 50px 0;
+    }
+    .tlt-why-title {
+        font-size: 2.8rem;
+    }
+    .tlt-why-tag {
+        font-size: 1.8rem;
+    }
+    .tlt-why-desc {
+        font-size: 1.6rem;
+    }
+    .tlt-why-card {
+        min-height: 320px;
+    }
+}
