@@ -289,22 +289,14 @@
         flex-wrap: nowrap;
         justify-content: flex-start;
         -webkit-overflow-scrolling: touch;
-        gap: 0;
+        gap: 20px;
         padding: 25px 20px;
-        scrollbar-width: thin;
-        scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
     
     .esf-stats-bar::-webkit-scrollbar {
-        height: 6px;
-    }
-    .esf-stats-bar::-webkit-scrollbar-track {
-        background: rgba(255, 255, 255, 0.1); 
-        border-radius: 4px;
-    }
-    .esf-stats-bar::-webkit-scrollbar-thumb {
-        background: rgba(255, 255, 255, 0.5); 
-        border-radius: 4px;
+        display: none;
     }
     
     .esf-stats-bar .stat-item {
@@ -313,8 +305,7 @@
     }
     
     .esf-stats-bar .stat-divider {
-        display: block;
-        flex-shrink: 0;
+        display: none;
     }
     
     .esf-title { font-size: 36px; }
