@@ -182,7 +182,7 @@
 
 .b3ds-hero .btn-style-two:hover {
     background-color: #ffffff;
-    color: #111111;
+    color: #111111 !important;
     border-color: #ffffff;
 }
 
