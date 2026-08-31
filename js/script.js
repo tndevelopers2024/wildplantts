@@ -34,10 +34,7 @@
       $(this).prev("ul").slideToggle(500);
     });
 
-    //Disable dropdown parent link
-    $(".navigation li.dropdown > a").on("click", function (e) {
-      e.preventDefault();
-    });
+    
   }
 
   //Hidden Bar Menu Config
@@ -54,7 +51,9 @@
     menuWrap.find(".dropdown").children("ul").hide();
     // toggling child ul
     menuWrap.find(".btn.expander").each(function () {
-      $(this).on("click", function () {
+      $(this).on("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
         $(this)
           .parent() // return parent of .btn.expander (a)
           .parent() // return parent of a (li)

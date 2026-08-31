@@ -1,284 +1,394 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>footer</title>
-    <!-- Stylesheets -->
+<style>
+/* Modern Footer Styles */
+.modern-footer {
+    background: #0f1115;
+    color: #a0a6b5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+    border-top: 3px solid #e5b122;
+}
+.modern-footer::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at top right, rgba(229, 177, 34, 0.05), transparent 50%);
+    pointer-events: none;
+}
+.modern-footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.modern-footer h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.modern-footer h3::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 40px;
+    height: 3px;
+    background: #e5b122;
+    border-radius: 2px;
+}
+.modern-footer .logo-widget img {
+    max-width: 200px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.3));
+}
+.modern-footer .about-text {
+    margin-bottom: 25px;
+    line-height: 1.8;
+    font-size: 15px;
+}
+.modern-footer .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.modern-footer .contact-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.modern-footer .contact-list i {
+    color: #e5b122;
+    font-size: 18px;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+.modern-footer .contact-list a {
+    color: #a0a6b5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.modern-footer .contact-list a:hover {
+    color: #e5b122;
+}
 
-    <!-- Responsive -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
-    <link href="css/responsive.css" rel="stylesheet" />
+/* Tags Widget */
+.modern-footer .tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+.modern-footer .tags-list li a {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #d1d5db;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+.modern-footer .tags-list li a:hover {
+    background: #e5b122;
+    color: #0f1115;
+    border-color: #e5b122;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(229, 177, 34, 0.3);
+}
 
-    <style>
-      .counter-outer {
-        display: grid;
-      }
-      .fact-counter {
-        position: relative;
-        padding: 10px 0px 10px !important;
-      }
-      .fact-counter .column {
-        width: 100%;
-        display: grid;
-        place-items: center;
-      }
-      .fact-counter .count-outer {
-        font-size: 20px !important;
-        color: #e5b122;
-        display: flex;
-        margin-bottom: 5px;
-      }
-      .fact-counter .column {
-        margin-bottom: 0;
-        border-bottom: 0.7px solid #b2b2b2;
-        padding: 20px ;
-      }
-      .fact-counter .column:last-child {
-        border: none !important;
-      }
-      .fact-counter .column .counter-title {
-        position: relative;
-        font-size: 16px;
-        color: #0b0b0b;
-      }
-    </style>
-  </head>
+/* News Widget */
+.modern-footer .news-list {
+    list-style: none;
+    padding: 0;
+}
+.modern-footer .news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.modern-footer .news-item:hover {
+    transform: translateX(5px);
+}
+.modern-footer .news-thumb {
+    width: 65px;
+    height: 65px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 15px;
+    flex-shrink: 0;
+    position: relative;
+}
+.modern-footer .news-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.modern-footer .news-item:hover .news-thumb img {
+    transform: scale(1.1);
+}
+.modern-footer .news-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.modern-footer .news-info h4 a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.modern-footer .news-info h4 a:hover {
+    color: #e5b122;
+}
+.modern-footer .news-date {
+    font-size: 12px;
+    color: #e5b122;
+    display: flex;
+    align-items: center;
+}
+.modern-footer .news-date i {
+    margin-right: 5px;
+}
 
-  <body>
-   
+/* Contact Form */
+.modern-footer .footer-form .form-group {
+    margin-bottom: 15px;
+}
+.modern-footer .footer-form .form-control {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+    color: #fff;
+    padding: 12px 15px;
+    width: 100%;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+.modern-footer .footer-form .form-control:focus {
+    outline: none;
+    border-color: #e5b122;
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 0 10px rgba(229, 177, 34, 0.1);
+}
+.modern-footer .footer-form textarea.form-control {
+    height: 90px;
+    resize: none;
+}
+.modern-footer .footer-form .submit-btn {
+    background: #e5b122;
+    color: #0f1115;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+.modern-footer .footer-form .submit-btn:hover {
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
 
-     
-      <!--Main Footer-->
-      <footer
-        class="main-footer"
-        style="background-image: url(images/background/footer-bg.jpg)"
-      >
-        <div class="auto-container">
-          <!--Widgets Section-->
-          <div class="widgets-section">
-            <div class="row clearfix">
-              <!--Big Column-->
-              <div class="big-column col-md-6 col-sm-12 col-xs-12">
-                <div class="row clearfix">
-                  <!--Footer Column-->
-                  <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer-widget about-widget">
-                      <div class="footer-logo">
-                        <figure>
-                          <a href="index.html"
-                            ><img src="images/home/wildplant logos-07.png" alt=""
-                          /></a>
-                        </figure>
-                      </div>
-                      <div class="widget-content">
-                        <div class="text">
-                          Wild plant provides accurate 3D scan data generated that enable you to view as-built documentation in a virtual world.
-                        </div>
-                        <ul class="contact-info">
-                          <li>
-                            <span class="icon fa fa-map-marker"></span>2A/461, 2nd Floor, Rajas Tower, Medavakkam Main Rd, Kovilambakkam, Chennai, Tamil Nadu 600129
-                          </li>
-                          <li>
-                            <span class="icon fa fa-phone"></span>+91-98404 78347
-                          </li>
-                          <li>
-                            <span class="icon fa fa-envelope-o"></span
-                            >support@wildplant3d.com
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+/* Footer Bottom */
+.modern-footer-bottom {
+    background: #0a0b0e;
+    padding: 25px 0;
+    margin-top: 60px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+.modern-footer-bottom .bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.modern-footer-bottom .copyright {
+    font-size: 14px;
+}
+.modern-footer-bottom .copyright span {
+    color: #e5b122;
+}
+.modern-footer-bottom .social-links {
+    display: flex;
+    gap: 15px;
+}
+.modern-footer-bottom .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.modern-footer-bottom .social-links a:hover {
+    background: #e5b122;
+    color: #0f1115;
+    transform: translateY(-3px);
+}
 
-                  <!--Footer Column-->
-                  <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer-widget tags-widget">
-                      <h2>Popular Tags</h2>
-                      <div class="widget-content">
-                        <ul class="tags-list">
-                          <li><a href="#">About Us  </a></li>
-                          <li><a href="#">Products</a></li>
-                          <li><a href="#">Technology Services</a></li>
-                          <li><a href="#">Resource</a></li>
-                          <li><a href="#">Blog</a></li>
-                        </ul>
-                      </div>
-                    </div>                   
-                  </div>
+@media (max-width: 768px) {
+    .modern-footer-bottom .bottom-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+</style>
+
+<footer class="modern-footer">
+    <div class="footer-container">
+        <div class="row">
+            <!-- About Widget -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                <div class="logo-widget">
+                    <a href="index.html"><img src="images/home/wildplant logos-07.png" alt="Wildplant"></a>
+                    <p class="about-text">Wild plant provides accurate 3D scan data generated that enable you to view as-built documentation in a virtual world.</p>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fa fa-map-marker-alt"></i>
+                            <span>2A/461, 2nd Floor, Rajas Tower, Medavakkam Main Rd, Kovilambakkam, Chennai, Tamil Nadu 600129</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone-alt"></i>
+                            <a href="tel:+919840478347">+91-98404 78347</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <a href="mailto:Lpsm@wildplantts.com">Lpsm@wildplantts.com</a>
+                        </li>
+                    </ul>
                 </div>
-              </div>
-
-              <!--Big Column-->
-              <div class="big-column col-md-6 col-sm-12 col-xs-12">
-                <div class="row clearfix">
-                  <!--Footer Column-->
-                  <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer-widget posts-widget">
-                      <h2>Recent News</h2>
-                      <div class="widget-content">
-                        <div class="posts">
-                          <div class="post">
-                            <figure class="post-thumb">
-                              <img
-                                src="images/home/bridge.png"
-                                alt=""
-                              /><a href="#" class="overlay-link"
-                                ><span class="flaticon-plus-1"></span
-                              ></a>
-                            </figure>
-                            <div class="desc-text">
-                              <a href="#"
-                                >We are Building New Quality Machinery.</a
-                              >
-                            </div>
-                            <div class="time">
-                              <span class="fa fa-clock-o"></span> Oct 03, 2022
-                            </div>
-                          </div>
-                          <div class="post">
-                            <figure class="post-thumb">
-                              <img
-                                src="images/home/factory.png"
-                                alt=""
-                              /><a href="#" class="overlay-link"
-                                ><span class="flaticon-plus-1"></span
-                              ></a>
-                            </figure>
-                            <div class="desc-text">
-                              <a href="#"
-                                >We are Building New Quality Machinery</a
-                              >
-                            </div>
-                            <div class="time">
-                              <span class="fa fa-clock-o"></span> Aug 21, 2022
-                            </div>
-                          </div>
-                        </div>
-                        <a class="view-more theme-btn" href="#"
-                          >Read More <span class="fa fa-caret-right"></span
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!--Footer Column-->
-                  <div class="footer-column col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer-widget contact-widget">
-                      <h2>Send Us Message</h2>
-                      <div class="widget-content">
-                        <div class="newsletter-form">
-                          <form method="post" action="contact.html">
-                            <div class="form-group">
-                              <input
-                                type="text"
-                                name="name"
-                                value=""
-                                placeholder="Name"
-                                required
-                              />
-                            </div>
-                            <div class="form-group">
-                              <input
-                                type="email"
-                                name="email"
-                                value=""
-                                placeholder="Email *"
-                                required
-                              />
-                            </div>
-                            <div class="form-group">
-                              <textarea
-                                name="message"
-                                placeholder="Message *"
-                                required
-                              ></textarea>
-                            </div>
-                            <button
-                              type="submit"
-                              class="theme-btn btn-style-two"
-                            >
-                              Send us
-                            </button>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
 
-        <!--Footer Bottom-->
-        <div class="footer-bottom">
-          <div class="auto-container">
-            <div class="clearfix">
-              <div class="pull-left">
-                <div class="copyright">
-                   &copy; Copyright 2022 by Wildplant
-                  
-                </div>
-              </div>
-              <div class="pull-right">
-                <ul class="footer-nav">
-                  <li><a href="#"><span class="fa-brands fa-facebook-f"></span></a></li>
-                  <li><a href="#"><span class="fa-brands fa-instagram"></span></a></li>
-                  <li><a href="#"><span class="fa-brands fa-linkedin"></span></a></li>
-                  <li><a href="#"><span class="fa-brands fa-twitter"></span></a></li>
+            <!-- Tags Widget -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                <h3>Popular Tags</h3>
+                <ul class="tags-list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Technology Services</a></li>
+                    <li><a href="#">Resource</a></li>
+                    <li><a href="#">Blog</a></li>
                 </ul>
-              </div>
             </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <!--End pagewrapper-->
 
-    <!--Search Popup-->
-    <div id="search-popup" class="search-popup">
-      <div class="close-search theme-btn">
-        <span class="flaticon-unchecked"></span>
-      </div>
-      <div class="popup-inner">
-        <div class="search-form">
-          <form method="post" action="index.html">
-            <div class="form-group">
-              <fieldset>
-                <input
-                  type="search"
-                  class="form-control"
-                  name="search-input"
-                  value=""
-                  placeholder="Search Here"
-                  required
-                />
-                <input type="submit" value="Search" class="theme-btn" />
-              </fieldset>
+            <!-- News Widget -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                <h3>Recent News</h3>
+                <ul class="news-list">
+                    <li class="news-item">
+                        <div class="news-thumb">
+                            <img src="images/home/bridge.png" alt="">
+                        </div>
+                        <div class="news-info">
+                            <h4><a href="#">We are Building New Quality Machinery.</a></h4>
+                            <div class="news-date"><i class="far fa-clock"></i> Oct 03, 2022</div>
+                        </div>
+                    </li>
+                    <li class="news-item">
+                        <div class="news-thumb">
+                            <img src="images/home/factory.png" alt="">
+                        </div>
+                        <div class="news-info">
+                            <h4><a href="#">We are Building New Quality Machinery</a></h4>
+                            <div class="news-date"><i class="far fa-clock"></i> Aug 21, 2022</div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </form>
 
-          <br />
-          <h3>Recent Search Keywords</h3>
-          <ul class="recent-searches">
-            <li><a href="#">Business</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">SEO</a></li>
-            <li><a href="#">Logistics</a></li>
-            <li><a href="#">Freedom</a></li>
-          </ul>
+            <!-- Contact Form Widget -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-5">
+                <h3>Send Us Message</h3>
+                <form method="post" action="contact.html" class="footer-form">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Email *" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-control" placeholder="Message *" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
         </div>
-      </div>
     </div>
 
-    <!--Scroll to top-->
-    <div class="scroll-to-top scroll-to-target" data-target=".main-header">
-      <span class="fa fa-long-arrow-up"></span>
+    <!-- Footer Bottom -->
+    <div class="modern-footer-bottom">
+        <div class="bottom-container">
+            <div class="copyright">
+                &copy; 2024 by <span>WildplantTS</span>. All rights reserved.
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </div>
+</footer>
 
-  </body>
-</html>
+<!--Search Popup-->
+<div id="search-popup" class="search-popup">
+    <div class="close-search theme-btn">
+    <span class="flaticon-unchecked"></span>
+    </div>
+    <div class="popup-inner">
+    <div class="search-form">
+        <form method="post" action="index.html">
+        <div class="form-group">
+            <fieldset>
+            <input
+                type="search"
+                class="form-control"
+                name="search-input"
+                value=""
+                placeholder="Search Here"
+                required
+            />
+            <input type="submit" value="Search" class="theme-btn" />
+            </fieldset>
+        </div>
+        </form>
+
+        <br />
+        <h3>Recent Search Keywords</h3>
+        <ul class="recent-searches">
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">SEO</a></li>
+        <li><a href="#">Logistics</a></li>
+        <li><a href="#">Freedom</a></li>
+        </ul>
+    </div>
+    </div>
+</div>
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".main-header">
+    <span class="fa fa-long-arrow-up"></span>
+</div>
