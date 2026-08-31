@@ -1,0 +1,1489 @@
+/* 
+   ==========================================================================
+   Clear Edge 3D Stylesheet
+   ========================================================================== 
+*/
+
+/* --- Navbar Style Overrides --- */
+.main-header {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); 
+}
+
+.main-header .main-box {
+    background-color: #ffffff !important;
+}
+
+.main-header .main-menu .navigation > li > a {
+    color: #333333 !important;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize !important; 
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li:hover > a,
+.main-header .main-menu .navigation > li.current > a {
+    color: #e4ae1f !important;
+    text-decoration: none !important;
+}
+
+/* Force ALL dropdown and sub-menu links to have no text decoration (underlines) */
+.main-header .main-menu .navigation li a {
+    text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li.dropdown > a::after {
+    content: '\f107'; 
+    font-family: 'Font Awesome 5 Free', 'FontAwesome', sans-serif;
+    font-weight: 900;
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+.main-header .main-menu .navigation > li > a.btn {
+    background-color: #e2a613 !important; 
+    color: #111111 !important;
+    padding: 12px 30px !important;
+    border-radius: 0px !important; 
+    font-weight: 600 !important;
+    margin-left: 20px;
+    border: none !important;
+    display: inline-block;
+    text-transform: none !important;
+}
+
+.main-header .main-menu .navigation > li > a.btn:hover {
+    background-color: #c9930f !important;
+    color: #ffffff !important;
+}
+.main-menu .navigation > li {
+    padding: 25px 0px;
+}
+
+/* --- Layout fixes for empty pages --- */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-main-content {
+    flex-grow: 1;
+    padding-top: 100px;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-footer {
+    margin-top: auto; 
+}
+
+/* --- Page Padding Overrides --- */
+.clear-edge-main-content {
+    /* Need padding-top to stop header overlay */
+    padding-top: 100px !important;
+    background-color: #242220; /* Dark background spanning standard empty area */
+}
+
+.clear-edge-container, .ce3d-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* --- Clear Edge 3D Hero Section --- */
+.ce3d-hero-section {
+    background-color: #242220;
+    padding: 20px 0 60px;
+    overflow: hidden;
+}
+
+.ce3d-hero-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ce3d-hero-left {
+    padding-right: 40px;
+    margin-bottom: 40px;
+}
+
+.ce3d-logo-overlay {
+    margin-bottom: 5px;
+}
+
+.ce3d-logo-overlay img {
+    max-width: 180px;
+    height: auto;
+}
+
+.ce3d-subtitle {
+    color: #e4ae1f;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.ce3d-title {
+    color: #ffffff;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.ce3d-desc {
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 95%;
+}
+
+.ce3d-hero-btns {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-ce3d-primary {
+    background-color: #e4ae1f;
+    color: #111111;
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    border: 2px solid #e4ae1f;
+}
+
+.btn-ce3d-primary:hover {
+    background-color: #c9930f;
+    border-color: #c9930f;
+    color: #ffffff;
+}
+
+.btn-ce3d-outline {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-ce3d-outline:hover {
+    background-color: #ffffff;
+    color: #111111;
+    border-color: #ffffff;
+}
+
+.ce3d-hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ce3d-img-top {
+    width: 100%;
+}
+
+.ce3d-img-top img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.ce3d-img-bottom-wrapper {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.ce3d-img-bottom-item {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ce3d-img-bottom-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+    .ce3d-title {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 991px) {
+    .ce3d-hero-row {
+        flex-direction: column;
+    }
+    .ce3d-hero-left {
+        padding-right: 15px;
+    }
+    .ce3d-title {
+        font-size: 36px;
+    }
+    .ce3d-hero-section{
+        padding: 0px 0 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    .ce3d-title {
+        font-size: 28px;
+    }
+    .ce3d-hero-btns {
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn-ce3d-primary, .btn-ce3d-outline {
+        width: 100%;
+    }
+    .ce3d-img-bottom-wrapper {
+        flex-direction: column;
+    }
+}
+
+/* --- What Is ClearEdge3D Verity Section --- */
+.ce3d-what-is-section {
+    background-color: #fafafa;
+    padding: 80px 0;
+}
+
+.ce3d-what-is-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ce3d-what-is-header .ce3d-section-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #222222;
+    margin: 0;
+}
+
+.ce3d-what-is-col {
+    margin-bottom: 30px;
+}
+
+.ce3d-what-is-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 35px 25px 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ce3d-what-is-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.ce3d-wic-img {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.ce3d-wic-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.ce3d-wic-content h4 {
+    font-size: 19px;
+    font-weight: 800;
+    color: #222222;
+    margin-bottom: 15px;
+    line-height: 1.35;
+}
+
+.ce3d-wic-content p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+}
+
+@media (max-width: 991px) {
+    .ce3d-what-is-section {
+        padding: 50px 0;
+    }
+    .ce3d-what-is-header .ce3d-section-title {
+        font-size: 32px;
+    }
+}
+@media (max-width: 575px) {
+    .ce3d-what-is-header .ce3d-section-title {
+        font-size: 28px;
+    }
+}
+
+/* --- Process Section --- */
+.ce3d-process-section {
+    background-color: #242220;
+    padding: 80px 0;
+}
+
+.ce3d-process-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ce3d-process-header .ce3d-section-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+}
+
+.ce3d-process-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.ce3d-process-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ce3d-pi-img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ce3d-pi-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.ce3d-process-item:hover .ce3d-pi-img img {
+    transform: scale(1.05);
+}
+
+.ce3d-pi-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.ce3d-pi-num {
+    background-color: #e4ae1f;
+    color: #111111;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.ce3d-pi-title-wrapper h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.ce3d-process-item p {
+    font-size: 13px;
+    color: #cccccc;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+@media (max-width: 1199px) {
+    .ce3d-process-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ce3d-process-item {
+        flex: 0 0 calc(33.333% - 20px);
+        margin-bottom: 30px;
+    }
+}
+
+/* --- What Is ClearEdge3D Verity Section --- */
+.ce3d-what-is-section {
+    background-color: #fafafa;
+    padding: 80px 0;
+}
+
+.ce3d-what-is-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ce3d-what-is-header .ce3d-section-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #222222;
+    margin: 0;
+}
+
+.ce3d-what-is-col {
+    margin-bottom: 30px;
+}
+
+.ce3d-what-is-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 35px 25px 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ce3d-what-is-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.ce3d-wic-img {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.ce3d-wic-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.ce3d-wic-content h4 {
+    font-size: 19px;
+    font-weight: 800;
+    color: #222222;
+    margin-bottom: 15px;
+    line-height: 1.35;
+}
+
+.ce3d-wic-content p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+}
+
+@media (max-width: 991px) {
+    .ce3d-what-is-section {
+        padding: 50px 0;
+    }
+    .ce3d-what-is-header .ce3d-section-title {
+        font-size: 32px;
+    }
+}
+@media (max-width: 575px) {
+    .ce3d-what-is-header .ce3d-section-title {
+        font-size: 28px;
+    }
+}
+
+/* --- Process Section --- */
+.ce3d-process-section {
+    background-color: #242220;
+    padding: 80px 0;
+}
+
+.ce3d-process-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ce3d-process-header .ce3d-section-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+}
+
+.ce3d-process-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.ce3d-process-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ce3d-pi-img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ce3d-pi-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.ce3d-process-item:hover .ce3d-pi-img img {
+    transform: scale(1.05);
+}
+
+.ce3d-pi-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.ce3d-pi-num {
+    background-color: #e4ae1f;
+    color: #111111;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.ce3d-pi-title-wrapper h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.ce3d-process-item p {
+    font-size: 13px;
+    color: #cccccc;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+@media (max-width: 1199px) {
+    .ce3d-process-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ce3d-process-item {
+        flex: 0 0 calc(33.333% - 20px);
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ce3d-process-item {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 575px) {
+    .ce3d-process-item {
+        flex: 0 0 100%;
+    }
+    .ce3d-process-header .ce3d-section-title {
+        font-size: 28px;
+    }
+}
+
+/* --- Two Ways to Adopt Section --- */
+.ce3d-adopt-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.ce3d-adopt-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ce3d-adopt-header .ce3d-section-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #222222;
+    margin: 0;
+}
+
+.ce3d-adopt-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ce3d-adopt-col {
+    flex: 1;
+    min-width: 45%;
+}
+
+.ce3d-adopt-card {
+    background: linear-gradient(135deg, #fffcf0 0%, #ffffff 30%);
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 40px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.ce3d-ac-inner {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.ce3d-ac-left {
+    flex: 0 0 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ce3d-ac-left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ce3d-ac-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.ce3d-ac-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #222222;
+    margin-bottom: 20px;
+    line-height: 1.35;
+}
+
+.ce3d-ac-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    flex-grow: 1;
+}
+
+.ce3d-ac-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.ce3d-ac-list li::before {
+    content: '\f058'; 
+    font-family: 'Font Awesome 5 Free', 'FontAwesome', sans-serif;
+    font-weight: 900;
+    color: #e4ae1f;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 16px;
+}
+
+/* Card 2 Specifics */
+.ce3d-adopt-card-center {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.ce3d-adopt-card-center .ce3d-ac-title {
+    font-size: 22px;
+    text-align: center;
+}
+
+.ce3d-ac-subtitle {
+    font-size: 15px;
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.ce3d-ac-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px 25px;
+    margin-bottom: 25px;
+    max-width: 85%;
+}
+
+.ce3d-ac-logos img {
+    max-width: 90px;
+    height: auto;
+    object-fit: contain;
+}
+
+.ce3d-ac-desc {
+    font-size: 13px;
+    color: #555555;
+    font-weight: 500;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ce3d-ac-btn-wrapper {
+    margin-top: auto;
+    text-align: left; 
+}
+
+.ce3d-adopt-card-center .ce3d-ac-btn-wrapper {
+    text-align: center; 
+}
+
+@media (max-width: 991px) {
+    .ce3d-ac-inner {
+        flex-direction: column;
+    }
+    .ce3d-ac-left {
+        margin-bottom: 20px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .ce3d-adopt-col {
+        min-width: 100%;
+    }
+    .ce3d-adopt-header .ce3d-section-title {
+        font-size: 30px;
+    }
+    .ce3d-ac-logos {
+        max-width: 100%;
+    }
+}
+@media (max-width: 575px) {
+    .ce3d-adopt-header .ce3d-section-title {
+        font-size: 26px;
+    }
+}
+
+/* --- Scope Section --- */
+.ce3d-scope-section {
+    background-color: #fafafa;
+    padding: 80px 0 50px;
+}
+
+.ce3d-scope-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ce3d-scope-header .ce3d-section-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #222222;
+    margin: 0;
+}
+
+.ce3d-scope-col {
+    margin-bottom: 40px;
+}
+
+.ce3d-scope-item {
+    text-align: center;
+    padding: 0 10px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.ce3d-scope-item:hover {
+    transform: translateY(-5px);
+}
+
+.ce3d-si-img {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+.ce3d-si-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ce3d-scope-item h4 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #222222;
+    margin-bottom: 12px;
+}
+
+.ce3d-scope-item p {
+    font-size: 13.5px;
+    color: #555555;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 500;
+}
+
+@media (max-width: 991px) {
+    .ce3d-scope-section {
+        padding: 50px 0 20px;
+    }
+    .ce3d-scope-header .ce3d-section-title {
+        font-size: 32px;
+    }
+}
+@media (max-width: 575px) {
+    .ce3d-scope-header .ce3d-section-title {
+        font-size: 26px;
+    }
+}
+
+/* --- Deviation Section --- */
+.ce3d-deviation-section {
+    background-color: #171515;
+    padding: 90px 0;
+}
+
+.ce3d-dev-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+
+.ce3d-dev-text {
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+.ce3d-dev-text .ce3d-section-title {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.ce3d-dev-text p {
+    color: #cccccc;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.ce3d-dev-col {
+    margin-bottom: 30px;
+}
+
+.ce3d-dev-card {
+    border-radius: 12px;
+    padding: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.ce3d-dev-card:hover {
+    transform: translateY(-5px);
+}
+
+.ce3d-dev-card-green {
+    border: 2px solid #00a651;
+    background: linear-gradient(180deg, rgba(0, 166, 81, 0.15) 0%, rgba(0,0,0,0) 100%);
+}
+
+.ce3d-dev-card-yellow {
+    border: 2px solid #ffc000;
+    background: linear-gradient(180deg, rgba(255, 192, 0, 0.15) 0%, rgba(0,0,0,0) 100%);
+}
+
+.ce3d-dev-card-red {
+    border: 2px solid #ed1c24;
+    background: linear-gradient(180deg, rgba(237, 28, 36, 0.15) 0%, rgba(0,0,0,0) 100%);
+}
+
+.ce3d-dev-img {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #000;
+}
+
+.ce3d-dev-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ce3d-dev-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.ce3d-icon-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.ce3d-bg-green { background-color: #00a651; }
+.ce3d-bg-yellow { background-color: #ffc000; }
+.ce3d-bg-red { background-color: #ed1c24; }
+
+.ce3d-dev-title h4 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.ce3d-dev-info p {
+    color: #bbbbbb;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 1199px) {
+    .ce3d-dev-text .ce3d-section-title {
+        font-size: 30px;
+    }
+}
+@media (max-width: 991px) {
+    .ce3d-dev-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ce3d-dev-text {
+        padding-right: 15px;
+    }
+    .ce3d-dev-col {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+/* --- QA/QC Steps Section --- */
+.ce3d-qa-section {
+    background-color: #f7f8f9;
+    padding: 80px 0;
+}
+
+.ce3d-qa-row {
+    align-items: flex-start;
+}
+
+.ce3d-qa-left {
+    padding-right: 40px;
+}
+
+.ce3d-qa-slider-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+}
+
+.ce3d-qa-slide {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.ce3d-qa-slide-header {
+    margin-bottom: 25px;
+}
+
+.ce3d-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 16px 4px 4px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    border: none;
+    color: #222222;
+    background-color: #fbfcdd; /* Lighter soft yellow background */
+}
+
+/* Format the circle number inside the badge */
+.ce3d-badge-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    color: #e5b002;
+    border-radius: 50%;
+    margin-right: 8px;
+    font-weight: 800;
+}
+
+.ce3d-badge-solid, .ce3d-qa-list-item.active .ce3d-badge {
+    background-color: #ffcc00;
+    color: #111111;
+}
+
+/* Active solid badge gets a white circle with yellow text */
+.ce3d-badge-solid .ce3d-badge-num, .ce3d-qa-list-item.active .ce3d-badge-num {
+    background-color: #ffffff;
+    color: #ffcc00;
+}
+
+.ce3d-qa-slide-header h3 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #222222;
+    margin-bottom: 12px;
+}
+
+.ce3d-qa-slide-header p {
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.ce3d-qa-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #eeeeee;
+}
+
+.ce3d-qa-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.ce3d-qa-controls button {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.ce3d-qa-controls button:hover {
+    background-color: #ffcc00;
+    color: #000000;
+}
+
+.ce3d-qa-controls .ce3d-badge {
+    margin-bottom: 0;
+    min-width: 80px;
+    text-align: center;
+}
+
+/* Right Side List */
+.ce3d-qa-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #222222;
+    margin-bottom: 40px;
+    line-height: 1.25;
+}
+
+.ce3d-qa-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ce3d-qa-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0.9;
+}
+
+.ce3d-qa-list-item:hover, .ce3d-qa-list-item.active {
+    opacity: 1;
+}
+
+.ce3d-qli-content h4 {
+    font-size: 17px;
+    font-weight: 800;
+    color: #222222;
+    margin-bottom: 8px;
+}
+
+.ce3d-qli-content p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .ce3d-qa-left {
+        padding-right: 15px;
+        margin-bottom: 40px;
+    }
+    .ce3d-qa-title {
+        font-size: 30px;
+    }
+}
+@media (max-width: 575px) {
+    .ce3d-qa-slider-container {
+        padding: 20px;
+    }
+    .ce3d-qa-slide-header h3 {
+        font-size: 22px;
+    }
+    .ce3d-qa-title {
+        font-size: 26px;
+    }
+}
+
+/* --- Implementation Partner Section --- */
+.ce3d-partner-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.ce3d-partner-header {
+    margin-bottom: 40px;
+}
+
+.ce3d-partner-header .ce3d-section-title {
+    font-size: 34px;
+    font-weight: 800;
+    color: #222222;
+    margin-bottom: 15px;
+    line-height: 1.25;
+}
+
+.ce3d-partner-header p {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 90%;
+}
+
+.ce3d-pc-col {
+    margin-bottom: 25px;
+}
+
+.ce3d-partner-card {
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 30px 15px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ce3d-partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.ce3d-partner-card img {
+    height: 55px;
+    margin-bottom: 25px;
+    object-fit: contain;
+}
+
+.ce3d-partner-card h4 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #222222;
+    margin-bottom: 15px;
+    line-height: 1.35;
+}
+
+.ce3d-partner-card p {
+    font-size: 13px;
+    color: #555555;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 500;
+}
+
+.ce3d-partner-map {
+    text-align: center;
+    padding-left: 20px;
+}
+
+.ce3d-partner-map img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+@media (max-width: 1199px) {
+    .ce3d-partner-header .ce3d-section-title {
+        font-size: 30px;
+    }
+}
+@media (max-width: 991px) {
+    .ce3d-partner-map {
+        padding-left: 0;
+        margin-top: 40px;
+    }
+    .ce3d-partner-header p {
+        max-width: 100%;
+    }
+}
+@media (max-width: 575px) {
+    .ce3d-partner-header .ce3d-section-title {
+        font-size: 26px;
+    }
+}
+
+/* --- CTA Section --- */
+.ce3d-cta-section {
+    background-color: #f7f3e8; /* Soft pale beige/yellow */
+    padding: 80px 0;
+}
+
+.ce3d-cta-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ce3d-cta-content .ce3d-section-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #333333;
+    margin-bottom: 20px;
+    line-height: 1.25;
+}
+
+.ce3d-cta-content p {
+    font-size: 16.5px;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    font-weight: 500;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-ce3d-cta {
+    background: linear-gradient(180deg, #f5d14d 0%, #db9d18 100%);
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 16px 45px;
+    border-radius: 6px;
+    text-decoration: none !important;
+    display: inline-block;
+    border: none;
+    box-shadow: 0 4px 15px rgba(219, 157, 24, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-ce3d-cta:hover {
+    background: linear-gradient(180deg, #e3bd3d 0%, #c28811 100%);
+    box-shadow: 0 6px 20px rgba(219, 157, 24, 0.6);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+    .ce3d-cta-content .ce3d-section-title {
+        font-size: 32px;
+    }
+}
+@media (max-width: 575px) {
+    .ce3d-cta-content .ce3d-section-title {
+        font-size: 28px;
+    }
+}
+
+/* --- FAQ Section --- */
+.ce3d-faq-section {
+    padding: 80px 0;
+    background-color: #fafafa;
+}
+
+.ce3d-faq-title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 800;
+    color: #222222;
+    margin-bottom: 50px;
+}
+
+.ce3d-faq-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ce3d-faq-item {
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.ce3d-faq-header {
+    background-color: #2c2c2c;
+    padding: 22px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.ce3d-faq-header:hover {
+    background-color: #1a1a1a;
+}
+
+.ce3d-faq-header h4 {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.ce3d-faq-header i {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.ce3d-faq-item.active .ce3d-faq-header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 4px solid #e4ae1f;
+}
+
+.ce3d-faq-body {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: block; /* Essential for transition */
+    padding: 0 25px; /* Start with 0 padding for clean slide */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, padding 0.4s ease, opacity 0.4s ease;
+}
+
+.ce3d-faq-item.active .ce3d-faq-body {
+    max-height: 500px;
+    padding: 25px;
+    opacity: 1;
+}
+
+.ce3d-faq-body p {
+    margin: 0;
+    color: #555555;
+    font-size: 14.5px;
+    line-height: 1.6;
+}
+
+@media (max-width: 575px) {
+    .ce3d-faq-title {
+        font-size: 30px;
+    }
+}
