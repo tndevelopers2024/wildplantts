@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -25,385 +25,11 @@
       ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
     ><![endif]-->
   <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="css/building-3d-scanning1.css" rel="stylesheet" />
 </head>
-<style>
-  .main-footer .about-widget .text {
-    font-size: 16px;
-  }
-
-  .main-footer .contact-info li {
-    font-size: 16px;
-  }
-
-  .main-footer .tags-widget .tags-list li a {
-    font-size: 16px;
-  }
-
-  .main-footer p {
-    font-size: 16px;
-  }
-
-  .main-footer a {
-    color: #e5b122;
-    font-size: 16px;
-  }
-
-  @media(max-width:600px) {
-    .hidden-bar .logo img {
-      display: inline-block;
-      max-width: 75%;
-    }
-
-    .faro-banner h1 {
-      font-size: 28px !important;
-      padding-bottom: 10px !important;
-      padding-top: 40px !important;
-    }
-
-    .faro-banner h3 {
-      font-size: 16px !important;
-      padding-bottom: 25px !important;
-      font-weight: 500 !important;
-    }
-
-    .sec2-btn a {
-      padding: 10px 40px !important;
-      font-size: 16px !important;
-      border: 2px solid #e5b122 !important;
-    }
-
-    .faro-banner {
-      padding: 80px 0px 80px !important;
-    }
-
-    .overview-ul {
-      gap: 25px !important;
-      padding: 10px 5px !important;
-    }
-
-    .overview {
-      display: none !important;
-    }
-
-    .sponsors-section {
-      padding: 50px 0px 40px !important;
-    }
-
-    .heading {
-      font-size: 18px !important;
-    }
-
-    .heading::before {
-      left: 3% !important;
-      width: 75px !important;
-    }
-
-    .over-con h1 {
-      font-size: 22px !important;
-      font-weight: 700 !important;
-    }
-
-    .over-con p {
-      font-size: 16px !important;
-      padding-top: 10px !important;
-    }
-
-    .sec-3 h2 {
-      font-size: 22px !important;
-    }
-
-    .sec-3 {
-      padding-top: 40px !important;
-    }
-
-    .sponsors-section h1::before {
-      left: 2% !important;
-      width: 150px !important;
-    }
-
-    .sec-4 {
-      background-color: #333333 !important;
-      padding-top: 40px !important;
-      padding-bottom: 40px !important;
-    }
-
-    .sponsors-section h1 {
-      font-size: 22px !important;
-      font-weight: 700;
-      padding-left: 5px !important;
-    }
-
-    .sec-4 h2 {
-      font-size: 16px !important;
-    }
-
-    .gellary-content h1 {
-      font-size: 22px !important;
-    }
-
-    .gellary-content1 h4 {
-      font-size: 22px !important;
-    }
-
-    .accordion-header span {
-      font-size: 18px !important;
-    }
-
-    .over-sec {
-      margin-top: -15px !important;
-    }
-
-    .sec-4 button {
-      height: 50px !important;
-    }
-
-    .download-sec {
-      gap: 0px !important;
-    }
-  }
-
-  a {
-    text-decoration: none !important;
-  }
-
-
-  /* Building */
-  .main-menu .navigation>li>a {
-    color: #000;
-  }
-
-  .faro-banner {
-    background-image: url(/images/bim-img/banner1.png) !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-  }
-
-  .overview {
-    display: grid;
-    place-content: center;
-    padding-top: 40px;
-  }
-
-  .overview-ul {
-    display: flex;
-    gap: 120px;
-    background-color: #EFEFEF;
-    padding: 10px 40px;
-  }
-
-  .overview-ul li {
-    border-right: 1.5px #fff;
-    color: black;
-    font-weight: 500;
-    font-size: 16px;
-  }
-
-  .over-con {
-    text-align: left;
-  }
-
-  .heading::before {
-    content: "";
-    position: absolute;
-    left: 1%;
-    margin-left: -8px;
-    bottom: 15px;
-    width: 110px;
-    border-bottom: 3px solid #e5b122;
-  }
-
-  .over-con h1 {
-    color: #000;
-    font-size: 32px;
-    font-weight: 700;
-  }
-
-  .over-con p {
-    font-size: 18px;
-    color: #000;
-    padding-top: 20px;
-  }
-
-  .over-sec {
-    background-image: url(/images/bim-img/Overview1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    margin-top: 40px;
-  }
-
-  .sec-3 {
-    background-image: url(/images/bim-img/Howitworks.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
-
-  .sec-3 h2 {
-    font-size: 32px;
-    font-weight: 600;
-    color: #ffffff;
-    padding-bottom: 30px;
-  }
-
-  .sec-4 {
-    background-color: #333333;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .sec-4 h2 {
-    font-size: 28px;
-    font-weight: 600;
-    color: #fff;
-  }
-
-  .sec-4 button {
-    padding: 12px 40px;
-    color: black;
-    font-size: 16px;
-    background-color: #E5B122;
-    font-weight: 600;
-    border-radius: 2px;
-    transition: 0.3s all;
-  }
-
-  .sec-4 button:hover {
-    background-color: #fff;
-  }
-
-  .download-sec {
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-  }
-
-  .gellary-content h1 {
-    font-size: 32px;
-    font-weight: 600;
-    color: #000;
-  }
-
-  .sponsors-section h1 {
-    text-align: left;
-    font-size: 32px;
-    font-weight: 700;
-    padding-left: 75px;
-    letter-spacing: 0px;
-    color: #fff !important;
-    opacity: 1;
-  }
-
-  .sponsors-section h1::before {
-    content: "";
-    position: absolute;
-    margin-left: -8px;
-    bottom: -12px;
-    left: 6.5%;
-    width: 180px;
-    border-bottom: 3px solid #e5b122;
-  }
-
-  .lower-content h5 {
-    width: 65px !important;
-    background: #e5b122;
-    margin-left: auto;
-    color: #000000;
-    font-weight: 600;
-    border-radius: 50%;
-    text-align: center;
-    margin-top: -80px;
-    padding: 10px;
-  }
-
-  .main-header .main-box .outer-container {
-    position: relative;
-    padding: 0px 40px 0px 0px;
-  }
-
-  .faq-sec {
-    background-color: #EFEFEF;
-    padding-top: 40px;
-    padding-bottom: 70px;
-  }
-
-  .image-box p {
-    color: #fff;
-    font-size: 16px;
-    padding-top: 15px;
-  }
-
-  .faq-scroll {
-    height: 600px;
-    overflow-y: scroll;
-  }
-
-  #style-3::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #F5F5F5;
-    border-radius: 10px;
-  }
-
-  .laser-scan,
-  .faro-scan {
-    padding: 0px 0px !important;
-    border-radius: 2px;
-    margin-right: 10px !important;
-    font-weight: 600;
-    background-color: #E5B122;
-  }
-
-  .laser-scan a,
-  .faro-scan a {
-    padding: 8px !important;
-  }
-
-  #style-3::-webkit-scrollbar {
-    width: 10px;
-    background-color: #F5F5F5;
-    border-radius: 20px;
-  }
-
-  #style-3::-webkit-scrollbar-thumb {
-    background-color: #E5B122;
-    border-radius: 10px;
-  }
-
-  .sec2-btn a {
-    padding: 10px 60px;
-    border-radius: 3px;
-    font-size: 18px;
-    color: #e5b122;
-    font-weight: 700;
-    background-color: transparent;
-    border: 1.5px solid #e5b122;
-  }
-
-  .sec2-btn a:hover {
-    color: #e5b122;
-  }
-
-  .heading {
-    text-align: justify;
-    font-size: 25px;
-    font-weight: 500;
-  }
-
-  .gellary-content1 h4 {
-    font-size: 32px;
-    color: #000;
-    margin-bottom: 40px;
-  }
-
-  .lower-content p {
-    font-size: 20px;
-    color: black !important;
-    font-weight: 500;
-  }
-</style>
-
 <body>
   <div class="page-wrapper">
     <!-- Preloader -->
@@ -415,526 +41,770 @@
     </div>
 
     <div class="header"></div>
-  </div>
-  <!--End pagewrapper-->
 
-  <!--Search Popup-->
-  <!-- <div id="search-popup" class="search-popup">
-<div class="close-search theme-btn">
-  <span class="flaticon-unchecked"></span>
-</div>
-<div class="popup-inner">
-  <div class="search-form">
-    <form method="post" action="index.html">
-      <div class="form-group">
-        <fieldset>
-          <input
-            type="search"
-            class="form-control"
-            name="search-input"
-            value=""
-            placeholder="Search Here"
-            required
-          />
-          <input type="submit" value="Search" class="theme-btn" />
-        </fieldset>
-      </div>
-    </form>
-
-    <br />
-
-  </div>
-</div>
-</div> -->
-
-  <!--Page Title-->
-
-  <!--Page Title-->
-  <section class="faro-banner">
-    <div class="container">
-      <h1>Building 3D Scanning</h1>
-      <h3>Scan, Measure And Design Any Building With Laser Scanning</h3>
-      <div class="sec2-btn">
-        <a href="wildplant-form.html">Get A Quote</a>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="sec-2">
-    <div class="container">
-      <div class="row">
-        <div class="overview">
-          <ul class="overview-ul">
-            <li>Overview</li>
-            <li>How it works</li>
-            <li>Applications</li>
-            <li>Blogs</li>
-            <li>Faqs</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <section class="over-sec">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7 over-con">
-            <h2 class="heading">
-              OVERVIEW
-            </h2>
-            <h1>BUILDING 3D SCANNING</h1>
-            <p>3D scanning can be a great way to gather much data about an existing building, and it may become the
-              standard method of capturing information about eye-level features. However, you have to invest time and
-              money in the scanning process, and it
-              still takes time to analyze the data. For example, you could use 3D scanning to take data from a building
-              that will undergo restoration. 3D scanning is quick, accurate, and requires only a small number of
-              measurements before you have a good amount of data. The captured data can then be used for modeling in
-              CAD software or even published online for better visualization. With the rapid technological advances in
-              laser scanning, Wildplant terrestrial solutions provide advanced 3D laser scanning for building to utilize
-              the latest technology available.</p>
+    
+    <!-- Main Content Area -->
+    <main class="page-main-content esf-main-content">
+      
+      <!-- Hero Section -->
+      <section class="b3ds-hero">
+        <div class="b3ds-container">
+          <div class="row clearfix align-items-center">
+            
+            <!-- Content Column -->
+            <div class="col-lg-7 col-md-12 col-sm-12 content-column">
+              <h1 class="title">
+                <span class="highlight">Building 3D Scanning</span><br />
+                &amp; Scan To BIM<br />
+                Modeling Service
+              </h1>
+              <p class="subtitle">
+                Accurate Existing Conditions for Buildings, Renovations,<br />
+                BIM &amp; Digital Twins
+              </p>
+              
+              <ul class="feature-list">
+                <li><i class="fas fa-check-circle"></i> Engineering Grade Accuracy</li>
+                <li><i class="fas fa-check-circle"></i> Advanced LiDAR Technology</li>
+                <li><i class="fas fa-check-circle"></i> BIM &amp; Digital Twin Ready</li>
+                <li><i class="fas fa-check-circle"></i> Fast Turnaround</li>
+              </ul>
+              
+              <div class="btn-box">
+                <a href="get-a-quote-3d-scanning.html" class="theme-btn btn-style-one">Get a Quote</a>
+                <a href="talk-to-experts.html" class="theme-btn btn-style-two outline-btn">Talk to Industrial Scanning Experts</a>
+              </div>
+            </div>
+            
+            <!-- Image Column -->
+            <div class="col-lg-5 col-md-12 col-sm-12 image-column">
+              <img src="images/building-3d-scanning1/b3ds--hero-right-img1.png" alt="Building Point Cloud" class="hero-img" />
+              <img src="images/building-3d-scanning1/b3ds--hero-right-img2.png" alt="Building BIM Model" class="hero-img" />
+            </div>
+            
           </div>
         </div>
-      </div>
-    </section>
-  </section>
+      </section>
 
-  <section class="sec-3">
-    <div class="container">
-      <h2>
-        HOW IT WORKS
-      </h2>
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <img src="images/bim-img/Component 16 – 1.png" alt="">
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <img src="images/bim-img/Component 17 – 1.png" alt="">
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <img src="images/bim-img/Component 18 – 1.png" alt="">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <img src="images/bim-img/Component 19 – 1.png" alt="">
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <img src="images/bim-img/Component 20 – 1.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--Sponsors Section-->
-  <section class="sponsors-section">
-    <div class="container">
-      <h1>APPLICATIONS</h1>
-      <div class="auto-container last-sec">
-        <!--Sponsors SLider-->
-        <ul class="sponsors-carousel">
-          <li>
-            <div class="inner-box">
-              <figure class="image-box">
-                <img src="images/3dlasertech/Group 39.png" alt="" />
-                <p>Digital Factory</p>
-              </figure>
-
-
+      <!-- Stats Bar Section -->
+      <section class="b3ds-stats-section">
+        <div class="b3ds-container">
+          <div class="b3ds-stats-bar">
+            
+            <div class="stat-item">
+              <div class="stat-icon"><img src="images/building-3d-scanning1/b3ds--hero-sb-img1.png" alt="Engineering Grade Accuracy"></div>
+              <div class="stat-text">Engineering<br>Grade Accuracy</div>
             </div>
-          </li>
-          <li>
-            <div class="inner-box">
-              <figure class="image-box">
-                <img src="images/3dlasertech/Group 40.png" alt="" />
-                <p>Digital Heritage</p>
-              </figure>
-
+            
+            <div class="stat-item">
+              <div class="stat-icon"><img src="images/building-3d-scanning1/b3ds--hero-sb-img2.png" alt="Millions Of Scan Points"></div>
+              <div class="stat-text">Millions Of<br>Scan Points</div>
             </div>
-          </li>
-          <li>
-            <div class="inner-box">
-              <figure class="image-box">
-                <img src="images/3dlasertech/Group 41.png" alt="" />
-                <p>Scan to BIM</p>
-              </figure>
-
+            
+            <div class="stat-item">
+              <div class="stat-icon"><img src="images/building-3d-scanning1/b3ds--hero-sb-img3.png" alt="Fast Site Capture"></div>
+              <div class="stat-text">Fast Site<br>Capture</div>
             </div>
-          </li>
-          <li>
-            <div class="inner-box">
-              <figure class="image-box">
-                <img src="images/3dlasertech/Group 42.png" alt="" />
-                <p>Scan to Mesh</p>
-              </figure>
-
+            
+            <div class="stat-item">
+              <div class="stat-icon"><img src="images/building-3d-scanning1/b3ds--hero-sb-img4.png" alt="BIM Ready Deliverables"></div>
+              <div class="stat-text">BIM Ready<br>Deliverables</div>
             </div>
-          </li>
-          <li>
-            <div class="inner-box">
-              <figure class="image-box">
-                <img src="images/3dlasertech/Group 43.png" alt="" />
-                <p>NDT with Laser scanning</p>
-              </figure>
-
+            
+            <div class="stat-item">
+              <div class="stat-icon"><img src="images/building-3d-scanning1/b3ds--hero-sb-img5.png" alt="Digital Twin Ready"></div>
+              <div class="stat-text">Digital Twin<br>Ready</div>
             </div>
-          </li>
-          <li>
-            <div class="inner-box">
-              <figure class="image-box">
-                <img src="images/3dlasertech/Group 44.png" alt="" />
-                <p>Scan to scan deviation analysis</p>
-              </figure>
-
-            </div>
-          </li>
-          <li>
-            <div class="inner-box">
-              <figure class="image-box">
-                <img src="images/3dlasertech/Group 45.png" alt="" />
-                <p>Scan to BIM deviation analysis</p>
-              </figure>
-
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 download-sec">
-          <h2>Download Laser scanning service brochure</h2>
-          <button type="button">Download</button>
+            
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section id="Blogs" class="tabbed-shop-section">
-    <div class="auto-container">
-      <div class="container">
-        <div class="gellary-content">
-          <h3 class="heading">OUR BLOGS</h3>
-          <h1>News & Articles</h1>
-        </div>
-      </div>
-
-      <!--Shop Tabs Box-->
-      <div class="shop-tabs-box">
-
-
-        <!--Tabs Content-->
-        <div class="tabs-content">
-          <!--Tab / Active Tab-->
-          <div class="shop-tab active-tab" id="tab-one">
-            <div class="tabbed-shop-carousel">
-              <div class="default-shop-item">
-                <!--inner-box-->
-                <div class="inner-box">
-                  <!--image-box-->
-                  <figure class="image-box">
-                    <a href="#"><img class="insusrty" src="images/home/industry/industry7.png" alt="" /></a>
-                  </figure>
-
-                  <!--lower-content-->
-                  <div class="lower-content">
-                    <h5>20 <br> OCT</h5>
-                    <h3>
-                      <span><i class="fa-solid fa-user"></i>Admin</span>
-                      <span><i class="fa-solid fa-comments"></i>2 Comments</span>
-                    </h3>
-                    <p>We are best for any industrial business</p>
-                  </div>
-
-                </div>
+      <!-- What is Building Scanning Section -->
+      <section class="wibs-section">
+        <div class="b3ds-container">
+          
+          <!-- Top Row -->
+          <div class="row clearfix align-items-center wibs-top-row">
+            <!-- Left List (Images) -->
+            <div class="col-lg-2 col-md-12 col-sm-12 left-img-col">
+              <ul class="wibs-img-list">
+                <li><img src="images/building-3d-scanning1/wibs-left-img1.png" alt="Building"><span>Building</span></li>
+                <li><img src="images/building-3d-scanning1/wibs-left-img2.png" alt="Laser Scanner"><span>Laser Scanner</span></li>
+                <li><img src="images/building-3d-scanning1/wibs-left-img3.png" alt="Point Cloud"><span>Point Cloud</span></li>
+                <li><img src="images/building-3d-scanning1/wibs-left-img4.png" alt="BIM Model"><span>BIM Model</span></li>
+                <li><img src="images/building-3d-scanning1/wibs-left-img5.png" alt="Digital Twin"><span>Digital Twin</span></li>
+              </ul>
+            </div>
+            
+            <!-- Center Content -->
+            <div class="col-lg-5 col-md-12 col-sm-12 center-content-col">
+              <h2>What is Building Scanning?</h2>
+              <p>Building Scanning is the process of capturing the complete geometry of a building using Reality Capture technologies.</p>
+              <p>Millions of laser measurements are collected to generate a highly detailed 3D Point Cloud, accurately representing:</p>
+              <ul class="wibs-check-list">
+                <li><i class="fas fa-check-circle"></i> Building Structure</li>
+                <li><i class="fas fa-check-circle"></i> Mechanical Systems</li>
+                <li><i class="fas fa-check-circle"></i> Interior Spaces</li>
+                <li><i class="fas fa-check-circle"></i> Structural Elements</li>
+                <li><i class="fas fa-check-circle"></i> Exterior Facades</li>
+                <li><i class="fas fa-check-circle"></i> Roofs</li>
+                <li><i class="fas fa-check-circle"></i> Architectural Features</li>
+                <li><i class="fas fa-check-circle"></i> Utilities</li>
+              </ul>
+              <p class="foundation-text">This digital dataset becomes the foundation for engineering design, renovation, BIM modelling, facility management, and Digital Twin development.</p>
+            </div>
+            
+            <!-- Right Image -->
+            <div class="col-lg-5 col-md-12 col-sm-12 right-img-col">
+              <img src="images/building-3d-scanning1/wibs-right-img.png" alt="Building Scaffold Model" class="img-fluid wibs-right-img">
+            </div>
+          </div>
+          
+          <!-- Bottom Row (Why + Workflow) -->
+          <div class="row clearfix wibs-bottom-row">
+            <!-- Why Building Scanning -->
+            <div class="col-lg-6 col-md-12 col-sm-12 why-wibs-col">
+              <h2>Why Building Scanning?</h2>
+              <p class="subtitle">Traditional building documentation often suffers from:</p>
+              <div class="why-wibs-lists">
+                <ul class="cross-list">
+                  <li><i class="fas fa-times-circle"></i> Missing drawings</li>
+                  <li><i class="fas fa-times-circle"></i> Outdated floor plans</li>
+                  <li><i class="fas fa-times-circle"></i> Unrecorded renovations</li>
+                  <li><i class="fas fa-times-circle"></i> Inaccurate dimensions</li>
+                  <li><i class="fas fa-times-circle"></i> Manual measurement errors</li>
+                  <li><i class="fas fa-times-circle"></i> Unknown structural changes</li>
+                </ul>
+                <ul class="tick-list">
+                  <li><i class="fas fa-check-circle"></i> Complete &amp; Accurate Data</li>
+                  <li><i class="fas fa-check-circle"></i> Up to Date Information</li>
+                  <li><i class="fas fa-check-circle"></i> High Accuracy</li>
+                  <li><i class="fas fa-check-circle"></i> Reliable Measurements</li>
+                  <li><i class="fas fa-check-circle"></i> Saves Time &amp; Cost</li>
+                  <li><i class="fas fa-check-circle"></i> Digital Twin Ready</li>
+                </ul>
               </div>
-
-              <div class="default-shop-item">
-                <!--inner-box-->
-                <div class="inner-box">
-                  <!--image-box-->
-                  <figure class="image-box">
-                    <a href="#"><img class="insusrty" src="images/home/industry/industry1.png" alt="" /></a>
-                  </figure>
-
-                  <!--lower-content-->
-                  <div class="lower-content">
-                    <h5>20 <br> OCT</h5>
-                    <h3>
-                      <span><i class="fa-solid fa-user"></i>Admin</span>
-                      <span><i class="fa-solid fa-comments"></i>2 Comments</span>
-                    </h3>
-                    <p>We are best for any industrial business</p>
-                  </div>
-
+            </div>
+            
+            <!-- Workflow -->
+            <div class="col-lg-6 col-md-12 col-sm-12 workflow-col">
+              <h2>Our Building Scanning Workflow</h2>
+              <div class="workflow-steps">
+                <div class="step-item">
+                  <div class="step-circle">1</div>
+                  <div class="step-title">Project<br>Consultation</div>
                 </div>
-              </div>
-
-              <div class="default-shop-item">
-                <!--inner-box-->
-                <div class="inner-box">
-                  <!--image-box-->
-                  <figure class="image-box">
-                    <a href="#"><img class="insusrty" src="images/home/industry/industry5.png" alt="" /></a>
-                  </figure>
-
-                  <!--lower-content-->
-                  <div class="lower-content">
-                    <h5>20 <br> OCT</h5>
-                    <h3>
-                      <span><i class="fa-solid fa-user"></i>Admin</span>
-                      <span><i class="fa-solid fa-comments"></i>2 Comments</span>
-                    </h3>
-                    <p>We are best for any industrial business</p>
-                  </div>
-
+                <div class="step-arrow"></div>
+                <div class="step-item">
+                  <div class="step-circle">2</div>
+                  <div class="step-title">3D<br>Scanning</div>
                 </div>
-              </div>
-              <div class="default-shop-item">
-                <!--inner-box-->
-                <div class="inner-box">
-                  <!--image-box-->
-                  <figure class="image-box">
-                    <a href="#"><img class="insusrty" src="images/home/industry/industry5.png" alt="" /></a>
-                  </figure>
-
-                  <!--lower-content-->
-                  <div class="lower-content">
-                    <h5>20 <br> OCT</h5>
-                    <h3>
-                      <span><i class="fa-solid fa-user"></i>Admin</span>
-                      <span><i class="fa-solid fa-comments"></i>2 Comments</span>
-                    </h3>
-                    <p>We are best for any industrial business</p>
-                  </div>
-
+                <div class="step-arrow"></div>
+                <div class="step-item">
+                  <div class="step-circle">3</div>
+                  <div class="step-title">Point Cloud<br>Registration</div>
                 </div>
-              </div>
-              <div class="default-shop-item">
-                <!--inner-box-->
-                <div class="inner-box">
-                  <!--image-box-->
-                  <figure class="image-box">
-                    <a href="#"><img class="insusrty" src="images/home/industry/industry5.png" alt="" /></a>
-                  </figure>
-
-                  <!--lower-content-->
-                  <div class="lower-content">
-                    <h5>20 <br> OCT</h5>
-                    <h3>
-                      <span><i class="fa-solid fa-user"></i>Admin</span>
-                      <span><i class="fa-solid fa-comments"></i>2 Comments</span>
-                    </h3>
-                    <p>We are best for any industrial business</p>
-                  </div>
-
+                <div class="step-arrow"></div>
+                <div class="step-item">
+                  <div class="step-circle">4</div>
+                  <div class="step-title">CAD / BIM /<br>As-Built<br>Documentation</div>
                 </div>
-              </div>
-              <div class="default-shop-item">
-                <!--inner-box-->
-                <div class="inner-box">
-                  <!--image-box-->
-                  <figure class="image-box">
-                    <a href="#"><img class="insusrty" src="images/home/industry/industry5.png" alt="" /></a>
-                  </figure>
-
-                  <!--lower-content-->
-                  <div class="lower-content">
-                    <h5>20 <br> OCT</h5>
-                    <h3>
-                      <span><i class="fa-solid fa-user"></i>Admin</span>
-                      <span><i class="fa-solid fa-comments"></i>2 Comments</span>
-                    </h3>
-                    <p>We are best for any industrial business</p>
-                  </div>
-
+                <div class="step-arrow"></div>
+                <div class="step-item">
+                  <div class="step-circle">5</div>
+                  <div class="step-title">Quality<br>Assurance</div>
+                </div>
+                <div class="step-arrow"></div>
+                <div class="step-item">
+                  <div class="step-circle">6</div>
+                  <div class="step-title">Project<br>Delivery</div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- faq -->
-  <section id="Faqs" class="faq-sec">
-    <div class="auto-container">
-      <div class="gellary-content1">
-        <h4>FAQ</h4>
-      </div>
-      <div id="style-3" class="container faq-scroll">
-
-
-
-
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                aria-expanded="true" aria-controls="collapseOne">
-                <i class="fa-solid fa-question"></i><span> How many building areas can we laser scan per day?</span>
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                It is based on the building area and size you want to 3d scan. We can 3D can per day 40,000 to 50,000
-                sqft size of building per day.
+      <!-- Technologies We Use Section -->
+      <section class="twu-section">
+        <div class="b3ds-container">
+          <div class="twu-wrapper">
+            
+            <div class="twu-header text-center">
+              <h2>Technologies We Use</h2>
+              <p>Every building has unique requirements. We choose the most appropriate capture technology<br>based on building size, complexity, accessibility, and project goals.</p>
+            </div>
+            
+            <div class="row clearfix align-items-stretch">
+              <!-- Card 1 -->
+              <div class="col-lg-3 col-md-6 col-sm-12 twu-card-col">
+                <div class="twu-card">
+                  <h4>Terrestrial LiDAR</h4>
+                  <div class="twu-img-box">
+                    <img src="images/building-3d-scanning1/twu-img1.png" alt="Terrestrial LiDAR">
+                  </div>
+                  <h5>Ideal for:</h5>
+                  <ul class="twu-list">
+                    <li>Commercial Buildings</li>
+                    <li>Heritage Structures</li>
+                    <li>High-Rise Buildings</li>
+                    <li>Institutional Facilities</li>
+                    <li>Industrial Buildings</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <!-- Card 2 -->
+              <div class="col-lg-3 col-md-6 col-sm-12 twu-card-col">
+                <div class="twu-card">
+                  <h4>Mobile SLAM</h4>
+                  <div class="twu-img-box">
+                    <img src="images/building-3d-scanning1/twu-img2.png" alt="Mobile SLAM">
+                  </div>
+                  <h5>Perfect for:</h5>
+                  <ul class="twu-list">
+                    <li>Hospitals</li>
+                    <li>Universities</li>
+                    <li>Shopping Centres</li>
+                    <li>Hotels</li>
+                    <li>Office Buildings</li>
+                    <li>Large Indoor Facilities</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <!-- Card 3 -->
+              <div class="col-lg-3 col-md-6 col-sm-12 twu-card-col">
+                <div class="twu-card">
+                  <h4>Drone Photogrammetry</h4>
+                  <div class="twu-img-box">
+                    <img src="images/building-3d-scanning1/twu-img3.png" alt="Drone Photogrammetry">
+                  </div>
+                  <h5>Ideal for:</h5>
+                  <ul class="twu-list">
+                    <li>Building Facades</li>
+                    <li>Roof Documentation</li>
+                    <li>Exterior Condition Assessment</li>
+                    <li>Progress Monitoring</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <!-- Card 4 -->
+              <div class="col-lg-3 col-md-6 col-sm-12 twu-card-col">
+                <div class="twu-card">
+                  <h4>Drone LiDAR</h4>
+                  <div class="twu-img-box">
+                    <img src="images/building-3d-scanning1/twu-img4.png" alt="Drone LiDAR">
+                  </div>
+                  <h5>Suitable for:</h5>
+                  <ul class="twu-list">
+                    <li>Large Building Campuses</li>
+                    <li>Building Exteriors</li>
+                    <li>Roof Surveys</li>
+                    <li>Utility Infrastructure</li>
+                  </ul>
+                </div>
               </div>
             </div>
+            
           </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <i class="fa-solid fa-question"></i><span> How much do you charge for scanning a building?</span>
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Building scanning is based on the area and complexity, and applications. Building 3D scanning in India
-                costs per day 30,000 to 60,000 rupees. Creating a 3D modeling of a building after 3D scanning will be an
-                extra additional cost which's calculated on an hourly basis. </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <i class="fa-solid fa-question"></i> <span>What is the output of building 3D scanning?</span>
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Raw 3D scanning of building output will be 3D point cloud formats.</div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingfour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                <i class="fa-solid fa-question"></i> <span>How long does it take to scan the building?</span>
-              </button>
-            </h2>
-            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                3D Laser scanning of buildings and other infrastructure is based on area and applications. We can 3D
-                scan per day 40 to 50 scans. As a total per day, 30,000 to 50,000 sqft of building we 3D scan with one
-                scanner.</div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingfive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-                <i class="fa-solid fa-question"></i> <span> Can you 3D scan the building interior and exterior both with
-                  your terrestrial scanners?</span>
-              </button>
-            </h2>
-            <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Yes, our terrestrial laser scanners are capable of scanning the building's interior and exterior.</div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingsix">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-                <i class="fa-solid fa-question"></i> <span> Does Environmental condition maters when scanning the
-                  exterior of the building outdoor?</span>
-              </button>
-            </h2>
-            <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                We can 3D scan the exterior of the building even there is a day out in sunlight or darkness in night. We
-                can 3D scan the exterior of the buildings.</div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingseven">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
-                <i class="fa-solid fa-question"></i> <span> What is the best 3D scanner equipment to 3D scan the
-                  building?</span>
-              </button>
-            </h2>
-            <div id="collapseseven" class="accordion-collapse collapse" aria-labelledby="headingseven"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Faro focus 3D scanners are best for 3D scanning a building infrastructure or any large object and
-                infrastructure.</div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingEight">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                <i class="fa-solid fa-question"></i> <span>Faro Long Range Laser 3D scanner</span>
-              </button>
-            </h2>
-            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
-              data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</div>
-            </div>
-          </div>
-
-
         </div>
+      </section>
 
-      </div>
-  </section>
-
-
-
-  <!--End pagewrapper-->
-
-  <!--Search Popup-->
-  <div id="search-popup" class="search-popup">
-    <div class="close-search theme-btn">
-      <span class="flaticon-unchecked"></span>
-    </div>
-    <div class="popup-inner">
-      <div class="search-form">
-        <form method="post" action="index.html">
-          <div class="form-group">
-            <fieldset>
-              <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here"
-                required />
-              <input type="submit" value="Search" class="theme-btn" />
-            </fieldset>
+      <!-- Industries We Serve Section -->
+      <section class="iwss-section text-center">
+        <div class="b3ds-container">
+          <div class="iwss-header">
+            <h2>Industries We Serve</h2>
           </div>
-        </form>
+          
+          <div class="iwss-grid">
+            <!-- Item 1 -->
+            <div class="iwss-item">
+              <div class="iwss-icon-box"><img src="images/building-3d-scanning1/iwss-img1.png" alt="Commercial Buildings"></div>
+              <h6>Commercial<br>Buildings</h6>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="iwss-item">
+              <div class="iwss-icon-box"><img src="images/building-3d-scanning1/iwss-img2.png" alt="Residential Buildings"></div>
+              <h6>Residential<br>Buildings</h6>
+            </div>
+            
+            <!-- Item 3 -->
+            <div class="iwss-item">
+              <div class="iwss-icon-box"><img src="images/building-3d-scanning1/iwss-img3.png" alt="Hospitals"></div>
+              <h6>Hospitals</h6>
+            </div>
+            
+            <!-- Item 4 -->
+            <div class="iwss-item">
+              <div class="iwss-icon-box"><img src="images/building-3d-scanning1/iwss-img4.png" alt="University"></div>
+              <h6>University</h6>
+            </div>
+            
+            <!-- Item 5 -->
+            <div class="iwss-item">
+              <div class="iwss-icon-box"><img src="images/building-3d-scanning1/iwss-img5.png" alt="Shopping Malls"></div>
+              <h6>Shopping<br>Malls</h6>
+            </div>
+            
+            <!-- Item 6 -->
+            <div class="iwss-item">
+              <div class="iwss-icon-box"><img src="images/building-3d-scanning1/iwss-img6.png" alt="Hotels"></div>
+              <h6>Hotels</h6>
+            </div>
+            
+            <!-- Item 7 -->
+            <div class="iwss-item">
+              <div class="iwss-icon-box"><img src="images/building-3d-scanning1/iwss-img7.png" alt="Office Buildings"></div>
+              <h6>Office<br>Buildings</h6>
+            </div>
+            
+            <!-- Item 8 -->
+            <div class="iwss-item">
+              <div class="iwss-icon-box"><img src="images/building-3d-scanning1/iwss-img8.png" alt="Cultural Heritage"></div>
+              <h6>Cultural<br>Heritage</h6>
+            </div>
+            
+            <!-- Item 9 -->
+            <div class="iwss-item">
+              <div class="iwss-icon-box"><img src="images/building-3d-scanning1/iwss-img9.png" alt="Airports"></div>
+              <h6>Airports</h6>
+            </div>
+            
+            <!-- Item 10 -->
+            <div class="iwss-item">
+              <div class="iwss-icon-box"><img src="images/building-3d-scanning1/iwss-img10.png" alt="Industrial Buildings"></div>
+              <h6>Industrial<br>Buildings</h6>
+            </div>
+            
+            <!-- Item 11 -->
+            <div class="iwss-item">
+              <div class="iwss-icon-box"><img src="images/building-3d-scanning1/iwss-img11.png" alt="Gas Stations"></div>
+              <h6>Gas Stations</h6>
+            </div>
+            
+            <!-- Item 12 -->
+            <div class="iwss-item">
+              <div class="iwss-icon-box"><img src="images/building-3d-scanning1/iwss-img12.png" alt="Public Buildings"></div>
+              <h6>Public<br>Buildings</h6>
+            </div>
+            
+            <!-- Item 13 -->
+            <div class="iwss-item">
+              <div class="iwss-icon-box"><img src="images/building-3d-scanning1/iwss-img13.png" alt="Religious Institutions"></div>
+              <h6>Religious<br>Institutions</h6>
+            </div>
+          </div>
+          
+        </div>
+      </section>
 
-        <br />
-        <h3>Recent Search Keywords</h3>
-        <ul class="recent-searches">
-          <li><a href="#">Business</a></li>
-          <li><a href="#">Web Development</a></li>
-          <li><a href="#">SEO</a></li>
-          <li><a href="#">Logistics</a></li>
-          <li><a href="#">Freedom</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="footer"></div>
+      <!-- Additional Deliverables & Benefits Section -->
+      <section class="adbbs-section">
+        <div class="b3ds-container">
+          <div class="row clearfix align-items-stretch">
+            
+            <!-- Left Column (Dark) -->
+            <div class="col-lg-5 col-md-12 col-sm-12 adbbs-left-col">
+              <div class="adbbs-dark-box">
+                <h2>Additional Deliverables</h2>
+                <p>Depending on project requirements, we<br>also provide:</p>
+                
+                <div class="adbbs-feature">
+                  <div class="adbbs-icon"><img src="images/building-3d-scanning1/ad-right-img1.png" alt="Reality Capture"></div>
+                  <div class="adbbs-content">
+                    <h4>Reality Capture</h4>
+                    <ul>
+                      <li>Registered Point Clouds</li>
+                      <li>Colourised Point Clouds</li>
+                      <li>Panoramic Images</li>
+                      <li>Reality Meshes</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="adbbs-feature">
+                  <div class="adbbs-icon"><img src="images/building-3d-scanning1/ad-right-img2.png" alt="CAD Deliverables"></div>
+                  <div class="adbbs-content">
+                    <h4>CAD Deliverables</h4>
+                    <ul>
+                      <li>Site Plans</li>
+                      <li>Roof Plans</li>
+                      <li>Reflected Ceiling Plans</li>
+                      <li>Door &amp; Window Schedules</li>
+                      <li>General Arrangement Drawings</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="adbbs-feature">
+                  <div class="adbbs-icon"><img src="images/building-3d-scanning1/ad-right-img3.png" alt="Digital Twin Deliverables"></div>
+                  <div class="adbbs-content">
+                    <h4>Digital Twin Deliverables</h4>
+                    <ul>
+                      <li>Building Digital Twins</li>
+                      <li>Asset Registers</li>
+                      <li>Facility Management Models</li>
+                      <li>QR Asset Database</li>
+                    </ul>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+            <!-- Right Column (Light) -->
+            <div class="col-lg-7 col-md-12 col-sm-12 adbbs-right-col">
+              <div class="adbbs-light-box">
+                <h2>Benefits of Building Scanning</h2>
+                
+                <div class="row clearfix">
+                  <!-- Benefit 1 -->
+                  <div class="col-md-6 col-sm-12 adbbs-benefit">
+                    <div class="benefit-inner">
+                      <div class="benefit-icon"><img src="images/building-3d-scanning1/ad-left-img1.png" alt="Accurate Existing Conditions"></div>
+                      <div class="benefit-text">
+                        <h4>Accurate Existing<br>Conditions</h4>
+                        <p>Capture every visible detail with engineering-grade accuracy.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Benefit 2 -->
+                  <div class="col-md-6 col-sm-12 adbbs-benefit">
+                    <div class="benefit-inner">
+                      <div class="benefit-icon"><img src="images/building-3d-scanning1/ad-left-img2.png" alt="Faster Renovation Planning"></div>
+                      <div class="benefit-text">
+                        <h4>Faster Renovation<br>Planning</h4>
+                        <p>Reduce site visits and design uncertainties with complete digital documentation.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Benefit 3 -->
+                  <div class="col-md-6 col-sm-12 adbbs-benefit">
+                    <div class="benefit-inner">
+                      <div class="benefit-icon"><img src="images/building-3d-scanning1/ad-left-img3.png" alt="Reduced Project Risk"></div>
+                      <div class="benefit-text">
+                        <h4>Reduced Project Risk</h4>
+                        <p>Identify building constraints before design and construction begin.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Benefit 4 -->
+                  <div class="col-md-6 col-sm-12 adbbs-benefit">
+                    <div class="benefit-inner">
+                      <div class="benefit-icon"><img src="images/building-3d-scanning1/ad-left-img4.png" alt="Better Collaboration"></div>
+                      <div class="benefit-text">
+                        <h4>Better Collaboration</h4>
+                        <p>Provide architects, engineers, contractors, and owners with a shared digital reference.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Benefit 5 -->
+                  <div class="col-md-6 col-sm-12 adbbs-benefit">
+                    <div class="benefit-inner">
+                      <div class="benefit-icon"><img src="images/building-3d-scanning1/ad-left-img5.png" alt="Support BIM"></div>
+                      <div class="benefit-text">
+                        <h4>Support Building<br>Information Modelling</h4>
+                        <p>Create intelligent BIM models directly from captured Reality Capture data.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Benefit 6 -->
+                  <div class="col-md-6 col-sm-12 adbbs-benefit">
+                    <div class="benefit-inner">
+                      <div class="benefit-icon"><img src="images/building-3d-scanning1/ad-left-img6.png" alt="Foundation for Digital Twins"></div>
+                      <div class="benefit-text">
+                        <h4>Foundation for Digital<br>Twins</h4>
+                        <p>Use building scan data to create Digital Twins for operations, maintenance, and facility management.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose WildPlantTS Section -->
+      <section class="wcw-section">
+        <div class="b3ds-container">
+          <div class="wcw-header text-center">
+            <h2>Why Choose WildPlantTS?</h2>
+          </div>
+          
+          <div class="row clearfix">
+            
+            <!-- Left Column -->
+            <div class="col-lg-6 col-md-12 col-sm-12 wcw-left-col">
+              
+              <div class="wcw-item">
+                <div class="wcw-icon"><i class="fas fa-check-circle"></i></div>
+                <div class="wcw-content">
+                  <h4>Engineering-Driven Documentation</h4>
+                  <p>We produce engineering-ready deliverables that architects, engineers, contractors, and facility managers can immediately use.</p>
+                </div>
+              </div>
+              
+              <div class="wcw-item">
+                <div class="wcw-icon"><i class="fas fa-check-circle"></i></div>
+                <div class="wcw-content">
+                  <h4>Advanced Reality Capture Technologies</h4>
+                  <p>We combine terrestrial LiDAR, Mobile SLAM, Drone LiDAR, and photogrammetry to create comprehensive digital building records.</p>
+                </div>
+              </div>
+              
+              <div class="wcw-item">
+                <div class="wcw-icon"><i class="fas fa-check-circle"></i></div>
+                <div class="wcw-content">
+                  <h4>Nationwide Coverage</h4>
+                  <p>We deliver Building Scanning services across India for projects of every size and complexity.</p>
+                </div>
+              </div>
+              
+            </div>
+            
+            <!-- Right Column -->
+            <div class="col-lg-6 col-md-12 col-sm-12 wcw-right-col">
+              
+              <div class="wcw-item">
+                <div class="wcw-icon"><i class="fas fa-check-circle"></i></div>
+                <div class="wcw-content">
+                  <h4>Complete Building Lifecycle Support</h4>
+                  <p>Our services support projects from initial documentation through renovation, construction, operations, and long-term facility management.</p>
+                </div>
+              </div>
+              
+              <div class="wcw-item">
+                <div class="wcw-icon"><i class="fas fa-check-circle"></i></div>
+                <div class="wcw-content">
+                  <h4>BIM &amp; Digital Twin Expertise</h4>
+                  <p>Our team specializes in converting captured data into BIM models, As-Built documentation, and Digital Twins.</p>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="b3ds-faq-section">
+        <div class="b3ds-container">
+          <div class="sec-title text-center">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          
+          <div class="row">
+            <div class="col-lg-10 col-md-12 col-sm-12 offset-lg-1">
+              <ul class="accordion-box style-two">
+                
+                <!--Block-->
+                <li class="accordion block active-block">
+                  <div class="acc-btn active">Why should I scan my building before renovation? <div class="icon fas fa-chevron-down"></div></div>
+                  <div class="acc-content current">
+                    <div class="content">
+                      <p>Building Scanning provides accurate existing conditions, reducing design errors, construction conflicts, and unexpected costs during renovation.</p>
+                    </div>
+                  </div>
+                </li>
+                
+                <!--Block-->
+                <li class="accordion block">
+                  <div class="acc-btn">Can occupied buildings be scanned? <div class="icon fas fa-chevron-down"></div></div>
+                  <div class="acc-content">
+                    <div class="content">
+                      <p>Yes. Most commercial, residential, educational, and healthcare facilities can be scanned while remaining operational, subject to access and safety requirements.</p>
+                    </div>
+                  </div>
+                </li>
+                
+                <!--Block-->
+                <li class="accordion block">
+                  <div class="acc-btn">Can you create BIM models from the scan? <div class="icon fas fa-chevron-down"></div></div>
+                  <div class="acc-content">
+                    <div class="content">
+                      <p>Yes. We provide Revit models, IFC models, LOD BIM models, CAD drawings, and As-Built documentation.</p>
+                    </div>
+                  </div>
+                </li>
+                
+                <!--Block-->
+                <li class="accordion block">
+                  <div class="acc-btn">Do you scan heritage buildings? <div class="icon fas fa-chevron-down"></div></div>
+                  <div class="acc-content">
+                    <div class="content">
+                      <p>Yes. We specialize in non-contact Reality Capture for heritage structures, monuments, museums, and historically significant buildings.</p>
+                    </div>
+                  </div>
+                </li>
+                
+                <!--Block-->
+                <li class="accordion block">
+                  <div class="acc-btn">Can the scan data be used for facility management? <div class="icon fas fa-chevron-down"></div></div>
+                  <div class="acc-content">
+                    <div class="content">
+                      <p>Absolutely. Building scan data forms the foundation for Asset Registers, BIM to FM workflows, Digital Twins, and long-term building management.</p>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="b3ds-cta-section">
+        <div class="b3ds-container">
+          <div class="row align-items-center">
+            
+            <div class="col-lg-8 col-md-12 col-sm-12">
+              <div class="cta-content">
+                <h2>Capture. Model.<br><span>Deliver. With Precision</span></h2>
+                <p>Get Accurate Existing Conditions For Your Building projects with WildplantsTS</p>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-12 col-sm-12 text-lg-right text-center mt-4 mt-lg-0">
+              <div class="cta-btn-box">
+                <a href="talk-to-experts.html" class="b3ds-cta-btn">Talk to an Expert</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Request Build Scan Section -->
+      <section class="rbs-section">
+        <div class="b3ds-container">
+          <div class="row style-two align-items-center">
+            
+            <!-- Left Info Box -->
+            <div class="col-lg-5 col-md-12 col-sm-12">
+              <div class="rbs-dark-box">
+                <div>
+                  <h2>Request Build Scan</h2>
+                  <p>Get Accurate Existing Conditions For<br>Your Building projects with WildplantsTS</p>
+                </div>
+                <div class="rbs-image">
+                  <img src="images/building-3d-scanning1/rbs-img.png" alt="Build Scan Building Model">
+                </div>
+              </div>
+            </div>
+            
+            <!-- Right Form Box -->
+            <div class="col-lg-7 col-md-12 col-sm-12">
+              <div class="rbs-form-wrapper">
+                <form action="#" method="POST" id="rbs-form">
+                  <div class="row">
+                    
+                    <div class="col-md-6 col-sm-12">
+                      <div class="rbs-input-group">
+                        <label>Full Name <span>*</span></label>
+                        <input type="text" name="full_name" placeholder="Enter your full name" required>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-12">
+                      <div class="rbs-input-group">
+                        <label>Company Name <span>*</span></label>
+                        <input type="text" name="company_name" placeholder="Enter your company name" required>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-12">
+                      <div class="rbs-input-group">
+                        <label>Designation <span>*</span></label>
+                        <input type="text" name="designation" placeholder="Enter your designation" required>
+                        <span class="input-icon-right far fa-id-badge"></span>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-12">
+                      <div class="rbs-input-group">
+                        <label>E-mail <span>*</span></label>
+                        <input type="email" name="email" placeholder="Enter email address" required>
+                        <span class="input-icon-right far fa-envelope"></span>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-12 col-sm-12">
+                      <div class="rbs-input-group phone-group">
+                        <label>Mobile Number <span>*</span></label>
+                        <div class="phone-prefix">
+                          <img src="images/building-3d-scanning1/cont.png" id="selected-flag" style="width:20px; border-radius:2px;" alt="IN"> <i class="fas fa-chevron-down" style="font-size:10px;margin-left:5px;margin-right:5px;color:#888;"></i> <span id="selected-dial-code">+91</span>
+                        </div>
+                        <input type="tel" name="phone" placeholder="(555) 000-0000" style="padding-left: 95px;" required>
+                        <span class="input-icon-right fas fa-phone-alt"></span>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-12">
+                      <div class="rbs-input-group select-group">
+                        <label>Country <span>*</span></label>
+                        <span class="input-icon-left fas fa-map-marker-alt"></span>
+                        <select name="country" required style="padding-left: 45px; padding-right: 40px; -webkit-appearance:none; -moz-appearance:none; appearance:none;">
+                          <option value="" disabled selected>Select country</option>
+                          <option value="India">India</option>
+                          <option value="USA">USA</option>
+                          <option value="UK">UK</option>
+                        </select>
+                        <span class="input-icon-right fas fa-chevron-down" style="font-size: 12px; pointer-events: none;"></span>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-12">
+                      <div class="rbs-input-group select-group">
+                        <label>City <span>*</span></label>
+                        <span class="input-icon-left fas fa-map-marker-alt"></span>
+                        <select name="city" required style="padding-left: 45px; padding-right: 40px; -webkit-appearance:none; -moz-appearance:none; appearance:none;">
+                          <option value="" disabled selected>Select city</option>
+                          <option value="Delhi">Delhi</option>
+                          <option value="Mumbai">Mumbai</option>
+                          <option value="Bangalore">Bangalore</option>
+                        </select>
+                        <span class="input-icon-right fas fa-chevron-down" style="font-size: 12px; pointer-events: none;"></span>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-12 col-sm-12">
+                      <div class="rbs-input-group select-group">
+                        <label>Industry</label>
+                        <select name="industry" style="padding-right: 40px; -webkit-appearance:none; -moz-appearance:none; appearance:none;">
+                          <option value="" disabled selected>Select industry</option>
+                          <option value="AEC">Architecture, Engineering & Construction (AEC)</option>
+                          <option value="Oil & Gas">Oil & Gas</option>
+                        </select>
+                        <span class="input-icon-right fas fa-chevron-down" style="font-size: 12px; pointer-events: none;"></span>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 mt-2">
+                        <button type="submit" class="b3ds-cta-btn" style="width: 100%; border: none; cursor: pointer;">Submit Request</button>
+                    </div>
+                    
+                  </div>
+                </form>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <div class="footer"></div>
 
 
   <script>
@@ -994,24 +864,6 @@
   </script>
 
 
-  <style>
-    /* Smooth open/close */
-    .side-menu .dropdown ul {
-      display: none;
-    }
-
-    .side-menu .dropdown ul.open-submenu {
-      display: block !important;
-    }
-
-    .navigation li.dropdown>ul {
-      display: none;
-    }
-
-    .navigation li.dropdown>ul.open-submenu {
-      display: block !important;
-    }
-  </style>
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -1026,7 +878,38 @@
   <script src="js/owl.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <script src="js/wow.js"></script>
-  <script src="js/script.js?v=2"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    $(document).ready(function() {
+        $('select[name="country"]').on('change', function() {
+            var country = $(this).val();
+            var flagSrc = '';
+            var dialCode = '';
+            
+            if (country === 'India') {
+                flagSrc = 'images/building-3d-scanning1/cont.png'; // user custom standard
+                dialCode = '+91';
+            } else if (country === 'USA') {
+                flagSrc = 'https://flagcdn.com/24x18/us.png';
+                dialCode = '+1';
+            } else if (country === 'UK') {
+                flagSrc = 'https://flagcdn.com/24x18/gb.png';
+                dialCode = '+44';
+            } else {
+                flagSrc = 'images/building-3d-scanning1/cont.png';
+                dialCode = '+00';
+            }
+            
+            // Apply the new image reliably
+            if(flagSrc !== '') {
+                $('#selected-flag').attr('src', flagSrc).css('display','inline-block');
+            }
+            $('#selected-dial-code').text(dialCode);
+        });
+    });
+  </script>
 </body>
 
 </html>
+

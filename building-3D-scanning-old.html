@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Movie Set 3D Scanning</title>
+  <title>Building 3D Scanning</title>
   <!-- Stylesheets -->
   <link href="css/bootstrap.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
@@ -164,13 +164,16 @@
 
   a {
     text-decoration: none !important;
-    color: #000;
   }
 
 
   /* Building */
+  .main-menu .navigation>li>a {
+    color: #000;
+  }
+
   .faro-banner {
-    background-image: url(/images/bim-img/coverpic2.png) !important;
+    background-image: url(/images/bim-img/banner1.png) !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
   }
@@ -222,7 +225,7 @@
   }
 
   .over-sec {
-    background-image: url(/images/bim-img/overview5.png);
+    background-image: url(/images/bim-img/Overview1.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 50px;
@@ -243,16 +246,6 @@
     font-weight: 600;
     color: #ffffff;
     padding-bottom: 30px;
-  }
-
-  .sec-3 h2::before {
-    content: "";
-    position: absolute;
-    left: 1%;
-    margin-left: -8px;
-    bottom: 15px;
-    width: 110px;
-    border-bottom: 3px solid #e5b122;
   }
 
   .sec-4 {
@@ -325,6 +318,10 @@
     padding: 10px;
   }
 
+  .main-header .main-box .outer-container {
+    position: relative;
+    padding: 0px 40px 0px 0px;
+  }
 
   .faq-sec {
     background-color: #EFEFEF;
@@ -339,7 +336,7 @@
   }
 
   .faq-scroll {
-    height: 500px;
+    height: 600px;
     overflow-y: scroll;
   }
 
@@ -347,6 +344,20 @@
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #F5F5F5;
     border-radius: 10px;
+  }
+
+  .laser-scan,
+  .faro-scan {
+    padding: 0px 0px !important;
+    border-radius: 2px;
+    margin-right: 10px !important;
+    font-weight: 600;
+    background-color: #E5B122;
+  }
+
+  .laser-scan a,
+  .faro-scan a {
+    padding: 8px !important;
   }
 
   #style-3::-webkit-scrollbar {
@@ -391,32 +402,10 @@
     color: black !important;
     font-weight: 500;
   }
-
-  .laser-scan,
-  .faro-scan {
-    padding: 0px 0px !important;
-    border-radius: 2px;
-    margin-right: 10px !important;
-    font-weight: 600;
-    background-color: #E5B122;
-  }
-
-  .main-header .main-box .outer-container {
-    position: relative;
-    padding: 0px 30px 0px 0px;
-  }
-
-  .laser-scan a,
-  .faro-scan a {
-    padding: 8px !important;
-  }
-
-  .main-menu .navigation>li>a {
-    color: #000;
-  }
 </style>
 
 <body>
+  <div class="page-wrapper">
     <!-- Preloader -->
     <div class="preloader"></div>
 
@@ -425,41 +414,48 @@
           src="WhatsApp.webp" alt=""></a>
     </div>
 
-   <div class="header"></div>
+    <div class="header"></div>
+  </div>
   <!--End pagewrapper-->
 
   <!--Search Popup-->
-  <div id="search-popup" class="search-popup">
-    <div class="close-search theme-btn">
-      <span class="flaticon-unchecked"></span>
-    </div>
-    <div class="popup-inner">
-      <div class="search-form">
-        <form method="post" action="index.html">
-          <div class="form-group">
-            <fieldset>
-              <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here"
-                required />
-              <input type="submit" value="Search" class="theme-btn" />
-            </fieldset>
-          </div>
-        </form>
-
-        <br />
-
+  <!-- <div id="search-popup" class="search-popup">
+<div class="close-search theme-btn">
+  <span class="flaticon-unchecked"></span>
+</div>
+<div class="popup-inner">
+  <div class="search-form">
+    <form method="post" action="index.html">
+      <div class="form-group">
+        <fieldset>
+          <input
+            type="search"
+            class="form-control"
+            name="search-input"
+            value=""
+            placeholder="Search Here"
+            required
+          />
+          <input type="submit" value="Search" class="theme-btn" />
+        </fieldset>
       </div>
-    </div>
+    </form>
+
+    <br />
+
   </div>
+</div>
+</div> -->
 
   <!--Page Title-->
 
   <!--Page Title-->
   <section class="faro-banner">
     <div class="container">
-      <h1>Heritage 3D Scanning</h1>
-      <h3>Scan, Model & Save Time With 3D Laser Scanning</h3>
+      <h1>Building 3D Scanning</h1>
+      <h3>Scan, Measure And Design Any Building With Laser Scanning</h3>
       <div class="sec2-btn">
-        <a href="get-a-quote-3d-scanning.html">Get A Quote</a>
+        <a href="wildplant-form.html">Get A Quote</a>
       </div>
     </div>
   </section>
@@ -470,39 +466,39 @@
       <div class="row">
         <div class="overview">
           <ul class="overview-ul">
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#How-it-works">How it works</a></li>
-            <li> <a href="#Applications">Applications</a></li>
-            <li><a href="#Blogs">Blogs</a></li>
-            <li><a href="#Faqs">Faqs</a></li>
+            <li>Overview</li>
+            <li>How it works</li>
+            <li>Applications</li>
+            <li>Blogs</li>
+            <li>Faqs</li>
           </ul>
         </div>
       </div>
     </div>
-    <section id="overview" class="over-sec">
+    <section class="over-sec">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 over-con">
             <h2 class="heading">
               OVERVIEW
             </h2>
-            <h1>MOVIE SET 3D SCANNING</h1>
-            <p>In the Movie industry, 3D laser scanning is used to scan the complete Movie set
-              and create digital 3D models of real-world objects for movies and computer games.
-              These 3D scans will produce replica and textures of an entire movie set for costume
-              effects, props creating, decoration, set construction elements, Visual effects (VFX),
-              which are used for computer-generated imagery(CGI) without these 3D laser scanning
-              techniques, animators can work for weeks on building an object from scratch in a
-              digital modeling program. With the rapid technological advances in laser scanning,
-              Wildplant terrestrial solutions provide advanced 3D laser scanning for Movie set
-              to utilize the latest technology available.</p>
+            <h1>BUILDING 3D SCANNING</h1>
+            <p>3D scanning can be a great way to gather much data about an existing building, and it may become the
+              standard method of capturing information about eye-level features. However, you have to invest time and
+              money in the scanning process, and it
+              still takes time to analyze the data. For example, you could use 3D scanning to take data from a building
+              that will undergo restoration. 3D scanning is quick, accurate, and requires only a small number of
+              measurements before you have a good amount of data. The captured data can then be used for modeling in
+              CAD software or even published online for better visualization. With the rapid technological advances in
+              laser scanning, Wildplant terrestrial solutions provide advanced 3D laser scanning for building to utilize
+              the latest technology available.</p>
           </div>
         </div>
       </div>
     </section>
   </section>
 
-  <section id="How-it-works" class="sec-3">
+  <section class="sec-3">
     <div class="container">
       <h2>
         HOW IT WORKS
@@ -530,20 +526,75 @@
   </section>
 
   <!--Sponsors Section-->
-  <section id="Applications" class="sponsors-section">
+  <section class="sponsors-section">
     <div class="container">
       <h1>APPLICATIONS</h1>
       <div class="auto-container last-sec">
         <!--Sponsors SLider-->
         <ul class="sponsors-carousel">
+          <li>
+            <div class="inner-box">
+              <figure class="image-box">
+                <img src="images/3dlasertech/Group 39.png" alt="" />
+                <p>Digital Factory</p>
+              </figure>
 
-          <div class="inner-box">
-            <figure class="image-box">
-              <img src="images/3dlasertech/Group 42.png" alt="" />
-              <p>Scan to Mesh</p>
-            </figure>
 
-          </div>
+            </div>
+          </li>
+          <li>
+            <div class="inner-box">
+              <figure class="image-box">
+                <img src="images/3dlasertech/Group 40.png" alt="" />
+                <p>Digital Heritage</p>
+              </figure>
+
+            </div>
+          </li>
+          <li>
+            <div class="inner-box">
+              <figure class="image-box">
+                <img src="images/3dlasertech/Group 41.png" alt="" />
+                <p>Scan to BIM</p>
+              </figure>
+
+            </div>
+          </li>
+          <li>
+            <div class="inner-box">
+              <figure class="image-box">
+                <img src="images/3dlasertech/Group 42.png" alt="" />
+                <p>Scan to Mesh</p>
+              </figure>
+
+            </div>
+          </li>
+          <li>
+            <div class="inner-box">
+              <figure class="image-box">
+                <img src="images/3dlasertech/Group 43.png" alt="" />
+                <p>NDT with Laser scanning</p>
+              </figure>
+
+            </div>
+          </li>
+          <li>
+            <div class="inner-box">
+              <figure class="image-box">
+                <img src="images/3dlasertech/Group 44.png" alt="" />
+                <p>Scan to scan deviation analysis</p>
+              </figure>
+
+            </div>
+          </li>
+          <li>
+            <div class="inner-box">
+              <figure class="image-box">
+                <img src="images/3dlasertech/Group 45.png" alt="" />
+                <p>Scan to BIM deviation analysis</p>
+              </figure>
+
+            </div>
           </li>
         </ul>
       </div>
@@ -584,7 +635,7 @@
                 <div class="inner-box">
                   <!--image-box-->
                   <figure class="image-box">
-                    <a href="#"><img class="insusrty" src="images/bim-img/blog-img.png" alt="" /></a>
+                    <a href="#"><img class="insusrty" src="images/home/industry/industry7.png" alt="" /></a>
                   </figure>
 
                   <!--lower-content-->
@@ -605,7 +656,7 @@
                 <div class="inner-box">
                   <!--image-box-->
                   <figure class="image-box">
-                    <a href="#"><img class="insusrty" src="images/bim-img/blog-img.png" alt="" /></a>
+                    <a href="#"><img class="insusrty" src="images/home/industry/industry1.png" alt="" /></a>
                   </figure>
 
                   <!--lower-content-->
@@ -626,7 +677,7 @@
                 <div class="inner-box">
                   <!--image-box-->
                   <figure class="image-box">
-                    <a href="#"><img class="insusrty" src="images/bim-img/blog-img.png" alt="" /></a>
+                    <a href="#"><img class="insusrty" src="images/home/industry/industry5.png" alt="" /></a>
                   </figure>
 
                   <!--lower-content-->
@@ -646,7 +697,7 @@
                 <div class="inner-box">
                   <!--image-box-->
                   <figure class="image-box">
-                    <a href="#"><img class="insusrty" src="images/bim-img/blog-img.png" alt="" /></a>
+                    <a href="#"><img class="insusrty" src="images/home/industry/industry5.png" alt="" /></a>
                   </figure>
 
                   <!--lower-content-->
@@ -666,7 +717,7 @@
                 <div class="inner-box">
                   <!--image-box-->
                   <figure class="image-box">
-                    <a href="#"><img class="insusrty" src="images/bim-img/blog-img.png" alt="" /></a>
+                    <a href="#"><img class="insusrty" src="images/home/industry/industry5.png" alt="" /></a>
                   </figure>
 
                   <!--lower-content-->
@@ -686,7 +737,7 @@
                 <div class="inner-box">
                   <!--image-box-->
                   <figure class="image-box">
-                    <a href="#"><img class="insusrty" src="images/bim-img/blog-img.png" alt="" /></a>
+                    <a href="#"><img class="insusrty" src="images/home/industry/industry5.png" alt="" /></a>
                   </figure>
 
                   <!--lower-content-->
@@ -724,14 +775,14 @@
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                 aria-expanded="true" aria-controls="collapseOne">
-                <i class="fa-solid fa-question"></i><span> How do you scan the movie set?</span>
+                <i class="fa-solid fa-question"></i><span> How many building areas can we laser scan per day?</span>
               </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                We use lidar 3D scanning equipment to 3D scan the movie set. Once we understand the location and
-                scanning area, we bring the Equipment to the film studio or shooting sport to 3D scan the move set.
+                It is based on the building area and size you want to 3d scan. We can 3D can per day 40,000 to 50,000
+                sqft size of building per day.
               </div>
             </div>
           </div>
@@ -740,14 +791,15 @@
             <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <i class="fa-solid fa-question"></i><span>What equipments are used to scan the movie set?</span>
+                <i class="fa-solid fa-question"></i><span> How much do you charge for scanning a building?</span>
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                We use a faro focus long-range 3D scanner to scan the as-build condition of the movie set for animation
-                and post-production works.</div>
+                Building scanning is based on the area and complexity, and applications. Building 3D scanning in India
+                costs per day 30,000 to 60,000 rupees. Creating a 3D modeling of a building after 3D scanning will be an
+                extra additional cost which's calculated on an hourly basis. </div>
             </div>
           </div>
 
@@ -755,16 +807,13 @@
             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <i class="fa-solid fa-question"></i> <span>What is the output of the movie set 3D scanning by a laser
-                  scanner?</span>
+                <i class="fa-solid fa-question"></i> <span>What is the output of building 3D scanning?</span>
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                We can 3D scan the movie set in any part of the country, and output can be 3D models as point cloud file
-                as .asc file, recap file even we can create 3D mesh file and export and colored .stl 3D mesh files.
-              </div>
+                Raw 3D scanning of building output will be 3D point cloud formats.</div>
             </div>
           </div>
 
@@ -772,15 +821,15 @@
             <h2 class="accordion-header" id="headingfour">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                <i class="fa-solid fa-question"></i> <span>How much do you charge for 3D scanning a movie set?</span>
+                <i class="fa-solid fa-question"></i> <span>How long does it take to scan the building?</span>
               </button>
             </h2>
             <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                We charge 40000 inr to 70000 inr for 3D scanning a movie set per day. This includes post-processing the
-                scan data. However, don't hesitate to get in touch with our sales team for the appropriate price quote
-                for your projects and scanners.</div>
+                3D Laser scanning of buildings and other infrastructure is based on area and applications. We can 3D
+                scan per day 40 to 50 scans. As a total per day, 30,000 to 50,000 sqft of building we 3D scan with one
+                scanner.</div>
             </div>
           </div>
 
@@ -788,17 +837,64 @@
             <h2 class="accordion-header" id="headingfive">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-                <i class="fa-solid fa-question"></i> <span>What is VFX 3D scanning?</span>
+                <i class="fa-solid fa-question"></i> <span> Can you 3D scan the building interior and exterior both with
+                  your terrestrial scanners?</span>
               </button>
             </h2>
             <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
               data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                Laser scanning nowadays aids VFX directors to capture the as build reality of the movie set. Post
-                scanning, the digital environment of the movie set can be used for Visual effects and Computer graphics.
-              </div>
+                Yes, our terrestrial laser scanners are capable of scanning the building's interior and exterior.</div>
             </div>
           </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingsix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                <i class="fa-solid fa-question"></i> <span> Does Environmental condition maters when scanning the
+                  exterior of the building outdoor?</span>
+              </button>
+            </h2>
+            <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                We can 3D scan the exterior of the building even there is a day out in sunlight or darkness in night. We
+                can 3D scan the exterior of the buildings.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingseven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                <i class="fa-solid fa-question"></i> <span> What is the best 3D scanner equipment to 3D scan the
+                  building?</span>
+              </button>
+            </h2>
+            <div id="collapseseven" class="accordion-collapse collapse" aria-labelledby="headingseven"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Faro focus 3D scanners are best for 3D scanning a building infrastructure or any large object and
+                infrastructure.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                <i class="fa-solid fa-question"></i> <span>Faro Long Range Laser 3D scanner</span>
+              </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</div>
+            </div>
+          </div>
+
 
         </div>
 
@@ -896,8 +992,6 @@
       });
     });
   </script>
-
-
 
 
   <style>
