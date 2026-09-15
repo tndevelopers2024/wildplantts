@@ -32,7 +32,7 @@
 }
 
 .main-header .main-menu .navigation > li > a.btn {
-    background-color: #e2a613 !important;
+    background-color: #E5B122 !important;
     color: #111111 !important;
     padding: 12px 30px !important;
     border-radius: 0px !important;
@@ -66,4 +66,16 @@
 
 .main-footer {
     margin-top: auto;
+}
+
+
+/* Fix transparent header issue:
+   The theme's style.css sets .main-box to fixed and transparent.
+   We need it to be white so the dark text is readable.
+   We will keep the fixed position if they want a sticky header, 
+   but force the background to white. */
+.main-header .main-box {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
 }

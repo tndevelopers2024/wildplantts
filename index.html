@@ -1,1087 +1,830 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-  <meta charset="utf-8" />
-  <title>Laser scanning technology company in India | WildplantTS</title>
-  <!-- Stylesheets -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link href="css/revolution-slider.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
-  <!-- Responsive -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="css/responsive.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
-  <link rel="stylesheet" href="./css/home.css">
-  <!--[if lt IE 9
-      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
-    ><![endif]-->
-  <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-  <style>
-    .counter-outer {
-      display: grid;
-    }
-
-    .fact-counter {
-      position: relative;
-      padding: 10px 0px 10px !important;
-    }
-
-    .fact-counter .column {
-      width: 100%;
-      display: grid;
-      place-items: center;
-    }
-
-    .fact-counter .count-outer {
-      font-size: 20px !important;
-      color: #e5b122;
-      display: flex;
-      margin-bottom: 5px;
-    }
-
-    .fact-counter .column {
-      margin-bottom: 0;
-      border-bottom: 0.7px solid #b2b2b2;
-      padding: 20px;
-    }
-
-    .fact-counter .column:last-child {
-      border: none !important;
-    }
-
-    .fact-counter .column .counter-title {
-      position: relative;
-      font-size: 16px;
-      color: #0b0b0b;
-    }
-
-    /* New About Section Styles */
-    .new-about-section {
-      position: relative;
-      padding: 100px 0;
-      background-color: #ffffff;
-      overflow: hidden;
-    }
-
-    .new-about-section .bg-pattern {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('images/aboutus/cta-bg.png');
-      background-size: cover;
-      background-position: center;
-      opacity: 0.05;
-      pointer-events: none;
-    }
-
-    .new-about-section .about-header {
-      display: flex;
-      align-items: center;
-      gap: 25px;
-      margin-bottom: 35px;
-      flex-wrap: wrap;
-    }
-
-    .new-about-section .about-title {
-      font-size: 64px;
-      font-weight: 900;
-      color: #e5b122;
-      line-height: 1;
-      margin: 0;
-      text-transform: uppercase;
-    }
-
-    .new-about-section .about-logo img {
-      max-width: 280px;
-      height: auto;
-    }
-
-    .new-about-section .about-content {
-      position: relative;
-      max-height: 110px;
-      overflow: hidden;
-    }
-
-    .new-about-section .about-content::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 50px;
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-      z-index: 1;
-    }
-
-    .new-about-section .about-content p {
-      font-size: 18px;
-      line-height: 1.7;
-      color: #444444;
-      margin-bottom: 0;
-    }
-
-    .new-about-section .btn-learn {
-      display: inline-block;
-      background: #e5b122;
-      color: #000000;
-      padding: 14px 45px;
-      font-size: 16px;
-      font-weight: 700;
-      border-radius: 4px;
-      text-decoration: none;
-      margin-top: 40px;
-      transition: all 0.3s ease;
-      text-align: center;
-    }
-
-    .new-about-section .btn-learn:hover {
-      background: #1a1a1a;
-      color: #ffffff;
-      transform: translateY(-3px);
-    }
-
-    .new-about-section .btn-container {
-      display: flex;
-      justify-content: center;
-    }
-
-    /* Lidar Services Section Styles */
-    .lidar-services-section {
-      padding: 50px 0;
-      background-color: #ffffff;
-      position: relative;
-    }
-
-    .lidar-services-section .section-header {
-      text-align: center;
-      margin-bottom: 80px;
-    }
-
-    .lidar-services-section .section-header h2 {
-      font-size: 48px;
-      font-weight: 800;
-      color: #222222;
-      margin-bottom: 20px;
-    }
-
-    .lidar-services-section .section-header p {
-      font-size: 16px;
-      color: #777777;
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    .lidar-services-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      position: relative;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .lidar-service-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 30px;
-      padding: 20px;
-    }
-
-    .lidar-service-item.stagger {
-      margin-top: 120px;
-    }
-
-    .lidar-service-item .image-box {
-      flex: 0 0 220px;
-      border-radius: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
-      transition: all 0.4s ease;
-    }
-
-    .lidar-service-item:hover .image-box {
-      background: #ffffff;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-      transform: translateY(-5px);
-    }
-
-    .lidar-service-item .image-box img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-    }
-
-    .lidar-service-item .content-box {
-      flex: 1;
-    }
-
-    .lidar-service-item .content-box h3 {
-      font-size: 26px;
-      font-weight: 700;
-      color: #222222;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 15px;
-    }
-
-    .lidar-service-item .content-box h3::before {
-      content: '';
-      display: inline-block;
-      width: 14px;
-      height: 14px;
-      background-color: #e5b122;
-      border-radius: 50%;
-    }
-
-    .lidar-service-item .content-box p {
-      font-size: 15px;
-      color: #666666;
-      line-height: 1.7;
-    }
-
-    .lidar-services-section .side-label {
-      position: absolute;
-      left: 20px;
-      top: 50%;
-      transform: translateY(-50%) rotate(-90deg);
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 8px;
-      color: #dddddd;
-      text-transform: uppercase;
-      border-left: 2px solid #eeeeee;
-      padding-left: 15px;
-      height: 100px;
-      display: flex;
-      align-items: center;
-    }
-
-    .lidar-services-section .btn-container {
-      text-align: center;
-      margin-top: 60px;
-    }
-
-    .lidar-services-section .btn-view-all {
-      display: inline-block;
-      background: #e5b122;
-      color: #000000;
-      padding: 15px 45px;
-      font-size: 15px;
-      font-weight: 700;
-      border-radius: 4px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(229, 177, 34, 0.2);
-    }
-
-    .lidar-services-section .btn-view-all:hover {
-      background: #1a1a1a;
-      color: #ffffff;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    @media (max-width: 991px) {
-      .lidar-services-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .lidar-service-item.stagger {
-        margin-top: 0;
-      }
-
-      .lidar-services-section .side-label {
-        display: none;
-      }
-    }
-
-    @media (max-width: 575px) {
-      .lidar-service-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      .lidar-service-item .content-box h3 {
-        justify-content: center;
-      }
-
-      .lidar-service-item .image-box {
-        width: 100%;
-        flex: 0 0 auto;
-      }
-    }
-
-    /* Project Slider Navigation */
-    .project .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      margin-bottom: 35px;
-    }
-
-    .project .slider-nav {
-      display: flex;
-      gap: 15px;
-      margin-bottom: 10px;
-    }
-
-    .project .nav-btn {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      border: none;
-      font-size: 16px;
-      outline: none;
-    }
-
-    .project .prev-btn {
-      background-color: #f2e1a9;
-      /* Light gold */
-      color: #333333;
-    }
-
-    .project .next-btn {
-      background-color: #e5b122;
-      /* Gold */
-      color: #000000;
-    }
-
-    .project .nav-btn:hover {
-      background-color: #1a1a1a;
-      color: #ffffff;
-      transform: translateY(-2px);
-    }
-
-    @media (max-width: 767px) {
-      .project .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      .project .slider-nav {
-        margin-top: 20px;
-      }
-    }
-
-    /* Key Applications Section Styles */
-    .key-apps-section {
-      padding: 100px 0;
-      background-color: #ffffff;
-    }
-
-    .key-apps-section h2 {
-      font-size: 38px;
-      font-weight: 600;
-      text-align: center;
-      margin-bottom: 60px;
-      color: #222222;
-    }
-
-    .key-apps-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      max-width: 1200px;
-      margin: 0 auto;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
-    }
-
-    .key-app-item {
-      display: flex;
-      align-items: center;
-      padding: 30px 45px;
-      gap: 25px;
-      transition: all 0.3s ease;
-    }
-
-    .key-app-item .icon-box {
-      flex: 0 0 45px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .key-app-item .icon-box img {
-      max-width: 100%;
-      max-height: 45px;
-      filter: grayscale(1) brightness(0);
-    }
-
-    .key-app-item .text-box {
-      font-size: 17px;
-      font-weight: 700;
-      color: #222222;
-      line-height: 1.3;
-    }
-
-    /* Dynamic Grid Coloring */
-    /* Mobile: Simple Alternating */
-    .key-app-item:nth-child(odd) {
-      background-color: #e5b122;
-    }
-
-    .key-app-item:nth-child(even) {
-      background-color: #f5f5f5;
-    }
-
-    /* Desktop: Checkerboard Pattern (2 columns) */
-    @media (min-width: 992px) {
-
-      .key-app-item:nth-child(4n+1),
-      .key-app-item:nth-child(4n+4) {
-        background-color: #e5b122;
-      }
-
-      .key-app-item:nth-child(4n+2),
-      .key-app-item:nth-child(4n+3) {
-        background-color: #f5f5f5;
-      }
-    }
-
-    @media (max-width: 991px) {
-      .key-apps-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .key-apps-section h2 {
-        font-size: 32px;
-        padding: 0 20px;
-      }
-
-      .key-app-item {
-        padding: 25px 30px;
-      }
-    }
-
-    .splide_card {
-      min-height: 560px;
-    }
-
-    .splide_card h3 {
-      font-size: 28px;
-      font-weight: 500;
-      margin-top: 20px;
-    }
-
-    .main-header .main-box .outer-container {
-      padding-right: 30px;
-    }
-  </style>
-</head>
-
-<body>
-    <!-- Preloader -->
-    <div class="preloader"></div>
-    <div class="whatsapp">
-      <a href="https://api.whatsapp.com/send/?phone=917395972777&text&type=phone_number&app_absent=0"><img
-          src="WhatsApp.webp" alt=""></a>
-    </div>
-    <div class="header"></div>
-
-  <!--End pagewrapper-->
-
-
-  <div class="seprator">
-
-  </div>
-  <!--Main Slider-->
-
-  <div class="home-section">
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="home-bg" style="background: url(images/new-home2/hero-bg1.png);">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-8">
-                  <div class="home-left">
-                    <h1 class="home-head">Pioneers in Smart Factory Digital Twin Solutions</h1>
-                    <p class="mt-3">From 3D scanning to complete 3D CAD modeling of your factory with the right process
-                      and workflow, we offer a customised solution based on your factory size, equipment count, and
-                      required level of detail.</p>
-                    <div class="mt-5">
-                      <a href="get-quote.html" class="btn">Get Quote</a>
+    <head>
+        <meta charset="utf-8" />
+        <title>Home Page | WildplantTS</title>
+        <!-- Stylesheets -->
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/style1.css" />
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+        <!-- Responsive -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
+        <link href="css/responsive.css" rel="stylesheet" />
+        <!--[if lt IE 9
+            ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
+        ><![endif]-->
+        <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Custom CSS for this page -->
+        <link href="css/home-page.css" rel="stylesheet" />
+
+        <style>
+            .main-header .main-box .outer-container{
+                padding-right:30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="page-wrapper">
+            <div class="header"></div>
+
+            <!-- Main Content Area -->
+            <main>
+                <section class="hp-hero-section position-relative">
+                    <div class="hp-hero-bg-desktop d-none d-lg-block"></div>
+                    <div
+                        class="container-fluid hp-container position-relative z-index-1"
+                    >
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 py-5">
+                                <div class="hp-hero-tag">India's Leading</div>
+                                <h1 class="hp-hero-title">
+                                    Reality Capture &<br />Digital Twin Company
+                                </h1>
+                                <p class="hp-hero-desc">
+                                    We digitally capture, model, visualize and
+                                    manage<br />buildings, plants and
+                                    infrastructure with advanced<br />LiDAR,
+                                    Drone, SLAM and Digital Twin technologies.
+                                </p>
+                                <div class="hp-hero-btns">
+                                    <a
+                                        href="engineering-service-family.html"
+                                        class="hp-btn-primary"
+                                        >Explore Services</a
+                                    >
+                                    <a
+                                        href="reality-capture-technologies-for-digital-engineering-digital-twins.html"
+                                        class="hp-btn-secondary"
+                                        >Explore Technologies</a
+                                    >
+                                    <a
+                                        href="products-family-services.html"
+                                        class="hp-btn-secondary"
+                                        >Book Live Demo</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-md-auto">
+                </section>
+                
+                <section class="hp-hero-stats-section">
+                    <div class="container-fluid hp-container">
+                        <div class="hp-hero-stats-wrapper">
+                            <!-- Stat 1 -->
+                            <div class="hp-hero-stat-item">
+                                <img src="images/home-page/hero-stat-1.svg" alt="Projects Completed">
+                                <div class="hp-hero-stat-text">
+                                    <h3 class="hp-hero-stat-title">750+</h3>
+                                    <p class="hp-hero-stat-desc">Projects<br>Completed</p>
+                                </div>
+                            </div>
+                            <div class="hp-hero-stat-divider"></div>
 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="home-bg" style="background: url(images/new-home2/hero-bg2.png);">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-8">
-                  <div class="home-left">
-                    <h1 class="home-head">Buy LiDAR 3D Scanners in India – Advanced Survey-Grade Solutions.</h1>
-                    <p class="mt-3">Partnering with Laica, we offer cutting-edge LiDAR 3D scanners in India at
-                      competitive prices. Experience high-accuracy scanning with pre-sales demos, expert consultation,
-                      and reliable post-sales support across India.</p>
-                    <div class="mt-5">
-                      <a href="get-quote.html" class="btn">Get a Quote & Schedule Your Free Demo</a>
+                            <!-- Stat 2 -->
+                            <div class="hp-hero-stat-item">
+                                <img src="images/home-page/hero-stat-2.png" alt="Factories Scanned">
+                                <div class="hp-hero-stat-text">
+                                    <h3 class="hp-hero-stat-title">20+</h3>
+                                    <p class="hp-hero-stat-desc">Factories<br>scanned</p>
+                                </div>
+                            </div>
+                            <div class="hp-hero-stat-divider"></div>
+
+                            <!-- Stat 3 -->
+                            <div class="hp-hero-stat-item">
+                                <img src="images/home-page/hero-stat-3.png" alt="Buildings Scanned">
+                                <div class="hp-hero-stat-text">
+                                    <h3 class="hp-hero-stat-title">100+</h3>
+                                    <p class="hp-hero-stat-desc">Buildings<br>Scanned</p>
+                                </div>
+                            </div>
+                            <div class="hp-hero-stat-divider"></div>
+
+                            <!-- Stat 4 -->
+                            <div class="hp-hero-stat-item">
+                                <img src="images/home-page/hero-stat-4.png" alt="Industries Served">
+                                <div class="hp-hero-stat-text">
+                                    <h3 class="hp-hero-stat-title">15+</h3>
+                                    <p class="hp-hero-stat-desc">Industries<br>Served</p>
+                                </div>
+                            </div>
+                            <div class="hp-hero-stat-divider"></div>
+
+                            <!-- Stat 5 -->
+                            <div class="hp-hero-stat-item">
+                                <img src="images/home-page/hero-stat-5.png" alt="Countries Served">
+                                <div class="hp-hero-stat-text">
+                                    <h3 class="hp-hero-stat-title">10+</h3>
+                                    <p class="hp-hero-stat-desc">Countries<br>Served</p>
+                                </div>
+                            </div>
+                            <div class="hp-hero-stat-divider"></div>
+
+                            <!-- Stat 6 -->
+                            <div class="hp-hero-stat-item">
+                                <img src="images/home-page/hero-stat-6.png" alt="Scans converted to BIM Models">
+                                <div class="hp-hero-stat-text">
+                                    <h3 class="hp-hero-stat-title">150+</h3>
+                                    <p class="hp-hero-stat-desc">Scans converted<br>to BIM Models</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-md-auto">
+                <!-- About Section -->
+                <section class="hp-about-section">
+                    <div class="container-fluid hp-container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <h2 class="hp-about-title">About</h2>
+                                <div class="hp-about-desc">
+                                    <p>WildPlantTS is the <strong>Reality Capture & Digital Engineering</strong> division of the Precise3DM Group, helping organisations digitise buildings, plants, infrastructure, and industrial assets using advanced <strong>LiDAR, Mobile SLAM, Drone LiDAR, BIM, GIS, and Digital Twin</strong> technologies.</p>
+                                    <p>We deliver complete end-to-end solutions—from Reality Capture services and engineering deliverables to hardware, software, implementation, training, and long-term technical support through leading global technology partners.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 text-center mt-4 mt-lg-0">
+                                <img src="images/home-page/wildplantts-logo.png" alt="WildPlantTS Logo" class="img-fluid" style="max-height: 300px;">
+                            </div>
+                        </div>
 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="home-bg" style="background: url(images/new-home2/hero-bg3.png);">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-8">
-                  <div class="home-left">
-                    <h1 class="home-head">End-to-End Building & Infrastructure 3D Scanning and BIM Modeling </h1>
-                    <p class="mt-3">From high-precision laser scanning to detailed BIM modeling — we offer complete
-                      reality capture solutions to digitise your infrastructure and deliver accurate, usable BIM models
-                      for your downstream engineering, renovation, or facility management workflows.</p>
-                    <div class="mt-5">
-                      <a href="get-quote.html" class="btn">Request a Quote Today</a>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <h3 class="hp-about-subtitle">Transforming Reality into Intelligent Digital Assets.</h3>
+                                <div class="hp-about-stats-card">
+                                    <div class="hp-about-stat-item-inner">
+                                        <div class="hp-about-stat-num">10+</div>
+                                        <div class="hp-about-stat-text">Years of Reality<br>Capture Expertise</div>
+                                    </div>
+                                    <div class="hp-about-stat-item-inner">
+                                        <div class="hp-about-stat-num">45+</div>
+                                        <div class="hp-about-stat-text">Factories<br>Digitized</div>
+                                    </div>
+                                    <div class="hp-about-stat-item-inner">
+                                        <div class="hp-about-stat-num">200+</div>
+                                        <div class="hp-about-stat-text">Infrastructure Projects<br>3D Scanned</div>
+                                    </div>
+                                    <div class="hp-about-stat-item-inner">
+                                        <div class="hp-about-stat-num">100+</div>
+                                        <div class="hp-about-stat-text">Point Clouds Converted to<br>BIM & Facility Models</div>
+                                    </div>
+                                    <div class="hp-about-stat-item-inner">
+                                        <div class="hp-about-stat-num">3+</div>
+                                        <div class="hp-about-stat-text">Reality Capture<br>Technologies Offered</div>
+                                    </div>
+                                    <div class="hp-about-stat-item-inner">
+                                        <div class="hp-about-stat-num">10+</div>
+                                        <div class="hp-about-stat-text">Countries<br>Served</div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-5">
+                                    <a href="about-us-new.html" class="hp-btn-primary" style="display: inline-block; padding: 15px 100px ">Know more</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-md-auto">
+                </section>
+                
+                <!-- CAPEX / OPEX Section -->
+                <section class="hp-capex-opex-section">
+                    <div class="container-fluid hp-container">
+                        <div class="row align-items-stretch">
+                            <!-- Left Card -->
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <div class="hp-co-card hp-capex-card">
+                                    <div class="hp-co-content-wrap">
+                                        <div class="hp-co-tag">CAPEX - Buy Technologies</div>
+                                        <h2 class="hp-co-title">Buy Enterprise Technologies</h2>
+                                        <p class="hp-co-desc">Build in-house capability with world-class hardware, software and complete support.</p>
+                                        
+                                        <h3 class="hp-co-subtitle">Technologies</h3>
+                                        <ul class="hp-co-list">
+                                            <li>Tripod LiDAR Scanners</li>
+                                            <li>Mobile SLAM Systems</li>
+                                            <li>Reality Capture Software</li>
+                                            <li>Implementation</li>
+                                            <li>Training</li>
+                                            <li>Support & AMC</li>
+                                        </ul>
+                                    </div>
+                                    <a href="high-precision-terrestrial-laser-scanner.html" class="text-center hp-btn-primary mt-auto w-100 hp-co-btn">Know more</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Right Card -->
+                            <div class="col-lg-6">
+                                <div class="hp-co-card hp-opex-card">
+                                    <div class="hp-co-content-wrap-wide">
+                                        <div class="hp-co-tag">OPEX - Engineering Services</div>
+                                        <h2 class="hp-co-title">Outsource Engineering Services</h2>
+                                        <p class="hp-co-desc">Leverage our expertise to deliver accurate data, intelligent models and actionable insights.</p>
+                                        
+                                        <h3 class="hp-co-subtitle">Services</h3>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <ul class="hp-co-list">
+                                                    <li>Plant 3D Scanning</li>
+                                                    <li>Factory Scanning</li>
+                                                    <li>Building Scanning</li>
+                                                    <li>Infrastructure Scanning</li>
+                                                    <li>Data Centre Scanning</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="hp-co-list">
+                                                    <li>Movie Set Scanning</li>
+                                                    <li>Scan to BIM</li>
+                                                    <li>Scan to Factory CAD</li>
+                                                    <li>Digital Twin Development</li>
+                                                    <li>SLAM Mapping</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="engineering-service-family.html" class="text-center hp-btn-primary mt-auto w-100 hp-co-btn">Explore Services</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                </div>
-              </div>
-            </div>
-          </div>
+                <!-- Featured Services Section -->
+                <section class="hp-fs-section">
+                    <div class="container-fluid hp-container">
+                        <h2 class="hp-fs-title">Featured Services – Reality Capture Services</h2>
+                        
+                        <div class="row">
+                            <!-- Card 1 -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="hp-fs-card">
+                                    <div class="hp-fs-card-left">
+                                        <h3 class="hp-fs-card-title">Plant 3D Scanning</h3>
+                                        <p class="hp-fs-card-desc">High-accuracy plant and industrial facility scanning.</p>
+                                    </div>
+                                    <div class="hp-fs-card-right">
+                                        <img src="images/home-page/service-1.png" alt="Plant 3D Scanning">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 2 -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="hp-fs-card">
+                                    <div class="hp-fs-card-left">
+                                        <h3 class="hp-fs-card-title">Factory Scanning</h3>
+                                        <p class="hp-fs-card-desc">Complete factory scanning for digital documentation.</p>
+                                    </div>
+                                    <div class="hp-fs-card-right">
+                                        <img src="images/home-page/service-2.png" alt="Factory Scanning">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 3 -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="hp-fs-card">
+                                    <div class="hp-fs-card-left">
+                                        <h3 class="hp-fs-card-title">Building Scanning</h3>
+                                        <p class="hp-fs-card-desc">Capture buildings with precision and detail.</p>
+                                    </div>
+                                    <div class="hp-fs-card-right">
+                                        <img src="images/home-page/service-3.png" alt="Building Scanning">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 4 -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="hp-fs-card">
+                                    <div class="hp-fs-card-left">
+                                        <h3 class="hp-fs-card-title">Infrastructure Scanning</h3>
+                                        <p class="hp-fs-card-desc">Bridges, roads, tunnels and infrastructure assets.</p>
+                                    </div>
+                                    <div class="hp-fs-card-right">
+                                        <img src="images/home-page/service-4.png" alt="Infrastructure Scanning">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 5 -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="hp-fs-card">
+                                    <div class="hp-fs-card-left">
+                                        <h3 class="hp-fs-card-title">Data Centre Scanning</h3>
+                                        <p class="hp-fs-card-desc">Accurate scans for data centre design and maintenance.</p>
+                                    </div>
+                                    <div class="hp-fs-card-right">
+                                        <img src="images/home-page/service-5.png" alt="Data Centre Scanning">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 6 -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="hp-fs-card">
+                                    <div class="hp-fs-card-left">
+                                        <h3 class="hp-fs-card-title">Scan to BIM</h3>
+                                        <p class="hp-fs-card-desc">Point cloud to BIM for planning, modelling and construction.</p>
+                                    </div>
+                                    <div class="hp-fs-card-right">
+                                        <img src="images/home-page/service-6.png" alt="Scan to BIM">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Our Products Section -->
+                <section class="hp-products-section">
+                    <div class="container-fluid hp-container">
+                        <h2 class="hp-products-title">Our Products</h2>
+                        
+                        <div class="hp-products-scroll-wrapper">
+                            <div class="hp-products-row">
+                                <!-- Card 1 -->
+                                <div class="hp-product-card-col">
+                                    <div class="hp-product-card">
+                                        <div class="hp-product-left">
+                                            <img src="images/home-page/product-1.png" alt="EPiC T150">
+                                        </div>
+                                        <div class="hp-product-right">
+                                            <h3 class="hp-product-card-title">EPiC T150</h3>
+                                            <ul class="hp-product-list">
+                                                <li>Terrestrial LiDAR Scanner</li>
+                                                <li>High accuracy.</li>
+                                                <li>Long range.</li>
+                                                <li>Rapid scanning.</li>
+                                            </ul>
+                                            <a href="high-precision-terrestrial-laser-scanner.html" class="hp-product-btn">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Card 2 -->
+                                <div class="hp-product-card-col">
+                                    <div class="hp-product-card">
+                                        <div class="hp-product-left">
+                                            <img src="images/home-page/product-2.png" alt="Precise S7">
+                                        </div>
+                                        <div class="hp-product-right">
+                                            <h3 class="hp-product-card-title">Precise S7</h3>
+                                            <ul class="hp-product-list">
+                                                <li>Handheld 3D Lidar</li>
+                                                <li>Fast, flexible and accurate indoor & outdoor mapping</li>
+                                            </ul>
+                                            <a href="product.html" class="hp-product-btn">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Card 3 -->
+                                <div class="hp-product-card-col">
+                                    <div class="hp-product-card">
+                                        <div class="hp-product-left">
+                                            <img src="images/home-page/product-3.png" alt="Lidar Processing Software">
+                                        </div>
+                                        <div class="hp-product-right">
+                                            <h3 class="hp-product-card-title">Lidar Processing Software</h3>
+                                            <ul class="hp-product-list">
+                                                <li>Convert lidar scan to mesh Model</li>
+                                            </ul>
+                                            <a href="product.html" class="hp-product-btn">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Card 4 -->
+                                <div class="hp-product-card-col">
+                                    <div class="hp-product-card">
+                                        <div class="hp-product-left">
+                                            <img src="images/home-page/product-4.png" alt="Scan to BIM Software">
+                                        </div>
+                                        <div class="hp-product-right">
+                                            <h3 class="hp-product-card-title">Scan to BIM<br>Software</h3>
+                                            <ul class="hp-product-list">
+                                                <li>Transform Lidar scans to BIM Models</li>
+                                            </ul>
+                                            <a href="product.html" class="hp-product-btn">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Card 5 -->
+                                <div class="hp-product-card-col">
+                                    <div class="hp-product-card hp-product-card-yellow">
+                                        <div class="hp-product-right w-100">
+                                            <h3 class="hp-product-card-title">More Technologies Coming Soon !!!</h3>
+                                            <ul class="hp-product-list hp-product-list-white">
+                                                <li>New releases and enterprise solutions on the way.</li>
+                                            </ul>
+                                            <a href="product.html" class="hp-product-btn hp-product-btn-white">Stay Tuned!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Industries We Serve Section -->
+                <section class="hp-industries-section">
+                    <div class="container-fluid hp-container">
+                        <div class="hp-industries-wrapper">
+                            <h2 class="hp-industries-title">Industries We Serve</h2>
+                            
+                            <div class="row">
+                                <!-- Industry 1 -->
+                                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                                    <div class="hp-industry-card">
+                                        <img src="images/home-page/serve-1.png" alt="Construction & BIM">
+                                        <h3 class="hp-industry-title">Construction & BIM</h3>
+                                    </div>
+                                </div>
+                                
+                                <!-- Industry 2 -->
+                                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                                    <div class="hp-industry-card">
+                                        <img src="images/home-page/serve-2.png" alt="Oil & Gas Plants">
+                                        <h3 class="hp-industry-title">Oil & Gas Plants</h3>
+                                    </div>
+                                </div>
+                                
+                                <!-- Industry 3 -->
+                                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                                    <div class="hp-industry-card">
+                                        <img src="images/home-page/serve-3.png" alt="Manufacturing & Automotive">
+                                        <h3 class="hp-industry-title">Manufacturing &<br>Automotive</h3>
+                                    </div>
+                                </div>
+                                
+                                <!-- Industry 4 -->
+                                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                                    <div class="hp-industry-card">
+                                        <img src="images/home-page/serve-4.png" alt="Infrastructure & Bridges">
+                                        <h3 class="hp-industry-title">Infrastructure &<br>Bridges</h3>
+                                    </div>
+                                </div>
+                                
+                                <!-- Industry 5 -->
+                                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                                    <div class="hp-industry-card">
+                                        <img src="images/home-page/serve-5.png" alt="Heritage Documentation">
+                                        <h3 class="hp-industry-title">Heritage Documentation</h3>
+                                    </div>
+                                </div>
+                                
+                                <!-- Industry 6 -->
+                                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                                    <div class="hp-industry-card">
+                                        <img src="images/home-page/serve-6.png" alt="Mining & Quarry">
+                                        <h3 class="hp-industry-title">Mining & Quarry</h3>
+                                    </div>
+                                </div>
+                                
+                                <!-- Industry 7 -->
+                                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                                    <div class="hp-industry-card">
+                                        <img src="images/home-page/serve-7.png" alt="Facility Management">
+                                        <h3 class="hp-industry-title">Facility Management</h3>
+                                    </div>
+                                </div>
+                                
+                                <!-- Industry 8 -->
+                                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                                    <div class="hp-industry-card">
+                                        <img src="images/home-page/serve-8.png" alt="Architecture & Surveying">
+                                        <h3 class="hp-industry-title">Architecture &<br>Surveying</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Twindeo Section -->
+                <section class="hp-twindeo-section">
+                    <div class="container-fluid hp-container">
+                        <div class="hp-twindeo-wrapper">
+                            <div class="row">
+                                <!-- Left Content -->
+                                <div class="col-lg-5 col-md-12 mb-5 mb-lg-0">
+                                    <div class="hp-twindeo-left">
+                                        <h2 class="hp-twindeo-title">Twindeo&trade;</h2>
+                                        <div class="hp-twindeo-tag">Twindeo &ndash; Launching Soon</div>
+                                        <h3 class="hp-twindeo-subtitle">The Future of Digital Twin is Almost Here</h3>
+                                        <p class="hp-twindeo-desc">Twindeo is currently under development and will become WildPlantTS&rsquo;s integrated platform for Digital Twins, Asset Intelligence, Reality Capture, and Engineering Information Management.</p>
+                                        <p class="hp-twindeo-desc">Future releases will introduce advanced AI capabilities, IoT integration, predictive analytics, automated change detection, and intelligent asset management workflows.</p>
+                                        <button class="hp-twindeo-btn">Launching Soon !!!</button>
+                                    </div>
+                                </div>
+                                
+                                <!-- Right Images Grid -->
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="row hp-twindeo-grid">
+                                        <div class="col-6 col-md-4"><img src="images/home-page/twindeo-1.png" alt="Twindeo Screenshot"></div>
+                                        <div class="col-6 col-md-4"><img src="images/home-page/twindeo-2.png" alt="Twindeo Screenshot"></div>
+                                        <div class="col-6 col-md-4"><img src="images/home-page/twindeo-3.png" alt="Twindeo Screenshot"></div>
+                                        <div class="col-6 col-md-4"><img src="images/home-page/twindeo-4.png" alt="Twindeo Screenshot"></div>
+                                        <div class="col-6 col-md-4"><img src="images/home-page/twindeo-5.png" alt="Twindeo Screenshot"></div>
+                                        <div class="col-6 col-md-4"><img src="images/home-page/twindeo-6.png" alt="Twindeo Screenshot"></div>
+                                        <div class="col-6 col-md-4"><img src="images/home-page/twindeo-7.png" alt="Twindeo Screenshot"></div>
+                                        <div class="col-6 col-md-4"><img src="images/home-page/twindeo-8.png" alt="Twindeo Screenshot"></div>
+                                        <div class="col-6 col-md-4"><img src="images/home-page/twindeo-9.png" alt="Twindeo Screenshot"></div>
+                                        <div class="col-6 col-md-4"><img src="images/home-page/twindeo-10.png" alt="Twindeo Screenshot"></div>
+                                        <div class="col-6 col-md-4"><img src="images/home-page/twindeo-11.png" alt="Twindeo Screenshot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Why Choose Section -->
+                <section class="hp-why-section">
+                    <div class="container-fluid hp-container">
+                        <div class="hp-why-wrapper">
+                            <h2 class="hp-why-main-title">Why Choose <span class="hp-text-yellow">WildPlantTS</span>?</h2>
+                            
+                            <div class="row">
+                                <!-- Item 1 -->
+                                <div class="col-lg-2 col-md-4 col-sm-6 mb-5 mb-lg-0">
+                                    <div class="hp-why-card">
+                                        <img src="images/home-page/why-1.png" alt="Technology First">
+                                        <h3 class="hp-why-title">Technology First</h3>
+                                        <p class="hp-why-desc">Built around the latest Reality Capture technologies.</p>
+                                    </div>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="col-lg-2 col-md-4 col-sm-6 mb-5 mb-lg-0">
+                                    <div class="hp-why-card">
+                                        <img src="images/home-page/why-2.png" alt="Engineering Excellence">
+                                        <h3 class="hp-why-title">Engineering Excellence</h3>
+                                        <p class="hp-why-desc">Skilled engineering team delivering reliable outcomes.</p>
+                                    </div>
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="col-lg-2 col-md-4 col-sm-6 mb-5 mb-lg-0">
+                                    <div class="hp-why-card">
+                                        <img src="images/home-page/why-3.png" alt="Pan India & Global Deployment">
+                                        <h3 class="hp-why-title">Pan India & Global Deployment</h3>
+                                        <p class="hp-why-desc">Project execution across India with international support.</p>
+                                    </div>
+                                </div>
+                                <!-- Item 4 -->
+                                <div class="col-lg-2 col-md-4 col-sm-6 mb-5 mb-lg-0">
+                                    <div class="hp-why-card">
+                                        <img src="images/home-page/why-4.png" alt="Fast Turnaround">
+                                        <h3 class="hp-why-title">Fast Turnaround</h3>
+                                        <p class="hp-why-desc">Efficient delivery without compromising quality.</p>
+                                    </div>
+                                </div>
+                                <!-- Item 5 -->
+                                <div class="col-lg-2 col-md-4 col-sm-6 mb-5 mb-lg-0">
+                                    <div class="hp-why-card">
+                                        <img src="images/home-page/why-5.png" alt="End-to-End Solutions">
+                                        <h3 class="hp-why-title">End-to-End Solutions</h3>
+                                        <p class="hp-why-desc">From data capture to engineering, Digital Twins and visualization.</p>
+                                    </div>
+                                </div>
+                                <!-- Item 6 -->
+                                <div class="col-lg-2 col-md-4 col-sm-6 mb-5 mb-lg-0">
+                                    <div class="hp-why-card">
+                                        <img src="images/home-page/why-6.png" alt="Training & Support">
+                                        <h3 class="hp-why-title">Training & Support</h3>
+                                        <p class="hp-why-desc">Comprehensive implementation, onboarding and long-term assistance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Featured Projects Section -->
+                <section class="hp-projects-section">
+                    <div class="container-fluid hp-container">
+                        <h2 class="hp-projects-main-title">Featured Projects</h2>
+                        
+                        <div class="row hp-projects-grid">
+                            <!-- Project 1 -->
+                            <div class="col-lg-3 col-md-6 mb-5">
+                                <div class="hp-project-card">
+                                    <div class="hp-project-img-wrapper">
+                                        <img src="images/home-page/project-1.png" alt="Oil & Gas Plant">
+                                    </div>
+                                    <div class="hp-project-info">
+                                        <h3 class="hp-project-title">Oil & Gas Plant</h3>
+                                        <p class="hp-project-desc">Gujarat, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project 2 -->
+                            <div class="col-lg-3 col-md-6 mb-5">
+                                <div class="hp-project-card">
+                                    <div class="hp-project-img-wrapper">
+                                        <img src="images/home-page/project-2.png" alt="Power Plant">
+                                    </div>
+                                    <div class="hp-project-info">
+                                        <h3 class="hp-project-title">Power Plant</h3>
+                                        <p class="hp-project-desc">Maharashtra, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project 3 -->
+                            <div class="col-lg-3 col-md-6 mb-5">
+                                <div class="hp-project-card">
+                                    <div class="hp-project-img-wrapper">
+                                        <img src="images/home-page/project-3.png" alt="Metro Project">
+                                    </div>
+                                    <div class="hp-project-info">
+                                        <h3 class="hp-project-title">Metro Project</h3>
+                                        <p class="hp-project-desc">Bengaluru, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project 4 -->
+                            <div class="col-lg-3 col-md-6 mb-5">
+                                <div class="hp-project-card">
+                                    <div class="hp-project-img-wrapper">
+                                        <img src="images/home-page/project-4.png" alt="Data Centre">
+                                    </div>
+                                    <div class="hp-project-info">
+                                        <h3 class="hp-project-title">Data Centre</h3>
+                                        <p class="hp-project-desc">Hyderabad, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-5">
+                            <a href="#" class="hp-projects-btn">View All Projects</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Find the Right Reality Capture Solution Section -->
+                <section class="hp-solution-section">
+                    <div class="container-fluid hp-container">
+                        <div class="hp-solution-wrapper">
+                            <div class="text-center">
+                                <span class="hp-solution-tag">CHOOSE YOUR PATH</span>
+                                <h2 class="hp-solution-title">Find the Right Reality Capture Solution</h2>
+                                <p class="hp-solution-desc">Tell us where you are in your project&mdash;we'll guide you to the right solution.</p>
+                            </div>
+                            
+                            <div class="row mt-5 hp-solution-cards">
+                                <!-- Card 1 -->
+                                <div class="col-lg col-md-6 mb-4">
+                                    <div class="hp-solution-card">
+                                        <div class="hp-solution-num">1</div>
+                                        <img src="images/home-page/solution-logo-1.png" alt="Logo 1" class="hp-solution-logo">
+                                        <h3 class="hp-solution-card-title">Need Professional<br>3D Laser Scanning?</h3>
+                                        <p class="hp-solution-card-desc">Our field teams capture accurate Reality Capture data anywhere in India.</p>
+                                        <a href="engineering-service-family.html" class="hp-solution-btn">Explore Scanning Service</a>
+                                        <img src="images/home-page/solution-1.png" alt="Solution 1" class="hp-solution-img">
+                                    </div>
+                                </div>
+                                <!-- Card 2 -->
+                                <div class="col-lg col-md-6 mb-4">
+                                    <div class="hp-solution-card">
+                                        <div class="hp-solution-num">2</div>
+                                        <img src="images/home-page/solution-logo-2.png" alt="Logo 2" class="hp-solution-logo">
+                                        <h3 class="hp-solution-card-title">Already Have<br>Point Clouds?</h3>
+                                        <p class="hp-solution-card-desc">Our engineering specialists convert your data into BIM models, CAD drawings, Digital Twins, and engineering documentation.</p>
+                                        <a href="engineering-service-family.html" class="hp-solution-btn">Explore Engineering Service</a>
+                                        <img src="images/home-page/solution-2.png" alt="Solution 2" class="hp-solution-img">
+                                    </div>
+                                </div>
+                                <!-- Card 3 -->
+                                <div class="col-lg col-md-6 mb-4">
+                                    <div class="hp-solution-card">
+                                        <div class="hp-solution-num">3</div>
+                                        <img src="images/home-page/solution-logo-3.png" alt="Logo 3" class="hp-solution-logo">
+                                        <h3 class="hp-solution-card-title">Planning a<br>Digital Twin?</h3>
+                                        <p class="hp-solution-card-desc">We help organizations create intelligent digital assets for long-term operations and asset management.</p>
+                                        <a href="#" class="hp-solution-btn">Talk to Digital Twin Experts</a>
+                                        <img src="images/home-page/solution-3.png" alt="Solution 3" class="hp-solution-img">
+                                    </div>
+                                </div>
+                                <!-- Card 4 -->
+                                <div class="col-lg col-md-6 mb-4">
+                                    <div class="hp-solution-card">
+                                        <div class="hp-solution-num">4</div>
+                                        <img src="images/home-page/solution-logo-4.png" alt="Logo 4" class="hp-solution-logo">
+                                        <h3 class="hp-solution-card-title">Looking to Buy a 3D<br>Laser Scanner?</h3>
+                                        <p class="hp-solution-card-desc">Receive independent technical consultation, live demonstrations, product comparisons, implementation planning, and training.</p>
+                                        <a href="products-family-services.html" class="hp-solution-btn">Book a Product Demo</a>
+                                        <img src="images/home-page/solution-4.png" alt="Solution 4" class="hp-solution-img">
+                                    </div>
+                                </div>
+                                <!-- Card 5 -->
+                                <div class="col-lg col-md-6 mb-4">
+                                    <div class="hp-solution-card">
+                                        <div class="hp-solution-num">5</div>
+                                        <img src="images/home-page/solution-logo-5.png" alt="Logo 5" class="hp-solution-logo">
+                                        <h3 class="hp-solution-card-title">Not Sure Where<br>to Start?</h3>
+                                        <p class="hp-solution-card-desc">Speak directly with our technical specialists for project guidance and technology recommendations.</p>
+                                        <a href="#" class="hp-solution-btn">Request Consultation</a>
+                                        <img src="images/home-page/solution-5.png" alt="Solution 5" class="hp-solution-img">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="hp-solution-trust-banner mt-4">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-3 col-md-6 mb-3 mb-lg-0 hp-trust-item">
+                                        <img src="images/home-page/trust-1.svg" alt="Trust">
+                                        <span>Engineering Accuracy<br>You Can Trust</span>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 mb-3 mb-lg-0 hp-trust-item">
+                                        <img src="images/home-page/trust-2.svg" alt="Trust">
+                                        <span>Advanced Technology.<br>Proven Workflows</span>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 mb-3 mb-lg-0 hp-trust-item">
+                                        <img src="images/home-page/trust-3.svg" alt="Trust">
+                                        <span>Expert Team.<br>Nationwide Support</span>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 mb-3 mb-lg-0 hp-trust-item hp-trust-last">
+                                        <img src="images/home-page/trust-4.svg" alt="Trust">
+                                        <span>Global Delivery<br>Local Expertise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA Section -->
+                <section class="hp-cta-section">
+                    <div class="container-fluid hp-container text-center">
+                        <h2 class="hp-cta-title">Ready to Digitally <br class="d-md-none"><span class="hp-text-yellow">Transform Your Facility?</span></h2>
+                        <p class="hp-cta-desc">Talk to our experts and discover the right solution for your business.</p>
+                        
+                        <div class="hp-cta-buttons">
+                            <a href="talk-to-experts.html" class="hp-cta-btn hp-cta-btn-primary">Talk to an Expert</a>
+                            <a href="book-demo.html" class="hp-cta-btn hp-cta-btn-secondary">Book Live Demo</a>
+                            <!-- <a href="get-quote.html" class="hp-cta-btn hp-cta-btn-secondary">Request Proposal</a> -->
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer Placeholder -->
+            <div class="footer"></div>
         </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
 
-  <!-- About Section -->
-  <section class="new-about-section">
-    <div class="bg-pattern"></div>
-    <div class="container">
-      <div class="about-header">
-        <h2 class="about-title">ABOUT</h2>
-        <div class="about-logo">
-          <img src="images/home-logo.png" alt="Wildplant Logo">
-        </div>
-      </div>
-      <div class="about-content">
-        <p>WildplantTS is a technology-driven company dedicated to transforming terrestrial objects using advanced
-          digital solutions. We specialise in delivering innovative services for buildings, infrastructure, industrial
-          facilities, transportation systems, and agriculture. By leveraging LiDAR, drone-based mapping, and BIM
-          technologies, we help businesses visualise, manage, and optimise their physical assets with exceptional
-          accuracy and efficiency.</p>
-      </div>
-      <div class="btn-container">
-        <a href="about-us.html" class="btn-learn">Learn more</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Lidar Services Section -->
-  <section class="lidar-services-section">
-    <div class="side-label">SERVICES</div>
-    <div class="container">
-      <div class="section-header">
-        <h2>Lidar Laser 3D Scanning Service</h2>
-        <p>WildplantTs is an Expert in executing and delivering high-quality LiDAR laser 3D scanning services across
-          multiple applications, taking Reality capture to the next level</p>
-      </div>
-
-      <div class="lidar-services-grid">
-        <!-- Item 1: Plant -->
-        <div class="lidar-service-item">
-          <div class="image-box">
-            <img src="images/new-home2/lidar1.png" alt="Plant">
-          </div>
-          <div class="content-box">
-            <h3>Plant</h3>
-            <p>High-precision LiDAR laser 3D scanning services for accurate plant layout, analysis, and documentation.
-            </p>
-          </div>
+        <!--Scroll to top-->
+        <div class="scroll-to-top scroll-to-target" data-target=".main-header">
+            <span class="fa fa-long-arrow-up"></span>
         </div>
 
-        <!-- Item 2: Building -->
-        <div class="lidar-service-item stagger">
-          <div class="image-box">
-            <img src="images/new-home2/lidar2.png" alt="Building">
-          </div>
-          <div class="content-box">
-            <h3>Building</h3>
-            <p>Accurate LiDAR laser 3D scanning services for building measurement, modelling, and BIM documentation.</p>
-          </div>
-        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
 
-        <!-- Item 3: Factories -->
-        <div class="lidar-service-item">
-          <div class="image-box">
-            <img src="images/new-home2/lidar3.png" alt="Factories">
-          </div>
-          <div class="content-box">
-            <h3>Factories</h3>
-            <p>Capturing high-detail LiDAR laser 3D scanning of factories for accurate factory mapping, virtual
-              planning, and factory digital twin.</p>
-          </div>
-        </div>
-
-        <!-- Item 4: Movie Set -->
-        <div class="lidar-service-item stagger">
-          <div class="image-box">
-            <img src="images/new-home2/lidar4.png" alt="Movie Set">
-          </div>
-          <div class="content-box">
-            <h3>Movie Set</h3>
-            <p>LiDAR 3D scanning of movie sets to digitally capture movie sets with original texture for VFX, virtual
-              production and set recreation</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="btn-container">
-        <a href="#" class="btn-view-all">View all lidar based Services</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="industry">
-    <h2 class="sec-head text-center">Industries we serve</h2>
-    <p class="text-center">Every day, we support diverse applications across multiple industries. Here are the key
-      sectors we serve</p>
-
-    <div class="row row-cols-md-7 overflow-x-auto mt-5 flex-nowrap industry-row">
-      <div class="col">
-        <div class="industry-box">
-          <div class="num-div">
-            <div class="num-in-div">
-              <h2>01</h2>
-            </div>
-          </div>
-          <img class="imgg" src="images/new-home/end-dot.png" alt="">
-          <div>
-            <h3 class="text-center">Architecture, <br>Engineering &<br> Construction (AEC)</h3>
-          </div>
-          <img src="images/new-home/arrow-1.png" alt="" class="ar-img">
-        </div>
-      </div>
-      <div class="col">
-        <div class="industry-box">
-          <div>
-            <h3 class="text-center">Surveying & Mapping</h3>
-          </div>
-          <img class="imgg" src="images/new-home/up-dot.png" alt="">
-          <div class="num-div">
-            <div class="num-in-div">
-              <h2>02</h2>
-            </div>
-          </div>
-          <!-- <img src="images/new-home/arrow-1.png" alt="" class="ar-img2"> -->
-        </div>
-      </div>
-      <div class="col">
-        <div class="industry-box">
-          <div class="num-div">
-            <div class="num-in-div">
-              <h2>03</h2>
-            </div>
-          </div>
-          <img class="imgg" src="images/new-home/end-dot.png" alt="">
-          <div>
-            <h3 class="text-center">Factory & Plant</h3>
-          </div>
-          <img src="images/new-home/arrow-1.png" alt="" class="ar-img">
-        </div>
-      </div>
-      <div class="col">
-        <div class="industry-box">
-          <!-- <img src="images/new-home/arrow-1.png" alt="" class="ar-img2"> -->
-          <div>
-            <h3 class="text-center">Oil, Gas & Energy</h3>
-          </div>
-          <img class="imgg" src="images/new-home/up-dot.png" alt="">
-          <div class="num-div">
-            <div class="num-in-div">
-              <h2>04</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="industry-box">
-          <div class="num-div">
-            <div class="num-in-div">
-              <h2>05</h2>
-            </div>
-          </div>
-          <img class="imgg" src="images/new-home/end-dot.png" alt="">
-          <div>
-            <h3 class="text-center">Mining & Geology</h3>
-          </div>
-          <img src="images/new-home/arrow-1.png" alt="" class="ar-img">
-        </div>
-      </div>
-      <div class="col">
-        <div class="industry-box">
-          <!-- <img src="images/new-home/arrow-1.png" alt="" class="ar-img2"> -->
-          <div>
-            <h3 class="text-center">Oil, Gas & Energy</h3>
-          </div>
-          <img class="imgg" src="images/new-home/up-dot.png" alt="">
-          <div class="num-div">
-            <div class="num-in-div">
-              <h2>06</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="industry-box">
-          <div class="num-div">
-            <div class="num-in-div">
-              <h2>07</h2>
-            </div>
-          </div>
-          <img class="imgg" src="images/new-home/end-dot.png" alt="">
-          <div>
-            <h3 class="text-center">Mining & Geology</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="benifits">
-    <div class="container">
-      <h2 class="sec-head text-center">Our key benefits</h2>
-      <div class="row row-cols-1 row-cols-lg-3 mt-5 g-4">
-        <div class="col">
-          <div class="benifits-box">
-            <img class="img" src="images/new-home/icon-1.png" alt="">
-            <h3>End-to-end solution</h3>
-            <p>While many service providers offer 3D laser scanning, WildplantTs delivers a complete solution, from 3D
-              Scan to CAD, 3D Scan to BIM, and polygon mesh creation, ensuring seamless execution under one roof.</p>
-            <img class="arrow-img" src="images/new-home/arrow.png" alt="">
-          </div>
-        </div>
-        <div class="col">
-          <div class="benifits-box">
-            <img class="img" src="images/new-home/icon-2.png" alt="">
-            <h3>Team and Resource</h3>
-            <p>We have 40+ in-house who are well-trained and experienced in working on real-time projects on Factory 3D
-              scan data and converting to Factory CAD model and Digital twin</p>
-            <img class="arrow-img arrow-img-2" src="images/new-home/arrow.png" style="transform: scaleY(-1);" alt="">
-          </div>
-        </div>
-        <div class="col">
-          <div class="benifits-box">
-            <img class="img" src="images/new-home/icon-3.png" alt="">
-            <h3>In-house advanced equipment</h3>
-            <p>We are equipped with advanced equipment and software, such as Leica 3D Laser Scanner and authorised
-              Cyclone, Autodesk software and Geomagic software</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Key Applications Section -->
-  <section class="key-apps-section">
-    <div class="container">
-      <h2>Key Technology Application of Lidar 3D Laser Scanning</h2>
-      <div class="key-apps-grid">
-        <!-- Row 1 -->
-        <div class="key-app-item">
-          <div class="icon-box"><img src="images/new-home2/key1.png" alt="Icon"></div>
-          <div class="text-box">Floor Flatness & Levelness (FF/FL Analysis)</div>
-        </div>
-        <div class="key-app-item">
-          <div class="icon-box"><img src="images/new-home2/key6.png" alt="Icon"></div>
-          <div class="text-box">As-Built Verification & Deviation Analysis</div>
-        </div>
-
-        <!-- Row 2 -->
-        <div class="key-app-item">
-          <div class="icon-box"><img src="images/new-home2/key2.png" alt="Icon"></div>
-          <div class="text-box">Structural Deformation Monitoring</div>
-        </div>
-        <div class="key-app-item">
-          <div class="icon-box"><img src="images/new-home2/key7.png" alt="Icon"></div>
-          <div class="text-box">Forensic Documentation & Accuracy Validation</div>
-        </div>
-
-        <!-- Row 3 -->
-        <div class="key-app-item">
-          <div class="icon-box"><img src="images/new-home2/key3.png" alt="Icon"></div>
-          <div class="text-box">Scan-to-BIM / Scan-to-CAD</div>
-        </div>
-        <div class="key-app-item">
-          <div class="icon-box"><img src="images/new-home2/key8.png" alt="Icon"></div>
-          <div class="text-box">Digital Twin Creation & Facility Intelligence</div>
-        </div>
-
-        <!-- Row 4 -->
-        <div class="key-app-item">
-          <div class="icon-box"><img src="images/new-home2/key4.png" alt="Icon"></div>
-          <div class="text-box">Clash Detection & Retrofit Planning</div>
-        </div>
-        <div class="key-app-item">
-          <div class="icon-box"><img src="images/new-home2/key9.png" alt="Icon"></div>
-          <div class="text-box">Geo-referencing & Coordinate Mapping</div>
-        </div>
-
-        <!-- Row 5 -->
-        <div class="key-app-item">
-          <div class="icon-box"><img src="images/new-home2/key5.png" alt="Icon"></div>
-          <div class="text-box">Volume & Quantity Analysis</div>
-        </div>
-        <div class="key-app-item">
-          <div class="icon-box"><img src="images/new-home2/key10.png" alt="Icon"></div>
-          <div class="text-box">Construction Progress Monitoring</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="project">
-    <div class="container">
-      <div class="title-box">
-        <h2>Our Recent Project</h2>
-        <p>Lidar laser 3D Scanning of Air Quenching Cooler boiler (AQC)</p>
-      </div>
-      <div class="slider-nav">
-        <button class="nav-btn prev-btn"><i class="fa fa-chevron-left"></i></button>
-        <button class="nav-btn next-btn"><i class="fa fa-chevron-right"></i></button>
-      </div>
-    </div>
-
-    <div class="splide">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <div class="splide_card">
-              <img src="images/new-home/card1.png" alt="Cement Factory" />
-              <h3>Cement Factory</h3>
-              <p>Digital Twin of Factory</p>
-            </div>
-          </li>
-          <li class="splide__slide">
-            <div class="splide_card">
-              <img src="images/new-home/card2.png" alt="Movie Set" />
-              <h3>Movie set</h3>
-              <p>Capturing a realistic Movie set with texture and high details without losing its originality</p>
-            </div>
-          </li>
-          <li class="splide__slide">
-            <div class="splide_card">
-              <img src="images/new-home/card3.png" alt="Ex Molestias" />
-              <h3>Ajanta Cave 3D scanning</h3>
-              <p>Beauty of Ajanta cave captured using Lidar 3D Laser Scanner for VR/AR applications.</p>
-            </div>
-          </li>
-          <!-- <li class="splide__slide">
-                  <div class="splide_card">
-                    <img src="images/new-home/card4.png" alt="Ex Molestias" />
-                    <h3>Ex molestias</h3>
-                    <p>Mauris sem mattis lorem, ut lobortis ligula leo a Odio. Nulla turpis ex,</p>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="splide_card">
-                    <img src="images/new-home/card5.png" alt="Ex Molestias" />
-                    <h3>Ex Molestias</h3>
-                    <p>Mauris sem mattis lorem, ut lobortis ligula leo a Odio. Nulla turpis ex,</p>
-                  </div>
-                </li> -->
-          <!-- Add more slides here -->
-        </ul>
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <div class="footer"></div>
-
-  <script src="js/jquery.js"></script>
-  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="js/revolution.min.js"></script>
-  <script src="js/jquery.fancybox.pack.js"></script>
-  <script src="js/jquery.fancybox-media.js"></script>
-  <script src="js/isotope.js"></script>
-  <script src="js/owl.js"></script>
-  <!-- <script src="js/header.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
-
-
-  <script src="js/wow.js"></script>
-  <script src="js/script.js?v=2"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
-  <script>
-    var splide = new Splide('.splide', {
-      type: 'loop',
-      perPage: 3,
-      perMove: 1,
-      gap: '20px',
-      arrows: false,
-      pagination: false,
-      breakpoints: {
-        1024: {
-          perPage: 2,
-        },
-        768: {
-          perPage: 1,
-        }
-      }
-    });
-
-    splide.mount();
-
-    // Connect custom buttons
-    document.querySelector('.prev-btn').addEventListener('click', () => splide.go('<'));
-    document.querySelector('.next-btn').addEventListener('click', () => splide.go('>'));
-  </script>
-
-
-  <script>
-    const counters = document.querySelectorAll('.counter');
-    let hasAnimated = false;
-
-    const duration = 2000; // Total animation time in milliseconds
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting && !hasAnimated) {
-          counters.forEach(counter => {
-            const target = +counter.getAttribute('data-target');
-            let current = 0;
-            const frameRate = 30; // Update interval in ms
-            const steps = Math.ceil(duration / frameRate);
-            const increment = target / steps;
-
-            const updateCount = () => {
-              current += increment;
-              if (current < target) {
-                counter.innerText = `${Math.floor(current)}+`;
-                setTimeout(updateCount, frameRate);
-              } else {
-                counter.innerText = `${target}+`;
-              }
-            };
-
-            updateCount();
-          });
-
-          hasAnimated = true;
-        }
-      });
-    }, {
-      threshold: 0.3
-    });
-
-    counters.forEach(counter => observer.observe(counter));
-  </script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-
-      const isMobile = window.innerWidth <= 991;
-
-      document.querySelectorAll(".main-header .navigation li.dropdown > a").forEach(function (link) {
-
-        const submenu = link.nextElementSibling;
-
-        // If no submenu → ignore
-        if (!submenu || submenu.tagName !== "UL") return;
-
-        // DESKTOP → allow normal navigation
-        if (!isMobile) {
-          link.addEventListener("click", function (e) {
-            window.location = this.href; // force navigation
-          });
-          return;
-        }
-
-        // MOBILE → first tap opens submenu, second tap navigates
-        link.addEventListener("click", function (e) {
-
-          if (!submenu.classList.contains("open-submenu")) {
-            e.preventDefault();
-            submenu.classList.add("open-submenu");
-            return;
-          }
-
-          // If already open → allow navigation
-        });
-
-      });
-    });
-  </script>
-
-
-
-
-  <style>
-    /* Smooth open/close */
-    .side-menu .dropdown ul {
-      display: none;
-    }
-
-    .side-menu .dropdown ul.open-submenu {
-      display: block !important;
-    }
-
-    .navigation li.dropdown>ul {
-      display: none;
-    }
-
-    .navigation li.dropdown>ul.open-submenu {
-      display: block !important;
-    }
-  </style>
-
-
-</body>
-
+        <script src="js/revolution.min.js"></script>
+        <script src="js/jquery.fancybox.pack.js"></script>
+        <script src="js/jquery.fancybox-media.js"></script>
+        <script src="js/isotope.js"></script>
+        <script src="js/owl.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <script src="js/wow.js"></script>
+        <script src="js/script.js?v=2"></script>
+    </body>
 </html>
