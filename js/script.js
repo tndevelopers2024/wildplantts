@@ -666,9 +666,9 @@ window.initHeaderScripts();
   }
 
   // Scroll to a Specific Div
-  if ($(".scroll-to-target").length) {
-    $(".scroll-to-target").on("click", function () {
-      var target = $(this).attr("data-target");
+  $(document).on("click", ".scroll-to-target", function () {
+    var target = $(this).attr("data-target");
+    if ($(target).length) {
       // animate
       $("html, body").animate(
         {
@@ -676,8 +676,8 @@ window.initHeaderScripts();
         },
         1000
       );
-    });
-  }
+    }
+  });
 
   // Elements Animation
   if ($(".wow").length) {

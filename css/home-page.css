@@ -531,6 +531,42 @@
     text-align: center;
     margin-bottom: 50px;
 }
+
+.hp-products-header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.hp-products-title {
+    grid-column: 2;
+    margin-bottom: 0;
+    text-align: center;
+}
+.hp-products-nav {
+    grid-column: 3;
+    justify-self: end;
+    display: flex;
+    gap: 15px;
+}
+.hp-products-nav button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #ffbc00;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.hp-products-nav button:hover {
+    background-color: #e5a800;
+    transform: translateY(-2px);
+}
 .hp-products-scroll-wrapper {
     overflow-x: auto;
     overflow-y: hidden;

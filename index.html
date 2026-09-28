@@ -168,7 +168,7 @@
                                 <h2 class="hp-about-title">About</h2>
                                 <div class="hp-about-desc">
                                     <p>WildPlantTS is the <strong>Reality Capture & Digital Engineering</strong> division of the Precise3DM Group, helping organisations digitise buildings, plants, infrastructure, and industrial assets using advanced <strong>LiDAR, Mobile SLAM, Drone LiDAR, BIM, GIS, and Digital Twin</strong> technologies.</p>
-                                    <p>We deliver complete end-to-end solutions—from Reality Capture services and engineering deliverables to hardware, software, implementation, training, and long-term technical support through leading global technology partners.</p>
+                                    <p>We deliver complete end-to-end solutions from Reality Capture services and engineering deliverables to hardware, software, implementation, training, and long-term technical support through leading global technology partners.</p>
                                 </div>
                             </div>
                             <div class="col-lg-5 text-center mt-4 mt-lg-0">
@@ -366,7 +366,13 @@
                 <!-- Our Products Section -->
                 <section class="hp-products-section">
                     <div class="container-fluid hp-container">
-                        <h2 class="hp-products-title">Our Products</h2>
+                        <div class="hp-products-header">
+                            <h2 class="hp-products-title">Our Products</h2>
+                            <div class="hp-products-nav">
+                                <button class="hp-products-prev"><i class="fas fa-chevron-left"></i></button>
+                                <button class="hp-products-next"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
                         
                         <div class="hp-products-scroll-wrapper">
                             <div class="hp-products-row">
@@ -398,7 +404,7 @@
                                         <div class="hp-product-right">
                                             <h3 class="hp-product-card-title">Precise S7</h3>
                                             <ul class="hp-product-list">
-                                                <li>Handheld 3D Lidar</li>
+                                                <li>Handheld 3D LiDAR</li>
                                                 <li>Fast, flexible and accurate indoor & outdoor mapping</li>
                                             </ul>
                                             <a href="product.html" class="hp-product-btn">Learn More</a>
@@ -413,7 +419,7 @@
                                             <img src="images/home-page/product-3.png" alt="Lidar Processing Software">
                                         </div>
                                         <div class="hp-product-right">
-                                            <h3 class="hp-product-card-title">Lidar Processing Software</h3>
+                                            <h3 class="hp-product-card-title">LiDAR Processing Software</h3>
                                             <ul class="hp-product-list">
                                                 <li>Convert lidar scan to mesh Model</li>
                                             </ul>
@@ -826,5 +832,19 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
         <script src="js/wow.js"></script>
         <script src="js/script.js?v=2"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('.hp-products-prev').click(function() {
+                    var wrapper = $('.hp-products-scroll-wrapper');
+                    wrapper.animate({ scrollLeft: wrapper.scrollLeft() - 510 }, 400);
+                });
+                $('.hp-products-next').click(function() {
+                    var wrapper = $('.hp-products-scroll-wrapper');
+                    wrapper.animate({ scrollLeft: wrapper.scrollLeft() + 510 }, 400);
+                });
+            });
+        </script>
     </body>
+
 </html>
