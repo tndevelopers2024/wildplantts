@@ -1,3 +1,4 @@
 *.md
 *.py
 .zed/
+.DS_Store
