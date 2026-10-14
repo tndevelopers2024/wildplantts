@@ -175,6 +175,73 @@ body,
 }
 
 /* ========================================= */
+/* Responsive Hero Section below 1650px */
+/* ========================================= */
+@media (max-width: 1650px) {
+    .about-hero-section {
+        background-size: 53% auto;
+        background-position: right center;
+    }
+    .about-hero-title {
+        font-size: 4.4rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    .about-hero-section {
+        background-size: 51% auto;
+        padding: 100px 0;
+        min-height: 70vh;
+    }
+    .about-hero-title {
+        font-size: 3.8rem;
+    }
+    .about-hero-subtitle {
+        font-size: 1.8rem;
+    }
+    .about-hero-desc {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    .about-btn-primary,
+    .about-btn-secondary {
+        font-size: 1.7rem;
+        padding: 12px 28px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .about-hero-section {
+        background-size: 48% auto;
+        padding: 90px 0;
+    }
+    .about-hero-title {
+        font-size: 3.2rem;
+    }
+    .about-hero-subtitle {
+        font-size: 1.6rem;
+    }
+    .about-hero-desc {
+        font-size: 1.4rem;
+        margin-bottom: 25px;
+    }
+    .about-btn-primary,
+    .about-btn-secondary {
+        font-size: 1.5rem;
+        padding: 10px 22px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .about-hero-section {
+        background-size: 46% auto;
+    }
+    .about-hero-title {
+        font-size: 2.8rem;
+    }
+}
+
+/* ========================================= */
 /* Who We Are Section */
 /* ========================================= */
 .who-we-are-section {
