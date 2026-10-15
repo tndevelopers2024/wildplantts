@@ -476,6 +476,17 @@
     display: flex;
     height: 100%;
     padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hp-fs-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(229, 177, 34, 0.25);
+    text-decoration: none;
+    color: inherit;
 }
 
 .hp-fs-card-left {
@@ -1120,20 +1131,75 @@
     text-decoration: none;
 }
 
-@media (max-width: 1400px) {
-    .hp-co-content-wrap,
+@media (max-width: 1799px) {
+    .hp-capex-card::after {
+        background-size: auto 58%;
+        background-position: 88% 48%;
+    }
+    .hp-opex-card::after {
+        background-size: auto 28%;
+        background-position: 96% 35%;
+    }
+}
+
+@media (max-width: 1599px) {
+    .hp-capex-card::after {
+        background-size: auto 48%;
+        background-position: 92% 48%;
+    }
+    .hp-opex-card::after {
+        background-size: auto 23%;
+        background-position: 98% 35%;
+    }
     .hp-co-content-wrap-wide {
-        max-width: 100%;
+        max-width: 65%;
     }
-    .hp-capex-card {
-        background-size:
-            auto 50%,
-            cover;
+}
+
+@media (max-width: 1399px) {
+    .hp-capex-card::after {
+        background-size: auto 40%;
+        background-position: 95% 48%;
     }
-    .hp-opex-card {
-        background-size:
-            auto 40%,
-            cover;
+    .hp-opex-card::after {
+        background-size: auto 19%;
+        background-position: 98% 35%;
+    }
+    .hp-co-content-wrap {
+        max-width: 65%;
+    }
+    .hp-co-content-wrap-wide {
+        max-width: 68%;
+    }
+    .hp-co-title {
+        font-size: 3.4rem;
+    }
+    .hp-co-list li {
+        font-size: 1.7rem;
+        padding-left: 28px;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .hp-capex-card::after {
+        background-size: auto 34%;
+        background-position: 96% 48%;
+    }
+    .hp-opex-card::after {
+        background-size: auto 16%;
+        background-position: 98% 35%;
+    }
+    .hp-co-title {
+        font-size: 3rem;
+    }
+    .hp-co-desc {
+        font-size: 1.6rem;
+    }
+    .hp-co-list li {
+        font-size: 1.5rem;
+        padding-left: 25px;
+        margin-bottom: 10px;
     }
 }
 
