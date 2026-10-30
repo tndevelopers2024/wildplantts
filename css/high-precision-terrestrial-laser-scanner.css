@@ -575,6 +575,14 @@
   flex-direction: column;
 }
 
+.hptls-kf-slide {
+  display: none;
+}
+
+.hptls-kf-slide.active {
+  display: block;
+}
+
 .hptls-kf-main-img {
   width: 100%;
   border-radius: 12px;
@@ -763,21 +771,26 @@
   margin-bottom: 25px;
   position: relative;
   z-index: 2;
+  cursor: pointer;
 }
 
 .hptls-kf-tl-item::before {
   content: '';
   position: absolute;
   left: 19px;
-  top: 20px;
-  bottom: -120px;
+  top: 0;
+  bottom: -25px;
   width: 2px;
   background-color: #222;
-  z-index: -1;
+  z-index: 1;
+}
+
+.hptls-kf-tl-item:first-child::before {
+  top: 50%;
 }
 
 .hptls-kf-tl-item:last-child::before {
-  display: none;
+  bottom: 50%;
 }
 
 .hptls-kf-tl-dot {
@@ -792,6 +805,8 @@
   justify-content: center;
   font-size: 15px;
   flex-shrink: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .hptls-kf-tl-dot.inactive {
@@ -842,7 +857,7 @@
 
 @media (max-width: 991px) {
   .hptls-kf-right { padding-left: 0; margin-top: 50px; }
-  .hptls-kf-tl-item::before { left: 14px; top: 15px; bottom: -100px; }
+  .hptls-kf-tl-item::before { left: 14px; }
   .hptls-kf-tl-dot { width: 30px; height: 30px; font-size: 13px; }
   .hptls-kf-mini { padding-bottom: 10px; }
   .hptls-kf-tl-card img {
@@ -1447,6 +1462,14 @@
   flex-direction: column;
 }
 
+.hptls-auc-slide {
+  display: none;
+}
+
+.hptls-auc-slide.active {
+  display: block;
+}
+
 .hptls-auc-main-img {
   width: 100%;
   border-radius: 12px;
@@ -1635,21 +1658,26 @@
   margin-bottom: 25px;
   position: relative;
   z-index: 2;
+  cursor: pointer;
 }
 
 .hptls-auc-tl-item::before {
   content: '';
   position: absolute;
   left: 19px;
-  top: 20px;
-  bottom: -120px;
+  top: 0;
+  bottom: -25px;
   width: 2px;
   background-color: #222;
-  z-index: -1;
+  z-index: 1;
+}
+
+.hptls-auc-tl-item:first-child::before {
+  top: 50%;
 }
 
 .hptls-auc-tl-item:last-child::before {
-  display: none;
+  bottom: 50%;
 }
 
 .hptls-auc-tl-dot {
@@ -1664,6 +1692,8 @@
   justify-content: center;
   font-size: 15px;
   flex-shrink: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .hptls-auc-tl-dot.inactive {
@@ -1713,7 +1743,7 @@
 
 @media (max-width: 991px) {
   .hptls-auc-right { padding-left: 0; margin-top: 50px; }
-  .hptls-auc-tl-item::before { left: 14px; top: 15px; bottom: -100px; }
+  .hptls-auc-tl-item::before { left: 14px; }
   .hptls-auc-tl-dot { width: 30px; height: 30px; font-size: 13px; }
   .hptls-auc-mini { padding-bottom: 10px; }
   .hptls-auc-tl-card img {
