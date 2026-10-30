@@ -1148,9 +1148,9 @@
   .ls-comp-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 130px;
     position: relative;
-    max-width: 1400px;
+    max-width: 1250px;
     margin: 0 auto;
   }
   
@@ -1175,7 +1175,7 @@
   
   .ls-comp-card {
     padding: 55px 40px;
-    border-radius: 10px;
+    border-radius: 14px;
     flex: 1;
   }
   
@@ -1237,11 +1237,17 @@
   .pro-list li i { color: #10c853; }
   .con-list li i { color: #eb4335; }
   
+  @media (max-width: 1199px) {
+    .ls-comp-grid {
+      gap: 90px;
+    }
+  }
+
   @media (max-width: 991px) {
     .ls-comp-grid {
       grid-template-columns: 1fr;
       max-width: 600px;
-      gap: 30px;
+      gap: 80px;
     }
     .ls-comparison-section{
       padding: 60px 0px;
