@@ -1,0 +1,1594 @@
+/* ========================================================
+   WildPlantTS - Contact Us Page Stylesheet
+   Hero Banner matching exact design reference
+   ======================================================== */
+
+:root {
+  --cu-primary-gold: #e5a93c;
+  --cu-gold-hover: #d6982f;
+  --cu-dark-bg: #161311;
+  --cu-text-main: #222222;
+  --cu-text-muted: #666666;
+  --cu-border-color: #e5e7eb;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  color: var(--cu-text-main);
+  background-color: #fcfbf9;
+  overflow-x: hidden;
+}
+
+/* --- Navbar Style Harmonization --- */
+.main-header {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.main-header .main-menu .navigation > li > a {
+  color: #333333 !important;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: capitalize !important;
+  text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation > li:hover > a,
+.main-header .main-menu .navigation > li.current > a {
+  color: #e4ae1f !important;
+  text-decoration: none !important;
+}
+
+.main-header .main-menu .navigation li a {
+  text-decoration: none !important;
+}
+
+/* Floating WhatsApp */
+.whatsapp {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 999;
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================= */
+/* Hero Section - Exact Design Replication  */
+/* ========================================= */
+.cu-hero-section {
+  position: relative;
+  min-height: 600px;
+  background-color: #1a1614;
+  background-image: url("../images/contact-us/cu-hero-banner-img.png");
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  padding: 95px 0 115px;
+  overflow: hidden;
+}
+
+/* Soft dark gradient overlay tailored for text legibility without altering the imagery */
+.cu-hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 56%;
+  background: linear-gradient(
+    90deg,
+    rgba(22, 19, 17, 0.96) 0%,
+    rgba(22, 19, 17, 0.88) 42%,
+    rgba(22, 19, 17, 0.5) 76%,
+    rgba(22, 19, 17, 0) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.cu-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 630px;
+}
+
+/* Eyebrow / Tag: "Contact WildPlantTS" */
+.cu-hero-tag {
+  display: inline-block;
+  color: var(--cu-primary-gold);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin-bottom: 16px;
+}
+
+/* Main Heading */
+.cu-hero-title {
+  color: #ffffff;
+  font-size: clamp(2.2rem, 3.8vw, 3.35rem);
+  font-weight: 700;
+  line-height: 1.18;
+  margin-bottom: 22px;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Subtitle description */
+.cu-hero-desc {
+  color: #d6d3ce;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 34px;
+  max-width: 520px;
+  font-weight: 400;
+}
+
+/* Buttons Container */
+.cu-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Primary Button: "Book an EdgeWise Demo" */
+.cu-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cu-primary-gold);
+  color: #171412 !important;
+  font-weight: 600;
+  font-size: 15.5px;
+  padding: 13px 28px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  border: 1px solid var(--cu-primary-gold);
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(229, 169, 60, 0.25);
+}
+
+.cu-btn-primary:hover {
+  background-color: var(--cu-gold-hover);
+  border-color: var(--cu-gold-hover);
+  color: #000000 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(229, 169, 60, 0.45);
+}
+
+/* Secondary Button: "Request a Dataset Evaluation" */
+.cu-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 15.5px;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  text-decoration: none !important;
+  backdrop-filter: blur(4px);
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.cu-btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+  border-color: #ffffff;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+/* ========================================= */
+/* Trust Highlights Ribbon                   */
+/* ========================================= */
+.cu-trust-strip {
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  padding: 24px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.cu-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 10px;
+}
+
+.cu-trust-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(229, 169, 60, 0.12);
+  color: #c98e22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.cu-trust-text h5 {
+  margin: 0 0 2px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1614;
+}
+
+.cu-trust-text p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+/* ========================================= */
+/* Main Contact Section                      */
+/* ========================================= */
+.cu-main-section {
+  padding: 70px 0 90px;
+}
+
+.cu-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+  border: 1px solid #edebe8;
+  height: 100%;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.cu-card:hover {
+  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.08);
+}
+
+.cu-card-header {
+  padding: 30px 36px 18px;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.cu-card-header .cu-subtitle {
+  color: var(--cu-primary-gold);
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.cu-card-header h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1614;
+  margin: 0;
+}
+
+.cu-card-body {
+  padding: 30px 36px;
+}
+
+/* Form Styles */
+.cu-form .form-group {
+  margin-bottom: 20px;
+}
+
+.cu-form label {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 7px;
+}
+
+.cu-form label .required-star {
+  color: #e53e3e;
+}
+
+.cu-form .form-control {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 14.5px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #fafafa;
+  color: #2d3748;
+  transition: all 0.2s ease;
+  outline: none;
+  height: auto;
+}
+
+.cu-form .form-control:focus {
+  border-color: var(--cu-primary-gold);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(229, 169, 60, 0.15);
+}
+
+.cu-form select.form-control {
+  cursor: pointer;
+}
+
+.cu-form textarea.form-control {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.cu-submit-btn {
+  width: 100%;
+  background: var(--cu-primary-gold);
+  color: #171412;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 14px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(229, 169, 60, 0.25);
+}
+
+.cu-submit-btn:hover {
+  background: var(--cu-gold-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(229, 169, 60, 0.4);
+}
+
+/* Direct Support Pill Cards */
+.cu-direct-connect {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.cu-contact-pill {
+  background: #fdfbf7;
+  border: 1px solid #faedd4;
+  border-radius: 12px;
+  padding: 16px 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.cu-contact-pill:hover {
+  background: #fff;
+  border-color: var(--cu-primary-gold);
+  box-shadow: 0 4px 15px rgba(229, 169, 60, 0.12);
+  transform: translateY(-2px);
+}
+
+.cu-contact-pill .pill-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--cu-primary-gold);
+  color: #1a1614;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.cu-contact-pill .pill-content span {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #888888;
+  margin-bottom: 2px;
+}
+
+.cu-contact-pill .pill-content a {
+  color: #1a1614;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.cu-contact-pill .pill-content a:hover {
+  color: var(--cu-gold-hover);
+}
+
+/* Regional Offices Switcher */
+.cu-offices-box {
+  background: #ffffff;
+  border: 1px solid #edebe8;
+  border-radius: 14px;
+  padding: 22px;
+  margin-top: 24px;
+}
+
+.cu-offices-box h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1614;
+  margin: 0 0 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cu-city-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.cu-city-pill {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #4a5568;
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.cu-city-pill:hover {
+  border-color: var(--cu-primary-gold);
+  color: #1a1614;
+}
+
+.cu-city-pill.active {
+  background: #171412;
+  border-color: #171412;
+  color: var(--cu-primary-gold);
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cu-address-display {
+  background: #faf9f6;
+  border: 1px solid #f0eee9;
+  border-radius: 10px;
+  padding: 16px 18px;
+  border-left: 4px solid var(--cu-primary-gold);
+}
+
+.cu-address-city-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1614;
+  margin-bottom: 6px;
+}
+
+.cu-address-text {
+  font-size: 13px;
+  color: #555555;
+  line-height: 1.55;
+  margin-bottom: 12px;
+}
+
+.cu-address-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #1a1614;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cu-address-link i {
+  color: var(--cu-primary-gold);
+}
+
+.cu-address-link:hover {
+  color: var(--cu-gold-hover);
+}
+
+/* Map Section */
+.cu-map-section {
+  padding: 0 0 75px;
+}
+
+.cu-map-container {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #edebe8;
+  background: #eaeaea;
+}
+
+.cu-map-container iframe {
+  width: 100%;
+  height: 420px;
+  border: 0;
+  display: block;
+}
+
+/* Alert Notification */
+.cu-status-msg {
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 18px;
+  display: none;
+}
+
+.cu-status-msg.success {
+  display: block;
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.cu-status-msg.error {
+  display: block;
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+/* ========================================= */
+/* Responsive Media Queries                  */
+/* ========================================= */
+@media (max-width: 991px) {
+  .cu-hero-section {
+    margin-top: 80px;
+    padding: 70px 0 60px;
+    min-height: auto;
+  }
+
+  .cu-hero-section::before {
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(22, 19, 17, 0.94) 0%,
+      rgba(22, 19, 17, 0.9) 100%
+    );
+  }
+
+  .cu-direct-connect {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .cu-hero-title {
+    font-size: 2rem;
+  }
+
+  .cu-hero-desc {
+    font-size: 0.98rem;
+  }
+
+  .cu-card-header,
+  .cu-card-body {
+    padding: 24px 20px;
+  }
+
+  .cu-hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cu-btn-primary,
+  .cu-btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* --- Footer and Mobile Drawer Consistency --- */
+.main-footer .about-widget .text,
+.main-footer .contact-info li,
+.main-footer .tags-widget .tags-list li a,
+.main-footer p {
+  font-size: 15px;
+}
+
+.main-footer a {
+  color: #e5b122;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .hidden-bar .logo img {
+    display: inline-block;
+    max-width: 75%;
+  }
+}
+
+
+/* ========================================= */
+/* Choose Your Path Section - Exact Reference */
+/* ========================================= */
+.cyp-section {
+  position: relative;
+  z-index: 10;
+  margin-top: -45px;
+  padding-bottom: 70px;
+}
+
+.cyp-main-wrapper {
+  background: #ffffff;
+  border-radius: 28px 28px 20px 20px;
+  box-shadow: 0 -6px 30px rgba(0, 0, 0, 0.08), 0 10px 30px rgba(0, 0, 0, 0.04);
+  padding: 38px 40px 45px;
+}
+
+.cyp-heading {
+  text-align: center;
+  font-size: clamp(1.85rem, 2.5vw, 2.4rem);
+  font-weight: 700;
+  color: #171412;
+  margin-bottom: 35px;
+  letter-spacing: -0.3px;
+}
+
+.cyp-card {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.cyp-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+  transform: translateY(-3px);
+}
+
+/* Card Header */
+.cyp-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.cyp-card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.cyp-card-titles h3 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #171412;
+  margin: 0 0 4px 0;
+  line-height: 1.25;
+}
+
+.cyp-card-titles p {
+  font-size: 13.5px;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* Process Steps Flow */
+.cyp-steps-flow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: center;
+  margin: 20px 0 24px;
+  padding: 0 4px;
+}
+
+.cyp-step-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cyp-step-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.cyp-step-circle.blue {
+  border: 2px solid #1e40af;
+  color: #1e40af;
+}
+
+.cyp-step-circle.green {
+  border: 2px solid #2e7d32;
+  color: #2e7d32;
+}
+
+.cyp-step-arrow {
+  color: #1a1614;
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 10px;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.cyp-step-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1f2937;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* Card Description */
+.cyp-card-desc {
+  font-size: 13.5px;
+  color: #4b5563;
+  text-align: center;
+  line-height: 1.55;
+  margin: 0 auto 26px auto;
+  max-width: 440px;
+  min-height: 42px;
+}
+
+/* Action Buttons */
+.cyp-btn {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 13px 20px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.cyp-btn.blue {
+  background-color: #1e40af;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(30, 64, 175, 0.25);
+}
+
+.cyp-btn.blue:hover {
+  background-color: #172554;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 64, 175, 0.35);
+}
+
+.cyp-btn.green {
+  background-color: #2e7d32;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(46, 125, 50, 0.25);
+}
+
+.cyp-btn.green:hover {
+  background-color: #1b5e20;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(46, 125, 50, 0.35);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .cyp-main-wrapper {
+    padding: 30px 24px 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cyp-section {
+    margin-top: -25px;
+  }
+
+  .cyp-main-wrapper {
+    padding: 24px 16px 30px;
+    border-radius: 20px 20px 14px 14px;
+  }
+
+  .cyp-card {
+    padding: 22px 16px;
+  }
+
+  .cyp-card-titles h3 {
+    font-size: 18px;
+  }
+
+  .cyp-step-circle {
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .cyp-step-label {
+    font-size: 11px;
+    line-height: 1.25;
+  }
+
+  .cyp-step-arrow {
+    font-size: 16px;
+    padding-top: 6px;
+  }
+
+  .cyp-card-desc {
+    font-size: 12.5px;
+    min-height: auto;
+  }
+}
+
+
+/* ========================================= */
+/* Consultation Card Banner - Exact Design   */
+/* ========================================= */
+.cu-consult-banner {
+  background: #fff9f2;
+  border: 1.5px solid #ffcca3;
+  border-radius: 18px;
+  padding: 24px 36px;
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  transition: all 0.25s ease;
+}
+
+.cu-consult-banner:hover {
+  border-color: #fca56a;
+  box-shadow: 0 8px 25px rgba(242, 101, 34, 0.08);
+}
+
+.cu-consult-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.cu-consult-icon {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.cu-consult-text h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #171412;
+  margin: 0 0 5px 0;
+  line-height: 1.25;
+}
+
+.cu-consult-text p {
+  font-size: 14px;
+  color: #4b5563;
+  margin: 0;
+  line-height: 1.45;
+}
+
+.cu-consult-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f26522;
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 13px 32px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 4px 14px rgba(242, 101, 34, 0.25);
+}
+
+.cu-consult-btn:hover {
+  background-color: #dc5413;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(242, 101, 34, 0.4);
+}
+
+@media (max-width: 991px) {
+  .cu-consult-banner {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 24px 22px;
+    gap: 20px;
+  }
+
+  .cu-consult-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .cu-consult-left {
+    gap: 16px;
+  }
+
+  .cu-consult-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .cu-consult-text h4 {
+    font-size: 18px;
+  }
+
+  .cu-consult-text p {
+    font-size: 12.5px;
+  }
+}
+
+
+/* ========================================= */
+/* Send Us a Message Section - Exact Design  */
+/* ========================================= */
+.cu-message-section {
+  padding: 10px 0 80px;
+  position: relative;
+  z-index: 5;
+}
+
+.cu-split-card {
+  background: #ffffff;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 32px 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s ease;
+}
+
+.cu-split-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Left Form Card */
+.cu-form-header {
+  margin-bottom: 22px;
+}
+
+.cu-form-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 5px;
+}
+
+.cu-form-title-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.cu-form-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #171412;
+  margin: 0;
+}
+
+.cu-form-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.cu-field-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 14.5px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #1f2937;
+  outline: none;
+  transition: all 0.2s ease;
+  height: 48px;
+}
+
+.cu-field-input:focus,
+.cu-field-select:focus,
+.cu-field-textarea:focus {
+  border-color: var(--cu-primary-gold);
+  box-shadow: 0 0 0 3px rgba(229, 169, 60, 0.15);
+}
+
+.cu-field-label {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 7px;
+}
+
+.cu-field-select {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 14.5px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #4b5563;
+  outline: none;
+  height: 48px;
+  cursor: pointer;
+  appearance: auto;
+}
+
+.cu-field-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 14.5px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #1f2937;
+  outline: none;
+  min-height: 105px;
+  resize: vertical;
+}
+
+/* Checkbox Contact Method */
+.cu-method-group {
+  margin: 6px 0 18px;
+}
+
+.cu-method-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4b5563;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.cu-checkbox-wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.cu-checkbox-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  margin: 0;
+  user-select: none;
+}
+
+.cu-checkbox-item input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  accent-color: var(--cu-primary-gold);
+}
+
+/* Submit Button */
+.cu-btn-submit-enquiry {
+  width: 100%;
+  background-color: var(--cu-primary-gold);
+  color: #171412 !important;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(229, 169, 60, 0.25);
+}
+
+.cu-btn-submit-enquiry:hover {
+  background-color: var(--cu-gold-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(229, 169, 60, 0.4);
+}
+
+.cu-secure-note {
+  font-size: 12.5px;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+/* Right Info Card */
+.cu-info-split-row {
+  display: flex;
+  gap: 22px;
+  align-items: stretch;
+  margin-bottom: 22px;
+  flex: 1;
+}
+
+.cu-info-list {
+  flex: 1.18;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2px 0;
+}
+
+.cu-info-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 6px 0;
+}
+
+.cu-info-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.cu-info-text h5 {
+  font-size: 18.5px;
+  font-weight: 700;
+  color: #171412;
+  margin: 0 0 3px 0;
+  line-height: 1.25;
+}
+
+.cu-info-link {
+  font-size: 18px;
+  font-weight: 700;
+  color: #171412;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  line-height: 1.25;
+  display: inline-block;
+}
+
+.cu-info-link:hover {
+  color: var(--cu-gold-hover);
+}
+
+.cu-info-text p {
+  font-size: 13.5px;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.35;
+}
+
+/* What We Help With Box */
+.cu-help-box {
+  flex: 1;
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 22px 24px;
+  border: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cu-help-box h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #171412;
+  margin: 0 0 14px 0;
+}
+
+.cu-help-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cu-help-list li {
+  font-size: 13.5px;
+  color: #374151;
+  line-height: 1.45;
+}
+
+/* Urgent Requirement Banner */
+.cu-urgent-banner {
+  background: #091124;
+  border-radius: 16px;
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  overflow: hidden;
+  position: relative;
+  margin-top: auto;
+}
+
+.cu-urgent-content {
+  flex: 1;
+}
+
+.cu-urgent-content h4 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.cu-urgent-content p {
+  color: #94a3b8;
+  font-size: 13.5px;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+  max-width: 320px;
+}
+
+.cu-urgent-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  background: transparent;
+  color: #ffffff !important;
+  font-size: 14.5px;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+}
+
+.cu-urgent-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.cu-urgent-img-wrap {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cu-urgent-img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.cu-urgent-content {
+  flex: 1;
+}
+
+.cu-urgent-content h4 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+}
+
+.cu-urgent-content p {
+  color: #94a3b8;
+  font-size: 12.5px;
+  line-height: 1.45;
+  margin: 0 0 16px 0;
+  max-width: 320px;
+}
+
+.cu-urgent-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  color: #ffffff !important;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 9px 22px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: all 0.25s ease;
+}
+
+.cu-urgent-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.cu-urgent-img-wrap {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cu-urgent-img {
+  width: 110px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .cu-split-card {
+    padding: 26px 20px;
+  }
+
+  .cu-info-split-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cu-checkbox-wrap {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .cu-urgent-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cu-urgent-img-wrap {
+    align-self: center;
+    margin-top: 10px;
+  }
+
+  .cu-urgent-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* ========================================= */
+/* Trust Badges 6-Card Section - Exact Design*/
+/* ========================================= */
+.cu-trust-cards-section {
+  padding: 0 0 75px;
+  position: relative;
+  z-index: 5;
+}
+
+.cu-trust-card {
+  background: #ffffff;
+  border: 1.5px solid #eef2f6;
+  border-radius: 18px;
+  padding: 28px 14px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s ease-in-out;
+}
+
+.cu-trust-card:hover {
+  transform: translateY(-4px);
+  border-color: #fbd38d;
+  box-shadow: 0 10px 25px rgba(229, 169, 60, 0.12);
+}
+
+.cu-trust-card-icon-wrap {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.cu-trust-card-img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.cu-trust-card:hover .cu-trust-card-img {
+  transform: scale(1.08);
+}
+
+.cu-trust-card-title {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #171412;
+  margin: 12px 0 6px 0;
+  line-height: 1.25;
+}
+
+.cu-trust-card-desc {
+  font-size: 12.5px;
+  color: #4b5563;
+  line-height: 1.45;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .cu-trust-card {
+    padding: 22px 12px 20px;
+  }
+
+  .cu-trust-card-title {
+    font-size: 14.5px;
+  }
+
+  .cu-trust-card-desc {
+    font-size: 11.5px;
+  }
+}
+
+
+/* ========================================= */
+/* Trusted by Global Leaders - Exact Design  */
+/* ========================================= */
+.cu-trusted-by-section {
+  padding: 0 0 85px;
+  position: relative;
+  z-index: 5;
+}
+
+.cu-trusted-by-banner {
+  background: #fffaf4;
+  border: 1.5px solid #fbd38d;
+  border-radius: 20px;
+  padding: 24px 36px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.cu-trusted-by-banner:hover {
+  border-color: #f6ad55;
+  box-shadow: 0 8px 25px rgba(229, 169, 60, 0.1);
+}
+
+.cu-tb-badge {
+  position: absolute;
+  top: 12px;
+  right: 28px;
+  color: #d97706;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+.cu-tb-heading {
+  flex-shrink: 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: #171412;
+  line-height: 1.18;
+  margin: 0;
+}
+
+.cu-tb-logos-row {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 10px; /* offset for the top right badge */
+}
+
+.cu-tb-logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  transition: transform 0.2s ease;
+}
+
+.cu-tb-logo-item:hover {
+  transform: scale(1.06);
+}
+
+.cu-tb-logo-img {
+  max-height: 80px;
+  max-width: 105px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 1199px) {
+  .cu-trusted-by-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 24px 22px;
+    gap: 20px;
+  }
+
+  .cu-tb-logos-row {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 0;
+  }
+
+  .cu-tb-logo-img {
+    max-height: 32px;
+    max-width: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cu-tb-badge {
+    position: static;
+    margin-bottom: 8px;
+  }
+
+  .cu-tb-heading {
+    font-size: 19px;
+  }
+
+  .cu-tb-logos-row {
+    gap: 16px 20px;
+  }
+
+  .cu-tb-logo-img {
+    max-height: 60px;
+    max-width: 80px;
+  }
+}
