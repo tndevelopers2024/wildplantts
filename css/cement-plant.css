@@ -60,7 +60,7 @@
 
 .page-main-content {
     flex-grow: 1;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .main-footer {
@@ -254,6 +254,9 @@
   .cp-title, .cp-subtitle, .cp-desc, .cp-buttons { position: relative; z-index: 5; }
   
   .cp-bottom-bar-wrapper { padding: 0 15px; }
+  .page-main-content {
+    padding-top: 80px;
+  }
   
   .cp-bottom-bar { 
     flex-wrap: nowrap; 
