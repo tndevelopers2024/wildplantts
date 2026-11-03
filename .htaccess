@@ -1,0 +1,4 @@
+# Custom Error Documents
+ErrorDocument 404 /wildplantt/404.html
+ErrorDocument 403 /wildplantt/404.html
+

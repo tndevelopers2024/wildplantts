@@ -1,0 +1,180 @@
+/* ==========================================================================
+   404 ERROR PAGE - SIMPLE & CLEAN DESIGN
+   Wildplant Terrestrial Solutions (WildplantTS)
+   ========================================================================== */
+
+.simple-404-section {
+  padding: 100px 20px 120px;
+  background: #ffffff;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.simple-404-container {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* Badge */
+.simple-404-badge {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #e5b122;
+  background: rgba(229, 177, 34, 0.1);
+  border: 1px solid rgba(229, 177, 34, 0.3);
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+/* 404 Number */
+.simple-404-number {
+  font-size: clamp(5rem, 12vw, 9rem);
+  font-weight: 800;
+  line-height: 1;
+  color: #191c1e;
+  margin: 0 0 10px;
+  letter-spacing: -2px;
+}
+
+.simple-404-number span {
+  color: #e5b122;
+}
+
+/* Title & Description */
+.simple-404-title {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: #191c1e;
+  margin-bottom: 15px;
+}
+
+.simple-404-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0 auto 35px;
+  max-width: 520px;
+}
+
+/* Action Buttons */
+.simple-404-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.simple-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #e5b122;
+  color: #191c1e !important;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  border: 1px solid #e5b122;
+}
+
+.simple-btn-primary:hover {
+  background-color: #191c1e;
+  color: #ffffff !important;
+  border-color: #191c1e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.simple-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  color: #191c1e !important;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  border: 1px solid #d0d4dc;
+}
+
+.simple-btn-secondary:hover {
+  background-color: #f4f6f8;
+  border-color: #191c1e;
+  transform: translateY(-2px);
+}
+
+/* Quick Links */
+.simple-404-links {
+  border-top: 1px solid #eef0f3;
+  padding-top: 25px;
+}
+
+.simple-404-links p {
+  font-size: 14px;
+  color: #888888;
+  margin-bottom: 12px;
+}
+
+.simple-links-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.simple-links-list li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #191c1e;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.simple-links-list li a:hover {
+  color: #e5b122;
+  text-decoration: underline;
+}
+
+.simple-links-list li:not(:last-child)::after {
+  content: '•';
+  margin-left: 18px;
+  color: #cccccc;
+}
+
+@media (max-width: 576px) {
+  .simple-404-section {
+    padding: 70px 15px 90px;
+  }
+  .simple-404-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .simple-btn-primary,
+  .simple-btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+  .simple-links-list li:not(:last-child)::after {
+    display: none;
+  }
+}
