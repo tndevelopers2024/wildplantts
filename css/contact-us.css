@@ -112,7 +112,7 @@ body {
 .cu-hero-tag {
   display: inline-block;
   color: var(--cu-primary-gold);
-  font-size: 1.15rem;
+  font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: 0.2px;
   margin-bottom: 16px;
@@ -132,7 +132,7 @@ body {
 /* Subtitle description */
 .cu-hero-desc {
   color: #d6d3ce;
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 34px;
   max-width: 520px;
