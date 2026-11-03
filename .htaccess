@@ -1,4 +1,27 @@
-# Custom Error Documents
-ErrorDocument 404 /wildplantt/404.html
-ErrorDocument 403 /wildplantt/404.html
+# ==========================================
+# WildplantTS Server Configuration
+# ==========================================
 
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# 1. Canonical Redirect: Transfer /index.html to / (301 Permanent Redirect)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Redirect /wildplantt/index.html to /wildplantt/ on local XAMPP
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /wildplantt/index\.html [NC]
+RewriteRule ^index\.html$ /wildplantt/ [R=301,L]
+
+# 2. Local XAMPP subfolder 404 handler (/wildplantt/)
+RewriteCond %{REQUEST_URI} ^/wildplantt/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /wildplantt/404.html [L]
+</IfModule>
+
+# ==========================================
+# Production Custom Error Pages (wildplantts.com)
+# ==========================================
+ErrorDocument 404 /404.html
+ErrorDocument 403 /404.html

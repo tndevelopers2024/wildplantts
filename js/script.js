@@ -40,37 +40,44 @@
   //Hidden Bar Menu Config
   function hiddenBarMenuConfig() {
     var menuWrap = $(".hidden-bar .side-menu");
-    // appending expander button
-    menuWrap
-      .find(".dropdown")
-      .children("a")
-      .append(function () {
-        return '<button type="button" class="btn expander"><i class="icon fa fa-angle-down"></i></button>';
-      });
-    // hidding submenu
-    menuWrap.find(".dropdown").children("ul").hide();
-    // toggling child ul
-    menuWrap.find(".btn.expander").each(function () {
-      $(this).on("click", function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $(this)
-          .parent() // return parent of .btn.expander (a)
-          .parent() // return parent of a (li)
-          .children("ul")
-          .slideToggle();
+    // Clean up old expanders
+    menuWrap.find(".btn.expander").remove();
 
-        // adding class to expander container
-        $(this).parent().toggleClass("current");
-        // toggling arrow of expander
-        $(this).find("i").toggleClass("fa-angle-up fa-angle-down");
-
-        return false;
-      });
+    // Appending dedicated clickable arrow to each li.dropdown if not already present
+    menuWrap.find(".dropdown").each(function () {
+      var $li = $(this);
+      if (!$li.children(".side-menu-arrow").length) {
+        $li.children("a").after('<span class="side-menu-arrow"><i class="fa fa-angle-down"></i></span>');
+      }
     });
+
+    // Hide all submenus by default
+    menuWrap.find(".dropdown").children("ul").hide();
   }
 
   hiddenBarMenuConfig();
+
+  // Dedicated Side Menu Dropdown Toggle Handlers (Delegated on document)
+  $(document).off("click.sideMenuArrow").on("click.sideMenuArrow", ".side-menu .side-menu-arrow", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var $parentLi = $(this).closest("li.dropdown");
+    var $subUl = $parentLi.children("ul");
+    
+    $parentLi.toggleClass("open");
+    $subUl.slideToggle(300);
+  });
+
+  // If the parent item link is '#' or empty, clicking the link also toggles the submenu
+  $(document).off("click.sideMenuLink").on("click.sideMenuLink", ".side-menu .dropdown > a", function (e) {
+    var href = $(this).attr("href");
+    if (!href || href === "#" || href === "javascript:void(0)" || href === "javascript:void(0);") {
+      e.preventDefault();
+      e.stopPropagation();
+      var $parentLi = $(this).closest("li.dropdown");
+      $parentLi.children(".side-menu-arrow").trigger("click");
+    }
+  });
 
   //Custom Scroll for Hidden Sidebar
   if ($(".hidden-bar-wrapper").length) {

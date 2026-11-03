@@ -79,3 +79,148 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     width: 100%;
 }
+
+
+/* ==========================================================================
+   Dropdown Submenu Scrollbar (Fix for overflowing menus with many items)
+   ========================================================================== */
+.main-menu .navigation > li > ul > li > ul,
+.main-header .main-menu .navigation > li > ul > li > ul {
+    max-height: calc(100vh - 140px) !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    width: 280px !important;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Custom Sleek Scrollbar for Webkit Browsers (Chrome, Edge, Safari, Opera) */
+.main-menu .navigation > li > ul > li > ul::-webkit-scrollbar,
+.main-header .main-menu .navigation > li > ul > li > ul::-webkit-scrollbar {
+    width: 6px;
+}
+
+.main-menu .navigation > li > ul > li > ul::-webkit-scrollbar-track,
+.main-header .main-menu .navigation > li > ul > li > ul::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.main-menu .navigation > li > ul > li > ul::-webkit-scrollbar-thumb,
+.main-header .main-menu .navigation > li > ul > li > ul::-webkit-scrollbar-thumb {
+    background: #e5b122;
+    border-radius: 4px;
+}
+
+.main-menu .navigation > li > ul > li > ul::-webkit-scrollbar-thumb:hover,
+.main-header .main-menu .navigation > li > ul > li > ul::-webkit-scrollbar-thumb:hover {
+    background: #272727;
+}
+
+/* Firefox Scrollbar */
+.main-menu .navigation > li > ul > li > ul,
+.main-header .main-menu .navigation > li > ul > li > ul {
+    scrollbar-width: thin;
+    scrollbar-color: #e5b122 #f1f1f1;
+}
+
+
+/* ==========================================================================
+   Mobile Side Menu Dropdown & Accordion Fixes
+   ========================================================================== */
+
+/* Disable non-clickable pseudo-element arrow on <a> */
+.side-menu .dropdown > a::after {
+    display: none !important;
+}
+
+.hidden-bar .side-menu ul li a .btn.expander {
+    display: none !important;
+}
+
+/* Ensure hidden bar is touch scrollable */
+.hidden-bar {
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+}
+
+.side-menu .navigation li.dropdown {
+    position: relative;
+}
+
+.side-menu .navigation li.dropdown > a {
+    position: relative;
+    padding-right: 50px !important; /* leave room for dedicated arrow button */
+}
+
+/* Dedicated clickable arrow button */
+.side-menu-arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 44px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    color: #ffffff;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.side-menu-arrow:hover {
+    color: #e5b122;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.side-menu-arrow i {
+    transition: transform 0.3s ease;
+    pointer-events: none;
+}
+
+/* Rotate arrow when open */
+.side-menu .navigation li.dropdown.open > .side-menu-arrow i {
+    transform: rotate(180deg);
+    color: #e5b122;
+}
+
+/* Side menu submenus */
+.side-menu .dropdown > ul {
+    display: none;
+    background: rgba(0, 0, 0, 0.25);
+    padding-left: 15px !important;
+    list-style: none;
+}
+
+.side-menu .dropdown > ul > li > a {
+    font-size: 13px !important;
+    text-transform: none !important;
+    padding: 10px 15px !important;
+    border-top: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    color: #e2e8f0 !important;
+    font-weight: 400 !important;
+}
+
+.side-menu .dropdown > ul > li > a:hover {
+    color: #e5b122 !important;
+    background: rgba(229, 177, 34, 0.1) !important;
+}
+
+/* 2nd-level submenu */
+.side-menu .dropdown > ul > li.dropdown > ul {
+    background: rgba(0, 0, 0, 0.45);
+    padding-left: 15px !important;
+}
+
+.side-menu .dropdown > ul > li.dropdown > ul > li > a {
+    font-size: 12px !important;
+    padding: 8px 15px !important;
+    color: #cbd5e1 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
